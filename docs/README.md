@@ -50,7 +50,7 @@ The screens below are an example of how the many tracking sensors can be display
 
 - Provides example screens, automations and scripts
 
-- Go [here](https://gcobb321.github.io/icloud3_v3/#/) to review the documentation.
+- Go [here](https://gcobb321.github.io/icloud3_v3_docs/#/) to review the documentation.
 
   
 
@@ -90,8 +90,8 @@ The screens below are an example of how the many tracking sensors can be display
 
 ### Useful Links   {docsify-ignore}
 
-* [Brief Overview](https://github.com/gcobb321/icloud3_v3/blob/master/README.md)
-* [Extensive Documentation](https://gcobb321.github.io/icloud3_v3/#/)
+* [Brief Overview](https://github.com/gcobb321/icloud3_v3_docs/blob/master/README.md)
+* [Extensive Documentation](https://gcobb321.github.io/icloud3_v3_docs/#/)
 * [GitHub Repository](https://github.com/gcobb321/icloud3_v3)
 
 
