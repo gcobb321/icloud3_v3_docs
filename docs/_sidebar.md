@@ -14,7 +14,7 @@
 <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar.png"/></a>
 
 
-  ------
+------
 
 - [Introducing  iCloud3](chapters/1.0-introduction.md)
 
@@ -37,6 +37,7 @@
 - [Event Log During Startup](chapters/1.4-evlog-during-startup.md)
 
 - [Other iCloud3 Features](chapters/3.1-other-topics.md)
+- [Sensor Attributes](chapters/3.2-attributes.md)
 
 - [Service Calls](chapters/4.1-service-calls.md)
 
@@ -49,8 +50,6 @@
 - [Frequently Asked Questions](chapters/4.3-frequently-asked-questions.md)
 
 - [Troubleshooting Problems](chapters/4.6-troubleshooting-problems.md)
-
-- [ToDo-Entity Attributes](chapters/3.2-attributes.md)
 
 - [ToDo-Technical Information](chapters/6.0-tech-info.md)
 
