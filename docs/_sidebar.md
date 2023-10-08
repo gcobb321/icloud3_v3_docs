@@ -51,5 +51,5 @@
 
 - [Troubleshooting Problems](chapters/4.6-troubleshooting-problems.md)
 
-- [ToDo-Technical Information](chapters/6.0-tech-info.md)
+- [Technical Information](chapters/6.0-tech-info.md)
 
