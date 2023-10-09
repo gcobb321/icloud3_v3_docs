@@ -28,7 +28,7 @@
 
 - [iCloud & iOS App Location Data](chapters/1.2-icloud-iosapp-loc-data.md)
 
-- [Installing and Setting up the iCloud3 Integration](chapters/2.0-installing-and-configuring.md)
+- [Installing and Configuring iCloud3](chapters/2.0-installing-and-configuring.md)
 
   ------
 
