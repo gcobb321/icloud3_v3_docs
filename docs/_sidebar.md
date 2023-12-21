@@ -27,6 +27,8 @@
 - [1.2 Event Log](chapters/1.2-event-log.md)
 - [1.3 Introduction to Configure Settings](chapters/1.3-configure-settings.md)
 
+------
+
 - [**Support Components**]()
 - [2. iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
 - [3. Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
