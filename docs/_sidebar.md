@@ -22,12 +22,12 @@
 
 ------
 
-**General Description**
+- [**General Description**]()
 - [1.1 Tracking Results screen](chapters/1.1-tracking-results-screen.md)
 - [1.2 Event Log](chapters/1.2-event-log.md)
 - [1.3 Introduction to Configure Settings](chapters/1.3-configure-settings.md)
 
-**Support Components**
+- [**Support Components**]()
 - [2. iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
 - [3. Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
 - [4. Installing and Configuring iCloud3](chapters/2.0-installing-and-configuring.md)
