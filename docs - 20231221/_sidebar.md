@@ -21,11 +21,11 @@
 - [Migrating from iCloud3 v2.4.x to v3.0](chapters/0.1-migrating-v2.4-to-v3.0.md)
 
   ------
-  **iCloud3 General Description**
-- [1 iCloud3 Components](chapters/1-ic3-components.md)
-- [2 iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
-- [3 Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
-- [4 Installing and Configuring iCloud3](chapters/2.0-installing-and-configuring.md)
+  
+- [iCloud3 Components](chapters/1.1-ic3-components.md)
+- [iCloud & iOS App Location Data](chapters/1.2-icloud-iosapp-loc-data.md)
+- [Apple iCloud Account Verification](chapters/1.3-apple-id-verification.md)
+- [Installing and Configuring iCloud3](chapters/2.0-installing-and-configuring.md)
 
   ------
   
