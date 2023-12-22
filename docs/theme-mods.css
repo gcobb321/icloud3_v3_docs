@@ -33,26 +33,26 @@ body{
     /*font-size: 14px;*/
     background: #F6F9FB;
     color: #364149;
-    padding: 2px 0 0 8px;
+    padding: 02px 0 0 0;
     width: 250px;
 }
 .sidebar-toggle span {
     background-color: red;
 }
 .sidebar>h1 {
-    margin: 10px 0px 0px 6px;
+    margin: 2px 0px 0px 6px;
     padding-left: 2px;
     font-size: 14px;
-    font-weight: 600;
-    text-align: left;
+    font-weight: 400;
+    text-align: center;
     color: #a5bcd9;
-    /* border-bottom: 1px solid #a5bcd9; */
+    /* border-bottom: 1px solid #a5bcd9;
     word-wrap: break-word;
     white-space: normal;
     text_decoration: underline #446ca2;
     text-decoration-thickness: 1px;
     -webkit-text_decoration: underline #446ca2;
-    -webkit-text-decoration-thickness: 1px;
+    -webkit-text-decoration-thickness: 1px; */
 }
 .sidebar ul li a {
     font-size: 14px;
