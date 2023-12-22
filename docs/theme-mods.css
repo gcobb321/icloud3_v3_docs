@@ -41,7 +41,7 @@ body{
 }
 .sidebar>h1 {
     margin: 5px 10px 5px 10px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 300;
     text-align: center;
     color: #a5bcd9;
@@ -72,7 +72,7 @@ body{
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
-    line-height: 1.4em;
+    line-height: 1.1em;
     border-top: 1px solid #33A9F4;
 }
 .sidebar-version-date {
