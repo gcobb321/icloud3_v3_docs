@@ -40,7 +40,8 @@ body{
     background-color: red;
 }
 .sidebar>h1 {
-    margin: 5px 10px 5px 10px;
+    margin: 2px 0px 0px 6px;
+    padding-left: 2px;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
@@ -55,14 +56,15 @@ body{
 }
 .sidebar ul li a {
     font-size: 14px;
+    line-height: 1em;
     word-wrap: break-word;
     white-space: normal;
-    padding-left: 6px;
+    padding-left: 2px;
     border: 1px solid transparent;
 }
 .sidebar ul li a:hover {
     padding-left: 2px;
-    /*border: 1px solid #406495;*/
+    border: 1px transparent #406495;
     background: #EAF0F7;
 }
 .sidebar ul li.active>a {
@@ -73,6 +75,7 @@ body{
 }
 .sidebar .sidebar-nav {
     line-height: 1em;
+    padding-left: 2px;
     border-top: 1px solid #33A9F4;
 }
 .sidebar-version-date {
