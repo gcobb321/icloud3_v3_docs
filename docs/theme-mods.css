@@ -33,18 +33,18 @@ body{
     /*font-size: 14px;*/
     background: #F6F9FB;
     color: #364149;
-    padding: 2px 0 0 0;
+    padding: 2px 0 0 8px;
     width: 250px;
 }
 .sidebar-toggle span {
     background-color: red;
 }
 .sidebar>h1 {
-    margin: 2px 0px 0px 6px;
+    margin: 10px 0px 0px 6px;
     padding-left: 2px;
     font-size: 14px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     color: #a5bcd9;
     /* border-bottom: 1px solid #a5bcd9; */
     word-wrap: break-word;
