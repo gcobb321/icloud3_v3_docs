@@ -57,7 +57,7 @@ body{
     font-size: 14px;
     word-wrap: break-word;
     white-space: normal;
-    padding-left: 2px;
+    padding-left: 6px;
     border: 1px solid transparent;
 }
 .sidebar ul li a:hover {
