@@ -70,6 +70,7 @@ body{
 .sidebar ul li.active>a {
     color: #406495;
     padding-left: 2px;
+    padding-bottom: 2px;
     border: 1px solid #406495;
     background: #D4DDE9;
 }
