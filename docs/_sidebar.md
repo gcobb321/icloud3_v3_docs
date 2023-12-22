@@ -21,8 +21,7 @@
 - [Migrating from iCloud3 v2.4.x to v3.0](chapters/0.1-migrating-v2.4-to-v3.0.md)
 
 ------
-
-- [**General Description**]()
+**General Description**
 - [1.1 Tracking Results screen](chapters/1.1-tracking-results-screen.md)
 - [1.2 Event Log](chapters/1.2-event-log.md)
 - [1.3 Introduction to Configure Settings](chapters/1.3-configure-settings.md)
