@@ -28,7 +28,7 @@
 
 ------
 
-- [**Support Components**]()
+- **Support Components**
 - [2. iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
 - [3. Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
 - [4. Installing and Configuring iCloud3](chapters/2.0-installing-and-configuring.md)
