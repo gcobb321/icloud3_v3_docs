@@ -15,9 +15,9 @@
 
 
 ------
-
-- [Introducing  iCloud3](chapters/1.0-introduction.md)
-- [Changes and new Features - v3.0](chapters/0.0-change-log-v3.0.md
+- **About iCloud3**
+- [Introducing iCloud3](chapters/1.0-introduction.md)
+- [Changes and new Features - v3.0](chapters/0.0-change-log-v3.0.md)
 
 ------
 - **iCloud3 Components**
@@ -29,14 +29,15 @@
 - **Support Components**
 - [2.1 iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
 - [2.2 Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
+
 -----
 - **Installation**
-- [3.1 Migrating from iCloud3 v2.4.x to v3.0](chapters/0.1-migrating-v2.4-to-v3.0.md)
-- [3.2 Installing the iCloud3 Integration](chapters/2.0-installing-and-configuring.md)
+- [3.1 Migrating from iCloud3 v2 to v3](chapters/0.1-migrating-v2.4-to-v3.0.md)
+- [3.2 Installing iCloud3 for the first time](chapters/2.0-installing-and-configuring.md)
 
   ------
+- **Reference Guide**
 - [Configuration Screens & Parameters](chapters/3.0-config-parms.md)
-- [Event Log During Startup](chapters/1.4-evlog-during-startup.md)
 - [Other iCloud3 Features](chapters/3.1-other-topics.md)
 - [Sensor Attributes](chapters/3.2-attributes.md)
 - [Service Calls](chapters/4.1-service-calls.md)
