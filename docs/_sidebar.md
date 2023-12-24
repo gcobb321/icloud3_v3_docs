@@ -32,21 +32,24 @@
 - [2.3 iOS App (HA Mobile App)](chapters/2.3-ios-app.md)
 
 ------
-- **Instaling iCloud3**
-- [3.1 Migrating from  v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
-- [3.2 First time or a Full Reinstall](chapters/3.2-installing-and-configuring.md)
-
-  ------
-- **Reference Guide**
+- **Installing iCloud3**
+- [3.1 Migrating from v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
+- [3.2 As a New Installation](chapters/3.2-installing-and-configuring.md)
+------
+- **Reference**
 - [Configuration Screens & Parameters](chapters/7.1-config-parms.md)
 - [Other iCloud3 Features](chapters/7.2-other-topics.md)
 - [Sensor Attributes](chapters/7.3-attributes.md)
 - [Service Calls](chapters/7.4-service-calls.md)
 - [Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
-
-  ------
+  
+------
+- **Questions and Problems**
 - [Fixing Tracking Problems](chapters/8.1-device-tracking-problems.md)
 - [Frequently Asked Questions](chapters/8.2-frequently-asked-questions.md)
 - [Troubleshooting Problems](chapters/8.3-troubleshooting-problems.md)
+  
+------
+- **Other Topics**
 - [Technical Information](chapters/9.1-tech-info.md)
 
