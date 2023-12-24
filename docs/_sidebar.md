@@ -20,7 +20,7 @@
 - [v3 Changes and New Features](chapters/0.2-change-log-v3.md)
 
 ------
-- [**User Guide Index**](chapters/0.3-index2-change-log-v3.md)
+- [**User Guide Index**](chapters/0.3-index.md)
 
 ------
 - **iCloud3 Components**
