@@ -18,8 +18,9 @@
 - **Getting Started**
 - [Introducing iCloud3](chapters/0.1-introduction.md)
 - [v3 Changes and New Features](chapters/0.2-change-log-v3.md)
-- 
-- **User Guide Index**
+
+------
+- [**User Guide Index**](chapters/0.3-index2-change-log-v3.md)
 
 ------
 - **iCloud3 Components**
