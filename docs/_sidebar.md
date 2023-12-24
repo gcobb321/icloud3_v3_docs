@@ -16,8 +16,8 @@
 
 ------
 - **About iCloud3**
-- [Introducing iCloud3](chapters/1.0-introduction.md)
-- [Changes and new Features - v3.0](chapters/0.0-change-log-v3.0.md)
+- [Introducing iCloud3](chapters/0.1-introduction.md)
+- [Changes and new Features - v3.0](chapters/0.2-change-log-v3.md)
 
 ------
 - **iCloud3 Components**
@@ -27,25 +27,26 @@
 
 ------
 - **Support Components**
-- [2.1 iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
-- [2.2 Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
+- [2.1 iCloud Account](chapters/2.1-icloud-account.md)
+- [2.2 Apple iCloud Account Verification](chapters/2.2-apple-id-verification.md)
+- [2.3 iOS App (HA Mobile App)](chapters/2.3-ios-app.md)
 
 ------
-- **Installation**
-- [3.1 Migrating from iCloud3 v2 to v3](chapters/0.1-migrating-v2.4-to-v3.0.md)
-- [3.2 Installing iCloud3 for the first time](chapters/2.0-installing-and-configuring.md)
+- **Instaling iCloud3**
+- [3.1 Migrating from  v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
+- [3.2 First time or a Full Reinstall](chapters/3.2-installing-and-configuring.md)
 
   ------
 - **Reference Guide**
-- [Configuration Screens & Parameters](chapters/3.0-config-parms.md)
-- [Other iCloud3 Features](chapters/3.1-other-topics.md)
-- [Sensor Attributes](chapters/3.2-attributes.md)
-- [Service Calls](chapters/4.1-service-calls.md)
-- [Sample Automation & Scripts](chapters/5.0-sample-automation-scripts.md)
+- [Configuration Screens & Parameters](chapters/7.1-config-parms.md)
+- [Other iCloud3 Features](chapters/7.2-other-topics.md)
+- [Sensor Attributes](chapters/7.3-attributes.md)
+- [Service Calls](chapters/7.4-service-calls.md)
+- [Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
 
   ------
-- [Fixing Tracking Problems](chapters/4.2-device-tracking-problems.md)
-- [Frequently Asked Questions](chapters/4.3-frequently-asked-questions.md)
-- [Troubleshooting Problems](chapters/4.6-troubleshooting-problems.md)
-- [Technical Information](chapters/6.0-tech-info.md)
+- [Fixing Tracking Problems](chapters/8.1-device-tracking-problems.md)
+- [Frequently Asked Questions](chapters/8.2-frequently-asked-questions.md)
+- [Troubleshooting Problems](chapters/8.3-troubleshooting-problems.md)
+- [Technical Information](chapters/9.1-tech-info.md)
 
