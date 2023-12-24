@@ -30,7 +30,7 @@
 - [2.1 iCloud & iOS App Location Data](chapters/2-icloud-iosapp-loc-data.md)
 - [2.2 Apple iCloud Account Verification](chapters/3-apple-id-verification.md)
 
------
+------
 - **Installation**
 - [3.1 Migrating from iCloud3 v2 to v3](chapters/0.1-migrating-v2.4-to-v3.0.md)
 - [3.2 Installing iCloud3 for the first time](chapters/2.0-installing-and-configuring.md)
@@ -44,7 +44,6 @@
 - [Sample Automation & Scripts](chapters/5.0-sample-automation-scripts.md)
 
   ------
-
 - [Fixing Tracking Problems](chapters/4.2-device-tracking-problems.md)
 - [Frequently Asked Questions](chapters/4.3-frequently-asked-questions.md)
 - [Troubleshooting Problems](chapters/4.6-troubleshooting-problems.md)
