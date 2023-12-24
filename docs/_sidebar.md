@@ -15,9 +15,11 @@
 
 
 ------
-- **About iCloud3**
+- **Getting Started**
 - [Introducing iCloud3](chapters/0.1-introduction.md)
-- [Changes and new Features - v3.0](chapters/0.2-change-log-v3.md)
+- [v3 Changes and New Features](chapters/0.2-change-log-v3.md)
+- 
+- [**User Guide Index**]()
 
 ------
 - **iCloud3 Components**
@@ -26,15 +28,16 @@
 - [1.3 Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
 
 ------
-- **Support Components**
-- [2.1 iCloud Account](chapters/2.1-icloud-account.md)
-- [2.2 Apple iCloud Account Verification](chapters/2.2-apple-id-verification.md)
-- [2.3 iOS App (HA Mobile App)](chapters/2.3-ios-app.md)
+- **Location Data Providers**
+- [2.1 iCloud Account Family Sharng Devices](chapters/2.1-icloud-account.md)
+- [2.2 iOS App Moitoring (HA Mobile App)](chapters/2.3-ios-app.md)
+- [2.3 iCloud Account Access Authentication](chapters/2.2-apple-id-verification.md)
 
 ------
 - **Installing iCloud3**
 - [3.1 Migrating from v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
 - [3.2 As a New Installation](chapters/3.2-installing-and-configuring.md)
+  
 ------
 - **Reference**
 - [Configuration Screens & Parameters](chapters/7.1-config-parms.md)
