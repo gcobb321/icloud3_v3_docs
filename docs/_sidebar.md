@@ -11,7 +11,7 @@
   </table>
 </nav>
 
-<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar.png"/></a>
+<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
 
 
 ------
