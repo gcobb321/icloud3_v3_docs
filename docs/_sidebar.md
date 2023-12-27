@@ -8,6 +8,9 @@
         <a href="https://github.com/gcobb321/icloud3_v3/releases" class="button-base">Download</a>
       </td>
     </tr>
+    <tr><td>
+        <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
+    </td></tr>
   </table>
 </nav>
 
