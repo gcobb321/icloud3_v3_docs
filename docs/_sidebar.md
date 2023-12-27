@@ -10,7 +10,8 @@
     </tr>
   </table>
 </nav>
-<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button2.png"/></a>
+<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
+
 ------
 - **Getting Started**
 - [Introducing iCloud3](chapters/0.1-introduction.md)
