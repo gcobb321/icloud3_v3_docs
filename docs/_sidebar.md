@@ -1,5 +1,5 @@
 <nav>
-  <table style="padding: 10px 0 5px 20px;">
+  <table style="padding: 10px 0 0px 20px;">
     <tr>
       <td>
         <a href="https://github.com/gcobb321/icloud3_v3" class="button-base">Github</a>
@@ -9,11 +9,7 @@
       </td>
     </tr>
   </table>
-  <table style="padding: 10px 0 5px 20px;">
-    <tr><td>
-        <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
-    </td></tr>
-  </table>
+  
 </nav>
 
 <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
