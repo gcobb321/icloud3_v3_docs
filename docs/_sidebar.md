@@ -27,10 +27,10 @@
 - [1.3 Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
 
 ------
-- **Location Data Providers**
-- [2.1 iCloud Account Family Sharng Devices](chapters/2.1-icloud-account.md)
-- [2.2 iOS App Moitoring (HA Mobile App)](chapters/2.3-ios-app.md)
-- [2.3 iCloud Account Access Authentication](chapters/2.2-apple-id-verification.md)
+- **Location Data Sources**
+- [2.1 iCloud Account Family Sharing Devices](chapters/2.1-icloud-account.md)
+- [2.2 Mobile App Integration/iOS App Entities](chapters/2.3-ios-app.md)
+- [2.3 iCloud Account Authentication](chapters/2.2-apple-id-verification.md)
 
 ------
 - **Installing iCloud3**
