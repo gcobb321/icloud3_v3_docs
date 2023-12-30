@@ -40,17 +40,17 @@ body{
     background-color: red;
 }
 .sidebar h1 {
-    /*margin: 2px 0px 0px 6px;*/
+    margin: 2px 0px 0px 6px;
     padding-left: 2px;
     font-size: 14px;
     line-height: 1.1em;
-    font-weight: 400;
+    font-weight: 600;
     word-wrap: break-word;
     white-space: normal;
     border: 1px solid transparent;
-    /*text-align: center;
+    /*text-align: center;*/
     color: #a5bcd9;
-    border-bottom: 1px solid #a5bcd9;
+    /*border-bottom: 1px solid #a5bcd9;
     word-wrap: break-word;
     white-space: normal;
     text_decoration: underline #446ca2;
