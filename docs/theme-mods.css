@@ -39,45 +39,15 @@ body{
 .sidebar-toggle span {
     background-color: red;
 }
-/*.sidebar>h1 {
-    margin: 2px 0px 0px 6px;
-    padding-left: 2px;
-    font-size: 14px;
-    line-height: 1.1em;
-    font-weight: 600;
-    word-wrap: break-word;
-    white-space: normal;
-    border: 1px solid transparent;
-    /*text-align: center;
-    color: #a5bcd9;*/
-    /*border-bottom: 1px solid #a5bcd9;
-    word-wrap: break-word;
-    white-space: normal;
-    text_decoration: underline #446ca2;
-    text-decoration-thickness: 1px;
-    -webkit-text_decoration: underline #446ca2;
-    -webkit-text-decoration-thickness: 1px; */
-    
-/*.sidebar>h1 {
-    margin: 5px 10px 5px 10px;
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: center;
-    color: #a5bcd9;
-    word-wrap: break-word;
-    white-space: normal;
-    text_decoration: underline #446ca2;
-    text-decoration-thickness: 1px;
-    -webkit-text_decoration: underline #446ca2;
-    -webkit-text-decoration-thickness: 1px;*/
     
 .sidebar>h1 {
-    margin: 5px 10px 5px 10px;
+    margin: 5px 10px 2px 10px;
     /*font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
     color: #a5bcd9;*/
 }
+
 .sidebar ul li a {
     font-size: 14px;
     line-height: 1.1em;
