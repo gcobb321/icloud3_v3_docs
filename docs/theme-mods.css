@@ -47,7 +47,9 @@ body{
     text-align: center;
     color: #a5bcd9;*/
 }
-
+.sidebar p {
+    margin-left: 4px;
+}
 .sidebar ul li a {
     font-size: 14px;
     line-height: 1.1em;
