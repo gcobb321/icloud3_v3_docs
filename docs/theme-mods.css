@@ -164,6 +164,9 @@ body{
     word-spacing: .05rem;
     margin: .75rem 0 .15em 0;
 }
+.markdown-section ol li p {
+   margin-top: .15rem; 
+}
 .markdown-section ul li p {
    margin-top: .15rem; 
 }
