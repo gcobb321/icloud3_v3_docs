@@ -58,19 +58,18 @@ body{
     -webkit-text_decoration: underline #446ca2;
     -webkit-text-decoration-thickness: 1px; */
     
-.sidebar>h1 {
+/*.sidebar>h1 {
     margin: 5px 10px 5px 10px;
     font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
     color: #a5bcd9;
-    /* border-bottom: 1px solid #a5bcd9; */
     word-wrap: break-word;
     white-space: normal;
     text_decoration: underline #446ca2;
     text-decoration-thickness: 1px;
     -webkit-text_decoration: underline #446ca2;
-    -webkit-text-decoration-thickness: 1px;
+    -webkit-text-decoration-thickness: 1px;*/
     
 .sidebar ul li a {
     font-size: 14px;
