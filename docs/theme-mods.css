@@ -39,7 +39,7 @@ body{
 .sidebar-toggle span {
     background-color: red;
 }
-.sidebar h1 {
+.sidebar>h1 {
     margin: 2px 0px 0px 6px;
     padding-left: 2px;
     font-size: 14px;
