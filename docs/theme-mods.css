@@ -48,7 +48,7 @@ body{
     color: #a5bcd9;*/
 }
 .sidebar p {
-    margin-left: 4px;
+    margin: 0 0 0 4px;
 }
 .sidebar ul li a {
     font-size: 14px;
