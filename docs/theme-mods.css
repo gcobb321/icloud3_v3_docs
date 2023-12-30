@@ -142,18 +142,23 @@ body{
     margin: 20px 0 -20px 0;
 }
 
-.markdown-section p {
-    margin: 1em 0 .15em 0;
-}
-.markdown-section ol, .markdown-section p, .markdown-section ul {
+.markdown-section ol {
     line-height: 1.3rem;
     word-spacing: .05rem;
     margin-top: .75rem;
-}
-.markdown-section ol, .markdown-section ul {
     padding-left: 1.5rem;
 }
-
+.markdown-section ul {
+    line-height: 1.3rem;
+    word-spacing: .05rem;
+    margin-top: .75rem;
+    padding-left: 1.5rem;
+}
+.markdown-section p {
+    line-height: 1.3rem;
+    word-spacing: .05rem;
+    margin: .75rem 0 .15em 0;
+}
 .markdown-section p.tip {
     background-color: #FFF6F4;
 }
