@@ -143,14 +143,15 @@ body{
 }
 
 .markdown-section p {
-    margin:1em 0 0 0;
+    margin: 1em 0 .15em 0;
 }
 .markdown-section ol, .markdown-section p, .markdown-section ul {
-    /*line-height:1.3rem; */
-    word-spacing:.05rem
+    line-height: 1.3rem;
+    word-spacing: .05rem;
+    margin-top: .15rem;
 }
-.markdown-section ol,.markdown-section ul {
-    padding-left:1.5rem
+.markdown-section ol, .markdown-section ul {
+    padding-left: 1.5rem;
 }
 
 .markdown-section p.tip {
