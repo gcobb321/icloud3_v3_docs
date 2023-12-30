@@ -22,9 +22,9 @@
 
 ------
 - **iCloud3 Components**
-- [1.1 Tracking Results screen](chapters/1.1-tracking-results-screen.md)
-- [1.2 Event Log](chapters/1.2-event-log.md)
-- [1.3 Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
+- [Tracking Results screen](chapters/1.1-tracking-results-screen.md)
+- [Event Log](chapters/1.2-event-log.md)
+- [Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
 
 ------
 - **Location Data Sources**
