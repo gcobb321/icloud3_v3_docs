@@ -27,7 +27,7 @@
 - [Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
 
 ------
-- **Location Data Sources**
+###### Location Data Sources
 - [iCloud Account Family Sharing Devices](chapters/2.1-icloud-account.md)
 - [Mobile App Integration, iOS App Entities](chapters/2.3-ios-app.md)
 - [iCloud Account Authentication](chapters/2.2-apple-id-verification.md)
