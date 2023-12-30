@@ -21,7 +21,7 @@
 - [**User Guide Index**](chapters/0.3-index.md)
 
 ------
-# iCloud3 Components
+- # iCloud3 Components
 - [1.1 Tracking Results screen](chapters/1.1-tracking-results-screen.md)
 - [1.2 Event Log](chapters/1.2-event-log.md)
 - [1.3 Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
