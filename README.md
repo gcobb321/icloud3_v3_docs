@@ -19,28 +19,32 @@ iCloud3 is a device tracker custom component that tracks your iPhones, iPads, Ap
 Although Home Assistant has it's own official iCloud component, iCloud3 goes far beyond it's capabilities. The important highlights include:
 
 - **HA Integration** - iCloud3 is a Home Assistant custom integration that is set up and configured from the *HA Settings > Devices & Services > Integrations* screen.
-- **Configuration Settings** - Configuration parameters are updated online using various screens and take effect immediately without restarting HA. 
+- **Configuration Settings** - Configuration parameters are updated online using various screens and take effect immediately without restarting HA.
+- **Track iPhones, iPads and Apple Watches** - Track or monitor your iDevices. 
 - **Location data sources** - Location data comes from the iCloud Account and the HA Companion App (iOS App).
 - **Actively track a device** - The device will request it's location on a regular interval based on its distance from Home or another zone. 
 - **Passively monitor a device** - The device does not request it's location. It is updated when another tracked device requests theirs.
 - **Waze Route Service** - The travel time and distance to Home or another tracked zone is provided by Waze.
 - **Waze Route Service History Database** - The travel time and distance data from Waze is saved to a local database and reused when the device is in a previous location. 
-- **Track from Multiple Zones** - Tracking results (location, travel time, distance, arrival time, etc.) are reported from the Home zone or another zone (office, second home, parents, etc.). 
+- **Track from multiple zones** - Tracking results (location, travel time, distance, arrival time, etc.) are reported from the Home zone or another zone (office, second home, parents, etc.). 
 - **Primary Home Zone** - Set another zone as the primary zone for the device and report tracking results based on that location. This is useful when you have two homes, on a vacation at another location, triggering automations at your parents house with true devices, etc.
-- **Improved GPS Accuracy** - GPS wandering errors leading to incorrect zone exits are eliminated.
-- **Enter Zone Delay** - Delay processing Zone Enter triggers in case you are just driving through it.
+- **Improved GPS accuracy** - GPS wandering errors leading to incorrect zone exits are eliminated.
+- **Monitors iOS App activity** - Looks for location and trigger changes every 5-seconds. 
+- **Enter Zone delay** - Delay processing Zone Enter triggers in case you are just driving through it.
 - **Stationary Zone** - A dynamic *Stationary Zone* is created when the device has not moved for a while (doctors office, store, friend's house). This helps conserve battery life.
-- **Nearby Devices** - The distance to other devices is displayed and used to determine tracking results.
-- **Zone Monitoring** - The number of devices in each zone is displayed when a device is updated.
-- **Local Time Zone Support** - Event times are normally displayed using the time zone your HA server is in. If, hoowever, you are away from home and in another time zone can, the Event times can be displayed for the time zone you are in.
+- **Nearby devices** - The distance to other devices is displayed and used to determine tracking results.
+- **Zone monitoring** - The number of devices in each zone is displayed when a device is updated. 
+- **Local Time Zone** - Event times are normally displayed using the time zone your HA server is in. If, hoowever, you are away from home and in another time zone can, the Event times can be displayed for the time zone you are in.
 - **Zone Activity Log** - A log can be kept for each time you are in a zone. This log file (.csv format) can be imported into a spreadsheet program and used for expense reporting, travel history, device location monitoring, etc. 
 - **Sensors and more sensors** - Many sensors are created and updated with distance, travel time, polling data, battery status, zone attributes, etc. Select only the ones you want to use. 
+- **Battery status** - Updates the battery level and status (charging/not charging) from iCloud data during a tracking event and from the iOS App every 5-seconds.
+- **Distance Sensor Attributes** - Shows the distance to the center and edge of the Home zone, distance to other zones and distance to other devices. 
 - **Event Log** - The current status and event history of every tracked and monitored device is displayed on the iCloud3 Event Log custom Lovelace card. Information about device configuration, errors and alerts, nearby devices, tracking results, debug information and location request results is displayed.
-- **Detailed debugging information** - Several levels location history transactions can be displayed in the Event Log or in the Home Assistant Log File. These include general information, debug data and the raw device location data received from iCloud Location Services.
-- **Updating and Restarting** - iCloud3 can be restarted without restarting Home Assistant. The current device_tracker and sensor entity states are restored on a restart. It can also be reloaded from the *Configure Settings > Action* screen without restarting Home Assistant.
-- **Device_tracker and sensor entities** - iCloud3 devices and sensors are true Home Assistant entities. They are added, deleted and updated using *Configuration Settings > Sensors* selection screens.
+- **Updating and Restarting** - iCloud3 can be restarted without restarting Home Assistant.
+- **Restore state values on restart** - The current device_tracker and sensor entity states are restored on a restart. The attributes are not restored but are reset on the first tracking Event. 
+- **Device_tracker and sensor entities** - iCloud3 devices and sensors are Home Assistant entities that are added, deleted and changed on the  *Update iCloud3 Devices* and *Sensors* configuration screens.
 - **Zone Exits for devices not using the iOS App** - Devices that do not or can not (Apple Watch) use the iOS App respond to a zone exit when it detects another nearby device has left a zone.
-- **And More** - Review the following documentation to see if it will help you track and monitor the locations of your family members and friends.
+- **And More** - Review the following documentation to see if it will help you track and monitor the locations of your iPhones, iPads and Apple Watches.
 
 ### Tracking Information Screen with Event Log
 
