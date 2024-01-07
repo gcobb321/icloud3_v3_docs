@@ -7,6 +7,9 @@
   <meta name="iCloud3 Documentation" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!--<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">-->
+
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+  
   <link rel="stylesheet" href="./theme-vue-min.css">
   <link rel="stylesheet" href="./theme-mods.css">
   <!--<link rel="stylesheet" href="./theme-toc.css">-->
@@ -42,6 +45,15 @@
         crossChapter: true,
         crossChapterText: false,
       },
+
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3, h4, h5, h6',
+        title: 'Table of Contents',
+      },
+
+      
+
       plugins: [
           EditOnGithubPlugin.create(
             'https://github.com/gcobb321/icloud3_v3_docs/blob/main/docs/',
@@ -55,6 +67,11 @@
   <script src="./docsify-copy-code.js"></script>
   <!--<script src="./docsify-toc.js"></script>-->
   <script src="./docsify-pagination.min.js"></script>
+
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+
+  
+
   <!--<script src="./docsify-search.min.js"></script>-->
   <!--<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>-->
   
