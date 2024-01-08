@@ -12,13 +12,12 @@
   
   <link rel="stylesheet" href="./theme-vue-min.css">
   <link rel="stylesheet" href="./theme-mods.css">
-  <!--<link rel="stylesheet" href="./theme-toc.css">-->
+  <link rel="stylesheet" href="./theme-toc.css">
 </head>
 <body>
   <div id="app"></div>
   <!--<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>-->
 
-  <script src="//unpkg.com/docsify-page-toc/dist/docsify-page-toc.js"></script>
   
   <script src="./docsify-edit-on-github.js"></script>
   <!--
@@ -49,11 +48,10 @@
         crossChapterText: false,
       },
 
-      'page-toc': {
-        tocMaxLevel: 4,
-        target: 'h1, h2, h3, h4'
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h2, h3, h4, h5, h6',
       },
-
       
 
       plugins: [
@@ -67,7 +65,7 @@
   </script>
   <script src="./docsify-main-code.js"></script>
   <script src="./docsify-copy-code.js"></script>
-  <!--<script src="./docsify-toc.js"></script>-->
+  <script src="./docsify-toc.js"></script>
   <script src="./docsify-pagination.min.js"></script>
 
   
