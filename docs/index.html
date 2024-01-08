@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!--<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">-->
 
-  
+  <script src="//unpkg.com/docsify-page-toc/dist/docsify-page-toc.js"></script>
   
   <link rel="stylesheet" href="./theme-vue-min.css">
   <link rel="stylesheet" href="./theme-mods.css">
@@ -46,7 +46,10 @@
         crossChapterText: false,
       },
 
-      
+      'page-toc': {
+        tocMaxLevel: 4,
+        target: 'h1, h2, h3, h4'
+      },
 
       
 
