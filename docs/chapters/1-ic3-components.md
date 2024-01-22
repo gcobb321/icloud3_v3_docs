@@ -16,8 +16,8 @@ This section describes each of the items.
 
 The iCloud3 Custom Component provides the core device tracking service. It does the following:
   - Initializes and sets up all tracking activities using the device configuration data from the iCloud account.
-  - Monitors the iOS App device_tracker entity for location changes, zone enter/exit triggers and battery information.
-  - Requests and processes location data from iCloud Location Services and the iOS App.
+  - Monitors the Mobile App device_tracker entity for location changes, zone enter/exit triggers and battery information.
+  - Requests and processes location data from iCloud Location Services and the Mobile App.
   - Analyzes the location data and tracks the devices.
   - Updates the sensors associated with each device.
 
@@ -28,7 +28,7 @@ The example screens below show examples of a tracked device's current status. Th
 
 - Gary, on the left, is at Home. Lillian, on the Right is Away.
   - Arrive item - The icons and text show Gary is at Home (Home icon in a circle and he arrived home at @3:22p. Lillian is traveling towards home. The Home d at the Home he arrival time. Notice the distance, travel time and travel direction from the Home Zone. 
-- Notice when the device was last located by iCloud or the iOS App, when it was last updated by iCloud3 and the time of the next update. 
+- Notice when the device was last located by iCloud or the Mobile App, when it was last updated by iCloud3 and the time of the next update. 
 - Gary is tracking from Home and the Quail Zone, Lillian just from Home.
 - The *Info* field shows tracking results from nearby devices is being used.
 
@@ -46,10 +46,10 @@ Note: The Lovelace code for these screens is in [Step #5 - Set up a Lovelace car
 The Event Log is a Lovelace custom card that shows past and current activity related to tracking a device. This includes:
 
 - Startup configuration.
-- Device information for Family Sharing, Find-my-Friends and iOS App devices and entities.
+- Device information for Family Sharing, Find-my-Friends and Mobile App devices and entities.
 - Tracking results including zone, travel time and distance data.
 - Error messages, problems and location data issues.
-- Detail tracking monitors that show what is going on under the covers, how location data from the iCloud Location Services and the iOS App is analyzed and processed.
+- Detail tracking monitors that show what is going on under the covers, how location data from the iCloud Location Services and the Mobile App is analyzed and processed.
 
 The Event Log has an *Actions* command menu that can control iCloud3 operations and the type of information to display in the Event Log or the Home Assistant log file. This includes:
 - Restart iCloud3 without restarting Home Assistant
@@ -76,7 +76,7 @@ The icons above the *Actions* drop-down menu list in the top-right are used for 
 | ![evlog-icons-refresh](../images/evlog-icons-refresh.png) | **Refresh** - This updates the Event Log screen with new activity for the selected device. |
 | ![](../images/evlog-icons-coffee.png)                     | **Buy Me a Coffee** - You find iCloud3 useful, appreciate the work I have done and want to send me a few dollars, euros, pesos, pounds, etc. Thanks. I appreciate it. |
 | ![](../images/evlog-icons-issues.png)                     | **GitHub Issue** - You are having a problem and think you may have found a bug or other problem. This takes you to the iCloud3 GitHub Issues page to create a new issue or to review existing issues. |
-| ![](../images/evlog-icons-config.png)                     | **Configure Settings** - This opens the iCloud3 Configure Settings screen. This will open a new browser page. It will only work when you are connected to your local network. It may not work on iPads and iPhones using the iOS App. |
+| ![](../images/evlog-icons-config.png)                     | **Configure Settings** - This opens the iCloud3 Configure Settings screen. This will open a new browser page. It will only work when you are connected to your local network. It may not work on iPads and iPhones using the Mobile App. |
 | ![](../images/evlog-icons-help.png)                       | **User Manual** - This opens the iCloud3 User Manual.        |
 
 
