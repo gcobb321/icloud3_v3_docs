@@ -194,7 +194,7 @@ body{
     padding: 0px 0px 5px 22px;
 }
 .markdown-section details > summary {
-    list-style-type: '▷ ';
+    list-style-type: '▷';
     font-weight: 450;
     line-height: 1.5em;
     padding: 0px 0px 0px 0px;
@@ -203,7 +203,7 @@ body{
     cursor: pointer;
 }
 .markdown-section details[open] > summary {
-    list-style-type: '▽ ';
+    list-style-type: '▽';
     padding: 0px 0px 5px 0px;
     margin: 0px 0px 0px -12px;
     color: #646bd4;
