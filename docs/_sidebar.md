@@ -47,8 +47,8 @@
   
 ------
 - **Questions and Problems**
-- [ Fixing Tracking Problems](chapters/8.1-device-tracking-problems.md)
 - [ Frequently Asked Questions](chapters/8.2-frequently-asked-questions.md)
+- [ Fixing Tracking Problems](chapters/8.1-device-tracking-problems.md)
 - [ Troubleshooting Problems](chapters/8.3-troubleshooting-problems.md)
   
 ------

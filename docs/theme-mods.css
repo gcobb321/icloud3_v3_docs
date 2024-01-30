@@ -186,6 +186,7 @@ body{
     color: DarkBlue;
     margin: 0 .2rem 0 .1rem;
 }
+
 /*---------------------------------------------------*/
 .markdown-section details {
     font-weight: 450;
@@ -193,7 +194,6 @@ body{
     word-spacing: .05rem;
     margin-top: .15rem;
 }
-
 .markdown-section details > summary {
     padding: 2px 6px;
     font-weight: 450;
@@ -202,14 +202,13 @@ body{
     margin-top: .15rem;
     cursor: pointer;
 }
-
 .markdown-section details > p {
-    padding: 2px 6px;
+    padding: 10px 0px 15px 10px;
+}
+.markdown-section details[open] > summary {
+    padding: 10px 0px 15px 10px;
 }
 
-.markdown-section details[open] > summary {
-    background-color: transparent;
-}
 /*---------------------------------------------------*/
 .search {
     wdth: 95%;
