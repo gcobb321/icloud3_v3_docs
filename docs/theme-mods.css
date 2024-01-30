@@ -189,19 +189,17 @@ body{
 
 /*---------------------------------------------------*/
 .markdown-section details {
-    font-weight: 450;
+    font-weight: 550;
 }
 .markdown-section details > summary {
-    padding: 0px 0px 5px 0px;
-    font-weight: 450;
+    font-weight: 550;
+    line-height: 1.5em;
+    padding: 0px 0px 0px 0px
     word-spacing: .05rem;
     cursor: pointer;
 }
-.markdown-section details[open] > summary > p {
-    padding: 10px 0px 15px 10px;
-}
 .markdown-section details[open] > summary {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 5px 0px;
 }
 
 /*---------------------------------------------------*/
