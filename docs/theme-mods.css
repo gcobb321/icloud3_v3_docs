@@ -196,7 +196,7 @@ body{
 }
 .markdown-section details > summary {
     /*list-style-type: '▷';*/
-    font-weight: 450;
+    font-weight: 500;
     line-height: 1.5em;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px -12px;
@@ -209,7 +209,7 @@ body{
     margin: 0px 0px 0px -12px;
     line-height: 1.5em;
     color: #646bd4;
-    font-weight: 550;
+    font-weight: 600;
 }
 
 /*---------------------------------------------------*/
