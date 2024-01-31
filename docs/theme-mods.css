@@ -191,6 +191,7 @@ body{
 /* FAQ Drop Down text */
 .markdown-section details {
     font-weight: 450;
+    line-height: 1.5em;
     padding: 0px 0px 5px 22px;
 }
 .markdown-section details > summary {
@@ -206,6 +207,7 @@ body{
     /*list-style-type: '▽';*/
     padding: 0px 0px 5px 0px;
     margin: 0px 0px 0px -12px;
+    line-height: 1.5em;
     color: #646bd4;
     font-weight: 550;
 }
