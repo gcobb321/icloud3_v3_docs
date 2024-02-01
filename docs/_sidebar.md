@@ -50,7 +50,7 @@
 - [ Frequently Asked Questions](chapters/8.1-freq-asked-questions.md)
 - [ Configuration Screen Issues](chapters/8.2-configure-screen-issues.md)
 - [ Fixing Tracking Problems](chapters/8.3-device-tracking-problems.md)
-- [ Troubleshooting Problems](chapters/8.3-troubleshooting-problems.md)
+- [ Troubleshooting Tools](chapters/8.4-troubleshooting-tools.md)
   
 ------
 - **Other Topics**
