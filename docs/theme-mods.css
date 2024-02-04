@@ -147,6 +147,7 @@ body{
 }
 .markdown-section ol li p {
    margin-top: .15rem; 
+   vertical-align: top;
 }
 .markdown-section ul li p {
    margin-top: .15rem; 
