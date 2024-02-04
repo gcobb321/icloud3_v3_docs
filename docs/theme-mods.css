@@ -130,12 +130,14 @@ body{
     word-spacing: .05rem;
     margin-top: .2rem;
     padding-left: 1.5rem;
+    vertical-align: top;
 }
 .markdown-section ul {
     line-height: 1.3rem;
     word-spacing: .05rem;
     margin-top: .15rem;
     padding-left: 1.5rem;
+    vertical-align: top;
 }
 
 .markdown-section p {
