@@ -8,13 +8,13 @@
 
 [![CurrentVersion](https://img.shields.io/badge/Current_Version-v3.0-blue.svg)](https://github.com/gcobb321/icloud3_v3)  [![Type](https://img.shields.io/badge/Type-Custom_Component-orange.svg)](https://github.com/gcobb321/icloud3_v3)  [![HACS](https://img.shields.io/badge/HACS-Custom_Repository-orange.svg)](https://github.com/gcobb321/icloud3_v3)
 
-[![ProjectStage](https://img.shields.io/badge/Project_Stage-General_Availability-forestgreen.svg)](https://github/gcobb321/icloud3_v3)  [![Released](https://img.shields.io/badge/Released-January,_2024-forestgreen.svg)](https://github.com/gcobb321/icloud3_v3)
+[![ProjectStage](https://img.shields.io/badge/Project_Stage-General_Availability-forestgreen.svg)](https://github/gcobb321/icloud3_v3)  [![Released](https://img.shields.io/badge/Released-February,_2024-forestgreen.svg)](https://github.com/gcobb321/icloud3_v3)
 
 
 
 iCloud3 is a device tracker custom component that tracks your iPhones, iPads and Apple Watches. iDevices in the Family Sharing List and the HA Mobile App Integration are trackable. The iDevice requests location data from from Apple's iCloud  Location Services and monitors various triggers sent from the Home Assistant Mobile App to Home Assistant. Sensors are updated with the device's location, distance from zones, travel time to zones, etc. 
 
-Although AirPods and SirTagsare in the iCloud Family Sharing list, they can not be tracked. They do not have the internal components to provide location data using cell towers and gps location information to Apple. 
+Although AirPods and AirTags are in the iCloud Family Sharing list, they can not be tracked. They do not have the internal components to provide location data using cell towers and gps location information to Apple. 
 
 ### iCloud3 v3 Highlights
 
@@ -53,33 +53,29 @@ Although Home Assistant has it's own official iCloud component, iCloud3 goes far
 
 The screens below are an example of how the many tracking sensors can be displayed. The screen on the left shows the current tracking formation for Gary while the Event Log on the right shows a history of important tracking events.
 
-![](./docs/images/track-evlog-gary-tfz-away-lillian-home.png)
+![](./images/track-evlog-gary-tfz-lillian-home.png)
+
 
 
 
 ### iCloud3 Documentation
 
 - Introduces the many features and components of iCloud3
-
 - Describes how to migration from v2 to v3
-
 - Provides step-by-step to install and configure iCloud3, it's components and it's supporting components (iCloud Account and the Mobile App)
-
 - Highlights the configuration screens and parameters
-
 - Provides example screens, automations and scripts
-
-- The [User Guide is here](https://gcobb321.github.io/icloud3_v3/#/).
+- The User Guide is [here](https://gcobb321.github.io/icloud3_v3/#/).
 
   
 
 ### Important Links
 
 - **iCloud3 GitHub Repository** - The  iCloud3 GitHub Repository is [here](https://github.com/gcobb321/icloud3).
-- **Install using HACS ** - iCloud3 v3 is available on the HACS and described [here]().
-- **Installing for the First Time** -  Instructions are in the *iCloud3 User Guide > As a New Install* [here](./docs/chapters/3.2-installing-and-configuring.md). HERE
-- **Migrating from v2** -  Instructions are in the *iCloud3 User Guide > Migrating iCloud3 from v2 to v3* [here](./docs/chapters/3.1-migrating-v2-to-v3.md). HERE
-- **iCloud3 v3 User Guide** -The User Guide is [here](https://gcobb321.github.io/icloud3_v3/#/).
+- **Install using HACS ** - iCloud3 v3 is available on the HACS and described [here](./docs/chapters/3.2-installing-and-configuring).
+- **Installing for the First Time** -  Instructions are in the *iCloud3 User Guide > As a New Install* [here](./docs/chapters/3.2-installing-and-configuring). HERE 
+- **Migrating from v2** -  Instructions are in the *iCloud3 User Guide > Migrating iCloud3 from v2 to v3* [here](./docs/chapters/3.1-migrating-v2-to-v3).
+- **iCloud3 v3 User Guide** -The User Guide is [here](./docs/chapters/0.1-introduction).
 
 
 
