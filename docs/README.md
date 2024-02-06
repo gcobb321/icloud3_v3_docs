@@ -69,8 +69,8 @@ The screens below are an example of how the many tracking sensors can be display
 ### Important Links
 
 - **iCloud3 GitHub Repository** - The  iCloud3 GitHub Repository is [here](https://github.com/gcobb321/icloud3).
-- **Installing for the First Time** -   This can be done using HACS or by downloading the Releasea zip file and is described in the Installing iCloud3 chapter [here](./docs/chapters/3.2-installing-and-configuring)
-- **Migrating from v2** - If you are already using iCloud3 v2, follow the instructions [here](./docs/chapters/3.1-migrating-v2-to-v3) to migrate your current configuration and then review the results to insure everything was migrated correctly. The devices you are tracking are migrated with an inactive status so be sure to follow all of the steps 
+- **Installing for the First Time** -   This can be done using HACS or by downloading the Releases *icloud3.zip* file. This is described in the Installing iCloud3 chapter [here](./chapters/3.2-installing-and-configuring)
+- **Migrating from v2** - If you are already using iCloud3 v2, follow the instructions [here](./chapters/3.1-migrating-v2-to-v3) to migrate your current configuration and then review the results to insure everything was migrated correctly. The devices you are tracking are migrated with an inactive status so be sure to follow all of the steps 
 
 
 -----
