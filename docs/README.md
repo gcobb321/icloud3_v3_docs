@@ -56,8 +56,6 @@ The screens below are an example of how the many tracking sensors can be display
 ![](./images/track-evlog-gary-tfz-lillian-home.png)
 
 
-
-
 ### iCloud3 Documentation
 
 - Introduces the many features and components of iCloud3
@@ -65,18 +63,14 @@ The screens below are an example of how the many tracking sensors can be display
 - Provides step-by-step to install and configure iCloud3, it's components and it's supporting components (iCloud Account and the Mobile App)
 - Highlights the configuration screens and parameters
 - Provides example screens, automations and scripts
-- The User Guide is [here](https://gcobb321.github.io/icloud3_v3/#/).
 
-  
+
 
 ### Important Links
 
 - **iCloud3 GitHub Repository** - The  iCloud3 GitHub Repository is [here](https://github.com/gcobb321/icloud3).
-- **Install using HACS ** - iCloud3 v3 is available on the HACS and described [here](./docs/chapters/3.2-installing-and-configuring).
-- **Installing for the First Time** -  Instructions are in the *iCloud3 User Guide > As a New Install* [here](./docs/chapters/3.2-installing-and-configuring). HERE 
-- **Migrating from v2** -  Instructions are in the *iCloud3 User Guide > Migrating iCloud3 from v2 to v3* [here](./docs/chapters/3.1-migrating-v2-to-v3).
-- **iCloud3 v3 User Guide** -The User Guide is [here](./docs/chapters/0.1-introduction).
-
+- **Installing for the First Time** -   This can be done using HACS or by downloading the Releasea zip file and is described in the Installing iCloud3 chapter [here](./docs/chapters/3.2-installing-and-configuring)
+- **Migrating from v2** - If you are already using iCloud3 v2, follow the instructions [here](./docs/chapters/3.1-migrating-v2-to-v3) to migrate your current configuration and then review the results to insure everything was migrated correctly. The devices you are tracking are migrated with an inactive status so be sure to follow all of the steps 
 
 
 -----
