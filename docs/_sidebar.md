@@ -30,7 +30,7 @@
 - **Location Data Sources**
 - [ iCloud Account Family Sharing Devices](chapters/2.1-icloud-account.md)
 - [ iCloud Account Authentication](chapters/2.2-apple-id-verification.md)
-- [ Mobile App Integration, Mobile App Entities](chapters/2.3-ios-app.md)
+- [ Mobile App Integration, Mobile App Entities](chapters/2.3-mobile-app.md)
 
 ------
 - **Installing iCloud3**
@@ -40,6 +40,7 @@
 ------
 - **Reference**
 - [ Configuration Screens & Parameters](chapters/7.1-config-parms.md)
+- [Alerts](chapters/7.6-alerts.md)
 - [ Other iCloud3 Features](chapters/7.2-other-topics.md)
 - [ Sensor Attributes](chapters/7.3-attributes.md)
 - [ Service Calls](chapters/7.4-service-calls.md)
