@@ -56,7 +56,7 @@ The screens below are an example of how the many tracking sensors can be display
 
 - Introduces the many features and components of iCloud3
 - Describes how to migration from v2 to v3
-- Provides step-by-step to install and configure iCloud3, it's components and it's supporting components (iCloud Account and the Mobile App)
+- Provides step-by-step lo to install and configure iCloud3, it's components and it's supporting components (iCloud Account and the Mobile App)
 - Highlights the configuration screens and parameters
 - Provides example screens, automations and scripts
 
