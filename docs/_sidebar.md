@@ -20,12 +20,9 @@
 ------
 - [**User Guide Index**](chapters/0.3-index.md)
 
-------
-- **Installing iCloud3**
-- [ Migrating from v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
-- [ As a New Installation](chapters/3.2-installing-and-configuring.md)
 -----
 - **iCloud3 Components**
+- [iCloud3 Components](chapters/1.0-ic3-components/md)
 - [ Tracking Results screen](chapters/1.1-tracking-results-screen.md)
 - [ Event Log](chapters/1.2-event-log.md)
 - [ Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
@@ -35,6 +32,11 @@
 - [ iCloud Account Family Sharing Devices](chapters/2.1-icloud-account.md)
 - [ iCloud Account Authentication](chapters/2.2-apple-id-verification.md)
 - [ Mobile App Integration, Mobile App Entities](chapters/2.3-mobile-app.md)
+
+------
+- **Installing iCloud3**
+- [ Migrating from v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
+- [ As a New Installation](chapters/3.2-installing-and-configuring.md)
 
 ------
 - **Reference**
