@@ -22,7 +22,7 @@
 
 -----
 - **iCloud3 Components**
-- [iCloud3 Components](chapters/1.0-ic3-components/md)
+- [iCloud3 Components](chapters/11.0-ic3-components.md)
 - [ Tracking Results screen](chapters/1.1-tracking-results-screen.md)
 - [ Event Log](chapters/1.2-event-log.md)
 - [ Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
