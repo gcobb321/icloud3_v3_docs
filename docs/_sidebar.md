@@ -15,17 +15,17 @@
 ------
 - **Getting Started**
 - [ Introducing iCloud3](chapters/0.1-introduction.md)
-- [ v3 Changes and New Features](chapters/0.2-change-log-v3.md)
+- [iCloud3 Components](chapters/0.2-ic3-components.md)
 
 ------
 - [**User Guide Index**](chapters/0.3-index.md)
 
 -----
 - **iCloud3 Components**
-- [iCloud3 Components](chapters/1.0-ic3-components.md)
 - [ Tracking Results screen](chapters/1.1-tracking-results-screen.md)
 - [ Event Log](chapters/1.2-event-log.md)
 - [ Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
+- [Installing iCloud3](chapters/3.2-installing-and-configuring.md)
 
 ------
 - **Location Data Sources**
@@ -36,7 +36,8 @@
 ------
 - **Installing iCloud3**
 - [ Migrating from v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
-- [ As a New Installation](chapters/3.2-installing-and-configuring.md)
+- [ v3 Changes and New Features](chapters/0.2-change-log-v3.md)
+
 
 ------
 - **Reference**
