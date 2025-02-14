@@ -16,22 +16,20 @@
 - **Getting Started**
 - [ Introducing iCloud3](chapters/0.1-introduction.md)
 - [iCloud3 Components](chapters/0.2-icloud3-components.md)
+- [ iCloud Account Family Sharing Devices](chapters/0.3-icloud-account.md)
+- [ Mobile App Integration, Mobile App Entities](chapters/0.4bile-app.md)
+- [ iCloud Account Authentication](chapters/0.5-apple-id-verification.md)
 
 ------
-- [**User Guide Index**](chapters/0.3-index.md)
+- [**User Guide Index**](chapters/0.9-index.md)
 
 -----
 - **iCloud3 Components**
-- [ Tracking Results screen](chapters/1.1-tracking-results-screen.md)
-- [ Event Log](chapters/1.2-event-log.md)
-- [ Configure iCloud3 Settings](chapters/1.3-configure-settings.md)
 - [Installing iCloud3](chapters/3.2-installing-and-configuring.md)
 
 ------
 - **Location Data Sources**
-- [ iCloud Account Family Sharing Devices](chapters/2.1-icloud-account.md)
-- [ iCloud Account Authentication](chapters/2.2-apple-id-verification.md)
-- [ Mobile App Integration, Mobile App Entities](chapters/2.3-mobile-app.md)
+
 
 ------
 - **Installing iCloud3**
