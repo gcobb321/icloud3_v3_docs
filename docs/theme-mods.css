@@ -159,14 +159,14 @@ body{
 }
 .markdown-section pre h6 {
     margin: 20px 0 -20px 0;
-    color: dodgerblue;
+    color: cornflowerblue;
 }
 /* blockquote = item starting with `>` */
 .markdown-section blockquote p {
     font-weight: 450;
     margin: -20px 0 -20px 0;
     font-style: italic;
-    color: dodgerblue;
+    color: cornflowerblue;
 }
 .markdown-section pre {
     -moz-osx-font-smoothing: initial;
@@ -223,7 +223,7 @@ body{
 .search {
     wdth: 95%;
     line-height: 20px;
-    border: 1px splid dodgerblue;
+    border: 1px splid cornflowerblue;
     background-color: white;
 }
 /*---------------------------------------------------*/
