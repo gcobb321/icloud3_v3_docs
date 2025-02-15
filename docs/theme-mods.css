@@ -116,6 +116,7 @@ body{
     margin: 30px 0 10px 0;
 }
 .markdown-section h4 {
+    font-size: 14px;
     margin: 30px 0 10px 0;
 }
 .markdown-section h5 {
@@ -152,6 +153,7 @@ body{
 .markdown-section ul li p {
    margin-top: .15rem; 
 }
+/* tip - item starting with `!>` */
 .markdown-section p.tip {
     background-color: #FFF6F4;
 }
@@ -159,9 +161,10 @@ body{
     margin: 20px 0 -20px 0;
     color: dodgerblue;
 }
+/* blockquote = item starting with `>` */
 .markdown-section blockquote p {
     font-weight: 450;
-    margin: 20px 0 -20px 0;
+    margin: -20px 0 -20px 0;
     font-style: italic;
     color: dodgerblue;
 }
