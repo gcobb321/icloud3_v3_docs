@@ -105,23 +105,18 @@ body{
 .markdown-section::-webkit-scrollbar-thumb:vertical:hover {
     background-color: #a5bcd9;
 }
+# Heading colors = themeColor in index.html
 .markdown-section h1 {
-    #color: #446ca2;
-    color: #64A1E4;
-    #color: #1E8ABC;
     margin: 30px 0 10px 0;
 }
 .markdown-section h2 {
-    color: #64A1E4;
     margin: 30px 0 10px 0;
 }
 .markdown-section h3 {
-    color: #64A1E4;
     margin: 30px 0 10px 0;
 }
 .markdown-section h4 {
     font-size: 20px;
-    color: red;
     margin: 30px 0 10px 0;
 }
 .markdown-section h5 {
@@ -193,9 +188,9 @@ body{
     font-weight: 450;
     background-color: #f2f2f2;
 }
+# em = italics text
 .markdown-section em {
-    #color: DarkBlue;
-    color: red;
+    color: DarkBlue;
     margin: 0 .2rem 0 .1rem;
 }
 
