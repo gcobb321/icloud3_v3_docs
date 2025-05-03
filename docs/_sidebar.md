@@ -14,27 +14,14 @@
 
 ------
 - **Getting Started**
-- [ Introducing iCloud3](chapters/0.1-introduction.md)
-- [iCloud3 Components](chapters/0.2-icloud3-components.md)
-- [Apple Account](chapters/0.3-apple-account.md)
-- [ Mobile App Integration](chapters/0.4-mobile-app.md)
+- [ Introducing iCloud3](chapters/1.1-introduction.md)
+- [iCloud3 Components](chapters/1.2-icloud3-components.md)
+- [Apple Account](chapters/1.3-apple-account.md)
+- [ Mobile App Integration](chapters/1.4-mobile-app.md)
 
 ------
-- [**User Guide Index**](chapters/0.9-index.md)
-
------
-- **iCloud3 Components**
-- [Installing iCloud3](chapters/3.2-installing-and-configuring.md)
-
-------
-- **Location Data Sources**
-
-
-------
-- **Installing iCloud3**
-- [ Migrating from v2 to v3](chapters/3.1-migrating-v2-to-v3.md)
-- [ v3 Changes and New Features](chapters/9.2-change-log-v3.md)
-
+- [**User Guide Index**](chapters/2.1-index.md)
+- [**Installing iCloud3**](chapters/2.2-installing-and-configuring.md)
 
 ------
 - **Reference**
