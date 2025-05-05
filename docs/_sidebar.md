@@ -23,10 +23,10 @@
 - **iCloud3 Data Sources**
 - [• Apple Account](chapters/1ds-apple-account.md)
 - [•  Mobile App Integration](chapters/1ds-mobile-app.md)
-- - **Other Features**
-- [• Track From Multiple Zones](chapters/1of-track-from-zone.md)
-- [•  Log Zone Activity](chapters/1of-log-zone-activity.md)
-- [•  Waze Map Card Display](chapters/1of-waze-map-card.md)
+- **Other Features**
+-- [• Track From Multiple Zones](chapters/1of-track-from-zone.md)
+-- [•  Log Zone Activity](chapters/1of-log-zone-activity.md)
+-- [•  Waze Map Card Display](chapters/1of-waze-map-card.md)
 
 ------
 - [**User Guide Index**](chapters/2-index.md)
