@@ -14,15 +14,15 @@
 
 ------
 - **About iCloud3**
-- [ Introducing iCloud3](chapters/1-introduction.md)
+- [•  Introducing iCloud3](chapters/1-introduction.md)
 - **iCloud3 Components**
-- [Device Tracker](chapters/1-device-tracker.md)
-- [Event Log](chapters/1-event-log.md)
-- [Configure Settings](chapters/1-configure-settings.md)
-- [Dashboard Builder](chapters/1-dashboard-builder.md)
+- [• Device Tracker](chapters/1-device-tracker.md)
+- [• Event Log](chapters/1-event-log.md)
+- [• Configure Settings](chapters/1-configure-settings.md)
+- [• Dashboard Builder](chapters/1-dashboard-builder.md)
 - **iCloud3 Data Sources**
-- [Apple Account](chapters/1-apple-account.md)
-- [ Mobile App Integration](chapters/1-mobile-app.md)
+- [• Apple Account](chapters/1-apple-account.md)
+- [•  Mobile App Integration](chapters/1-mobile-app.md)
 
 ------
 - [**User Guide Index**](chapters/2.1-index.md)
@@ -30,19 +30,19 @@
 
 ------
 - **Reference**
-- [ Configuration Screens & Parameters](chapters/7.1-config-parms.md)
-- [Startup & Device Alerts](chapters/7.6-alerts.md)
-- [ Other iCloud3 Features](chapters/7.2-other-topics.md)
-- [ Sensor Attributes](chapters/7.3-attributes.md)
-- [ Service Calls](chapters/7.4-service-calls.md)
-- [ Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
+- [•  Configuration Screens & Parameters](chapters/7.1-config-parms.md)
+- [• Startup & Device Alerts](chapters/7.6-alerts.md)
+- [•  Other iCloud3 Features](chapters/7.2-other-topics.md)
+- [•  Sensor Attributes](chapters/7.3-attributes.md)
+- [•  Service Calls](chapters/7.4-service-calls.md)
+- [•  Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
   
 ------
 - **Questions and Problems**
-- [ Frequently Asked Questions](chapters/8.1-freq-asked-questions.md)
-- [ Configuration and Setup Issues](chapters/8.2-configuration-setup-issues.md)
-- [ Tracking Issues](chapters/8.3-tracking-issues.md)
-- [ Troubleshooting Tools](chapters/8.4-troubleshooting-tools.md)
+- [•  Frequently Asked Questions](chapters/8.1-freq-asked-questions.md)
+- [•  Configuration and Setup Issues](chapters/8.2-configuration-setup-issues.md)
+- [•  Tracking Issues](chapters/8.3-tracking-issues.md)
+- [•  Troubleshooting Tools](chapters/8.4-troubleshooting-tools.md)
   
 ------
 - **Other Topics**
