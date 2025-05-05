@@ -15,10 +15,12 @@
 ------
 - **About iCloud3**
 - [ Introducing iCloud3](chapters/1-introduction.md)
+- **iCloud3 Components**
 - [Device Tracker](chapters/1-device-tracker.md)
 - [Event Log](chapters/1-event-log.md)
 - [Configure Settings](chapters/1-configure-settings.md)
 - [Dashboard Builder](chapters/1-dashboard-builder.md)
+- **iCloud3 Data Sources**
 - [Apple Account](chapters/1-apple-account.md)
 - [ Mobile App Integration](chapters/1-mobile-app.md)
 
