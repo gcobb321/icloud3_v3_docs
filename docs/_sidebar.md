@@ -14,25 +14,28 @@
 
 ------
 - **About iCloud3**
-- [•  Introducing iCloud3](chapters/1-introduction.md)
+- [•  Introducing iCloud3](chapters/1ai-introduction.md)
 - **iCloud3 Components**
-- [• Device Tracker](chapters/1-device-tracker.md)
-- [• Event Log](chapters/1-event-log.md)
-- [• Configure Settings](chapters/1-configure-settings.md)
-- [• Dashboard Builder](chapters/1-dashboard-builder.md)
+- [• Device Tracker](chapters/1cs-device-tracker.md)
+- [• Event Log](chapters/1cs-event-log.md)
+- [• Configure Settings](chapters/1cs-configure-settings.md)
+- [• Dashboard Builder](chapters/1cs-dashboard-builder.md)
 - **iCloud3 Data Sources**
-- [• Apple Account](chapters/1-apple-account.md)
-- [•  Mobile App Integration](chapters/1-mobile-app.md)
+- [• Apple Account](chapters/1ds-apple-account.md)
+- [•  Mobile App Integration](chapters/1ds-mobile-app.md)
+- - **Other Features**
+- [• Track From Multiple Zones](chapters/1of-track-from-zone.md)
+- [•  Log Zone Activity](chapters/1of-log-zone-activity.md)
+- [•  Waze Map Card Display](chapters/1of-waze-map-card.md)
 
 ------
-- [**User Guide Index**](chapters/2.1-index.md)
-- [**Installing iCloud3**](chapters/2.2-installing-and-configuring.md)
+- [**User Guide Index**](chapters/2-index.md)
+- [**Installing iCloud3**](chapters/2-installing-and-configuring.md)
 
 ------
 - **Reference**
 - [•  Configuration Screens & Parameters](chapters/7.1-config-parms.md)
 - [• Startup & Device Alerts](chapters/7.6-alerts.md)
-- [•  Other iCloud3 Features](chapters/7.2-other-topics.md)
 - [•  Sensor Attributes](chapters/7.3-attributes.md)
 - [•  Service Calls](chapters/7.4-service-calls.md)
 - [•  Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
