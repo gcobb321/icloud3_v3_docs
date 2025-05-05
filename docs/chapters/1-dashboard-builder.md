@@ -27,7 +27,7 @@ The six views tabs that are set up when a dashboard is created.
 - **Event Log** - The iCloud3 Event Log (not shown).
 - **Main (Backup)** - The Main view tab is not updated when devices are added or deleted. You can customize it to meet your needs and show the sensors that are important to you. You can, however, recreate an existing dashboard which will erase any changes you have made. This screen is the main view tab before it was recreated. Items you really wanted to keep can be copied back to the new Main view tab. (not shown).
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-dashboard-bldr-views-main.png)
+![](..\images\cf-dashboard-bldr-views-main.png)
 
 ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-dashboard-bldr-views-allinfo-badge-battery.png)
 
@@ -44,7 +44,7 @@ A dashboard is created on the *iCloud3 Dashboard Builder* screen. This can be fo
 
 The dashboard that is created is named *iCloud3-0, iCloud3-1*, etc. This name can be changed on the *HA Settings > Dashboard* screen.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-dashboard-builder.png)
+![](..\images\cf-dashboard-builder.png)
 
 ## Update an Existing Dashboard
 
@@ -62,7 +62,7 @@ The *All Info, *Track Results and *Badge, Battery view tabs provide selectable e
 
 The screens below show the typical elements that can be copied and pasted.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-dashboard-bldr-view-hl.png)
+![](..\images\cf-dashboard-bldr-view-hl.png)
 
 1. On the dashboard screen, select the **Edit Pencil** to open up the HA Dashboard Editor.
 2. Go to the view tab with the item you want to copy to another dashboard or view tab.
@@ -70,7 +70,7 @@ The screens below show the typical elements that can be copied and pasted.
 4. Go to the dashboard or view tab you want to copy the item to. Select the **'+' image** in the the destination area.
 5. Select **Paste** copied item to paste it. Pasting it into a *Horizontal Stack* or *Vertical Stack* can help position the item in with other similar items.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-dashboard-bldr-edit-copy-paste.png)
+![](..\images\cf-dashboard-bldr-edit-copy-paste.png)
 
 
 

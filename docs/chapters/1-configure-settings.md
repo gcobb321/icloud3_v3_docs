@@ -14,7 +14,7 @@ The iCloud3 configuration screens are used to:
 
 There are two ways to open the Configuration Screens. 
 
-- Select the   ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\evlog-icons-config-small.png) **Configure Icon** shortcut on the *Event Log screen* 
+- Select the   ![](..\images\evlog-icons-config-small.png) **Configure Icon** shortcut on the *Event Log screen* 
   Then select **Configure** 
   *or*   
 - Select from the HA Dashboard using **☰ > HA Settings > Devices & Services > Integrations > iCloud3** screen
@@ -23,7 +23,7 @@ There are two ways to open the Configuration Screens.
 
 > The Configure Icon shortcut is not available when you first install the iCloud3 integration. It will be available after the Event Log card has been setupit.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-configure.png)
+![](..\images\cf-configure.png)
 
 
 
@@ -49,7 +49,7 @@ The *Configure Devices & Sensors* menu is displayed when you select *Configure*.
 - Setup default inZone time intervals 
 
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-menu-12.png)
+![](..\images\cf-menu-12.png)
 
 ## Selection and Parameter Update screens
 
@@ -70,7 +70,7 @@ The screen you selected will be displayed It generally has two parts:
 
 These example screens show these 2-sections. 
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-device-list.png)
+![](..\images\cf-device-list.png)
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-m1-update-device12.png)
+![](..\images\cf-m1-update-device12.png)
 

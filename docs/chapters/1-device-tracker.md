@@ -24,5 +24,5 @@ The screens below show examples of a tracked device's current status. The follow
 - The *Info* field shows tracking results from nearby devices is being used.
 
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\track-gary-home-lillian-away-captions.png)
+![](..\images\track-gary-home-lillian-away-captions.png)
 
