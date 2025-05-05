@@ -13,11 +13,14 @@
 <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
 
 ------
-- **Getting Started**
-- [ Introducing iCloud3](chapters/1.1-introduction.md)
-- [iCloud3 Components](chapters/1.2-icloud3-components.md)
-- [Apple Account](chapters/1.3-apple-account.md)
-- [ Mobile App Integration](chapters/1.4-mobile-app.md)
+- **About iCloud3**
+- [ Introducing iCloud3](chapters/1-introduction.md)
+- [Device Tracker](chapters/1-device-tracker.md)
+- [Event Log](chapters/1-event-log.md)
+- [Configure Settings](chapters/1-configure-settings.md)
+- [Dashboard Builder](chapters/1-dashboard-builder.md)
+- [Apple Account](chapters/1-apple-account.md)
+- [ Mobile App Integration](chapters/1-mobile-app.md)
 
 ------
 - [**User Guide Index**](chapters/2.1-index.md)
