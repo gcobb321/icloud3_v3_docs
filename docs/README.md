@@ -3,11 +3,10 @@
 
 [![CurrentVersion](https://img.shields.io/badge/Current_Version-v3.2-blue.svg)](https://github.com/gcobb321/icloud3_v3)  [![Type](https://img.shields.io/badge/Type-Custom_Component-orange.svg)](https://github.com/gcobb321/icloud3_v3)  [![HACS](https://img.shields.io/badge/HACS-Custom_Repository-orange.svg)](https://github.com/gcobb321/icloud3_v3)
 
-[![ProjectStage](https://img.shields.io/badge/Project_Stage-Development_Version-forestgreen.svg)](https://github/gcobb321/icloud3_v3)  [![Released](https://img.shields.io/badge/Released-May, 2025-forestgreen.svg)](https://github.com/gcobb321/icloud3_v3)
+[![ProjectStage](https://img.shields.io/badge/Project_Stage-Development_Version-forestgreen.svg)](https://github/gcobb321/icloud3_v3)  [![Released](https://img.shields.io/badge/Released-May,_2025-forestgreen.svg)](https://github.com/gcobb321/icloud3_v3)
+
 
 -----
-
-ic3_v3_docs/docs/readme
 
 iCloud3 is a device tracker custom component that tracks your iPhones, iPads and Apple Watches. Devices in the Family Sharing List and the HA Mobile App Integration are trackable. The device requests location data from from Apple's iCloud  Location Services and monitors various Mobile App sensors and triggers to determine the device's  battery level, location, distance, travel time and arrival to Home. 
 
@@ -96,7 +95,7 @@ The screens below are an example of how the many tracking sensors can be display
 
 
 
-<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-docs-button.png"/></a>
+<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="https://gcobb321.github.io/icloud3_v3_docs/images/buymeacoffee-docs-button.png"/></a>
 
 
 -----
