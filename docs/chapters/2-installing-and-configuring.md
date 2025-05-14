@@ -17,9 +17,8 @@ There are several steps that that need to be done to install and start using iCl
 These steps are described below.
 
 
-
 ------
-### Step #1 - Install iCloud3
+### Step 1 - Install iCloud3
 
 iCloud3 is not available on the HACS base integration yet. It will be added as an update to iCloud3 v2 once it has been released for general usage and has a sufficient number of users to insure a smooth transition. There are almost 7000 users now and  supporting a large number of people that might upgrade it at the same time is not feasible.
 
@@ -29,18 +28,39 @@ However, it can be added to HACS as a custom repository. This provides all the b
   1. Open HACS.
   2. Select **Integrations** and type **icloud3** in the search bar.
   3. Select the **iCloud3 Device Tracker, Version 3** item, then select **+Download** to download iCloud3 and follow the normal steps for installing an integration using HACS.
-  4. **Restart Home Assistant**
-
-  ![](../images/hacs-process-highlighted.png)
-
+  
 - **Manual Installation from the iCloud3 Repository Releases Page**
-  1. Download the *icloud3.zip* (or *icloud3_v3.zip*) file from the *gcobb321/icloud3_v3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3_v3/releases). Selects *Assets* at the bottom, then the zip file. The file save screen is displayed, select the location on your computer and save the zip file.
+  1. Download the *icloud3.zip* file from the *gcobb321/icloud3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3/releases). Selects *Assets* at the bottom, then the zip file. The file save screen is displayed, select the location on your computer and save the zip file.
   2. Unzip the file into the *config/custom_components/icloud3* directory on your Home Assistant server (ex.: Raspberry Pi)
   3. **Restart Home Assistant**
 
 
+
 ------
-### Step #2 - Install the Mobile App on your iPhone or iPad
+### iCloud3 Development Version
+
+New features are added to iCloud3 Development Version before they are released to the General Availability version on HACS. This Beta version can be added to HACS as a Custom Repository. Follow the instructions below:
+
+- **Adding the iCloud3 Development Edition to HACS**
+
+  1. Open HACS
+  2. Select the 3-dots in the upper-right corner, then select *Custom Repository*.
+  3. Enter the following values in the fields displayed:
+     - Repository: `gcobb321/icloud3_v3`
+     - Category: `Integration`
+  4. Select **Add**
+
+   ![](../images/hacs-process-highlighted.png)
+
+  *Notes*:
+  1. Monitor the gcobb321/icloud3_v3 Issues page for an announcement that a new release is available.
+  2. Download the *icloud3.zip* file from the *gcobb321/icloud3_v3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3_v3/releases). Follow the Manual instructions above. 
+  
+     
+
+
+------
+### Step 2 - Install the Mobile App on your iPhone or iPad
 
 The Mobile App is not required for iCloud3 to track devices. But it helps and it's benefits have already been discussed. It can be installed on some of your iDevices and not others. You can, for example, install it on your iPhone and not your wife's. 
 
@@ -52,7 +72,7 @@ The Mobile App must be configured to provide location and zone activity to Home 
 
 
 ------
-### Step #3 - Add the iCloud3 Integration and open *Configure Settings*
+### Step 3 - Add the iCloud3 Integration and open *Configure Settings*
 
 iCloud3 is a Home Assistant Integration and is configured on the Integrations screens like all the other Integrations you may be using.
 
@@ -72,8 +92,7 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
 
 ​	The *iCloud3 Configure Settings* Menu Page 1 on the left is displayed.
 
-
-![](../images/cf-menu-1-2-sbs.png)
+![](../images/cf-menu-12.png)
 
 There are 10-parameter screens on 2-menu pages that are used to display and update the parameters. The name of the screens are displayed at the top, the Action to be performed is displayed at the bottom. All update screens follow this same format.
 
@@ -84,7 +103,7 @@ Only two of the parameter screens are needed to be set up for iCloud3 to start t
 
 
 
-#### Step #3.1 - iCloud Account & Mobile App screen
+#### Step 3.1 - iCloud Account & Mobile App screen
 
 This screen is used to indicate the data sources used for location information (iCloud, Mobile App) and the username/password of your Apple iCloud account.
 
@@ -100,7 +119,7 @@ This screen is used to indicate the data sources used for location information (
 3. The username and password are not required if you are only tracking with the Mobile App,
 4. Apple account authentication - If you are signing into the Apple iCloud Account for the first time, the account access token has expired or your account username or password has changed and you will get an alert on your phone or other device that someone is signing into your Apple account. 
    1. Select **Allow** on your phone or other trusted device, the screen showing the 6-digit verification code is displayed
-   2. The code entry form below should display on your computer. If it does not, select *Enter Verification Code*, then select Submit.When iCloud3 starts, you are logged into your Apple iCloud account. The account username/password is shown on the *LOGIN Action* line (gc......@gm......./Gc......).
+   2. The code entry form below should display on your computer. If it does not, select *Enter Verification Code*, then select Submit. When iCloud3 starts, you are logged into your Apple iCloud account. The account username/password is shown on the *LOGIN Action* line (gc......@gm......./Gc......).
    3. From time-to-time, you will have to reauthenticate iCloud3's access to your Apple iCloud account. This is discussed later. 
    4. Enter the 6-digit verification code, then select *Submit*.
 
@@ -108,7 +127,7 @@ This screen is used to indicate the data sources used for location information (
 
 
 
-#### Step #3.2 - iCloud3 Devices screen
+#### Step 3.2 - iCloud3 Devices screen
 
 Up to 10-devices can be tracked by iCloud3. They are shown on this screen.  Since no devices have been set up, the list is empty and *Add Device* is selected.
 
@@ -118,7 +137,7 @@ Up to 10-devices can be tracked by iCloud3. They are shown on this screen.  Sinc
 
 
 
-#### Step #3.3 - Add Tracked iCloud3 Device screen
+#### Step 3.3 - Add Tracked iCloud3 Device screen
 
 New iCloud3 tracked devices are added on this screen.
 
@@ -138,7 +157,7 @@ New iCloud3 tracked devices are added on this screen.
 
 
 
-#### Step #3.4 - Update Tracked iCloud3 Device screen
+#### Step 3.4 - Update Tracked iCloud3 Device screen
 
 This screen specifies various parameters used by iCloud3 to track the device. The major parameters are:
 
@@ -159,7 +178,7 @@ This screen specifies various parameters used by iCloud3 to track the device. Th
 
 -----
 
-### Step #4 - Exit the *Configure Settings* screens and Restart iCloud3
+### Step 4 - Exit the *Configure Settings* screens and Restart iCloud3
 
 Since a tracked device was updated, iCloud3 will restart when you exit the *Configure Settings*.
 
@@ -183,7 +202,7 @@ Review the other screens just to see what is configurable. Nothing has to be don
 
 
 ------
-### Step #5 - Set up a Lovelace card tracking card
+### Step 5 - Set up a Lovelace card tracking card
 
 The screen below is an example screen that shows the current status for Gary's iPhone (*gary_iphone*).
 

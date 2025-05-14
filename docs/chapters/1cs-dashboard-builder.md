@@ -9,9 +9,16 @@ The Dashboard Builder is a tool that will create and update dashboards showing i
 Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are built for the selected devices when the dashboard is created. The other view tabs (their name starts with a '*') are recreated for all devices whenever a dashboard is updated. The type of elements that are created are:
 
 - All tracking information (tracking results sensors + tracking status sensors  + device information sensors) as one item
+
 - All tracking information (tracking results sensors, tracking status sensors, device information sensors) as separate items
+
 - Device Badge sensors and Battery sensor as one item in several formats
+
 - Device Battery sensors in several formats
+
+  
+
+!> The Dashboard Builder was released in iCloud3 v3.2 
 
 
 
