@@ -89,9 +89,9 @@ The screens below are an example of how the many tracking sensors can be display
 iCloud3 can be installed two ways:
 
 - Using HACS
-- Downloading the *icloud3.zip* file from the *iCloud3 GitHub Repository Releases Page* [here](https://github.com/gcobb321/icloud3_v3/releases). 
+- Downloading the *icloud3.zip* file from the *iCloud3 GitHub Repository Releases Page* [here](https://github.com/gcobb321/icloud3/releases). 
 
-The procedures for both methods are described in the *Installing and Configuring iCloud3* chapter [here](chapters/2.0-installing-and-configuring.md).
+The procedures for both methods are described in the *Installing and Configuring iCloud3* chapter [here](chapters/2-installing-and-configuring.md).
 
 
 
@@ -111,16 +111,10 @@ There are 4 major parts to the iCloud3 custom component that are used to configu
 The iCloud3 Custom Component provides the core device tracking service. It does the following:
 
   - Initializes and sets up all tracking activities for the Devices using location data from iCloud Location Services or the Mobile App device_tracker entity (or both).
-
   - Monitors the Mobile App device_tracker entity for location changes, zone enter/exit triggers and battery information.
-
   - Requests and processes location data from iCloud Location Services and the Mobile App.
-
   - Analyzes the location data and tracks the devices.
-
   - Updates the sensors associated with each device.
-
-    
 
 
 The screens below show examples of a tracked device's current status. The following is displayed:
