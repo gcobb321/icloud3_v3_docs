@@ -53,8 +53,9 @@ New features are added to iCloud3 Development Version before they are released t
    ![](../images/hacs-process-highlighted.png)
 
   *Notes*:
-  1. Monitor the gcobb321/icloud3_v3 Issues page for an announcement that a new release is available.
-  2. Download the *icloud3.zip* file from the *gcobb321/icloud3_v3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3_v3/releases). Follow the Manual instructions above. 
+  1. Additional information in the HACS User Guide can be found [here](https://www.hacs.xyz/docs/faq/custom_repositories/?h=reposit).
+  2. Monitor the gcobb321/icloud3_v3 Issues page for an announcement that a new release is available.
+  3. Download the *icloud3.zip* file from the *gcobb321/icloud3_v3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3_v3/releases). Follow the Manual instructions above. 
   
      
 
