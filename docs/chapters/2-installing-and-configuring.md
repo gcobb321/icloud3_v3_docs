@@ -27,7 +27,7 @@ However, it can be added to HACS as a custom repository. This provides all the b
 - **Using HACS to install iCloud3**
   1. Open HACS.
   2. Select **Integrations** and type **icloud3** in the search bar.
-  3. Select the **iCloud3 Device Tracker, Version 3** item, then select **+Download** to download iCloud3 and follow the normal steps for installing an integration using HACS.
+  3. Select the **iCloud3 v3, iDevice Tracker** item, then select **+Download** to download iCloud3 and follow the normal steps for installing an integration using HACS.
   
 - **Manual Installation from the iCloud3 Repository Releases Page**
   1. Download the *icloud3.zip* file from the *gcobb321/icloud3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3/releases). Selects *Assets* at the bottom, then the zip file. The file save screen is displayed, select the location on your computer and save the zip file.
@@ -37,7 +37,7 @@ However, it can be added to HACS as a custom repository. This provides all the b
 
 
 ------
-### iCloud3 Development Version
+### iCloud3 v3 Development Version (HACS Custom Installation)
 
 New features are added to iCloud3 Development Version before they are released to the General Availability version on HACS. This Beta version can be added to HACS as a Custom Repository. Follow the instructions below:
 
@@ -179,7 +179,7 @@ This screen specifies various parameters used by iCloud3 to track the device. Th
 
 -----
 
-### Step 4 - Exit the *Configure Settings* screens and Restart iCloud3
+### Step 4 - Exit the *Configure Settings* screens
 
 Since a tracked device was updated, iCloud3 will restart when you exit the *Configure Settings*.
 
@@ -203,175 +203,36 @@ Review the other screens just to see what is configurable. Nothing has to be don
 
 
 ------
-### Step 5 - Set up a Lovelace card tracking card
+### Step 5 - Review the iCloud3 Dashboard
 
-The screen below is an example screen that shows the current status for Gary's iPhone (*gary_iphone*).
+When the iCloud3 Integration is added the first time, the iCloud3 Dashboard is created and added to the HA Sidebar Manu. The dashboard contains several View Tabs. The *Main* View Tab shows the tracking results and battery information, the *Other Devices* View Tab shows the tracking results, tracking status and device information sensors. Other View Tabs contain Lovelace *sections* that can be copied and pasted to other dashboards or view tabs on the iCloud3 dashboard.
+
+See the Dashboard Builder chapter [here](chapters/1cs-dashboard-builder.md) for more information about the various view tabs, customizing your dashboard and how to create other iCloud3 dashboards.
+
+The dashboard is organized to provide device and tracking information on on the left and the *Event Log* on the right.
 
 -  **Left Side** - Shows the device_tracker and various sensor entities for the two devices showing the distance and travel time from Home, the interval between location requests and when the next request will be made, the battery level, and when it was last located.
 - **Right Side** - The Event Log for Gary while traveling towards home.
 
-![](../images/lovelace-gary-lillian-evlog.png)
-
-Generally, this card is set up as follows:
-1. Create an iCloud3  Lovelace dashboard on the HA Sidebar on the left side of the HA screen.
-2. Create the device tracker element (right side).
-3. Create the Event Log element (left side).
-4. Update the Lovelace Resources for the Event Log card if it failed to set up during the iCloud3 installation.
-   
-
-#### Step 5.1 - Create the Lovelace iCloud3 Dashboard
-
-Create the iCloud3 Panel that will sit in the HA toolbar along the left-side of the screen.
-
-1. Select **☰ > HA Settings > Dashboards**.
-2. Select **+ Add Dashboard** in the lower-right hand corner. The Add New Dashboard screen is displayed.
-
-   ![](../images/lovelace-add-dashboard.png)
-
-3. Enter the following:
-   - **iCloud3** in the *Title* field
-   - **mdi:weather-cloud-outline** in the *Icon* field
-   - **dashboard-icloud3** will be automatically filled in into the *URL* field
-4. Select **Create**. The Dashboard list screen is redisplayed.
-   
-
-#### Step 5.2 - Create the device tracking portion of the lovelace screen
-
-Generally, you will create a Lovelace grid card and copy the raw yaml statements below o that card.  to your phone in the yaml code.
-
-!> The *Event Log card* is a Lovelace custom card. In order to set it up, it must be added to the Lovelace Resources. iCloud3 automatically adds it to the Lovelace Resources when it starts so nothing should need to be done.  Manual instructions on doing this are at the end of this chapter in case it is not added correctly or an error occurs.
-
-Do the following:
-1. Select **'⋮' (Upper right corner) > Edit Dashboard** as you normally do to create or update a Lovelace card. The *Take control of your dashboard* screen is displayed.
-   - Select **Start with an empty dashboard**
-   - Select **Take Control**
-
-   A blank *Edit Dashboard* screen is displayed
-
-2. Select **'⋮' (Upper right corner) > Raw configuration editor** and a blank *Edit Configuration* is displayed. Ignore the **+  Add Card**. 
-
-3. Sample code will be displayed in the Edit window. Replace it with the sample code, then select **Save**, then select the '**X**' next to Edit Configuration in the upper-left, then select **Done**. 
-
-   - The sample code is for *gary_iphone*. Be sure to change the entity names to the names of your devices.
-
-
-
-- **Erase the following code** that HA adds to the beginning of the Lovelace yaml code editor:	
-
-  ```yaml
-  views:
-    - title: Home
-  ```
-
-  
-
-- **Copy the following code** below into the blank editor area. This code is for the *gary_iphone* device_tracker entity on the left-side of the screen above.. Change all occurrences of *gary_iphone* to the iCloud3 device_tracker entity name for your phone you entered in the *Add Devices*  screen in step 3.3 above.,
-
-   ```yaml
-  title: iCloud3
-  views:
-    - title: iCloud3
-      cards:
-        - square: false
-          columns: 1
-          type: grid
-          cards:
-            - type: glance
-              state_color: true
-              show_name: true
-              show_icon: true
-              show_state: true
-              columns: 5
-              entities:
-                - entity: device_tracker.gary_iphone
-                  name: Gary
-                - entity: sensor.gary_iphone_arrival_time
-                  name: Arrive
-                - entity: sensor.gary_iphone_zone_distance
-                  name: Distance
-                - entity: sensor.gary_iphone_travel_time
-                  name: TravTime
-                - entity: sensor.gary_iphone_next_update
-                  name: NextUpdt
-            - type: glance
-              columns: 5
-              entities:
-                - entity: sensor.gary_iphone_battery
-                  name: Battery
-                - entity: sensor.gary_iphone_interval
-                  name: Interval
-                - entity: sensor.gary_iphone_moved_distance
-                  name: Moved
-                - entity: sensor.gary_iphone_last_located
-                  name: Located
-                - entity: sensor.gary_iphone_last_update
-                  name: LastUpdt
-            - type: entities
-              entities:
-                - entity: sensor.gary_iphone_info
-                  name: Info
-                  icon: mdi:information-outline
-    
-    - title: iCloud3 Event Log
-      path: icloud3-event-log
-      cards:
-        - type: custom:icloud3-event-log-card
-  
-  ```
+![](../images/dashboard-allinfo-summary.png)
 
 
 
 
 
-#### Step 5.3 - Create the Event Log portion of the Lovelace screen
+#### iCloud3 Event Log Lovelace Resource (if needed)
 
-The Event Log shows the status of iCloud3 operations. It displays a lot of information on how iCloud3 starts and on provides the tracking events for all of the devices being tracked and monitored. For this custom card to be displayed, it needs to be added to the Lovelace Resources. 
-
-![](../images/lovelace-evlog-gary-away.png)
-
-The Event Log is a custom card and HA looks for it in the /www directory. 
-
-- When iCloud3 was installed, the *icloud3-event-log-card.js* file was copied from the *icloud3/event_log_card* directory to the */www/icloud3* directory (or another custom_card directory you might have set up for iCloud3 v2).
-
--  When iCloud3 starts, it does the following:
-  - Determine if the Event Log in the */www/icloud3* directory is the latest version. If not, it is updated. A browser refresh will be needed it it was updated. A notification is displayed on each device that a refresh is needed. 
-
-    Note: The notification will not be displayed when it is first installed, it is only displayed on an update.
-
-  - Determine if the Lovelace Resource list contains the Event Log and if the directory is correct. It will be added or updated if that is needed.
-
-When you created the Lovelace card above, you added the statements for the Event Log. They are after all of the other statements.
-
-       - type: grid
-         square: false
-         columns: 1
-         cards:
-           - type: custom:icloud3-event-log-card
-
-Hopefully, the Event Log displayed correctly. If it did not display and *Custom element doesn't exist icloud3-event-log-card* error message displayed instead, the Event Log needs to be added to the Lovelace Resources.
-
-
-
-#### Step 5.4 - Set up the *icloud3-event-log-card* Lovelace Resource (if needed)
-
-The Lovelace Resources points to the location of the *icloud3-event-log-card.js* file and must be set up for the Event Log to be displayed.  If a problem occurs setting up the Lovelace Resource automatically, the Event Log (on the right in the above screenshot) will not be displayed and the following will be displayed instead:
+The Lovelace Resources points to the location of the *icloud3-event-log-card.js* file and must be set up for the Event Log to be displayed.  This is setup with iCloud3 is installed. However, if a problem occurs setting it up, the Event Log (on the right in the above screenshot) will not be displayed and the following will be displayed instead:
 
 ![](../images/lovelace-evlog-resource-error.png)
 
 Do the following to set it up manually:
 
 1. Select **☰ > HA Settings > Dashboards > ⋮ (Upper right corner) > Resources**. The following screen is displayed:
-
-   ![](../images/lovelace-resources-list.png)
-
-2. Select **+ Add Resource** to open the Add Resources window (on the left).
-
-![](../images/lovelace-resources-add.png)
-
+2. Select **+ Add Resource** to open the Add Resources window
 3. Enter the following:
-
-   - **/local/icloud3/icloud3-event-log-card.js** in the **URL** field
-   - Check **JavaScript Module**
+   - **URL** field -  Type **/local/icloud3/icloud3-event-log-card.js** 
+   - **Resources type** - Select **JavaScript Module**
 4. Select **Create (or Update)**
 
 > *Note: Using another custom card directory* - If you move the Event Log card to another directory, the Lovelace Resources should automatically be changed. If something happens and it is not changed, change the directory (*icloud3*) in the URL statement on the above screen to the new directory name. Then select the new directory name in the *Event Log Directory* field on the *iCloud3 Configure Settings > Menu Page 2 > Other Parameters*  screen.
@@ -381,7 +242,7 @@ Do the following to set it up manually:
 ------
 ### Congratulations, iCloud3 is set up
 
- If you successfully added the Lovelace tracking, Event Log card and the tracking data is displayed, you have successfully set up iCloud3 and Home Assistant does not have to be restarted, Review the rest of the documentation and the parameter screens
+If you successfully added the Lovelace tracking, Event Log card and the tracking data is displayed, you have successfully set up iCloud3 and Home Assistant does not have to be restarted, Review the rest of the documentation and the parameter screens
 
 
 
