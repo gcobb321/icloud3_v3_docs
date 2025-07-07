@@ -43,7 +43,7 @@ Alert notifications can be sent to one of your devices when Home Assistant start
 
 
 
-##### *iCloud3_Alerts* Notification for the state value (first alert message above)
+***iCloud3_Alerts* Notification for the state value (first alert message above)**
 ```
 alias: iCloud3 Alerts
 description: Send an Alert Msg (All Alerts)
@@ -76,7 +76,7 @@ mode: single
 
 
 
-##### *iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)
+***iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)**
 ```
 alias: iCloud3 Alerts Attributes
 description: Send an Alert Msg (All Alerts)
@@ -108,7 +108,7 @@ mode: single
 
 
 
-##### Send Message Script
+**Send Message Script**
 ```
 alias: Gary - Send Message
 sequence:
