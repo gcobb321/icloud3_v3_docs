@@ -43,7 +43,21 @@ Alert notifications can be sent to one of your devices when Home Assistant start
 
 
 
-***iCloud3_Alerts* Notification for the state value (first alert message above)**
+------
+
+#### *iCloud3_Alerts* Notification for the state value (first alert message above)
+
+Sent a notification with the *icloud3_alerts* highest priority message (state value)
+
+- Triggers:
+  - HA starts, or
+  - The alerts sensor is updated
+- Conditions:
+  - Alerts are available
+
+- Action:
+  - Send a message to Gary's iPhone that there are iCloud3 alerts
+
 ```
 alias: iCloud3 Alerts
 description: Send an Alert Msg (All Alerts)
@@ -76,7 +90,19 @@ mode: single
 
 
 
-***iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)**
+#### iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)
+
+Sent a notification with all of the *icloud3_alerts* 
+
+- Triggers:
+  - HA starts, or
+  - The alerts sensor is updated
+- Conditions:
+  - Alerts are available
+
+- Action:
+  - Send a message to Gary's iPhone that there are iCloud3 alerts
+
 ```
 alias: iCloud3 Alerts Attributes
 description: Send an Alert Msg (All Alerts)
@@ -108,7 +134,8 @@ mode: single
 
 
 
-**Send Message Script**
+#### *notify_gary_iphone* Send message script
+
 ```
 alias: Gary - Send Message
 sequence:
