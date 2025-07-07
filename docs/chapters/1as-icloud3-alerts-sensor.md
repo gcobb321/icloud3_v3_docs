@@ -51,9 +51,9 @@ Sent a notification with the *icloud3_alerts* highest priority message (state va
 
 - Triggers:
   - HA starts, or
-  - The alerts sensor is updated
+  - The Alerts sensor is updated
 - Conditions:
-  - Alerts are available
+  - Alerts are available (*alert_count* attribute > 0)
 
 - Action:
   - Send a message to Gary's iPhone that there are iCloud3 alerts
@@ -94,15 +94,15 @@ mode: single
 
 ------
 
-#### iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)
+#### *iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)
 
 Sent a notification with all of the *icloud3_alerts* 
 
 - Triggers:
   - HA starts, or
-  - The alerts sensor is updated
+  - The Alerts sensor is updated
 - Conditions:
-  - Alerts are available
+  - Alerts are available (*alert_count* attribute > 0)
 
 - Action:
   - Send a message to Gary's iPhone that there are iCloud3 alerts
