@@ -1,5 +1,7 @@
 # iCloud3 Alerts Sensor
 
+*Added in iCloud3 v3.2.3*
+
 Errors and Alerts are displayed in the Event log as they are found and summarized in a green bar at the top of the Event Log. They are prioritized in order of importance:
 
 - Internet Connection Errors
@@ -17,12 +19,13 @@ Alert updates are also added to the *sensor.icloud3_alerts* entity. This sensor 
    - **State Value**: 
         - *none* - No alerts are available
         - The highest priority alert
+
    - **Attributes**:
-           - *alert_count* - Number of alerts (0 if no alerts are available)
-           - *updated* - When the alert sensor was updated
-           - *message_text* - A text summary of all errors that can be sent to a device using the notify.[devicename] Action.
-           - *yourappleacct@* - The Apple account that caused the alert
-           - *devicename* - The Device that caused the alert
+        - *alert_count* - Number of alerts (0 if no alerts are available)
+        - *updated* - When the alert sensor was updated
+        - *message_text* - A text summary of all errors that can be sent to a device using the notify.[devicename] Action.
+        - *yourappleacct@* - The Apple account that caused the alert
+        - *devicename* - The Device that caused the alert
 
 ![](..\images\icloud3-alerts-sensor.png)
 
@@ -41,7 +44,6 @@ Alert notifications can be sent to one of your devices when Home Assistant start
 
 
 ##### *iCloud3_Alerts* Notification for the state value (first alert message above)
-
 ```
 alias: iCloud3 Alerts
 description: Send an Alert Msg (All Alerts)
@@ -75,7 +77,6 @@ mode: single
 
 
 ##### *iCloud3_Alerts_Attributes* Notification for all alerts (second alert message above)
-
 ```
 alias: iCloud3 Alerts Attributes
 description: Send an Alert Msg (All Alerts)
@@ -108,7 +109,6 @@ mode: single
 
 
 ##### Send Message Script
-
 ```
 alias: Gary - Send Message
 sequence:
