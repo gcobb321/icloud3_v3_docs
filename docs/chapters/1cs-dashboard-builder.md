@@ -1,5 +1,7 @@
 # Dashboard Builder
 
+*Feature added in iCloud3 v3.2.2*
+
 The Dashboard Builder is a tool that will create and update dashboards showing iCloud3 tracking results and other device information provided by iCloud3. It is added to the HA Sidebar panel when it is created and can be edited using the HA Dashboard Editor in the same manner as other dashboards. It's name starts with *iCloud3-#* and can be changed to meet your needs. There is no limit to the number of iCloud3 dashboards that can be created.
 
 !> When the iCloud3 Integration is install the first time, the *iCloud3* is created and added to the HA Sidebar panel.

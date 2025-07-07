@@ -100,6 +100,31 @@ Although the Mobile App Complication can be installed on the Apple Watch, there 
 
 These devices can not be tracked. They are not tracked by Apple like an iPhone or iPad and location information is not returned from iCloud Location Services for them.
 
+## Internet Connection Errors
+
+*Feature added in iCloud3 v3.2.3*
+
+iCloud3 requests a location update when it is needed. Obviously, this request will fail if the Internet is down or www.icloud.com is not available. Various internet errors will trigger this - Connection Errors, Connection Timeouts, HTTP Errors, and many more. This is also triggered when the Internet Connection is available but www.icloud.com does not respond to a location request within 1-minute.
+
+When this happens:
+
+- An Internet Connection Error status message is displayed in the Event Log
+
+- Tracking is Paused
+
+- Every 15-seconds, a status request is made to see if it has been restored
+
+- When is it is back up, www.icloud.com is checked to make sure a location a request is successful
+
+- After it has been down for 3-minutes, an Internet Connection Error message is sent to the *icloud3_alerts* sensor
+
+  ![](../images/internet-connection-error.png)
+
+When the Internet Connection is restored and www.icloud.com is available:
+
+- Tracking is resumed
+- iCloud3 may restart if the Internet problem was detected when it was starting, when a verification code needs to be entered, when a Connection Error, Too Many Redirects, Proxy Errors, etc. or other error was encountered.
+
 ## Family Sharing vs Owner's Devices when using several Apple Accounts
 
 This applies only when you are tracking devices using several Apple Accounts. If only one Apple Account is being used, all devices in the Family Sharing List are located on each location request sent to Apple.

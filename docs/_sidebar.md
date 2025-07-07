@@ -24,6 +24,7 @@
 - [ • Apple Account](chapters/1ds-apple-account.md)
 - [ •  Mobile App Integration](chapters/1ds-mobile-app.md)
 - **Other Features**
+- [ • iCloud3 Alerts Sensor](chapters/1as-icloud3-alerts-sensor.md)
 - [ • Track From Multiple Zones](chapters/1of-track-from-zone.md)
 - [ •  Log Zone Activity](chapters/1of-log-zone-activity.md)
 -  [•  Waze Map Card Display](chapters/1of-waze-map-card.md)
