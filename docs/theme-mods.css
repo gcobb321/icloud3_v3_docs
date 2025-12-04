@@ -49,6 +49,7 @@ body{
 }
 .sidebar p {
     margin: 0 0 0 10px;
+    color: cornflowerblue;
 }
 .sidebar ul li a {
     font-size: 14px;
