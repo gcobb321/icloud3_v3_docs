@@ -14,9 +14,9 @@
 
 ------
 - **Getting Started**
-- [ •  Highlights](chapters/1_getting-started_highlights.md)
-- [ •  Core Components](chapters/1_getting-started_components.md)
-- [ •  Installing iCloud3](chapters/1_getting-started_installing.md)
+- [ •  Highlights](chapters/1_getting-started-highlights.md)
+- [ •  Core Components](chapters/1_getting-started-components.md)
+- [ •  Installing iCloud3](chapters/1_getting-started-installing.md)
 - [ •  Setting up the Mobile App](chapters/1_getting-started-mobile-app.md)
 - **Core Components**
 - [ • Event Log](chapters/2_core-components-event-log.md)
