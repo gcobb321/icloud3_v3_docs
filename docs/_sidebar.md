@@ -13,21 +13,21 @@
 <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
 
 ------
-<u>** Getting Started**</u>
+<u> **Getting Started**</u>
 - [ •  Highlights](chapters/1_getting-started-highlights.md)
 - [ •  Core Components](chapters/1_getting-started-components.md)
 - [ •  Installing iCloud3](chapters/1_getting-started-installing.md)
 - [ •  Setting up the Mobile App](chapters/1_getting-started-mobile-app.md)
 
-<u>** Core Component Details**</u>
+<u> **Core Component Details**</u>
 - [ • Event Log](chapters/2_core-components-event-log.md)
 - [ • Dashboard Builder](chapters/2_core-components-dashboard-builder.md)
 - [ • Configure Settings](chapters/2_core-components-configure-settings.md)
 - 
-<u>** iCloud3 Data Sources**</u>
+<u> **iCloud3 Data Sources**</u>
 - [ • Apple Account](chapters/1ds-apple-account.md)
 - [ •  Mobile App Integration](chapters/1ds-mobile-app.md)
-<u>** Other Features**</u>
+<u> **Other Features**</u>
 - [ • iCloud3 Alerts Sensor](chapters/1as-icloud3-alerts-sensor.md)
 - [ • Track From Multiple Zones](chapters/1of-track-from-zone.md)
 - [ •  Log Zone Activity](chapters/1of-log-zone-activity.md)
@@ -38,7 +38,7 @@
 - [**Installing iCloud3**](chapters/2-installing-and-configuring.md)
 
 ------
-<u>** Reference**</u>
+<u> **Reference**</u>
 - [ •  Configuration Screens & Parameters](chapters/7.1-config-parms.md)
 - [ • Startup & Device Alerts](chapters/7.6-alerts.md)
 - [ •  Sensor Attributes](chapters/7.3-attributes.md)
@@ -46,13 +46,13 @@
 - [ •  Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
   
 ------
-<u>** Questions and Problems**</u>
+<u> **Questions and Problems**</u>
 - [ •  Frequently Asked Questions](chapters/8.1-freq-asked-questions.md)
 - [ •  Configuration and Setup Issues](chapters/8.2-configuration-setup-issues.md)
 - [ •  Tracking Issues](chapters/8.3-tracking-issues.md)
 - [ •  Troubleshooting Tools](chapters/8.4-troubleshooting-tools.md)
   
 ------
-- ** Other Topics**
+<u> **Other Topics**</u>
 - [ •  Technical Information](chapters/9.1-tech-info.md)
 
