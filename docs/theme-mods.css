@@ -31,9 +31,8 @@ body{
 
 .sidebar {
     /*font-size: 14px;*/
-    /*background: #F6F9FB;*/
-    background: #F8FBFD;
-    color: #364149;
+    background: #F6F9FB;
+    color: #005CB9;
     padding: 02px 0 0 0;
     width: 250px;
 }
