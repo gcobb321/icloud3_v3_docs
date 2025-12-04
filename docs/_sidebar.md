@@ -13,13 +13,16 @@
 <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
 
 ------
-- **About iCloud3**
-- [ •  Introducing iCloud3](chapters/1ai-introduction.md)
-- **iCloud3 Components**
-- [ • Device Tracker](chapters/1cs-device-tracker.md)
-- [ • Event Log](chapters/1cs-event-log.md)
-- [ • Configure Settings](chapters/1cs-configure-settings.md)
-- [ • Dashboard Builder](chapters/1cs-dashboard-builder.md)
+- **Getting Started**
+- [ •  Highlights](chapters/1_getting-started_highlights.md)
+- [ •  Core Components](chapters/1_getting-started_components.md)
+- [ •  Installing iCloud3](chapters/1_getting-started_installing.md)
+- [ •  Setting up the Mobile App](chapters/1_getting-started-mobile-app.md)
+- **Core Components**
+- [ • Event Log](chapters/2_core-components-event-log.md)
+- [ • Dashboard Builder](chapters/2_core-components-dashboard-builder.md)
+- [ • Configure Settings](chapters/2_core-components-configure-settings.md)
+- 
 - **iCloud3 Data Sources**
 - [ • Apple Account](chapters/1ds-apple-account.md)
 - [ •  Mobile App Integration](chapters/1ds-mobile-app.md)
