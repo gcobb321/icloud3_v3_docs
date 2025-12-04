@@ -6,5 +6,5 @@ The official documentation for the Mobile App (Home Assistant Mobile) can be fou
 
 The Mobile App must be configured to provide location and zone activity to Home Assistant. The screen below shows the correct settings:
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\mobapp-config.png)
+![](..\images\mobapp-config.png)
 
