@@ -11,7 +11,9 @@ There are 4 major parts to the iCloud3 custom component that are used to configu
 
 
 
-### iCloud3 Device Tracker
+------
+
+## iCloud3 Device Tracker
 
 The iCloud3 Custom Component provides the core device tracking service. It does the following:
 
@@ -30,9 +32,13 @@ The screens below show examples of a tracked device's current status. The follow
 - Gary is tracking from Home and the Quail Zone, Lillian just from Home.
 - The *Info* field shows tracking results from nearby devices is being used.
 
-![](..\images\track-gary-home-lillian-away-captions.png)
+<img src="..\images\track-gary-home-lillian-away-captions.png" style="zoom:25%;" />
 
-### Event Log
+
+
+------
+
+## Event Log
 
 The Event Log is a Lovelace custom card that shows past and current activity related to tracking a device. The right side of the image below shows device tracking results. The *Event Log* also shows:
 
@@ -44,7 +50,11 @@ The Event Log is a Lovelace custom card that shows past and current activity rel
 
 ![](..\images\track-evlog-gary-tfz-away.png)
 
-### Configure Settings
+
+
+------
+
+## Configure Settings
 
 The iCloud3 configuration screens are used to:
 
@@ -58,7 +68,9 @@ The iCloud3 configuration screens are used to:
 
 
 
-### Dashboard Builder
+-----
+
+## Dashboard Builder
 
 The Dashboard Builder is a tool that will create and update dashboards showing iCloud3 tracking results and other device information provided by iCloud3. It is added to the HA Sidebar panel when it is created and can be edited using the HA Dashboard Editor in the same manner as other dashboards. It's name starts with *iCloud3-#* and can be changed to meet your needs. There is no limit to the number of iCloud3 dashboards that can be created.  The screen above was created by the Dashboard Builder. 
 

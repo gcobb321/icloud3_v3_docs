@@ -35,7 +35,7 @@ iCloud3 is available on the HACS and is installed using the same process as othe
 
 ------
 
-### Prelease versions are on the iCloud3 v3 Development Version GitHub Repository
+### iCloud3 Development Version (Beta) 
 
 New features are added to iCloud3 Development Version before they are released to the General Availability version on HACS. This Beta version can be added to HACS as a Custom Repository. Follow the instructions below:
 
