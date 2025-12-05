@@ -25,7 +25,7 @@
 - [ • Configure Settings Menus](chapters/2_core-components-configure-settings.md)
 
 <u>**Configuring Devices to Track**</u>
-- [ • Apple Accounts](chapters/3_configure-apple-accts.md)
+- [ • Apple Accounts](chapters/3_configure-apple-acct.md)
 - [ • Authenticating Apple Account Sign-in](chapters/3_configure-apple-acct-auth.md)
 - [ • iCloud3  Devices](chapters/3_configure-devices.md)
 
