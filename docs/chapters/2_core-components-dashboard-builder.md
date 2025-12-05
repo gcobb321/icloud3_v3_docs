@@ -24,6 +24,9 @@ Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are b
 
 
 
+  
+
+------
 ## Dashboard View Tabs
 
 The six views tabs that are set up when a dashboard is created.
@@ -42,6 +45,9 @@ The six views tabs that are set up when a dashboard is created.
 
 
 
+  
+
+------
 ## Creating a Dashboard
 
 A dashboard is created on the *iCloud3 Dashboard Builder* screen. This can be found on the *iCloud3 Devices & Sensors* menu on the *iCloud3 Configure Settings* screen accessed uging the *Event Log > Configure Shortcut* or the *HA Settings > Devices & services > iCloud3* screen.
@@ -55,6 +61,9 @@ The dashboard that is created is named *iCloud3-0, iCloud3-1*, etc. This name ca
 
 ![](..\images\cf-dashboard-builder.png)
 
+  
+
+------
 ## Update an Existing Dashboard
 
 When a dashboard is updated, the current iCloud3 devices are used to recreate the *All Info , *Track Results and *Badge, Battery view tabs. The *Main* and *Other Device*s view tabs are not changed. This lets you customize the Main view tab to show sensors, device trackers, and other cards to meet your needs.
@@ -65,6 +74,9 @@ When a dashboard is updated, the current iCloud3 devices are used to recreate th
 
 > The *Main* and *Other Devices* will be recreated when you select *Recreate a Dashboard*. The current *Main* view tab is saved to the *Main (Backup)* view tab.
 
+  
+
+------
 ## Customizing the Main view tab
 
 The *All Info, *Track Results and *Badge, Battery view tabs provide selectable elements that can be copied and pasted to another view tab or dashboard using the HA Dashboard Editor screens. That process is beyond the scope of this paragraph. HA provides instructions and tutorials here: https://www.home-assistant.io/dashboards/. 
@@ -81,8 +93,9 @@ The screens below show the typical elements that can be copied and pasted.
 
 ![](..\images\cf-dashboard-bldr-edit-copy-paste.png)
 
+  
 
-
+------
 ## Miscellaneous Notes
 
 - The dashboard name and icon can be changed on HA Settings > Dashboards screen.

@@ -48,7 +48,7 @@ New features are added to iCloud3 Development Version before they are released t
      - Category: `Integration`
   4. Select **Add**
 
-  ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\hacs-add-ic3-custom-repo.png)
+  ![](..\images\hacs-add-ic3-custom-repo.png)
 
   *Notes*:
 
@@ -76,5 +76,5 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
    - Event Log has been set up:
      - Select the **Event Log > Purple Configure Gear Icon  > Configure Gear Icon**.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\cf-configure.png)
+![](..\images\cf-configure.png)
 

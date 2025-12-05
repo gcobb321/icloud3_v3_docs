@@ -55,11 +55,11 @@ Although Home Assistant has it's own official iCloud component, iCloud3 goes far
 - **Local Time Zone** - Event times are normally displayed using the time zone your HA server is in. If, however, you are away from home and in another time zone can, the Event times can be displayed for the time zone you are in.
 - **Sensors and more sensors** - Many sensors are created and updated with distance, travel time, polling data, battery status, zone attributes, etc. Select only the ones you want to use. 
 
-#### And ...
+#### Event Log
 
 - **Event Log** - The current status and event history of every tracked and monitored device is displayed on the iCloud3 Event Log custom Lovelace card. Information about device configuration, errors and alerts, nearby devices, tracking results, debug information and location request results is displayed.
-- **Extensive Documentation** - The iCloud3 User Guide explains the three main components, hot to get started, how to migrate from v2, how to install the integration, each of the screens and special features, the service calls that can request updates, locate iPhones and send notification alerts, examples of how to automate opening your garage door when you arrive home, etc.
-- **And More** - Review the following documentation to see if it will help you track and monitor the locations of your iPhones, iPads and Apple Watches.
+
+  
 
 ### Tracking Information Screens with Event Log
 

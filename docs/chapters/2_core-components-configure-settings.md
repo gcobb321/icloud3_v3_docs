@@ -3,13 +3,22 @@
 The iCloud3 configuration screens are used to:
 
 - Add and update Apple accounts
+
 - Add and update tracked and monitored devices. You can assign the Apple account device and Mobile App device that provides location and other data, zone and tracking parameters, a picture or icon, etc
+
 - Select the sensors to be updated during tracking operations
+
 - Create HA Dashboards with iCloud3 sensors showing tracking results and battery information in several formats.
+
 - Run special Tools to fix configuration problems
+
 - Configure other tracking and formatting parameters
+
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
+  
+
+------
 ## Open the Configuration screens
 
 There are two ways to open the Configuration Screens. 
@@ -29,6 +38,9 @@ There are two ways to open the Configuration Screens.
 
 The *Configure Devices & Sensors* menu is displayed when you select *Configure*. Toggle between the two menus by selecting it from the Action list at the bottom of the screen.
 
+  
+
+------
 ## Configure Devices & Sensors Menu screen
 
 - Setup, update and log into the Apple Accounts containing the devices you want to track.
@@ -39,6 +51,9 @@ The *Configure Devices & Sensors* menu is displayed when you select *Configure*.
 - Select how a sensor's time value and the time values in the Event Log should be displayed If you are away from home and in another time zone. You can show show the local time or the time of your HA server.
 - Various utility tools for resetting configuration parameters, resetting and cleaning up bad data and other miscellaneous actions used for solving problems
 
+  
+
+------
 ## Configure Parameters Menu screen
 
 - Setup various tracking parameters dealing with time, accuracy, distances, etc.
@@ -51,6 +66,9 @@ The *Configure Devices & Sensors* menu is displayed when you select *Configure*.
 
 ![](..\images\cf-menu-12.png)
 
+  
+
+------
 ## Selection and Parameter Update screens
 
 Select the parameter or other screen you want to view from the screen list on the menus.
