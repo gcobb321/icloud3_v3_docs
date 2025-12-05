@@ -30,13 +30,11 @@ The screens below show examples of a tracked device's current status. The follow
 - Gary is tracking from Home and the Quail Zone, Lillian just from Home.
 - The *Info* field shows tracking results from nearby devices is being used.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\track-gary-home-lillian-away-captions.png)
-
-
+![](..\images\track-gary-home-lillian-away-captions.png)
 
 ### Event Log
 
-The Event Log is a Lovelace custom card that shows past and current activity related to tracking a device. The right side of the *Information screen showing Tracking Information* above is the *Event Log*. The *Event Log* shows:
+The Event Log is a Lovelace custom card that shows past and current activity related to tracking a device. The right side of the image below shows device tracking results. The *Event Log* also shows:
 
 - Startup configuration.
 - Device information for Apple account and Mobile App devices and entities
@@ -44,7 +42,7 @@ The Event Log is a Lovelace custom card that shows past and current activity rel
 - Error messages, problems and location data issues
 - Detail tracking monitors that show what is going on under the covers, how location data from the iCloud Location Services and the Mobile App is analyzed and processed
 
-
+![](..\images\track-evlog-gary-tfz-away.png)
 
 ### Configure Settings
 
@@ -62,7 +60,7 @@ The iCloud3 configuration screens are used to:
 
 ### Dashboard Builder
 
-The Dashboard Builder is a tool that will create and update dashboards showing iCloud3 tracking results and other device information provided by iCloud3. It is added to the HA Sidebar panel when it is created and can be edited using the HA Dashboard Editor in the same manner as other dashboards. It's name starts with *iCloud3-#* and can be changed to meet your needs. There is no limit to the number of iCloud3 dashboards that can be created.
+The Dashboard Builder is a tool that will create and update dashboards showing iCloud3 tracking results and other device information provided by iCloud3. It is added to the HA Sidebar panel when it is created and can be edited using the HA Dashboard Editor in the same manner as other dashboards. It's name starts with *iCloud3-#* and can be changed to meet your needs. There is no limit to the number of iCloud3 dashboards that can be created.  The screen above was created by the Dashboard Builder. 
 
 !> When the iCloud3 Integration is install the first time, the *iCloud3* is created and added to the HA Sidebar panel.
 
