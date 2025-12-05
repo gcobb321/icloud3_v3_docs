@@ -17,26 +17,26 @@
 - [ •  Highlights](chapters/1_getting-started-highlights.md)
 - [ •  Core Components](chapters/1_getting-started-components.md)
 - [ •  Installing iCloud3](chapters/1_getting-started-installing.md)
-- [ •  Setting up the Mobile App](chapters/1_getting-started-mobile-app.md)
+- [ •  Using the HA Mobile App](chapters/1_getting-started-mobile-app.md)
 
 <u>**Core Component Details**</u>
 - [ • Event Log](chapters/2_core-components-event-log.md)
 - [ • Dashboard Builder](chapters/2_core-components-dashboard-builder.md)
-- [ • Configure Settings](chapters/2_core-components-configure-settings.md)
+- [ • Configure Settings Menus](chapters/2_core-components-configure-settings.md)
 
-<u>**iCloud3 Data Sources**</u>
-- [ • Apple Account](chapters/1ds-apple-account.md)
-- [ •  Mobile App Integration](chapters/1ds-mobile-app.md)
+<u>**Configuring Devices to Track**</u>
+- [ • Apple Accounts](chapters/3_configure-apple-accts.md)
+- [ • Authenticating Apple Account Sign-in](chapters/3_configure-apple-acct-auth.md)
+- [ • iCloud3  Devices](chapters/3_configure-devices.md)
 
 <u>**Other Features**</u>
-- [ • iCloud3 Alerts Sensor](chapters/1as-icloud3-alerts-sensor.md)
-- [ • Track From Multiple Zones](chapters/1of-track-from-zone.md)
-- [ •  Log Zone Activity](chapters/1of-log-zone-activity.md)
--  [•  Waze Map Card Display](chapters/1of-waze-map-card.md)
+- [ • iCloud3 Alerts Sensor](chapters/5of-icloud3-alerts-sensor.md)
+- [ • Track From Multiple Zones](chapters/5of-track-from-zone.md)
+- [ •  Log Zone Activity](chapters/5of-log-zone-activity.md)
+-  [•  Waze Map Card Display](chapters/5of-waze-map-card.md)
 
 ------
-- [**User Guide Index**](chapters/2-index.md)
-- [**Installing iCloud3**](chapters/2-installing-and-configuring.md)
+- [**User Guide Index**](chapters/6-index.md)
 
 ------
 <u>**Reference**</u>

@@ -12,7 +12,6 @@ There are 4 major parts to the iCloud3 custom component that are used to configu
 
 
 ------
-
 ## iCloud3 Device Tracker
 
 The iCloud3 Custom Component provides the core device tracking service. It does the following:
@@ -32,12 +31,11 @@ The screens below show examples of a tracked device's current status. The follow
 - Gary is tracking from Home and the Quail Zone, Lillian just from Home.
 - The *Info* field shows tracking results from nearby devices is being used.
 
-<img src="..\images\track-gary-home-lillian-away-captions.png" style="zoom:25%;" />
+![](..\images\track-gary-home-lillian-away-captions.png)
 
 
 
 ------
-
 ## Event Log
 
 The Event Log is a Lovelace custom card that shows past and current activity related to tracking a device. The right side of the image below shows device tracking results. The *Event Log* also shows:
@@ -53,7 +51,6 @@ The Event Log is a Lovelace custom card that shows past and current activity rel
 
 
 ------
-
 ## Configure Settings
 
 The iCloud3 configuration screens are used to:
