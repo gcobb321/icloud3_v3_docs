@@ -29,11 +29,11 @@
 - [ • Apple Account Authentication](chapters/3_configure-apple-acct-auth.md)
 - [ • iCloud3  Devices](chapters/3_configure-devices.md)
 
-<u>**Other Features**</u>
-- [ • iCloud3 Alerts Sensor](chapters/5of-icloud3-alerts-sensor.md)
-- [ • Track From Multiple Zones](chapters/5of-track-from-zone.md)
-- [ •  Log Zone Activity](chapters/5of-log-zone-activity.md)
--  [•  Waze Map Card Display](chapters/5of-waze-map-card.md)
+<u>**Advanced Features**</u>
+- [ • iCloud3 Alerts Sensor](chapters/4_alerts-sensor.md)
+- [ • Track From Multiple Zones](chapters/4_track-from-zone.md)
+- [ •  Log Zone Activity](chapters/4_log-zone-activity.md)
+-  [•  Waze Map Card Display](chapters/4_waze-map-card.md)
 
 ------
 - [**User Guide Index**](chapters/6-index.md)

@@ -31,7 +31,7 @@ The username and password are verified and the Apple account will be logged into
 
 Note: The Apple account can locate only your devices or all devices in your Family Sharing list. Apple's location request may take slightly longer when this is enabled since it has to locate more devices. However, all tracked devices are updated when this is done.  See the *Family Sharing vs Owner's Devices when using several Apple Accounts* paragraph below for more information.
 
-#### Changed Password
+#### Changing the Password
 
 When you change the password, be sure to change it here. If you do not change it, iCloud3 will still log into the account until the Trust Token expires. Once it expires, the account login will fail and error messages are displayed in the Event Log. The account will also show 'Not Logged Into' on the Apple Accounts list. 
 
