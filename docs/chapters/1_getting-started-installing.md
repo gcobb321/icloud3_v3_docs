@@ -17,7 +17,7 @@ Steps 1-3 are described below. Steps 5-7 (Adding and authenticating the Apple Ac
 
 ------
 
-###  Installing iCloud3
+##  Installing iCloud3
 
 iCloud3 is available on the HACS and is installed using the same process as other HACS custom components.
 
@@ -35,7 +35,7 @@ iCloud3 is available on the HACS and is installed using the same process as othe
 
 ------
 
-### iCloud3 Development Version (Beta) 
+## iCloud3 Development Version (Beta)
 
 New features are added to iCloud3 Development Version before they are released to the General Availability version on HACS. This Beta version can be added to HACS as a Custom Repository. Follow the instructions below:
 
@@ -63,7 +63,7 @@ New features are added to iCloud3 Development Version before they are released t
 
 ------
 
-### Add the iCloud3 Integration
+## Add the iCloud3 Integration
 
 iCloud3 is a Home Assistant Integration and is configured on the Integrations screens like all the other Integrations you may be using.
 

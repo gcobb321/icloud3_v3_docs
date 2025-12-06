@@ -34,7 +34,7 @@ The code is valid for about 15-minutes. A *Verification Code Accepted* message i
 
 -----
 
-## Login email Notification from Apple
+## Login email from Apple
 
 An email is sent from Apple when you log into your your iCloud account using your password. You will receive this email:
 
@@ -67,7 +67,7 @@ Although the chance of someone else successfully logging into your Apple Account
 
 -----
 
-## Access tokens, password and security
+## Access tokens and cookie Files
 
 iCloud3 is always logged into your Apple account. When iCloud3 starts and logs into your iCloud account, Apple returns an *access token* indicating iCloud3 is authorized to use data from the iCloud account. These tokens expire after about 30-minutes and the login process using the access token is done again. After a while (determined by Apple), the token is invalidated and the Apple requests the password. A new access token is sent and the process starts over.
 

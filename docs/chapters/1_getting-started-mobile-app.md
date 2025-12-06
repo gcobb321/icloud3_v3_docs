@@ -17,7 +17,7 @@ The Mobile App consists of two components:
 
 
 
-### Configure the Home Assistant Companion App
+## Configure the Home Assistant Companion App
 
 - **Device Name** - This is the name the Mobile App Integration will use for the device_tracker entity (*device_tracker.gary_iphone_app*) and sensors (*sensor.gary_iphone_app_battery_level*). 
 
@@ -33,7 +33,7 @@ The screens below shows the configuration settings App. This is done on the devi
 
 
 ------
-## Results of not installing the Mobile App
+### Results of not installing the Mobile App
 
 iCloud3 does not require the Mobile App to be installed on an iPhone or iPad. However, if it is not installed, the following happens:
 
@@ -56,7 +56,7 @@ The documentation for the Home Assistant Companion can be found [here](https://c
 
 ------
 
-## Apple Watch Location Information
+## Apple Watch is not Located
 
 Only iPhones and iPads with the Mobile App installed are monitored. Although there is an HA Complication that can be installed on the Apple Watch, it does not provide location information so it is not monitored. iCloud3 attempts to trigger zone exits by requesting an Apple Account location update when a nearby iPhone or iPad receives a zone exit trigger.
 
