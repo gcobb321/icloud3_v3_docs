@@ -9,6 +9,29 @@ iCloud3 monitors the Mobile App device_tracker entity and several sensors for:
 The sensors are monitored for changed data every 5-seconds. iCloud3 also sends messages to the Mobile App when an error occurs and when a location update from the Mobile App is needed.
 
 
+
+The Mobile App consists of two components:
+
+- **Home Assistant Companion App [(HA Docs here⧉ )](https://companion.home-assistant.io/)**  - This is installed from the Apple App store [here⧉ ](https://apps.apple.com/us/app/home-assistant/id1099568401) on every iPhone and iPad you want to monitor. 
+- **Mobile App integration [(HA Docs here⧉)](https://www.home-assistant.io/integrations/mobile_app/)**. - This is added like all integrations on the _Settings > Devices & services > Integration_ screen. It connects to the Home Assistant App on the iPhone or iPad and updates device_tracker and sensor entities for the  zone, battery, location and other data from the  App.
+
+
+
+### Configure the Home Assistant Companion App
+
+- **Device Name** - This is the name the Mobile App Integration will use for the device_tracker entity (*device_tracker.gary_iphone_app*) and sensors (*sensor.gary_iphone_app_battery_level*). 
+
+  Tip: When the HA App is first installed, it uses the name of the device on the *Settings App > General > About > Name* (*Gary_iPhone*) as the device name. That is fine but later on, you will need to create a different name for the iCloud3 device name (*i.e., gary_iphone_ic3)*. However, if you would rather have the iCloud3 device and sensors to start with actual name of the device (*gary_iphone*) instead of something else (*gary_iphone_ic3*), you need to change the HA Mobile App Device Name field. Below it was changed to *Gary_iPhone_app*.
+
+- **Location Permissions** - The 3 screen images on the left show the configuration to share zone changes, location updates and other information.
+
+The screens below shows the configuration settings App. This is done on the device.
+
+![](../images/mobapp-config.png)
+
+
+
+
 ------
 ## Results of not installing the Mobile App
 
@@ -33,38 +56,15 @@ The documentation for the Home Assistant Companion can be found [here](https://c
 
 ------
 
-## The Apple Watch cannot be tracked with the Mobile App
+## Apple Watch Location Information
 
 Only iPhones and iPads with the Mobile App installed are monitored. Although there is an HA Complication that can be installed on the Apple Watch, it does not provide location information so it is not monitored. iCloud3 attempts to trigger zone exits by requesting an Apple Account location update when a nearby iPhone or iPad receives a zone exit trigger.
 
 
 
 ------
-## Add the Mobile App Integration
 
-The Mobile App Integration is added to HA on the Integrations screen. It provides the link between the device itself and the device_tracker and sensor entities on the HA sever. There are a lot of sensor entities created by the Mobile App. iCloud3 monitors the only the _device_tracker_ entity, the _last_update_trigger_ sensor and the _battery_ sensor. The rest can be disabled, hidden or left alone.
-
-
-
-------
-## Configure the Mobile App for location updates
-
-The screens below shows the configuration settings for the Mobile App:
-
-![](../images/mobapp-config.png)
-
-
-
-------
-## Assign the Mobile App device_tracker to the iCloud3 tracked device
-
-The Mobile App device is assigned to the the iCloud3 tracked device on the *Configure > Update iCloud3 Device* screen, *Mobile App device_tracker entity* field. It is selected from the list of available Mobile App devices.
-
-
-
-------
-
-## The Event Log shows devices that provide location data
+## Mobile App Devices discovered by iCloud3
 
 When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
 
