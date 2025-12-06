@@ -17,7 +17,11 @@ Two screens are used to add and update Apple Accounts to iCloud3.
 
 -----
 
-## Add or Update an Apple Account
+## Add, Update and Deleting Apple Accounts
+
+
+
+#### Add, or Update an Apple Account
 
 - Display the *Update Apple Account Username/Password* screen. 
 - Enter the *Username* and *Password* fields.
@@ -29,7 +33,7 @@ Note: The Apple account can locate only your devices or all devices in your Fami
 
 Note: You can have up to 10 Apple Accounts.
 
-### Deleting an Apple Account
+#### Deleting an Apple Account
 
 - Display the *Update Apple Account Username/Password* screen. 
 - Select *Delete Apple Account*, then select *Submit*
@@ -47,19 +51,23 @@ Note: You can have up to 10 Apple Accounts.
 
 -----
 
-### App Specific Password
+## App Specific Password, Hardware Keys, Tracking Watch & AirTags
+
+
+
+#### App Specific Password
 
 App Specific Passwords can not be used with iCloud3. Apple does not provide an interface for web based programs like iCloud3 to use them. They can only be used by Apps installed on the iPhone or iPad. 
 
 Try to log into your Apple Account at www.icloud.com from a browser. Use your username and the App Specific Password. It will fail.
 
-### Hardware Security Keys like Yubikey
+#### Hardware Security Keys like Yubikey
 
 Hardware security keys can not be used with iCloud3 to authenticate access to your Apple Account. 
 
 If are using a Yubikey or other hardware key for your Apple Account and get an authentication request or if you request a new verification code, you will get the window requesting Apple account access approval as you normally do. You can approve the access but there is no method of linking that approval to iCloud3.
 
-### Tracking an Apple Watch
+#### Tracking an Apple Watch
 
 
 The Watch is tracked like any other iPhone or iPad. It is added on the *iCloud3 Devices* screen and configured on the *Update Devices* screen. 
@@ -72,7 +80,7 @@ Although the Mobile App Complication can be installed on the Apple Watch, there 
 - Set the *inZone Interval* to 15-minutes or less to minimize the delay when the device enters or exits a zone.
 - Only assign a *Family Sharing* device to the tracked Watch device.
 
-### Tracking AirTags
+#### Tracking AirTags
 
 These devices can not be tracked. They are not tracked by Apple like an iPhone or iPad and location information is not returned from iCloud Location Services for them.
 
@@ -94,7 +102,7 @@ The HA Server contains the 2-character code for the location. The *Apple Server 
 - Enable the *Apple Server Location (China)* field on the screen that is displayed.
 - Select *Save*, then select *Submit*.
 
-### GPS Coordinates (GCJ-02 vs WGS-84)
+#### GPS Coordinates (GCJ-02 vs WGS-84)
 
 GCJ-02 is a geodetic datum used in China that adds offsets to WGS-84 coordinates for security reasons and uses an algorithm that adds offsets to latitude and longitude to deviate from the actual WGS-84 coordinates. Apple has made Guizhou-Cloud Big Data, a company owned by the Guizhou provincial government, the legal owner of its Chinese customers' iCloud data. This means that maps in China, including those in Apple's iOS system, may show locations slightly offset from their actual WGS-84 coordinates. Apple servers in China likely use GCJ-02 for map data within Mainland China, Hong Kong, and Macao.
 
@@ -108,7 +116,7 @@ iCloud3 converts the GPS coordinates received from Apple servers in China from G
 
 -----
 
-## Support Topics
+## Location Sharing, Family Sharing, Upgrading Devices
 
 The following paragraphs provide additional information on various topics associated with the Apple account and requesting location and other data.
 
@@ -126,9 +134,7 @@ The following paragraphs provide additional information on various topics associ
 
 
 
------
-
-### Enable Location Sharing
+#### Enable Location Sharing
 
 Location Sharing must be enabled on all Apple devices that are tracked by iCloud3.
 
@@ -141,36 +147,7 @@ Location Sharing must be enabled on all Apple devices that are tracked by iCloud
 
 
 
------
-
-### Internet Connection Errors
-
-iCloud3 requests a location update when it is needed. Obviously, this request will fail if the Internet is down or www.icloud.com is not available. Various internet errors will trigger this - Connection Errors, Connection Timeouts, HTTP Errors, and many more. This is also triggered when the Internet Connection is available but www.icloud.com does not respond to a location request within 1-minute.
-
-When this happens:
-
-- An Internet Connection Error status message is displayed in the Event Log
-
-- Tracking is Paused
-
-- Every 15-seconds, a status request is made to see if it has been restored
-
-- When is it is back up, www.icloud.com is checked to make sure a location a request is successful
-
-- After it has been down for 3-minutes, an Internet Connection Error message is sent to the *icloud3_alerts* sensor
-
-  ![](../images/internet-connection-error.png)
-
-When the Internet Connection is restored and www.icloud.com is available:
-
-- Tracking is resumed
-- iCloud3 may restart if the Internet problem was detected when it was starting, when a verification code needs to be entered, when a Connection Error, Too Many Redirects, Proxy Errors, etc. or other error was encountered.
-
-
-
------
-
-### Family Sharing vs Owner's Devices when using several Apple Accounts
+#### Family Sharing vs Owner's Devices when using several Apple Accounts
 
 This applies only when you are tracking devices using several Apple Accounts. If only one Apple Account is being used, all devices in the Family Sharing List are located on each location request sent to Apple.
 
@@ -193,11 +170,7 @@ This is configured on the *Configure > Update Apple Account Username/Password* s
 
 
 
-
-
------
-
-### Upgrading to a new Device
+#### Upgrading to a new Device
 
 The device's name (*Gary iPhone*) selected from the above list is stored in the iCloud3 configuration file. This is used to determine the actual Apple device providing location data when iCloud3 starts.
 
@@ -233,7 +206,37 @@ Since the new iPhone 16 Pro Max is now the *Gary iPhone* device, it will be now 
 
 -----
 
-### Event Log Startup Stage 4 - Apple Account Information
+## Internet Errors, Event Log Apple Info, Cookie Files
+
+
+
+#### Internet Connection Errors
+
+iCloud3 requests a location update when it is needed. Obviously, this request will fail if the Internet is down or www.icloud.com is not available. Various internet errors will trigger this - Connection Errors, Connection Timeouts, HTTP Errors, and many more. This is also triggered when the Internet Connection is available but www.icloud.com does not respond to a location request within 1-minute.
+
+When this happens:
+
+- An Internet Connection Error status message is displayed in the Event Log
+
+- Tracking is Paused
+
+- Every 15-seconds, a status request is made to see if it has been restored
+
+- When is it is back up, www.icloud.com is checked to make sure a location a request is successful
+
+- After it has been down for 3-minutes, an Internet Connection Error message is sent to the *icloud3_alerts* sensor
+
+  ![](../images/internet-connection-error.png)
+
+When the Internet Connection is restored and www.icloud.com is available:
+
+- Tracking is resumed
+
+- iCloud3 may restart if the Internet problem was detected when it was starting, when a verification code needs to be entered, when a Connection Error, Too Many Redirects, Proxy Errors, etc. or other error was encountered.
+
+  
+
+#### Event Log Startup Stage 4 - Apple Account Information
 
 When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
 
@@ -248,9 +251,7 @@ The results are shown in the *Event Log > Stage 4* screens.
 
 
 
------
-
-### Apple Account Cookie and Session Files
+#### Apple Account Cookie and Session Files
 
 Apple Account cookies and session data is stored in the *config/.storage/icloud3.apple_acct* directory for each Apple Account being used. These *cookie* and *session* files store tokens that are used to access your iCloud account without requesting a 6-digit verification code every time you start iCloud3 or request location data.
 
