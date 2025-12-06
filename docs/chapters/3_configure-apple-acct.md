@@ -17,11 +17,11 @@ Two screens are used to add and update Apple Accounts to iCloud3.
 
 -----
 
-## Add, Update and Deleting Apple Accounts
+## Add, Update and Delete Apple Accounts
 
 
 
-#### Add, or Update an Apple Account
+### Add, or Update an Apple Account
 
 - Display the *Update Apple Account Username/Password* screen. 
 - Enter the *Username* and *Password* fields.
@@ -31,9 +31,16 @@ The username and password are verified and the Apple account will be logged into
 
 Note: The Apple account can locate only your devices or all devices in your Family Sharing list. Apple's location request may take slightly longer when this is enabled since it has to locate more devices. However, all tracked devices are updated when this is done.  See the *Family Sharing vs Owner's Devices when using several Apple Accounts* paragraph below for more information.
 
-Note: You can have up to 10 Apple Accounts.
+#### Changed Password
 
-#### Deleting an Apple Account
+When you change the password, be sure to change it here. If you do not change it, iCloud3 will still log into the account until the Trust Token expires. Once it expires, the account login will fail and error messages are displayed in the Event Log. The account will also show 'Not Logged Into' on the Apple Accounts list. 
+
+- Enter your new password in the Password field
+- Select *Save & Log into Apple Acct*, then select *Submit*
+
+
+
+### Deleting an Apple Account
 
 - Display the *Update Apple Account Username/Password* screen. 
 - Select *Delete Apple Account*, then select *Submit*
@@ -116,7 +123,7 @@ iCloud3 converts the GPS coordinates received from Apple servers in China from G
 
 -----
 
-## Location Sharing, Family Sharing, Upgrading Devices
+## Location and Family Sharing, Upgrading Devices
 
 The following paragraphs provide additional information on various topics associated with the Apple account and requesting location and other data.
 

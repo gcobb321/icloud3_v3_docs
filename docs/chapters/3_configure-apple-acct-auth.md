@@ -6,11 +6,11 @@ When iCloud3 logs in the first time and about every 2-3 months after that, acces
 - An *Apple Account Authentication is Required* message is displayed in the Event Log.
 - An alert is sent to your devices by iCloud3.
 
-> See [here](https://support.apple.com/en-us/HT205064) for additional information from Apple Support about your Trusted Devices.
+> See [here⧉](https://support.apple.com/en-us/HT205064) for additional information from Apple Support about your Trusted Devices.
 
 When you select *Allow*, the 6-digit verification code is displayed on your Trusted Devices. This 6-digit verification code is entered on  *Authenticate Apple Account Sign-in* screen. 
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\apple-acct-auth.png)
+![](..\images\apple-acct-auth.png)
 
 
 
