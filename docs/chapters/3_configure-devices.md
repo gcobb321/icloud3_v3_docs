@@ -7,7 +7,7 @@ iCloud3 will track up to 10 iPhones, iPads and Watches. These screens list the d
   - Select the device to be updated or deleted
   - Add a new iCloud3 device
   - Change the order of the devices on the Event Log
-- **Update iCloud3 Devices** - on the right below:
+- **Update iCloud3 Device** - on the right below:
   - Selected from -  *Apple Account & Mobile App - Data Source* screen
   - Update the parameters on an existing iCloud3 device
   - Add a new iCloud3 device
@@ -17,7 +17,7 @@ iCloud3 will track up to 10 iPhones, iPads and Watches. These screens list the d
 
 
 
-## Update iCloud3 Devices
+## Add and Update an iCloud3 Device 
 
 Fields that are updated on this screen:
 
@@ -37,7 +37,7 @@ Fields that are updated on this screen:
 
    - **Inactive** - Not tracked or monitored. This option keeps the device's parameters in the the configuration file but does not track it. 
 
-## Assigning the iCloud and Mobile App Device
+## Assign the iCloud and Mobile App Device
 
 When iCloud3 starts, the Apple Accounts are opened and the devices in the accounts are retrieved. The devices in the Mobile App Integration are also identified. When an iCloud3 device is added, the iCloud and Mobile App devices that will provide location, battery status, current zone and other data are assigned by selecting the corresponding device from the list of devices detected when iCloud3 started.
 
@@ -60,7 +60,7 @@ There are several parameters that further configure the device that are rarely u
 
 ![](../images/device-update-other-parms.png)
 
-## Change Device Order
+## Change Event Log Device Order
 
 ![](../images/device-order-evlog-names.png)
 
