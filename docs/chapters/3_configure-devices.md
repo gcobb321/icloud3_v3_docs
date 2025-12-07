@@ -17,7 +17,7 @@ iCloud3 will track up to 10 iPhones, iPads and Watches. These screens list the d
 
 
 
-### Update iCloud3 Devices
+## Update iCloud3 Devices
 
 Fields that are updated on this screen:
 
@@ -37,7 +37,7 @@ Fields that are updated on this screen:
 
    - **Inactive** - Not tracked or monitored. This option keeps the device's parameters in the the configuration file but does not track it. 
 
-### Assigning the iCloud and Mobile App Device
+## Assigning the iCloud and Mobile App Device
 
 When iCloud3 starts, the Apple Accounts are opened and the devices in the accounts are retrieved. The devices in the Mobile App Integration are also identified. When an iCloud3 device is added, the iCloud and Mobile App devices that will provide location, battery status, current zone and other data are assigned by selecting the corresponding device from the list of devices detected when iCloud3 started.
 
@@ -47,7 +47,7 @@ Below are examples of these selection lists:
 
 
 
-### Rarely Updated Parameters
+## Rarely Updated Parameters
 
 There are several parameters that further configure the device that are rarely updated: These include:
 
@@ -60,7 +60,7 @@ There are several parameters that further configure the device that are rarely u
 
 ![](../images/device-update-other-parms.png)
 
-### Change Device Order
+## Change Device Order
 
 ![](../images/device-order-evlog-names.png)
 
