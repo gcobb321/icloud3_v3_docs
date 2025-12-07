@@ -1,51 +1,67 @@
- iCloud3 Devices screen
+# iCloud3 Devices <!-- {docsify-ignore} -->
 
-Up to 10-devices can be tracked by iCloud3. They are shown on this screen.  Since no devices have been set up, the list is empty and *Add Device* is selected.
+iCloud3 will track up to 10 iPhones, iPads and Watches. These screens list the devices you have added to iCloud3 to be tracked or monitored and 
 
-1. Select **Add Device**, then select **Next** to display the *Add Device* screen
+- **iCloud3 Devices** - on the left below:
+  - Lists the devices that will be tracked and monitored
+  - Select the device to be updated or deleted
+  - Add a new iCloud3 device
+  - Change the order of the devices on the Event Log
+- **Update iCloud3 Devices** - on the right below:
+  - Selected from -  *Apple Account & Mobile App - Data Source* screen
+  - Update the parameters on an existing iCloud3 device
+  - Add a new iCloud3 device
+  - Specify the Apple/iCloud Account and Mobile App that provide location and other data for this device
 
-![](..\images\cf-device-list-empty.png)
+![](../images/device-list-update.png)
 
 
 
-#### Step #3.3 - Add Tracked iCloud3 Device screen
+### Update iCloud3 Devices
 
-New iCloud3 tracked devices are added on this screen.
+Fields that are updated on this screen:
 
-1. Assign a  **iCloud3 Device Name** to the device (*gary_iphone*). This will create the HA *device-tracker.[devicename]* entity and the HA *sensor.[devicename]_[sensorname]* entities for this device.
+1. **iCloud3 device_tracker Entity ID**  (*gary_iphone*) - The unique name used to create the device_tracker entity (device.tracker.gary_iphone) and sensor entities (sensor.gary_iphone_battery_level).
 
-![](..\images\cf-device-add-empty.png)
+2. **Friendly Name** -  Typically, this is the same as the name on the *Settings App > General > About* value.
 
-2. Type the **Friendly Name** (*Gary*) and change the **Device Type** if necessary.
+3. **Apple/iCloud device, Mobile App device** - Apple and Mobile App device providing location, zone and other data. See examples of the lists below.
 
-![](..\images\cf-device-add-gary.png)
+4. **Picture or icon** - An image file that is displayed on the dashboard. See examples of the lists below.
 
-3. Select **Next** to display the *Update Tracked iCloud3 Device* screen to enter the rest of the parameters.
+5. **Tracking Mode** - Describes how the device will be tracked: 
 
-*Notes*:
+   - **Track** - Actively requests the location and track the device,
 
-1. The *Tracking Mode* field describes how the device will be tracked: 
-   - **Track** - Request the location and track the device,
-   - **Monitor** - Do not request the location. Report it's location when it is requrned from an iCloud location request for another device.
+   - **Monitor** - Do not request the location. Report it's location when a tracked device is updated using data that is also  returned from iCloud
+
    - **Inactive** - Not tracked or monitored. This option keeps the device's parameters in the the configuration file but does not track it. 
 
+### Assigning the iCloud and Mobile App Device
+
+When iCloud3 starts, the Apple Accounts are opened and the devices in the accounts are retrieved. The devices in the Mobile App Integration are also identified. When an iCloud3 device is added, the iCloud and Mobile App devices that will provide location, battery status, current zone and other data are assigned by selecting the corresponding device from the list of devices detected when iCloud3 started.
+
+Below are examples of these selection lists:
+
+![](../images/device-sel-list-all.png)
 
 
-#### Step #3.4 - Update Tracked iCloud3 Device screen
 
-This screen specifies various parameters used by iCloud3 to track the device. The major parameters are:
+### Rarely Updated Parameters
 
-1. The Family Sharing List and the Find-my-Friends device from your iCloud account that is associated with this iCloud3 device.
-2. The iOS App device tracker entity tha will be monitored for location changes, zone enter/exit triggers and battery information.
-3. The picture to be displayed on the *device_tracker.[devicename]* entity and the *sensor.[devicename]_badge* entity.
+There are several parameters that further configure the device that are rarely updated: These include:
 
-![](..\images\cf-device-update.png)
+- **Device Typ**e (*iPhone, iPad, Watch*) - Type of the device that help identify it on the Event Log.
+- **InZone Interval** - Time between location requests when the device is in a zone.
+- **Fixed Interval** - Normally, the next location update is determined by the distance from Home (or another tracked zone) and the direction. This overrides that calculation and will request a location update on a fixed time frame.
+- **Log Zone Activity** - Update a csv file when the device enters a zone with the date/time, zone, and length of time in the zone. This can be used for expense reporting records. This is described in detail in the Advanced Features chapter [here]().
+- **Track from Zone**s - The device always updates the time and distance from the Home zone. This selects other zone(s) you also want to track the time and distance from.
+- **Track from Home Zone Override** - The Home zone is the main zone for all activities. Examples of when you might want to override the Home zone and set another zone as the main zone include you are away from Home (at a second home, on vacation), the device belongs to your parents and you want to monitor where they are in relation to their house.
 
-1. Select and enter the parameters for this device.
-2. Select **Submit** to add the device. It will be added to the *iCloud3 Device Tracker Entities* screenn.
+![](../images/device-update-other-parms.png)
 
-![](..\images\cf-device-list-gary-added.png)
+### Change Device Order
 
-!> At this time, it is advisable to only set up the main device associated with the Apple iCloud account. This will make sure iCloud3 is up and running, the device_tracker and sensor entities are being created, the Lovelace sensor screens are showing the correct information, the Event Log is operational before continuing and you have become familiar with the *Configure Settings* screens and iCloud3.
+![](../images/device-order-evlog-names.png)
 
-!> Apple discontinued the Find-my-Friends (FmF) data source in May, 2023. References to FmF have not been removed from iCloud3 or this User Guide with hopes that a new solution will be found to provide this service at a later time. 
+![](../images/device-order.png)

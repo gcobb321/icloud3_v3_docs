@@ -76,5 +76,5 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
    - Event Log has been set up:
      - Select the **Event Log > Purple Configure Gear Icon  > Configure Gear Icon**.
 
-![](..\images\cf-configure.png)
+![](..\images\icloud3-integration-add.png)
 

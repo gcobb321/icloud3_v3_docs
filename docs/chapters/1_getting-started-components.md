@@ -46,7 +46,7 @@ The Event Log is a Lovelace custom card that shows past and current activity rel
 - Error messages, problems and location data issues
 - Detail tracking monitors that show what is going on under the covers, how location data from the iCloud Location Services and the Mobile App is analyzed and processed
 
-![](..\images\track-evlog-gary-tfz-away.png)
+![](..\images\dashboard-allinfo-2-zones.png)
 
 
 

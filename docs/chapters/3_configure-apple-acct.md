@@ -2,18 +2,22 @@
 
 The Apple Account is the primary source of location data for iCloud3. It provides information related to the iPhones, iPads, Watches  and other devices in the Family Sharing list to the devices that are tracked and monitored.
 
-Two screens are used to add and update Apple Accounts to iCloud3.
+Two screens are used to list, add and update the Apple Accounts that provide this data.
 
-- **Apple Account & Mobile App - Data Source** > ***Configure Devices & Sensors > Apple Accts & Mobile App***
+- **Apple Account & Mobile App - Data Source** - on the left below:
+  - Selected from - *Configure Devices & Sensors* Menu
   - Enable/disable the Mobile App and Apple Account as a data source.
-  - Add, update and delete the Apple accounts
-  - Specify other special parameters related to setting up Apple accounts
-- **Update Apple Account Username/Password**  > ***Apple Account & Mobile App - Data Source > Select Apple Account***
-  - Select an existing Apple account or *Add a New Apple Account*, Then select *Select Apple Account*, then click *Submit*
+  - Display the *Update Apple Account Username/Password* screen
+  - Display the screen for configuring other special parameters related to setting up Apple accounts
+
+- **Update Apple Account Username/Password** - on the right below:
+  - Selected from -  *Apple Account & Mobile App - Data Source* screen
+  - Enter the username/password for the Apple account
+  - Log into the Apple Account
+  - Delete the Apple Account
+
 
 ![](../images/apple-acct-list-update.png)
-
-
 
 -----
 
@@ -99,9 +103,7 @@ These devices can not be tracked. They are not tracked by Apple like an iPhone o
 
 A different URL is used to access the Apple Account servers in China (.cn is added to the URL). This is configured on the *Update Apple Account Username/Password* screen, *Apple Server Location* field. 
 
-This selection field is displayed when the Home Assistant country code is `cn` or `hk`.![](../images/cf-m1-apple-account-china-server.png)
-
-
+This selection field is displayed when the Home Assistant country code is `cn` or `hk`.![](../images/apple-account-china-server.png)
 
 The HA Server contains the 2-character code for the location. The *Apple Server Location* field is displayed if it is 'cn' or 'hk'. If you are using a VPN, you may need this field to be displayed when the location code is not 'cn' or 'hk'.
 

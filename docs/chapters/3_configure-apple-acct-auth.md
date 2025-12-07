@@ -43,7 +43,7 @@ An email is sent from Apple when you log into your your iCloud account using you
 
 !> You will receive a number of these emails from Apple each day while iCloud3 is tracking your devices. The number you receive is determined by Apple, iCloud3 can not do anything about this.  iCloud3 minimizes the number you receive as best it can by using tokens first and only logging in when Apple requests one.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\auth-apple-email.png)
+![](..\images\apple-acct-auth-email.png)
 
 ####  What can you do to minimize these emails from clogging up your inbox
 
@@ -59,7 +59,7 @@ Although the chance of someone else successfully logging into your Apple Account
 
    Scroll through the items for an entry similar to this. Logins during the startup process are in the Stage 4 area while logins during normal tracking are shown near the top of the list. 
 
-   ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\evlog-password-auth-note.png)
+   ![](..\images\apple-acct-auth-evlog-password-msg.png)
 
 2. Refresh the Event Log or select a device to redisplay the tracking screen.
 

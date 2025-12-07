@@ -65,4 +65,4 @@ Although Home Assistant has it's own official iCloud component, iCloud3 goes far
 
 The screens below are an example of how the many tracking sensors can be displayed. The screen on the left shows the current tracking formation for Gary while the Event Log on the right shows a history of important tracking events.
 
-![](https://gcobb321.github.io/icloud3_v3_docs/images/dashboard-allinfo-summary.png)
+![](../images/dashboard-allinfo-summary.png)

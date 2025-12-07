@@ -38,8 +38,6 @@ The icons above the *Actions* drop-down menu list in the top-right are used for 
 
 
 
-
-
 ------
 
 ### Actions
@@ -79,123 +77,6 @@ The **Actions** drop-down menu is used to issue commands to:
 | WazeHist-Recalculate Route Time/Dist           | The Waze Time and Distance information is saved to the Waze History Database for local handling of Waze route requests. This eliminates delays that can occur responding to route requests in poor cell phone areas with poor internet response times. This command will send a request to Waze to update the time and distance for all locations in the database. It is processed in the background at midnight on your HA server. Select it a second time to start the update immediately. |
 | WazeHist-Load Track Locations for Map          | The locations in the Waze History database can be displayed on an HA Map. This command will load those locations into the _sensor.icloud3_wazehist_track_ entity, the data source for the map. See  _Reference > Other iCloud3 Features > Display the Waze History Location on a Map Card_ for more information. |
 | Request Apple ID Verification Code             | Request a new 6-digit verificatoin code from Apple. This is the same as requesting a new code on the _Configure Settings > Enter/Request an Apple  ID Verification Code_ screen. |
-
-
-
-------
-### Creating the Event Log screen
-
-The Event Log shows the status of iCloud3 operations. It displays a lot of information on how iCloud3 starts and on provides the tracking events for all of the devices being tracked and monitored. For this custom card to be displayed, it needs to be added to the Lovelace Resources. 
-
-![](../images/lovelace-evlog-gary-away.png)
-
-The Event Log is a custom card and HA looks for it in the /www directory. 
-
-- When iCloud3 was installed, the *icloud3-event-log-card.js* file was copied from the *icloud3/event_log_card* directory to the */www/icloud3* directory (or another custom_card directory you might have set up for iCloud3 v2).
-
--  When iCloud3 starts, it does the following:
-  - Determine if the Event Log in the */www/icloud3* directory is the latest version. If not, it is updated. A browser refresh will be needed it it was updated. A notification is displayed on each device that a refresh is needed. 
-
-    Note: The notification will not be displayed when it is first installed, it is only displayed on an update.
-
-  - Determine if the Lovelace Resource list contains the Event Log and if the directory is correct. It will be added or updated if that is needed.
-
-
-
-#### Add the Event Log to an existing dashboard layout
-
-The following yaml will create the Event Log custom card on the dashboard card you added at another time all of the other statements.
-
-
-- **GUI Entry Method**
-  
-  1. Display the dashboard you want to add the card to. 
-  2. Select the **Edit Pencil** in the upper right corner, then select **+ Add Card** at the bottom.
-  3. Scroll to the bottom of the Card Type Selection screen and select **Manual**. A screen with ```type: ''``` is displayed.
-  4. Paste  ```custom:icloud3-event-log-card```  between the quote marks. Delete the blank line #2 so the error/warning message will go away. It should now read:
-  
-  	     type: 'custom:icloud3-event-log-card'
-  
-  5. Select **Save** to save your changes.
-  
-     
-  
-- **Manual Entry Method**
-
-  1. Display the dashboard you want to add the card to. 
-  2. Select the **Edit Pencil** in the upper right corner. Then select the **three-dots** and then **Raw Configuration Editor**. 
-  3. Scroll to the bottom or the location where you want to create the Event Log card. Insert the code below at that location. YAML is very unforgiving and you have to pay attention to spaces and indents.
-  
-      ```
-              - type: grid
-                square: false
-                columns: 1
-                cards:
-                  - type: 'custom:icloud3-event-log-card'
-      ```
-  
-
-
-
-#### Create a new dashboard card for the Event Log
-
-The following yaml will create the Event Log custom card on the dashboard card you added at another time all of the other statements.
-
-- **GUI Entry Method**
-  
-   1. Display the dashboard you want to add the card to or create a new one.
-   2. Select **+ (Plus Sign)** on the top line to add the new dashboard. The *View Configuration* screen is displayed.
-   3. Enter the dashboard title (**iCloud3 Event Log**) and select **Save**.
-   4. Select **+ Add Card** at the bottom and follow steps 3, 4 and 5 in the GUI Entry Method above.
-   
-- **Manual Entry Method**
-   1. Follow steps 1, 2 and 3 above.
-   
-   2. Select the **Edit Pencil** in the upper right corner. Then select the **three-dots** and then **Raw Configuration Editor**. 
-   
-   3. Scroll to the bottom or the location where you want to create the Event Log card. Insert the code below at that location. YAML is very unforgiving and you have to pay attention to spaces and indents.
-   
-      ```
-      title: iCloud3 Event Log
-      columns: 1
-      square: false
-      type: grid
-      cards:
-        - type: 'custom:icloud3-event-log-card'
-      ```
-   
-   
-
-Hopefully, the Event Log displayed correctly. If it did not display and *Custom element doesn't exist icloud3-event-log-card* error message displayed instead, the Event Log needs to be added to the Lovelace Resources.
-
-
-
-------
-### Lovelace Resource for the Event Log
-
-The Lovelace Resources points to the location of the *icloud3-event-log-card.js* file and must be set up for the Event Log to be displayed.  If a problem occurs setting up the Lovelace Resource automatically, the Event Log (on the right in the above screenshot) will not be displayed and the following will be displayed instead:
-
-![](../images/lovelace-evlog-resource-error.png)
-
-Do the following to set it up manually:
-
-1. Select **☰ > HA Settings > Dashboards > ⋮ (Upper right corner) > Resources**. The following screen is displayed:
-
-   ![](../images/lovelace-resources-list.png)
-
-2. Select **+ Add Resource** to open the Add Resources window (on the left).
-
-![](../images/lovelace-resources-add.png)
-
-3. Enter the following:
-
-   - `/local/icloud3/icloud3-event-log-card.js` in the **URL** field. 
-   - DO NOT ENTER `/www/icloud3/icloud3-event-log-card.js` . It will not work.
-   - Check **JavaScript Module**
-4. Select **Create (or Update)**
-
-#### Using another custom card directory
-If you move the Event Log card to another directory, the Lovelace Resources should automatically be changed. If something happens and it is not changed, change the directory (*icloud3*) in the URL statement on the above screen to the new directory name. Then select the new directory name in the *Event Log Directory* field on the *iCloud3 Configure Settings > Menu Page 2 > Other Parameters*  screen.
 
 
 
@@ -266,3 +147,133 @@ The *Configure Tracked Devices* stage:
 - Links the *Battery Sensor*, *Notifications* and *Stationary Zones* to each tracked device
 
 ![](../images/evlog-stage-5.png)
+
+
+
+------
+
+### Setting up the Event Log on a Custom Dashboard
+
+The Event Log is created by the Dashboard Builder when iCloud3 is installed and when a new iCloud3 Dashboard is created. You can also add the Event Log to a dashboard you created. This can be done by:
+
+- Copying the Event Log card parameters from an iCloud3 Dashboard layout.
+- Creating one manually
+
+This describes how to create it manually.
+
+The Event Log is a custom card and HA looks for it in the /www directory. 
+
+- When iCloud3 was installed, the *icloud3-event-log-card.js* file was copied from the *icloud3/event_log_card* directory to the */www/icloud3* directory.
+
+- When iCloud3 starts, it does the following:
+
+  - Determine if the Event Log in the */www/icloud3* directory is the latest version. If not, it is updated. A browser refresh will be needed it it was updated. A notification is displayed on each device that a refresh is needed. 
+
+    Note: The notification will not be displayed when it is first installed, it is only displayed on an update.
+
+  - Determine if the Lovelace Resource list contains the Event Log and if the directory is correct. It will be added or updated if that is needed.
+
+
+
+#### Add the Event Log to an existing dashboard layout
+
+The following yaml will create the Event Log custom card on the dashboard card you added at another time all of the other statements.
+
+
+- **GUI Entry Method**
+
+  1. Display the dashboard you want to add the card to. 
+
+  2. Select the **Edit Pencil** in the upper right corner, then select **+ Add Card** at the bottom.
+
+  3. Scroll to the bottom of the Card Type Selection screen and select **Manual**. A screen with ```type: ''``` is displayed.
+
+  4. Paste  ```custom:icloud3-event-log-card```  between the quote marks. Delete the blank line #2 so the error/warning message will go away. It should now read:
+
+         type: 'custom:icloud3-event-log-card'
+
+  5. Select **Save** to save your changes.
+
+     
+
+- **Manual Entry Method**
+
+  1. Display the dashboard you want to add the card to. 
+
+  2. Select the **Edit Pencil** in the upper right corner. Then select the **three-dots** and then **Raw Configuration Editor**. 
+
+  3. Scroll to the bottom or the location where you want to create the Event Log card. Insert the code below at that location. YAML is very unforgiving and you have to pay attention to spaces and indents.
+
+     ```
+             - type: grid
+               square: false
+               columns: 1
+               cards:
+                 - type: 'custom:icloud3-event-log-card'
+     ```
+
+
+
+#### Create a new dashboard card for the Event Log
+
+The following yaml will create the Event Log custom card on the dashboard card you added at another time all of the other statements.
+
+- **GUI Entry Method**
+
+  1. Display the dashboard you want to add the card to or create a new one.
+  2. Select **+ (Plus Sign)** on the top line to add the new dashboard. The *View Configuration* screen is displayed.
+  3. Enter the dashboard title (**iCloud3 Event Log**) and select **Save**.
+  4. Select **+ Add Card** at the bottom and follow steps 3, 4 and 5 in the GUI Entry Method above.
+
+- **Manual Entry Method**
+
+  1. Follow steps 1, 2 and 3 above.
+
+  2. Select the **Edit Pencil** in the upper right corner. Then select the **three-dots** and then **Raw Configuration Editor**. 
+
+  3. Scroll to the bottom or the location where you want to create the Event Log card. Insert the code below at that location. YAML is very unforgiving and you have to pay attention to spaces and indents.
+
+     ```
+     title: iCloud3 Event Log
+     columns: 1
+     square: false
+     type: grid
+     cards:
+       - type: 'custom:icloud3-event-log-card'
+     ```
+
+  
+
+Hopefully, the Event Log displayed correctly. If it did not display and *Custom element doesn't exist icloud3-event-log-card* error message displayed instead, the Event Log needs to be added to the Lovelace Resources.
+
+
+
+------
+
+### Lovelace Resource Configuration
+
+The Lovelace Resources points to the location of the *icloud3-event-log-card.js* file and must be set up for the Event Log to be displayed.  If a problem occurs setting up the Lovelace Resource automatically, the Event Log (on the right in the above screenshot) will not be displayed and the following will be displayed instead:
+
+![](../images/lovelace-evlog-resource-error.png)
+
+Do the following to set it up manually:
+
+1. Select **☰ > HA Settings > Dashboards > ⋮ (Upper right corner) > Resources**. The following screen is displayed:
+
+   ![](../images/lovelace-resources-list.png)
+
+2. Select **+ Add Resource** to open the Add Resources window (on the left).
+
+![](../images/lovelace-resources-add.png)
+
+3. Enter the following:
+
+   - `/local/icloud3/icloud3-event-log-card.js` in the **URL** field. 
+   - DO NOT ENTER `/www/icloud3/icloud3-event-log-card.js` . It will not work.
+   - Check **JavaScript Module**
+4. Select **Create (or Update)**
+
+#### Using another custom card directory
+
+If you move the Event Log card to another directory, the Lovelace Resources should automatically be changed. If something happens and it is not changed, change the directory (*icloud3*) in the URL statement on the above screen to the new directory name. Then select the new directory name in the *Event Log Directory* field on the *iCloud3 Configure Settings > Menu Page 2 > Other Parameters*  screen.
+

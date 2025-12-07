@@ -17,7 +17,7 @@ The iCloud3 configuration screens are used to:
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
 
-![](..\images\cf-menu-12.png)
+![](..\images\menu-devices-sensors-parms.png)
 
 #### Configure Devices & Sensors screen
 
@@ -59,7 +59,7 @@ There are two ways to open the Configuration Screens.
 
 > The Configure Icon shortcut is not available when you first install the iCloud3 integration. It will be available after the Event Log card has been setup.
 
-![](..\images\cf-configure.png)
+![](..\images\icloud3-configure.png)
 
 
 
