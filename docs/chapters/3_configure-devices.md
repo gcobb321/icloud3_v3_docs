@@ -62,6 +62,9 @@ There are several parameters that further configure the device that are rarely u
 
 ## Change Event Log Device Order
 
-![](../images/device-order-evlog-names.png)
+The devices are listed in the Event Log in the order they are added (monitored devices are always last). They can be reordered on this screen.
+
+1. Select the device.
+2. Select *Move Up* or *Move Down*, then select *Submit*.
 
 ![](../images/device-order.png)
