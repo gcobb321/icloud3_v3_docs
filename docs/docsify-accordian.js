@@ -76,4 +76,4 @@
 // Docsify plugin options
 //window.$docsify['toc'] = Object.assign(defaultOptions, window.$docsify['toc']);
 //window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins);
-window.$docsify.plugins = [].concat(io_accordion, $docsify.plugins)}());
+window.$docsify.plugins = [].concat(io_accordion, window.$docsify.plugins)}());
