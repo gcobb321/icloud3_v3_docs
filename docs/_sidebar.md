@@ -24,16 +24,17 @@
 - [ • Dashboard Builder](chapters/2_core-components-dashboard-builder.md)
 - [ • Configure Settings Menus](chapters/2_core-components-configure-settings.md)
 
-<u>**Configuring Devices to Track**</u>
-- [ • Apple Accounts](chapters/3_configure-apple-acct.md)
-- [ • Apple Account Authentication](chapters/3_configure-apple-acct-auth.md)
-- [ • iCloud3  Devices](chapters/3_configure-devices.md)
+<u>**Configuring Tracked Devices**</u>
+- [ • Apple Accounts](chapters/3_config-track-dev-apple-acct.md)
+- [ • Apple Account Authentication](chapters/3_config-track-dev-apple-acct-auth.md)
+- [ • iCloud3  Devices](chapters/3_cconfig-track-dev-devices.md)
+- [ • Frequently Asked Questions](3_config-track-dev-freq-asked-questions.md)
 
 <u>**Advanced Features**</u>
-- [ • iCloud3 Alerts Sensor](chapters/4_alerts-sensor.md)
-- [ • Track From Multiple Zones](chapters/4_track-from-zone.md)
-- [ •  Log Zone Activity](chapters/4_log-zone-activity.md)
--  [•  Waze Map Card Display](chapters/4_waze-map-card.md)
+- [ • iCloud3 Alerts Sensor](chapters/4_adv-feature-alerts-sensor.md)
+- [ • Track From Multiple Zones](chapters/4_adv-feature-track-from-zone.md)
+- [ •  Zone Log for Expense Reports](chapters/4_adv-feature-zone-log.md)
+-  [•  Waze Map Card Display](chapters/4_adv-feature-waze-map-card.md)
 
 ------
 - [**User Guide Index**](chapters/6-index.md)
