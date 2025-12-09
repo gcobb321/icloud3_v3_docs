@@ -9,11 +9,12 @@
   <!--
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
     <link rel="stylesheet" href="//unpkg.com/docsify-accordion/src/style.css">
+  <link rel="stylesheet" href="./theme-toc.css">    
   -->
 
   <link rel="stylesheet" href="./theme-vue-min.css">
   <link rel="stylesheet" href="./theme-mods.css">
-  <link rel="stylesheet" href="./theme-toc.css">
+
   <link rel="stylesheet" href="./theme-accordian.css">  
 
 
@@ -54,12 +55,7 @@
         crossChapter: true,
         crossChapterText: false,
       },
-      io_accordion: {
-      },
-      toc: {
-        scope: '.markdown-section',
-        headings: 'h2, h3, h4, h5, h6',
-      },
+
       plugins: [
           EditOnGithubPlugin.create(
             'https://github.com/gcobb321/icloud3_v3_docs/blob/main/docs/',
@@ -72,6 +68,12 @@
 
   
   <!--
+      io_accordion: {
+      },
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h2, h3, h4, h5, h6',
+      },
   <script src="./docsify-pagination.min.js"></script>
   <script src="./docsify-search.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
