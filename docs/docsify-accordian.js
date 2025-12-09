@@ -73,5 +73,7 @@
     });
   }
 
-  window.$docsify.plugins = [].concat(io_accordion, $docsify.plugins)
-}());
+// Docsify plugin options
+//window.$docsify['io_accordion'] = Object.assign(defaultOptions, window.$docsify['io_accordion']);
+//window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins);
+window.$docsify.plugins = [].concat(io_accordion, $docsify.plugins);
