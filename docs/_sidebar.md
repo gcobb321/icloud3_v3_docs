@@ -28,7 +28,7 @@
 - [ • Apple Accounts](chapters/3_config-track-dev-apple-acct.md)
 - [ • Apple Account Authentication](chapters/3_config-track-dev-apple-acct-auth.md)
 - [ • iCloud3  Devices](chapters/3_config-track-dev-devices.md)
-- [ • Frequently Asked Questions](3_config-track-dev-freq-asked-questions.md)
+- [ • Frequently Asked Questions]((chapters/3_config-track-dev-freq-asked-questions.md)
 
 <u>**Advanced Features**</u>
 - [ • iCloud3 Alerts Sensor](chapters/4_adv-feature-alerts-sensor.md)
