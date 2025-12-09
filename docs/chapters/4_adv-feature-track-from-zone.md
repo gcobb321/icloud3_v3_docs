@@ -4,11 +4,11 @@ Normally, you track a device from the Home Zone. The sensor entities for travel 
 
 To track from another zone, select that zone in the *Track from Zones* parameter on the *Update Tracked iCloud3 Device* screen. 
 
-1. Select the *iCloud3 Devices* screen.
-2. Select the device to be tracked from the other zone.
-3. Select the *Track-from-Zones* field, then select the zones to be tracked from.
+1. Select the *iCloud3 Devices > Update Other Device Parameters* screen.
+2. Select the *Track-from-Zones* field, then select the zones to be tracked from.
+3. Then select *Save*, then *Submit*.
 
-![](..\images\cf-device-update-tfz.png)
+![](..\images\track-from-zones-sel-list.png)
 
 New sensors are created for all of the track-from-zones.
 

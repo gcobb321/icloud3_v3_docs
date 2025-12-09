@@ -1,8 +1,6 @@
 # iCloud3 Alerts Sensor
 
-*Added in iCloud3 v3.2.3*
-
-Errors and Alerts are displayed in the Event log as they are found and summarized in a green bar at the top of the Event Log. They are prioritized in order of importance:
+Errors and Alerts are displayed in the Event log activity area and summarized in a green bar at the top. They are prioritized in order of importance:
 
 - Internet Connection Errors
 - Apple account authentication is needed
@@ -14,17 +12,17 @@ Errors and Alerts are displayed in the Event log as they are found and summarize
 
 ## *icloud3_alerts* Sensor
 
-Alert updates are also added to the *sensor.icloud3_alerts* entity. This sensor entity can be used to notify a device that an error or alert has occurred. 
+Alert updates are also added to the *sensor.icloud3_alerts* entity. This sensor can be used to notify a device that an error or alert has occurred. 
 
    - **State Value**: 
-        - *none* - No alerts are available
+        - *none* - No alerts have been encountered or previous alerts have been resolved
         - The highest priority alert
 
    - **Attributes**:
         - *alert_count* - Number of alerts (0 if no alerts are available)
         - *updated* - When the alert sensor was updated
         - *message_text* - A text summary of all errors that can be sent to a device using the notify.[devicename] Action.
-        - *yourappleacct@* - The Apple account that caused the alert
+        - *appleacct@* - The Apple account that caused the alert
         - *devicename* - The Device that caused the alert
 
 ![](..\images\icloud3-alerts-sensor.png)
