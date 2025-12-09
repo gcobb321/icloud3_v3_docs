@@ -1,0 +1,75 @@
+# Frequently Asked Questions {docsify-ignore}
+
+<hr><br><br>
+
+
+
++ App Specific Passwords +
+
+App Specific Passwords are not supported by iCloud3. iCloud3 is a program running on a computer, not an app running on an iDevice. It uses web service calls to request the location of the devices in the iCloud's Family Sharing List. Apps running on iDevices use a different access method that is not available by programs.
+
+<details>
+<summary>Occasionally, My iPhone does not exit the Home Zone when I leave</summary>
+<p>This question is discussed in <strong>Tracking Issues</strong> chapter. </p>
+</details>
+
+<details>
+<summary>Can I use a Hardware Security Key instead of my iCloud account password</summary>
+<p>No. iCloud3 (nor Home Assistant) do not support hardware security keys at this time. </p>
+<p>An alternative is to use another family member's iCloud account and add your iPhone to their Family Sharing List. Then use that account in iCloud3 as the data source on the <em>Configure Settings > iCloud Account and Mobile App</em> screen..</p>
+</details>
+
+<details>
+<summary>How can I display a map of where my iDevices have been</summary>
+<p>HA provides a Lovelace map card that will show the location track of your iDevices. Refer to the HA Map documentation on setting it up. Add each Person (person.gary) or iDevice (<em>devicetracker.gary_iphone</em>)  you want to track on the Map configuration screen in the Entity field. </p>
+</details>
+
+<details>
+<summary><i>Locate Device(s) using iCloud FamShr</i> vs <i>Send Locate Request to Mobile App</i> </summary>
+<p>Both options will try to locate the iDevice. However:</p>
+<ul>
+<li><p><em>FamShr Locate</em> - (Preferred) iCloud3 requests the location from iCloud Location Services and gets an immediate response with it&#39;s location. It also gets the location of the other devices in the Family Sharing list. </p>
+</li>
+<li><p><em>Mobile App Request</em> - iCloud3 sends a message to that iDevice asking for it&#39;s location and then waits for a response. There may be a delay in providing the location if the device is asleep, the Mobile App is not loaded and running or if it is running in the background.</p>
+</li>
+</ul>
+</details>
+
+<details>
+<summary>&#39;platform: icloud3&#39; message is displayed in the Event Log and HA Log</summary>
+<p>The following message is displayed in the Event Log as a warning message in the HA Log. What does it mean?</p>
+<pre><code>iCloud3 is <span class="hljs-keyword">an</span> Integration. Delete <span class="hljs-keyword">the</span> <span class="hljs-string">'platform: icloud3'</span>
+configuration parameters <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> HA <span class="hljs-string">'configuration.yaml'</span> <span class="hljs-built_in">file</span>.
+</code></pre><p>You can delete (or comment out) the iCloud3 parameters in the <em>configuration.yaml</em> file. Once iCloud3 is configured and you are satisfied, delete the parameters from the <em>configuration.yaml</em> file and delete the <em>config-ic3.yaml</em> file.</p>
+<p>If you can not find the parameters or the <em>config-ic3.yaml</em> file, keep looking. Be sure to check any sub-directories you might be using with an <em>include</em> statement.</p>
+</details>
+
+<details>
+<summary>What version of iCloud3 am I running</summary>
+<p><strong>HACS Version</strong>
+
+HACS displays information about the version of iCloud3 it has downloaded. HACS keeps that version number in it's database to be able to identify when an update is available.
+<img src="../icloud3_v3_docs/images/version-hacs.png">
+<p><em>This version may or may not be the version of iCloud3 you are running. The only way to know is to look at iCloud3 itself,</em></p>
+<p><strong>Version of iCloud3 that is Running</strong>
+
+The version that is running on your system might not be the actual version of iCloud3 that HACS thinks is installed and running. The only way to know is to verify the version in iCloud3 itself.  The following screens highlight the version number running in red.</p>
+<ul>
+<li>On the <em>device</em>tracker.[devicename]* attributes for every device being tracked by iCloud3.</li>
+<li>In the <em>Event Log</em> when iCloud3 starts at the beginning and end of the startup process.</li>
+<li>In the <em>Event Log</em> when you hover a mouse over the Actions list or when you open the Actions list. </li>
+<li>In the iCloud3 configuration file <em>config./storage/icloud3</em> (admin rights must be enabled)</li>
+<li>In the <em>config/icloud3-0.log</em> log file.</li>
+</ul>
+<img src="../icloud3_v3_docs/images/version-running.png">
+</details>
+
+<details>
+<summary>How do I setup HACS to also show the iCloud3 v3, Development Version</summary>
+<p>The Development Version is used to distribute prerelease/beta code for testing before it is released for general use. It is available on HACS as a custom repository. The following describes how to add the custom repository to HACS. </p>
+<ol>
+<li>Open HACS from the HA sidebar as you normally do.</li>
+<li>Select the 3-dots  ' <strong>⠇</strong>' in the upper-right corner, then select <em>Custom repositories</em></li>
+<li>Type <strong>gcobb321/icloud3_v3</strong> in the Repository field, select <strong>Integration</strong> in the Category field and then select <strong>Add</strong> </li>
+</ol>
+</details>
