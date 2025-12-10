@@ -17,7 +17,7 @@
 - [ • Highlights](chapters/1_getting-started-highlights.md)
 - [ • Core Components](chapters/1_getting-started-components.md)
 - [ • Installing iCloud3](chapters/1_getting-started-installing.md)
-- [ •  Using the HA Mobile App](chapters/1_getting-started-mobile-app.md)
+- [ • Using the HA Mobile App](chapters/1_getting-started-mobile-app.md)
 
 <u>**Core Component Details**</u>
 - [ • Event Log](chapters/2_core-components-event-log.md)
