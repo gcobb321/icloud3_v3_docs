@@ -16,21 +16,18 @@ ul.accordion-wrapper > li {
 }
 
 ul.accordion-wrapper > li:hover {
-  background: #F6F9FB;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 ul.accordion-wrapper > li > p:first-of-type {
   position: relative;
   margin: 0;
-  padding: 5px 5px;
-  font-weight: normal;
-  /*padding: 10px 20px;
-  font-weight: bold;*/
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 ul.accordion-wrapper > li.active > p:first-of-type {
-  padding: 5px 10px 5px 5px;
-  /*padding: 10px 20px 20px 20px;*/
+  padding: 10px 20px 20px 20px;
 }
 
 ul.accordion-wrapper > li.active > p:first-of-type::after {
@@ -49,8 +46,8 @@ ul.accordion-wrapper > li.active > p:first-of-type::after {
 
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
-  margin: 0 10px 10px 10px;
-  padding: 0 5px 10px;
+  margin: 0 20px 20px 20px;
+  padding: 0 15px 20px;
   background: white;
   cursor: default;
   overflow: hidden;
@@ -61,15 +58,12 @@ ul.accordion-wrapper > li:not(:first-of-type) {
 }
 
 .accordion {
-  /*background: whitesmoke;*/
-  background: transparent;
+  background: whitesmoke;
 }
 
 .accordion.active {
-  background: #EAF0F7;
-  border-left: 2px solid #406495
-  /*background: rgba(0, 0, 0, 0.1);
-  border-left: 3px solid #014f17;*/
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #014f17;
 }
 
 .accordion .accordion-content-container {
