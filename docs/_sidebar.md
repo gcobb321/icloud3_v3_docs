@@ -14,9 +14,9 @@
 
 ------
 <u>**Getting Started**</u>
-- [ •  Highlights](chapters/1_getting-started-highlights.md)
-- [ •  Core Components](chapters/1_getting-started-components.md)
-- [ •  Installing iCloud3](chapters/1_getting-started-installing.md)
+- [ • Highlights](chapters/1_getting-started-highlights.md)
+- [ • Core Components](chapters/1_getting-started-components.md)
+- [ • Installing iCloud3](chapters/1_getting-started-installing.md)
 - [ •  Using the HA Mobile App](chapters/1_getting-started-mobile-app.md)
 
 <u>**Core Component Details**</u>
@@ -28,13 +28,13 @@
 - [ • Apple Accounts](chapters/3_config-track-dev-apple-acct.md)
 - [ • Apple Account Authentication](chapters/3_config-track-dev-apple-acct-auth.md)
 - [ • iCloud3 Devices](chapters/3_config-track-dev-devices.md)
-- [ • Frequently Asked Questions](chapters/3_config-freq-asked-questions.md)
+- [ • Frequently Asked Questions](chapters/3_config-track-dev-freq-asked-questions.md)
 
 <u>**Advanced Features**</u>
 - [ • iCloud3 Alerts Sensor](chapters/4_adv-feature-alerts-sensor.md)
 - [ • Track From Multiple Zones](chapters/4_adv-feature-track-from-zone.md)
-- [ •  Zone Log for Expense Reports](chapters/4_adv-feature-zone-log.md)
--  [•  Waze Map Card Display](chapters/4_adv-feature-waze-map-card.md)
+- [ • Zone Log for Expense Reports](chapters/4_adv-feature-zone-log.md)
+- [ • Waze Map Card Display](chapters/4_adv-feature-waze-map-card.md)
 
 ------
 - [**User Guide Index**](chapters/6-index.md)
