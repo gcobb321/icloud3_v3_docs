@@ -101,7 +101,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
   color: black;
   margin: 5px 10px 10px 15px;
   padding: 0 5px 10px 15px;
-  background: white;
+  background: pink;
   cursor: default;
   overflow: hidden;
   border: 1px solid Fuchsia;
@@ -111,12 +111,12 @@ ul.accordion-wrapper > li > .accordion-content-container {
 .accordion {
   /*background: whitesmoke;*/
   /*background: transparent;*/
-  background: white;
+  background: oange;
 }
 
 /* Active selected item display box area */
 .accordion.active {
-  background: white;
+  background: violet;
 }
 
 /* Selected item dropdown area */
