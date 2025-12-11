@@ -18,12 +18,12 @@ ul.accordion-wrapper > li {
 /* Hovered over item text area */
 ul.accordion-wrapper > li:hover {
   color: black;
-  /* background: #F6F9FB; */
+  /*background: #F6F9FB;*/
   /* border: 1px solid #ffaf1a;*/
-  background-color: #ffc966;
+  /*background-color: #ffc966;
   border-top: 1px solid #ffaf1a
   border-bottom: 1px solid #ffaf1a
-  border-left: 2px solid #ffaf1a
+  border-left: 2px solid #ffaf1a*/
   
   /* font-weight: bold; */
 }

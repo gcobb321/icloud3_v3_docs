@@ -18,7 +18,7 @@
               childElement.classList.add('tip')
             }
 
-            if (childIndex >= 0) {
+            if (childIndex > 0) {
               wrapper.appendChild(childElement)
             }
           })
@@ -57,13 +57,14 @@
 
           //Add arrows
           let arrow=document.createElement("i")
-          if (indexAccordionItemIndex === 0) {
-            element.classList.add("active");
-            arrow.classList.add("arrow","down")
-          }
-          else{
-            arrow.classList.add("arrow","right")
-          }
+          //if (indexAccordionItemIndex === 0) {
+          //  element.classList.add("active");
+          //  arrow.classList.add("arrow","down")
+          //}
+          //else{
+          //  arrow.classList.add("arrow","right")
+          //}
+          arrow.classList.add("arrow","right")
           let p=element.children.item(0);
           p.appendChild(arrow)
 
