@@ -82,7 +82,7 @@ ul.accordion-wrapper > li {
 /* Active selected item display area */
 .accordion.active {
   border: 1px solid #406495;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 15px 0px;
 }
 
 /* Selected item dropdown area */
