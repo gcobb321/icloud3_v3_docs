@@ -19,14 +19,14 @@ ul.accordion-wrapper > li {
 ul.accordion-wrapper > li:hover {
   color: red;
   background: #F6F9FB;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* Item text  */
 ul.accordion-wrapper > li > p:first-of-type {
   position: relative;
   margin: 0;
-  padding: 5px 5px;
+  padding: 5px 10px 10px 10px;
   font-weight: normal;
   /*padding: 10px 20px;
   font-weight: bold;*/
@@ -35,9 +35,16 @@ ul.accordion-wrapper > li > p:first-of-type {
 /* Selected item text now active and displayed */
 ul.accordion-wrapper > li.active > p:first-of-type {
   background-color: yellow;
-  padding: 5px 10px 5px 15px;
+  padding: 5px 10px 10px 15px;
   font-weight: bold;
   /*padding: 10px 20px 20px 20px;*/
+}
+
+/* Hovered over item text area */
+ul.accordion-wrapper > li.active:hover {
+  /* color: red;
+  background: #F6F9FB;
+  font-weight: bold; */
 }
 
 /* Up solid arrow above active box pointing to item */
