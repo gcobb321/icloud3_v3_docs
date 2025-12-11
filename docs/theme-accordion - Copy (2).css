@@ -39,7 +39,14 @@ ul.accordion-wrapper > li > p:first-of-type {
   margin: 0;
   padding: 5px 10px 10px 10px;
   font-weight: normal;
-
+  /*padding: 10px 20px;
+  font-weight: bold;*/
+  background-color: #D4DDE9;
+  /*border-top: 1px solid #ffaf1a;*/
+  /*border-bottom: 1px transparent #ffaf1a;*/
+  border-left: 2px solid green;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
 }
 
 /* Item text  */
