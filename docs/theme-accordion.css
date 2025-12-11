@@ -44,8 +44,8 @@ ul.accordion-wrapper > li.active > p:first-of-type {
 /* Hovered over item text area */
 ul.accordion-wrapper > li.active:hover {
   color: black;
-  /* background: #F6F9FB;
-  font-weight: bold; */
+  background-color: red;
+  /*font-weight: bold; */
 }
 
 /* Up solid arrow above active box pointing to item */
@@ -67,8 +67,8 @@ ul.accordion-wrapper > li.active:hover {
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
   color: black;
-  margin: 5px 10px 10px 10px;
-  padding: 0 5px 10px;
+  /*margin: 5px 10px 10px 10px;*/
+  padding: 10px 10px 10px 10px;
   background: white;
   cursor: default;
   overflow: hidden;
