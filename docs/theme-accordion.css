@@ -44,7 +44,7 @@ ul.accordion-wrapper > li > p:first-of-type {
   /*background-color: #ffedcc*/
   /*border-top: 1px solid #ffaf1a;*/
   /*border-bottom: 1px transparent #ffaf1a;*/
-  border-left: 2px transparent #ffaf1a;
+  border-left: 2px solid green; /* #ffaf1a;*/
 }
 
 /* Selected item text now active and displayed */
@@ -59,7 +59,7 @@ ul.accordion-wrapper > li.active > p:first-of-type {
 ul.accordion-wrapper > li.active:hover {
   color: black;
   /*border: 1px solid #ffaf1a;*/
-  background-color: #f6f9fb;
+  background-color: white;
   border-top: 1px solid #ffaf1a;
   border-bottom: 1px solid #ffaf1a;
   border-left: 2px solid #ffaf1a;
