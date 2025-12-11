@@ -1,6 +1,6 @@
 # Frequently Asked Questions {docsify-ignore}
 
------
+
 
 
 
@@ -40,8 +40,10 @@
   
     HACS keeps that version number in it's database to be able to identify when an update is available.
   
-    <img src="../images/version-hacs.png">
-     	
+    ![](../images/version-hacs.png)
+    
+    [](../images/device-list.png) 	
+  
   The version that is running on your system might not be the actual version of iCloud3 that HACS thinks is installed and running. The only way to know is to verify the version in iCloud3 itself.  The following screens highlight the version number running in red.
   
   - On the *device_tracker.[devicename]* attributes for every device being tracked by iCloud3.
@@ -54,7 +56,7 @@
   
   + In the _config/icloud3.log_  log file.
   
-    <img src="../images/version-running.png">
+    ![](../images/version-running.png)
   
 
 
