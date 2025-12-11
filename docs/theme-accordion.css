@@ -42,9 +42,17 @@ ul.accordion-wrapper > li.active > p:first-of-type {
   /*padding: 10px 20px 20px 20px;*/
 }
 
+/* Selected item text now active and displayed */
+ul.accordion-wrapper > li.active:hover > p:first-of-type {
+  background-color: orange;
+  padding: 5px 10px 10px 15px;
+  font-weight: bold;
+  /*padding: 10px 20px 20px 20px;*/
+}
 /* Hovered over item text area */
 ul.accordion-wrapper > li.active:hover {
   color: black;
+  color: red;
   background-color: red;
   /*font-weight: bold; */
 }
@@ -90,9 +98,9 @@ ul.accordion-wrapper > li:not(:first-of-type) {
 /* Active selected item display area */
 .accordion.active {
   /* background: #F6F9FB; */
-  border-top: 1px solid #406495;
-  border-bottom: 1px solid #406495;
-  border-left: 2px solid #406495;
+  border: 1px solid #406495;
+  /*border-bottom: 1px solid #406495;
+  border-left: 2px solid #406495;*/
 }
 
 /* Selected item dropdown area */
