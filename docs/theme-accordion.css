@@ -17,20 +17,9 @@ ul.accordion-wrapper > li {
 
 /* Hovered over item text area */
 ul.accordion-wrapper > li:hover {
-  color: black;
-  /*background: #F6F9FB;*/
-  /* border: 1px solid #ffaf1a;*/
-  background-color: #ffedcc
-  border-top: 1px solid #ffaf1a;
-  border-bottom: 1px solid #ffaf1a;
-  border-left: 2px solid #ffaf1a;
-  
+  color: red;
+  background: #F6F9FB;
   /* font-weight: bold; */
-}
-
-/* Unselected item separator line */
-ul.accordion-wrapper > li:not(:first-of-type) {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* Item text  */
@@ -39,46 +28,24 @@ ul.accordion-wrapper > li > p:first-of-type {
   margin: 0;
   padding: 5px 10px 10px 10px;
   font-weight: normal;
-}
-
-/* Item text  */
-ul.accordion-wrapper > li:hover > p:first-of-type {
-  position: relative;
-  margin: 0;
-  padding: 5px 10px 10px 10px;
-  font-weight: normal;
   /*padding: 10px 20px;
   font-weight: bold;*/
-  background-color: pink;
-  border: 1px solid red;
-  /*border-left: 2px solid red;*/
-  /*border-top: 1px solid red;*/
-  /*border-bottom: 1px solid red;*/
 }
 
 /* Selected item text now active and displayed */
-ul.accordion-wrapper > li.active:hover > p:first-of-type {
+ul.accordion-wrapper > li.active > p:first-of-type {
+  background-color: #F6F9FB;
   padding: 5px 10px 10px 15px;
   font-weight: bold;
-  background-color: lavender;/*#F6F9FB;*/
-  border: 1px solid darkblue;
-  /*border-top: 1px solid #406495;
-  border-bottom: 1px solid #406495;
-  border-left: 2px solid #406495;*/
   /*padding: 10px 20px 20px 20px;*/
 }
 
-/* Hovered over selected item text area */
-/*ul.accordion-wrapper > li.active:hover {
+/* Hovered over item text area */
+ul.accordion-wrapper > li.active:hover {
   color: black;
-  /*border: 1px solid #ffaf1a;*/
-  /*background-color: yellow;'/*white;*/
-  /*border-top: 1px solid #ffaf1a;
-  border-bottom: 1px solid #ffaf1a;
-  border-left: 2px solid #ffaf1a;*/
   /* background: #F6F9FB;
   font-weight: bold; */
-}*/
+}
 
 /* Up solid arrow above active box pointing to item */
 /*ul.accordion-wrapper > li.active > p:first-of-type::after {
@@ -95,28 +62,34 @@ ul.accordion-wrapper > li.active:hover > p:first-of-type {
   border-left-color: transparent;
 }*/
 
-/* Selected item dropdown display area */
+/* Selected item display area */
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
   color: black;
-  margin: 5px 10px 10px 15px;
-  padding: 0 5px 10px 15px;
-  background: pink;
+  margin: 5px 10px 10px 10px;
+  padding: 0 5px 10px;
+  background: white;
   cursor: default;
   overflow: hidden;
-  border: 1px solid Fuchsia;
 }
 
-/* Selected item display box area  */
+/* Unselected item separator line */
+ul.accordion-wrapper > li:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Selected item display area  */
 .accordion {
   /*background: whitesmoke;*/
-  /*background: transparent;*/
-  background: oange;
+  background: transparent;
 }
 
-/* Active selected item display box area */
+/* Active selected item display area */
 .accordion.active {
-  background: violet;
+  /* background: #F6F9FB; */
+  border-top: 1px solid #406495;
+  border-bottom: 1px solid #406495;
+  border-left: 2px solid #406495;
 }
 
 /* Selected item dropdown area */
@@ -136,7 +109,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
   display: inline-block;
   padding: 4px;
   float:right;
-  margin-top: 1%;
+  margin-top: 1.25%;
 }
 
 /* Arrow On right side Off item line (>) */
