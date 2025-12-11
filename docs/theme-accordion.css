@@ -19,7 +19,7 @@ ul.accordion-wrapper > li {
 ul.accordion-wrapper > li:hover {
   color: red;
   /*background: #F6F9FB;*/
-  background-color: white;
+  background-color: #ffedcc;
   /* font-weight: bold; */
 }
 
