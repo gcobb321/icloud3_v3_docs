@@ -44,7 +44,14 @@ ul.accordion-wrapper > li.active:hover > p:first-of-type {
   background-color: #ffedcc;
   padding: 5px 10px 10px 15px;
   font-weight: bold;
+  /*padding: 10px 20px 20px 20px;*/
 }
+/* Hovered over item text area */
+/*ul.accordion-wrapper > li.active:hover {
+  color: black;
+  color: red;
+  background-color: red;
+}*/
 
 /* Up solid arrow above active box pointing to item */
 /*ul.accordion-wrapper > li.active > p:first-of-type::after {
@@ -65,6 +72,7 @@ ul.accordion-wrapper > li.active:hover > p:first-of-type {
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
   color: black;
+  /*margin: 5px 10px 10px 10px;*/
   padding: 10px 10px 10px 10px;
   background: white;
   cursor: default;
@@ -90,13 +98,15 @@ ul.accordion-wrapper > li {
 
 /* Active selected item display area */
 .accordion.active {
+  /* background: #F6F9FB; */
   border: 1px solid #406495;
+  /*border-bottom: 1px solid #406495;
+  border-left: 2px solid #406495;*/
 }
 
 /* Selected item dropdown area */
 .accordion .accordion-content-container {
   display: none !important;
-  margin: 0px 0px10px 0px;
 }
 
 /* Active selected item dropdown area */
