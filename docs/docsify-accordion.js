@@ -51,10 +51,9 @@
               arrow.remove("right");
               arrow.add("down");
             }
-            }
           })
 
-          element.firstChild.textContent = element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
+          element.firstChild.textContent = '• '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
 
           //Add arrows
           let arrow=document.createElement("i")
