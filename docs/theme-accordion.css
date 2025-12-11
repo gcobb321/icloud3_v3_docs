@@ -65,6 +65,7 @@ ul.accordion-wrapper > li.active:hover {
 /* Selected item display area */
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
+  color: black;
   margin: 5px 10px 10px 10px;
   padding: 0 5px 10px;
   background: white;
@@ -104,9 +105,9 @@ ul.accordion-wrapper > li:not(:first-of-type) {
 /* Arrow On right side Off item line */
 .arrow {
   border: solid black;
-  /* border-width: 0 3px 3px 0; */
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 4px;
+  padding: 0px 4px;
   float:right;
   / * margin-top: 1.25%; */
 }
