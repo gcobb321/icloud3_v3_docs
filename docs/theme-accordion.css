@@ -39,7 +39,6 @@ ul.accordion-wrapper > li > p:first-of-type {
   margin: 0;
   padding: 5px 10px 10px 10px;
   font-weight: normal;
-
 }
 
 /* Item text  */
@@ -50,8 +49,8 @@ ul.accordion-wrapper > li:hover > p:first-of-type {
   font-weight: normal;
   /*padding: 10px 20px;
   font-weight: bold;*/
-  background-color: white;
-  border-left: 2px solid red;
+  background-color: red;
+  /*border-left: 2px solid red;*/
   border-top: 1px solid red;
   border-bottom: 1px solid red;
 }
