@@ -31,9 +31,9 @@ ul.accordion-wrapper > li > p:first-of-type {
 }
 
 /* Hovered over unselected item text area */
-ul.accordion-wrapper > li:hover {
+ul.accordion-wrapper > li:hover > p:first-of-type {
   background-color: #ffedcc;
-  border: 2px solid #ffaf1a;
+  border: 1px solid #ffaf1a;
 }
 
 /* Unselected item separator line */
