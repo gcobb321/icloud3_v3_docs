@@ -61,7 +61,7 @@ body{
     /* border: 1px transparent #406495;*/
     /* background: #EAF0F7; */
     border: 1px solid #ffaf1a;
-    background-color: #ffe4b3;
+    background-color: #ffedcc
 }
 .sidebar ul li.active>a {
     color: #406495;
