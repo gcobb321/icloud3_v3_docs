@@ -50,14 +50,14 @@ ul.accordion-wrapper > li {
 /* Selected item text now active and displayed */
 ul.accordion-wrapper > li.active > p:first-of-type {
   background-color: #D4DDE9;
-  padding: 2px 10px 10px 15px;
+  padding: 5px 10px 10px 10px;
   font-weight: bold;
 }
 
 /* Selected item text now active and displayed */
 ul.accordion-wrapper > li.active:hover > p:first-of-type {
   background-color: #ffedcc;
-  padding: 2px 10px 10px 15px;
+  padding: 5px 10px 10px 10px;
   font-weight: bold;
 }
 
