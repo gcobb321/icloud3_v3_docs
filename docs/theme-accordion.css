@@ -19,8 +19,12 @@ ul.accordion-wrapper > li {
 ul.accordion-wrapper > li:hover {
   color: black;
   /* background: #F6F9FB; */
-  border: 1px solid #ffaf1a;
-  background_color: #ffc966;
+  /* border: 1px solid #ffaf1a;*/
+  background-color: #ffc966;
+  border-top: 1px solid #ffaf1a
+  border-bottom: 1px solid #ffaf1a
+  border-left: 2px solid #ffaf1a
+  
   /* font-weight: bold; */
 }
 
@@ -45,8 +49,11 @@ ul.accordion-wrapper > li.active > p:first-of-type {
 /* Hovered over selected item text area */
 ul.accordion-wrapper > li.active:hover {
   color: black;
-  border: 1px solid #ffaf1a;
-  background_color: #ffc966;
+  /*border: 1px solid #ffaf1a;*/
+  background-color: #ffc966;
+  border-top: 1px solid #ffaf1a
+  border-bottom: 1px solid #ffaf1a
+  border-left: 2px solid #ffaf1a
   /* background: #F6F9FB;
   font-weight: bold; */
 }
@@ -91,7 +98,7 @@ ul.accordion-wrapper > li:not(:first-of-type) {
 /* Active selected item display box area */
 .accordion.active {
   /* background: #F6F9FB;*/
-  background_color: #D4DDE9;
+  background-color: #D4DDE9;
   border-top: 1px solid #406495;
   border-bottom: 1px solid #406495;
   border-left: 2px solid #406495;

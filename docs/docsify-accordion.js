@@ -18,7 +18,7 @@
               childElement.classList.add('tip')
             }
 
-            if (childIndex > 0) {
+            if (childIndex >= 0) {
               wrapper.appendChild(childElement)
             }
           })
