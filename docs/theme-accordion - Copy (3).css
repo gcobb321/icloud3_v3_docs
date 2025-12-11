@@ -18,8 +18,7 @@ ul.accordion-wrapper > li {
 /* Hovered over item text area */
 ul.accordion-wrapper > li:hover {
   color: red;
-  /*background: #F6F9FB;*/
-  background-color: orange;
+  background: #F6F9FB;
   /* font-weight: bold; */
 }
 
