@@ -87,7 +87,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
 /* Unselected item separator line */
 ul.accordion-wrapper > li {
   border-left: 1px transparent rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Selected item display area  */
