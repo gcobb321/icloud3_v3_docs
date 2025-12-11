@@ -35,7 +35,7 @@ ul.accordion-wrapper > li > p:first-of-type {
 
 /* Selected item text now active and displayed */
 ul.accordion-wrapper > li.active > p:first-of-type {
-  background-color: #pink;
+  background-color: #D4DDE9;
   padding: 5px 10px 10px 15px;
   font-weight: bold;
   /*padding: 10px 20px 20px 20px;*/
