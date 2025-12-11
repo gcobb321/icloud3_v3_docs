@@ -82,12 +82,12 @@ ul.accordion-wrapper > li {
 /* Active selected item display area */
 .accordion.active {
   border: 1px solid #406495;
+  margin: 0px 0px 10px 0px;
 }
 
 /* Selected item dropdown area */
 .accordion .accordion-content-container {
   display: none !important;
-  margin: 0px 0px 10px 0px;
 }
 
 /* Active selected item dropdown area */
