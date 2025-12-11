@@ -20,7 +20,7 @@ ul.accordion-wrapper > li:hover {
   color: black;
   /*background: #F6F9FB;*/
   /* border: 1px solid #ffaf1a;*/
-  background-color: #ffe4b3;
+  background-color: #ffedcc
   border-top: 1px solid #ffaf1a;
   border-bottom: 1px solid #ffaf1a;
   border-left: 2px solid #ffaf1a;
@@ -36,16 +36,15 @@ ul.accordion-wrapper > li > p:first-of-type {
   font-weight: normal;
   /*padding: 10px 20px;
   font-weight: bold;*/
-  /*background-color: #ffe4b3;
+  /*background-color: #ffedcc*/
   border-top: 1px solid #ffaf1a;
   border-bottom: 1px solid #ffaf1a;
-  border-left: 2px solid #ffaf1a;*/
+  border-left: 2px solid #ffaf1a;
 }
 
 /* Selected item text now active and displayed */
 ul.accordion-wrapper > li.active > p:first-of-type {
-  /*background-color: #F6F9FB;*/
-  background-color: #ffe4b3
+  background-color: #F6F9FB;
   padding: 5px 10px 10px 15px;
   font-weight: bold;
   /*padding: 10px 20px 20px 20px;*/
@@ -55,7 +54,7 @@ ul.accordion-wrapper > li.active > p:first-of-type {
 ul.accordion-wrapper > li.active:hover {
   color: black;
   /*border: 1px solid #ffaf1a;*/
-  background-color: #ffe4b3;
+  background-color: #f6f9fb;
   border-top: 1px solid #ffaf1a;
   border-bottom: 1px solid #ffaf1a;
   border-left: 2px solid #ffaf1a;
