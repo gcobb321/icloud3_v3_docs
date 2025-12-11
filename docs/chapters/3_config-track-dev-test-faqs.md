@@ -32,21 +32,19 @@
 
   Both options will try to locate the iDevice. 
 
-  - **Apple Account Locate** - (Preferred) iCloud3 requests the location from iCloud Location Services and gets an immediate response with it&#39;s location. It also gets the location of the other devices in the Family Sharing list. 
+  - **Apple Account Locate** - (Preferred) iCloud3 requests the location from iCloud Location Services and gets an immediate response with it&#39;s location. It also gets the location of the other devices in the Family Sharing list.
   
+  - **Mobile App Request** - iCloud3 sends a message to that iDevice asking for it's location and then waits for a response. There may be a delay in providing the location if the device is asleep, the Mobile App is not loaded and running or if it is running in the background.
   
-    - **Mobile App Request** - iCloud3 sends a message to that iDevice asking for it's location and then waits for a response. There may be a delay in providing the location if the device is asleep, the Mobile App is not loaded and running or if it is running in the background.
-  
-  + HACS displays information about the version of iCloud3 it has downloaded +
+  - HACS displays information about the version of iCloud3 it has downloaded +
   
     HACS keeps that version number in it's database to be able to identify when an update is available.
   
     <img src="../images/version-hacs.png">
      	
-    The version that is running on your system might not be the actual version of iCloud3 that HACS thinks is installed and running. The only way to know is to verify the version in iCloud3 itself.  The following screens highlight the version number running in red.
+  The version that is running on your system might not be the actual version of iCloud3 that HACS thinks is installed and running. The only way to know is to verify the version in iCloud3 itself.  The following screens highlight the version number running in red.
   
-  
-  + On the *device_tracker.[devicename]* attributes for every device being tracked by iCloud3.
+  - On the *device_tracker.[devicename]* attributes for every device being tracked by iCloud3.
   
   + In the Event Log  when iCloud3 starts at the beginning and end of the startup process.
   
