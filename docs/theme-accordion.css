@@ -99,8 +99,8 @@ ul.accordion-wrapper > li.active:hover > p:first-of-type {
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
   color: black;
-  margin: 5px 10px 10px 20px;
-  padding: 0 5px 10px;
+  margin: 5px 10px 10px 15px;
+  padding: 0 5px 10px 15px;
   background: white;
   cursor: default;
   overflow: hidden;
