@@ -1,3 +1,6 @@
+/*-----------------------------*/
+/* BASE LIST definition        */
+
 ul.accordion-wrapper {
   display: block;
   margin: 0;
@@ -15,18 +18,42 @@ ul.accordion-wrapper > li {
   cursor: pointer;
 }
 
-/* Hovered over item text area */
-ul.accordion-wrapper > li:hover {
-  background-color: #ffedcc;
-  border: 1px solid #ffaf1a;
-}
 
-/* Item text  */
+/*-----------------------------*/
+/* UNSELECTED ITEM             */
+
+/* Unselected item text  */
 ul.accordion-wrapper > li > p:first-of-type {
   position: relative;
   margin: 0;
   padding: 5px 10px 10px 10px;
   font-weight: normal;
+}
+
+/* Hovered over unselected item text area */
+ul.accordion-wrapper > li:hover {
+  background-color: #ffedcc;
+  border: 1px solid #ffaf1a;
+}
+
+/* Unselected item separator line */
+ul.accordion-wrapper > li {
+  border-left: 1px transparent rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/*-----------------------------*/
+/* SELECTED (ACTIVE) ITEM      */
+
+/* Selected item display area */
+ul.accordion-wrapper > li > .accordion-content-container {
+  display: block;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  background: white;
+  cursor: default;
+  overflow: hidden;
 }
 
 /* Selected item text now active and displayed */
@@ -58,21 +85,10 @@ ul.accordion-wrapper > li.active:hover > p:first-of-type {
   border-left-color: transparent;
 }*/
 
-/* Selected item display area */
-ul.accordion-wrapper > li > .accordion-content-container {
-  display: block;
-  color: black;
-  padding: 10px 10px 10px 10px;
-  background: white;
-  cursor: default;
-  overflow: hidden;
-}
 
-/* Unselected item separator line */
-ul.accordion-wrapper > li {
-  border-left: 1px transparent rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+
+/*-----------------------------*/
+/* CLASS DEFINITIONS           */
 
 /* Selected item display area  */
 .accordion {
@@ -94,6 +110,10 @@ ul.accordion-wrapper > li {
 .accordion.active .accordion-content-container {
   display: block !important;
 }
+
+
+/*------------------------------*/
+/* RIGHT SIDE ARROW DEFINITIONS */
 
 /* Arrow On right side Off item line */
 .arrow {
