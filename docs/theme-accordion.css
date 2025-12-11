@@ -17,11 +17,8 @@ ul.accordion-wrapper > li {
 
 /* Hovered over item text area */
 ul.accordion-wrapper > li:hover {
-  /*color: red;*/
-  /*background: #F6F9FB;*/
   background-color: #ffedcc;
   border: 1px solid #ffaf1a;
-  /* font-weight: bold; */
 }
 
 /* Item text  */
@@ -50,12 +47,11 @@ ul.accordion-wrapper > li.active:hover > p:first-of-type {
   /*padding: 10px 20px 20px 20px;*/
 }
 /* Hovered over item text area */
-ul.accordion-wrapper > li.active:hover {
+/*ul.accordion-wrapper > li.active:hover {
   color: black;
   color: red;
   background-color: red;
-  /*font-weight: bold; */
-}
+}*/
 
 /* Up solid arrow above active box pointing to item */
 /*ul.accordion-wrapper > li.active > p:first-of-type::after {
