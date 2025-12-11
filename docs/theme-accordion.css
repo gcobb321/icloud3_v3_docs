@@ -80,9 +80,13 @@ ul.accordion-wrapper > li > .accordion-content-container {
 }
 
 /* Unselected item separator line */
-ul.accordion-wrapper > li:not(:first-of-type) {
+/*ul.accordion-wrapper > li:not(:first-of-type) {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}*/
+/* Unselected item separator line */
+ul.accordion-wrapper > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Selected item display area  */
