@@ -17,7 +17,7 @@ ul.accordion-wrapper > li {
 
 /* Hovered over item text area */
 ul.accordion-wrapper > li:hover {
-  color: red;
+  /*color: red;*/
   /*background: #F6F9FB;*/
   background-color: #ffedcc;
   border: 1px solid #ffaf1a;
@@ -44,7 +44,7 @@ ul.accordion-wrapper > li.active > p:first-of-type {
 
 /* Selected item text now active and displayed */
 ul.accordion-wrapper > li.active:hover > p:first-of-type {
-  background-color: orange;
+  background-color: #ffedcc;
   padding: 5px 10px 10px 15px;
   font-weight: bold;
   /*padding: 10px 20px 20px 20px;*/
