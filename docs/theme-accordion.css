@@ -49,10 +49,11 @@ ul.accordion-wrapper > li:hover > p:first-of-type {
   font-weight: normal;
   /*padding: 10px 20px;
   font-weight: bold;*/
-  background-color: red;
+  background-color: lightcoral;
+  border: 1px solid red;
   /*border-left: 2px solid red;*/
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
+  /*border-top: 1px solid red;*/
+  /*border-bottom: 1px solid red;*/
 }
 
 /* Selected item text now active and displayed */
