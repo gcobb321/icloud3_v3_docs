@@ -56,8 +56,9 @@ body{
     border: 1px solid transparent;
 }
 .sidebar ul li a:hover {
+    font-style: normal;
     padding-left: 2px;
-    border: 1px transparent #406495;
+    /* border: 1px transparent #406495;*/
     /* background: #EAF0F7; */
     border: 1px solid #ffaf1a;
     background-color: #ffe4b3;

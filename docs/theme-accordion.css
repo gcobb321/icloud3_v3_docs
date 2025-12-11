@@ -36,10 +36,10 @@ ul.accordion-wrapper > li > p:first-of-type {
   font-weight: normal;
   /*padding: 10px 20px;
   font-weight: bold;*/
-  background-color: #ffe4b3;
+  /*background-color: #ffe4b3;
   border-top: 1px solid #ffaf1a;
   border-bottom: 1px solid #ffaf1a;
-  border-left: 2px solid #ffaf1a;
+  border-left: 2px solid #ffaf1a;*/
 }
 
 /* Selected item text now active and displayed */
@@ -97,7 +97,8 @@ ul.accordion-wrapper > li:not(:first-of-type) {
 /* Selected item display box area  */
 .accordion {
   /*background: whitesmoke;*/
-  background: transparent;
+  /*background: transparent;*/
+  background: white;
 }
 
 /* Active selected item display box area */
