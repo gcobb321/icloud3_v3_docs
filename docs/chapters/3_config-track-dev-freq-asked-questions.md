@@ -51,6 +51,8 @@
   
     ![](../images/version-running.png)
   
+  
+  
 + How do I setup HACS to also show the iCloud3 v3, Development Version +
 
   See *Installing iCloud3 > iCloud3 Development Version (Beta)* for detailed instructions
