@@ -66,4 +66,4 @@
   See *Installing iCloud3 > iCloud3 Development Version (Beta)* for detailed instructions
 
 
-![link file](../3_config-track-dev-devices :include)
+![link file](../3_config-track-dev-test-faqs.md :include)
