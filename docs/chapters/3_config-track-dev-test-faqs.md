@@ -65,7 +65,7 @@
 
   See *Installing iCloud3 > iCloud3 Development Version (Beta)* for detailed instructions
 
-[TestInclude](./chapters/4_adv-feature-waze-map-card.md ':include')
+[TestInclude](chapters/4_adv-feature-waze-map-card.md ':include')
 
 
 
