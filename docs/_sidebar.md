@@ -14,28 +14,28 @@
 
 ------
 <u>**Getting Started**</u>
-- [ •  Highlights](chapters/1_getting-started-highlights.md)
-- [ •  Core Components](chapters/1_getting-started-components.md)
-- [ •  Installing iCloud3](chapters/1_getting-started-installing.md)
-- [ •  Using the HA Mobile App](chapters/1_getting-started-mobile-app.md)
+- [ •  Highlights](chapters/1_highlights.md)
+- [ •  Core Components](chapters/1_components.md)
+- [ •  Installing iCloud3](chapters/1_installing.md)
+- [ •  Using the HA Mobile App](chapters/1_mobile-app.md)
 
 <u>**Core Component Details**</u>
-- [ •  Event Log](chapters/2_core-components-event-log.md)
-- [ •  Dashboard Builder](chapters/2_core-components-dashboard-builder.md)
-- [ •  Configure Settings Menus](chapters/2_core-components-configure-settings.md)
+- [ •  Event Log](chapters/2_event-log.md)
+- [ •  Dashboard Builder](chapters/2_dashboard-builder.md)
+- [ •  Configure Settings Menus](chapters/2_configure-settings.md)
 
 <u>**Configuring Tracked Devices**</u>
-- [ •  Apple Accounts](chapters/3_config-track-dev-apple-acct.md)
-- [ •  Apple Account Authentication](chapters/3_config-track-dev-apple-acct-auth.md)
-- [ •  iCloud3 Devices](chapters/3_config-track-dev-devices.md)
-- [ •  Frequently Asked Questions](chapters/3_config-track-dev-freq-asked-questions.md)
-- [ • Test FAQs](chapters/3_config-track-dev-test-faqs.md)
+- [ •  Apple Accounts](chapters/3_apple-acct.md)
+- [ •  Apple Account Authentication](chapters/3_apple-acct-auth.md)
+- [ •  iCloud3 Devices](chapters/3_devices.md)
+- [ •  Frequently Asked Questions](chapters/3_freq-asked-questions.md)
+- [ • Test FAQs](chapters/3_test-faqs.md)
 
 <u>**Advanced Features**</u>
-- [ •  iCloud3 Alerts Sensor](chapters/4_adv-feature-alerts-sensor.md)
-- [ •  Track From Multiple Zones](chapters/4_adv-feature-track-from-zone.md)
-- [ •  Zone Log for Expense Reports](chapters/4_adv-feature-zone-log.md)
-- [ •  Waze Map Card Display](chapters/4_adv-feature-waze-map-card.md)
+- [ •  iCloud3 Alerts Sensor](chapters/4_alerts-sensor.md)
+- [ •  Track From Multiple Zones](chapters/4_track-from-zone.md)
+- [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
+- [ •  Waze Map Card Display](chapters/4_waze-map-card.md)
 
 ------
 - [**User Guide Index**](chapters/6-index.md)

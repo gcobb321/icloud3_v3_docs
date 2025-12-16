@@ -60,6 +60,23 @@ When you change the password, be sure to change it here. If you do not change it
 
   
 
+### Event Log Startup Stage 4 - Apple Account Information
+
+When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
+
+- Verify the Username/Password
+- Read all of the devices in the Apple Account
+- Match them up with the iCloud3 device using the Apple Account iCloud Device parameter from the *Update iCloud3 Device* screen
+- Errors are identified. This includes login errors, missing devices, duplicate devices, authentication, changed device names, etc.
+
+The results are shown in the *Event Log > Stage 4* screens. 
+
+![](../images/evlog-stage-4-notes.png)
+
+
+
+
+
 -----
 
 ## App Specific Password, Hardware Keys, Tracking Watch & AirTags
@@ -179,7 +196,9 @@ This is configured on the *Configure > Update Apple Account Username/Password* s
 
 
 
-#### Upgrading to a new Device
+-----
+
+### Tips when you get a new device
 
 The device's name (*Gary iPhone*) selected from the above list is stored in the iCloud3 configuration file. This is used to determine the actual Apple device providing location data when iCloud3 starts.
 
@@ -215,11 +234,7 @@ Since the new iPhone 16 Pro Max is now the *Gary iPhone* device, it will be now 
 
 -----
 
-## Internet Errors, Event Log Apple Info, Cookie Files
-
-
-
-#### Internet Connection Errors
+## Internet Connection Errors
 
 iCloud3 requests a location update when it is needed. Obviously, this request will fail if the Internet is down or www.icloud.com is not available. Various internet errors will trigger this - Connection Errors, Connection Timeouts, HTTP Errors, and many more. This is also triggered when the Internet Connection is available but www.icloud.com does not respond to a location request within 1-minute.
 
@@ -243,28 +258,21 @@ When the Internet Connection is restored and www.icloud.com is available:
 
 - iCloud3 may restart if the Internet problem was detected when it was starting, when a verification code needs to be entered, when a Connection Error, Too Many Redirects, Proxy Errors, etc. or other error was encountered.
 
-  
-
-#### Event Log Startup Stage 4 - Apple Account Information
-
-When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
-
-- Verify the Username/Password
-- Read all of the devices in the Apple Account
-- Match them up with the iCloud3 device using the Apple Account iCloud Device parameter from the *Update iCloud3 Device* screen
-- Errors are identified. This includes login errors, missing devices, duplicate devices, authentication, changed device names, etc.
-
-The results are shown in the *Event Log > Stage 4* screens. 
-
-![](../images/evlog-stage-4-notes.png)
 
 
 
-#### Apple Account Cookie and Session Files
+-----
 
-Apple Account cookies and session data is stored in the *config/.storage/icloud3.apple_acct* directory for each Apple Account being used. These *cookie* and *session* files store tokens that are used to access your iCloud account without requesting a 6-digit verification code every time you start iCloud3 or request location data.
+## Trust Tokens and Cookie Files
 
-Changing and deleting these files will cause reauthentication requests from Apple and termination of your current login session and should not generally be done. These files can be deleted on the *Configure > Tools* screen.
+iCloud3 is always logged into your Apple account. When iCloud3 starts and logs into your iCloud account, Apple returns an *access token* indicating iCloud3 is authorized to use data from the iCloud account. These tokens expire after about 30-minutes and the login process using the access token is done again. After a while (determined by Apple), the token is invalidated and the Apple requests the password. A new access token is sent and the process starts over.
+
+The access token is stored in cookie files in the *config/.storage/icloud3.apple_acct* directory. Normally, you will never have to delete these files. However, if you really want to delete them:
+
+- Display the *Tools* screen. 
+- Select *Delete All Apple/iCloud Cookie Files*, then select *Submit*.
+
+All cookie and session files for all Apple accounts will be deleted. Restarting iCloud3 or logging into the Apple account will recreate the files for the Apple account. This will also display the _Someone is logging into your Apple account_ popup screen on your Trusted devices with a new 6-digit verification code. 
 
 
 

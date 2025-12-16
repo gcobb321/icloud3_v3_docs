@@ -63,34 +63,3 @@ Although the chance of someone else successfully logging into your Apple Account
 
 2. Refresh the Event Log or select a device to redisplay the tracking screen.
 
-
-
------
-
-## Access tokens and cookie Files
-
-iCloud3 is always logged into your Apple account. When iCloud3 starts and logs into your iCloud account, Apple returns an *access token* indicating iCloud3 is authorized to use data from the iCloud account. These tokens expire after about 30-minutes and the login process using the access token is done again. After a while (determined by Apple), the token is invalidated and the Apple requests the password. A new access token is sent and the process starts over.
-
-The access token is stored in cookie files in the *config/.storage/icloud3.apple_acct* directory. Normally, you will never have to delete these files. However, if you really want to delete them:
-
-- Display the *Tools* screen. 
-- Select *Delete All Apple/iCloud Cookie Files*, then select *Submit*.
-
-All cookie and session files for all Apple accounts will be deleted. Restarting iCloud3 or logging into the Apple account will recreate the files for the Apple account.
-
-
-
------
-
-## Frequently Asked Questions
-
-- **Should I delete the *.storage/icloud* files** - No, you should not. It will not hurt anything but it does not help anything either. In fact, when you request a new code (above), iCloud3 deletes these files to force Apple to request a new verification code and display the *Someone is accessing your iCloud Account - Do Not Allow/Allow* window on your trusted device. The 6-digit code is displayed when you select *Allow*.
-
-- **I keep getting a notification that a verification code is needed** - Apple notifies iCloud3 that a reauthentication code is needed to continue accessing the iCloud account. You need go through *Entering the Apple ID Verification Code* above and enter the 6-digit verification code displayed on one of your trusted devices. 
-
-- **I can not enter the code right now. The alert was displayed on another device. I forgot the code. I lost the code. ** - Apple will continue to provide location information for a while but will eventually stop iCloud3 from accessing your iCloud account. 
-
-  The 6-digit code is valid for a short time (the time varies) and must be entered before it expires. If the code has expired, request a new one (see above) and enter that code.
-
-- **Will Apple stop asking for the code if I restart Home Assistant or delete and reinstall iCloud3 Integration** - No, Apple requires that access to your iCloud account is only done from an authorized device that has been verified. iCloud3 must comply with this request and provide a valid 6-digit verification code. When you restart Home Assistant or reinstall the iCloud3 Integration, Apple will just keep asking for the verification code. 
-
