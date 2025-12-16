@@ -32,13 +32,13 @@
 
   Apple notifies iCloud3 that a reauthentication code is needed to continue accessing the iCloud account. You need go through *Authenticate Apple Account Signin* to enter the 6-digit verification code that is displayed on one of your trusted devices. 
 
-+ I can not enter the code right now. The alert was displayed on another device. I forgot the code. I lost the code. + 
++ I can not enter the code right now, the alert was displayed on another device,  I forgot the code, I lost the code + 
 
-The Authenticate Apple Account Signin message will continue to appear until the code is entered. Although, Apple will continue to provide location information for a while, it  will eventually stop iCloud3 from accessing your iCloud account until it is entered.
+  The Authenticate Apple Account Signin message will continue to appear until the code is entered. Although, Apple will continue to provide location information for a while, it  will eventually stop iCloud3 from accessing your iCloud account until it is entered.
 
 + Will Apple stop asking for the code if I restart Home Assistant or delete and reinstall iCloud3 Integration +
 
-No, Apple requires that access to your iCloud account is only done from an authorized device that has been verified. iCloud3 must comply with this request and provide a valid 6-digit verification code. When you restart Home Assistant or reinstall the iCloud3 Integration, Apple will just keep asking for the verification code. 
+  No, Apple requires that access to your iCloud account is only done from an authorized device that has been verified. iCloud3 must comply with this request and provide a valid 6-digit verification code. When you restart Home Assistant or reinstall the iCloud3 Integration, Apple will just keep asking for the verification code. 
 
 
 
