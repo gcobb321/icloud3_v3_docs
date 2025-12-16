@@ -24,7 +24,7 @@
 - [ •  Dashboard Builder](chapters/2_dashboard-builder.md)
 - [ •  Configure Settings Menus](chapters/2_configure-settings.md)
 
-<u>**Configuring Tracked Devices**</u>
+<u>**Configure Tracked Devices**</u>
 - [ •  Apple Accounts](chapters/3_apple-acct.md)
 - [ •  Apple Account Authentication](chapters/3_apple-acct-auth.md)
 - [ •  iCloud3 Devices](chapters/3_devices.md)
@@ -37,6 +37,16 @@
 - [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
 - [ •  Waze Map Card Display](chapters/4_waze-map-card.md)
 
+<u>**Configure Operational Parameters**</u>
+- [ •  Away Time Zone](chapters/5_away-time-zone.md)
+- [ •  Display Text As](chapters/5_display-text-as.md)
+- [ •  Field Formats](chapters/5_field-formats.md)
+- [ •  Maintenance Tools](chapters/5_tools.md)
+- [ •  Sensors](chapters/5_sensors.md)
+- [ •  Special Zones](chapters/5_special-zones.md)
+- [ •  Waze Route Time & Distance](chapters/5_waze.md)
+
+ 
 ------
 - [**User Guide Index**](chapters/6-index.md)
 
