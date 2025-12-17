@@ -39,7 +39,7 @@
 
 <u>**Configure Operational Parameters**</u>
 - [ •  Away Time Zone](chapters/5_away-time-zone.md)
-- [ •  Display Settings & Other Parameters](chapters/5_display_settings_parms.md)
+- [ •  Display Settings & Other Parms](chapters/5_display_settings_parms.md)
 -  [ •  Display Text As](chapters/5_display-text-as.md)
 - [ •  Maintenance Tools](chapters/5_tools.md)
 - [ •  Sensors](chapters/5_sensors.md)
@@ -53,7 +53,6 @@
 
 ------
 <u>**Reference**</u>
-- [ •   Configuration Screens & Parameters](chapters/7.1-config-parms.md)
 - [ •  Startup & Device Alerts](chapters/7.6-alerts.md)
 - [ •   Sensor Attributes](chapters/7.3-attributes.md)
 - [ •   Service Calls](chapters/7.4-service-calls.md)
