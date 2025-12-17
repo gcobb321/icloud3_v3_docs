@@ -4,7 +4,7 @@
 -->
 
 body{
-    font-size: 14px;
+    font-size: 13px;
 }
 .content {
    /*#padding-top: 10px;
@@ -52,7 +52,7 @@ body{
     margin: 4px 0;
 }
 .sidebar ul li a {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.1em;
     word-wrap: break-word;
     white-space: normal;
@@ -61,7 +61,7 @@ body{
     /*border: 1px solid transparent;*/
 }
 .xsidebar ul li a:hover {}
-.sidebar ul li.hover {
+.sidebar ul li.hover>a {
     font-style: normal;
     /*border: 1px solid #ffaf1a;*/
     background-color: #ffedcc;
