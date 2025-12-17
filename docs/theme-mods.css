@@ -56,12 +56,14 @@ body{
     line-height: 1em;
     word-wrap: break-word;
     white-space: normal;
-    margin: 4px;
+    margin: -3px 4px 0px 4px;
     padding: 2px 2px 2px 0px;
     border: 1px solid red;  /*transparent;*/
 }
 .sidebar ul li a:hover {
     font-style: normal;
+    margin: -3px 4px 0px 4px;
+    padding: 2px 2px 2px 0px;
     border: 1px solid #ffaf1a;
     /*background-color: #ffedcc;*/
     background:  #ffedcc;
@@ -69,9 +71,10 @@ body{
 }
 .sidebar ul li.active>a {
     color: #406495;
-    padding-left: 2px;
-    padding-bottom: 2px;
-    border-left: 0px;
+    margin: -3px 4px 0px 4px;
+    padding: 2px 2px 2px 0px;
+    /*padding-left: 2px;
+    padding-bottom: 2px;*/
     border: 1px solid #406495;
     background: #D4DDE9;
 }
