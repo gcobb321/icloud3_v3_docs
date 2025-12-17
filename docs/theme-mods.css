@@ -58,11 +58,11 @@ body{
     white-space: normal;
     margin: 4px;
     padding-left: 2px;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
 }
 .sidebar ul li a:hover {
     font-style: normal;
-    border: 1px solid #ffaf1a;
+    /*border: 1px solid #ffaf1a;*/
     background-color: #ffedcc;
     text-decoration: none;
 }
@@ -70,13 +70,13 @@ body{
     color: #406495;
     padding-left: 2px;
     padding-bottom: 2px;
-    border: 1px solid #406495;
+    /*border: 1px solid #406495;*/
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
     line-height: 1.1em;
     padding-left: 2px;
-    border-top: 1px solid #33A9F4;
+    /*border-top: 1px solid #33A9F4;*/
 }
 .sidebar-version-date {
     font-family: Arial;
