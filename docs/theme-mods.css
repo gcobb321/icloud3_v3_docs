@@ -48,8 +48,8 @@ body{
     color: #047EEE;
 }
 .sidebar ul li a {
-    font-size: 14px;
-    line-height: 1.1em;
+    font-size: 12px;
+    line-height: 1em;
     word-wrap: break-word;
     white-space: normal;
     padding-left: 2px;
