@@ -52,15 +52,16 @@ body{
     margin: 4px 0;
 }
 .sidebar ul li a {
-    font-size: 12px;
-    line-height: 1.2em;
+    font-size: 13px;
+    line-height: 1.1em;
     word-wrap: break-word;
     white-space: normal;
     margin: 4px;
     padding: 2px 2px 2px 0px;
     /*border: 1px solid transparent;*/
 }
-.sidebar ul li a:hover {
+.xsidebar ul li a:hover {}
+.sidebar ul li.hover {
     font-style: normal;
     /*border: 1px solid #ffaf1a;*/
     background-color: #ffedcc;
@@ -74,7 +75,7 @@ body{
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
-    line-height: 1.2em;
+    line-height: 1.1em;
     padding-left: 2px;
     /*border-top: 1px solid #33A9F4;*/
 }
