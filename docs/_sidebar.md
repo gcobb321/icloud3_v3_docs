@@ -39,11 +39,12 @@
 
 <u>**Configure Operational Parameters**</u>
 - [ •  Away Time Zone](chapters/5_away-time-zone.md)
-- [ •  Display Text As](chapters/5_display-text-as.md)
-- [ •  Field Formats](chapters/5_field-formats.md)
+- [ •  Display Settings & Other Parameters](chapters/5_display_settings_parms.md)
+-  [ •  Display Text As](chapters/5_display-text-as.md)
 - [ •  Maintenance Tools](chapters/5_tools.md)
 - [ •  Sensors](chapters/5_sensors.md)
 - [ •  Special Zones](chapters/5_special-zones.md)
+-  [ •  Tracking Parameters](chapters/5_tracking_parms.md)
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
 
  
