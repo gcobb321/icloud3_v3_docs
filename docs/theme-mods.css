@@ -60,8 +60,8 @@ body{
     padding: 2px 2px 2px 0px;
     /*border: 1px solid transparent;*/
 }
-.xsidebar ul li a:hover {}
-.sidebar ul li.hover>a {
+.xsidebar ul li.hover>a {}
+.sidebar ul li a:hover {
     font-style: normal;
     /*border: 1px solid #ffaf1a;*/
     /*background-color: #ffedcc;*/
