@@ -58,9 +58,8 @@ body{
     white-space: normal;
     margin: 4px;
     padding: 2px 2px 2px 0px;
-    /*border: 1px solid transparent;*/
+    border: 1px solid transparent;
 }
-.xsidebar ul li.hover>a {}
 .sidebar ul li a:hover {
     font-style: normal;
     border: 1px solid #ffaf1a;
