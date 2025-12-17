@@ -58,7 +58,7 @@ body{
     white-space: normal;
     margin: 4px;
     padding: 2px 2px 2px 0px;
-    border: 1px solid transparent;
+    border: 1px solid red;  /*transparent;*/
 }
 .sidebar ul li a:hover {
     font-style: normal;
