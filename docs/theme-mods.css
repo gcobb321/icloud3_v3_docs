@@ -45,6 +45,7 @@ body{
 }
 .sidebar p {
     margin: 0 0 0 10px;
+    padding: 1px 0 1px 0;
     color: #047EEE;
 }
 
@@ -74,7 +75,7 @@ body{
     margin: 4px 0;
 }
 .sidebar .sidebar-nav {
-    line-height: 1.2em;
+    line-height: 1.3em;
     padding-left: 2px;
     border-top: 1px solid #33A9F4;
 }
