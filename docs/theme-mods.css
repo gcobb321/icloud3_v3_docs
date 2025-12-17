@@ -53,11 +53,11 @@ body{
 }
 .sidebar ul li a {
     font-size: 12px;
-    line-height: 1em;
+    line-height: 1.2em;
     word-wrap: break-word;
     white-space: normal;
     margin: 4px;
-    padding-left: 2px;
+    padding: 2px 2px 2px 0px;
     /*border: 1px solid transparent;*/
 }
 .sidebar ul li a:hover {
@@ -74,7 +74,7 @@ body{
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
-    line-height: 1.1em;
+    line-height: 1.2em;
     padding-left: 2px;
     /*border-top: 1px solid #33A9F4;*/
 }
