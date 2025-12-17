@@ -38,7 +38,7 @@ ul.accordion-wrapper > li > p:first-of-type {
 /* Unselected item separator line */
 ul.accordion-wrapper > li {
   border-top: 1px transparent rgba(0, 0, 0, 0.0);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0);
   border-left: 1px solid rgba(0, 0, 0, 0.0);
   border-right: 1px solid rgba(0, 0, 0, 0.0);
   /*border: 1px solid rgba(0, 0, 0, 0.1);*/
