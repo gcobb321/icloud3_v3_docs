@@ -69,13 +69,13 @@ body{
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
-    line-height: 1.1em;
+    line-height: 1em;
     padding-left: 2px;
     border-top: 1px solid #33A9F4;
 }
 .sidebar-version-date {
     font-family: Arial;
-    font-size: 13px;
+    font-size: 12px;
     color: darkred;
     text-align: center;
     border-bottom: solid darkred 1px;
