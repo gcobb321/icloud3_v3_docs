@@ -63,7 +63,7 @@ body{
 .xsidebar ul li.hover>a {}
 .sidebar ul li a:hover {
     font-style: normal;
-    /*border: 1px solid #ffaf1a;*/
+    border: 1px solid #ffaf1a;
     /*background-color: #ffedcc;*/
     background:  #ffedcc;
     text-decoration: none;
@@ -73,7 +73,7 @@ body{
     padding-left: 2px;
     padding-bottom: 2px;
     border-left: 0px;
-    /*border: 1px solid #406495;*/
+    border: 1px solid #406495;
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
