@@ -29,22 +29,15 @@ ul.accordion-wrapper > li > p:first-of-type {
   padding: 5px 10px 8px 10px;
   font-weight: normal;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.0);*/
   /*border: 1px solid #ffaf1a;*/
 }
-ul.accordion-wrapper > li > p:last-of-type {
-  position: relative;
-  margin: 0;
-  padding: 5px 10px 8px 10px;
-  font-weight: normal;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
-  /*border: 1px solid #ffaf1a;*/
-}
+
 /* Unselected item separator line */
 ul.accordion-wrapper > li {
-  border-top: 1px transparent rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+  border-top: 1px transparent rgba(0, 0, 0, 0.01);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.0);
   /*border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
