@@ -34,7 +34,7 @@
 
   
 
-+ I can not enter the code right now, the alert was displayed on another device,  I forgot the code, I lost the code +
++ I do not know the code, I can not enter the code right now, the alert was displayed on another device +
 
   The Authenticate Apple Account Signin message will continue to appear until the code is entered. Although, Apple will continue to provide location information for a while, it  will eventually stop iCloud3 from accessing your iCloud account until it is entered.
 

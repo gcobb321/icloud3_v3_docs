@@ -32,19 +32,29 @@ ul.accordion-wrapper > li > p:first-of-type {
   border-bottom: 1px solid rgba(0, 0, 0, 0.0);
   /*border: 1px solid #ffaf1a;*/
 }
-
-/* Hovered over unselected item text area */
-ul.accordion-wrapper > li:hover > p:first-of-type {
-  background-color: #ffedcc;
+ul.accordion-wrapper > li > p:last-of-type {
+  position: relative;
+  margin: 0;
+  padding: 5px 10px 8px 10px;
+  font-weight: normal;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
   /*border: 1px solid #ffaf1a;*/
 }
-
 /* Unselected item separator line */
 ul.accordion-wrapper > li {
   border-top: 1px transparent rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.0);
   /*border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
+
+/* Hovered over unselected item text area */
+ul.accordion-wrapper > li:hover > p:first-of-type {
+  background-color: #ffedcc;
+  border: 1px solid #ffaf1a;
+}
+
+
 
 
 /*-----------------------------*/
