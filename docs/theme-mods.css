@@ -52,6 +52,7 @@ body{
     line-height: 1em;
     word-wrap: break-word;
     white-space: normal;
+    margin: 4px;
     padding-left: 2px;
     border: 1px solid transparent;
 }
@@ -69,7 +70,7 @@ body{
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
-    line-height: 1em;
+    line-height: 1.2em;
     padding-left: 2px;
     border-top: 1px solid #33A9F4;
 }
@@ -125,23 +126,23 @@ body{
 }
 
 .markdown-section ol {
-    line-height: 1.3rem;
-    word-spacing: .05rem;
+    line-height: 1.2rem;
+    word-spacing: .15rem;
     margin-top: .2rem;
     padding-left: 1.5rem;
     vertical-align: top;
 }
 .markdown-section ul {
-    line-height: 1rem;
-    word-spacing: .05rem;
+    line-height: 1.2rem;
+    word-spacing: .15rem;
     margin-top: .15rem;
     padding-left: 1.5rem;
     vertical-align: top;
 }
 
 .markdown-section p {
-    line-height: 1rem;
-    word-spacing: .05rem;
+    line-height: 1.2rem;
+    word-spacing: .15rem;
     margin: .75rem 0 .15em 0;
 }
 .markdown-section ol li p {
@@ -196,13 +197,13 @@ body{
 /* FAQ Drop Down text */
 .markdown-section details {
     font-weight: 450;
-    line-height: 1.5em;
+    line-height: 1.2em;
     padding: 0px 0px 5px 22px;
 }
 .markdown-section details > summary {
     /*list-style-type: '▷';*/
     font-weight: 600;
-    line-height: 1.5em;
+    line-height: 1.2em;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px -12px;
     word-spacing: .05rem;
@@ -212,7 +213,7 @@ body{
     /*list-style-type: '▽';*/
     padding: 0px 0px 5px 0px;
     margin: 0px 0px 0px -12px;
-    line-height: 1.5em;
+    line-height: 1.2em;
     color: #646bd4;
     background-color: #ffffe6;
     font-weight: 600;
