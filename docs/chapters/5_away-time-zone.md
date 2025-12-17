@@ -6,9 +6,11 @@ The time displayed in the Event Log and Sensors show the time an event took plac
 
 The following fields are available:
 
-- **Devices in Away Time Zone #1 and #2** - Select the devices that are away
+- **Devices in Away Time Zone #1 and #2** - The devices that are away
 
-- **Time & Time Zone Adjustment at Current Location #1 & #2** - Select the time at your current location 
+- **Time & Time Zone Adjustment at Current Location #1 & #2** - The time at your current location 
+
+
 
 
 

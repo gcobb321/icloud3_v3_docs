@@ -16,4 +16,6 @@ This screen is used to configure:
 
 
 
+
+
 ![](../images/special-zones.png)

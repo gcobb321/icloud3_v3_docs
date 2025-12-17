@@ -50,6 +50,9 @@ The sensors are grouped into the following categories:
 
 - **Excluded sensors** -  Sensors that will not be created when iCloud3 starts
 
-  
+
+
+
+
 
 ![](../images/sensors.png)

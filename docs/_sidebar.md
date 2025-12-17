@@ -47,7 +47,7 @@
 -  [ •  Tracking Parameters](chapters/5_tracking_parms.md)
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
 
- 
+
 ------
 - [**User Guide Index**](chapters/6-index.md)
 

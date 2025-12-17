@@ -16,4 +16,6 @@ The following fields are available:
 - **History Database** - Enable/Disable using the Waze History Database
 - **History Max Distance** - The database is most useful for regular travel routes. It does not make sense to fill up the database with data that will never be used again. Do not store Waze data in the database for locations greater than this distance. 
 
+
+
 ![](../images/waze.png)
