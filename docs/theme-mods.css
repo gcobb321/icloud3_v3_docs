@@ -48,7 +48,9 @@ body{
     padding: 1px 0 1px 0;
     color: #047EEE;
 }
-
+.sidebar li {
+    margin: 4px 0;
+}
 .sidebar ul li a {
     font-size: 12px;
     line-height: 1em;
@@ -71,11 +73,8 @@ body{
     border: 1px solid #406495;
     background: #D4DDE9;
 }
-.sidebar li {
-    margin: 4px 0;
-}
 .sidebar .sidebar-nav {
-    line-height: 1.3em;
+    line-height: 1em;
     padding-left: 2px;
     border-top: 1px solid #33A9F4;
 }
