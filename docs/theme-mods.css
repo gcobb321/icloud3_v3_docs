@@ -4,7 +4,7 @@
 -->
 
 body{
-    font-size: 13px;
+    font-size: 14px;
 }
 .content {
    /*#padding-top: 10px;
@@ -30,7 +30,7 @@ body{
 }
 
 .sidebar {
-    /*font-size: 14px;*/
+    font-size: 14px;
     background: #F6F9FB;
     color: #005CB9;
     padding: 02px 0 0 0;
@@ -53,7 +53,7 @@ body{
 }
 .sidebar ul li a {
     font-size: 14px;
-    line-height: 1.1em;
+    line-height: 1em;
     word-wrap: break-word;
     white-space: normal;
     margin: 4px;
@@ -64,18 +64,20 @@ body{
 .sidebar ul li.hover>a {
     font-style: normal;
     /*border: 1px solid #ffaf1a;*/
-    background-color: #ffedcc;
+    /*background-color: #ffedcc;*/
+    background:  #ffedcc;
     text-decoration: none;
 }
 .sidebar ul li.active>a {
     color: #406495;
     padding-left: 2px;
     padding-bottom: 2px;
+    border-left: 0px;
     /*border: 1px solid #406495;*/
     background: #D4DDE9;
 }
 .sidebar .sidebar-nav {
-    line-height: 1.1em;
+    line-height: 1em;
     padding-left: 2px;
     /*border-top: 1px solid #33A9F4;*/
 }
