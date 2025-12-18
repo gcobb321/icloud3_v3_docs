@@ -33,8 +33,8 @@
               e.target.parentElement.classList.remove('active');
               //Change arrow
               let arrow= e.target.childNodes.item(1).classList;
-              //arrow.remove("down");
-              //arrow.add("right");
+              arrow.remove("down");
+              arrow.add("right");
               arrow.textContent = '+'
             } else {
               document.querySelectorAll("li").forEach(function (_el) {
@@ -50,15 +50,15 @@
               e.target.parentElement.classList.add('active')
               //Change arrow
               let arrow=e.target.childNodes.item(1).classList
-              //arrow.remove("right");
-              //arrow.add("down");
+              arrow.remove("right");
+              arrow.add("down");
               arrow.textContent = '-'
             }
           })
 
           element.firstChild.textContent = '\u2022 '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
 
-          //Add arrows
+          //Add arrows \u1F53A = blue diamond
           let arrow=document.createElement("i")
           //if (indexAccordionItemIndex === 0) {
           //  element.classList.add("active");
@@ -67,8 +67,9 @@
           //else{
           //  arrow.classList.add("arrow","right")
           //}
-          //arrow.classList.add("arrow","right")
+          arrow.classList.add("arrow","right")
           arrow.textContent = '+'
+          //arrow.classList.add("arrow")
           let p=element.children.item(0);
           p.appendChild(arrow)
 
