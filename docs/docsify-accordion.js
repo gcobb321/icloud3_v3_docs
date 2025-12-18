@@ -66,7 +66,6 @@
           //  arrow.classList.add("arrow","right")
           //}
           arrow.classList.add("arrow","right")
-          /*arrow.textContent = '\u25B6'*/
           let p=element.children.item(0);
           p.appendChild(arrow)
 
