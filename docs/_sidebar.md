@@ -55,8 +55,8 @@
 - [ •  Service Calls](chapters/7.4-service-calls.md)
 
 <u>**Help**</u>
- [ •  Frequently Asked Questions](chapters/3_freq-asked-questions.md)
- [ •  Configuration and Setup Issues](chapters/8.2-configuration-setup-issues.md)
+- [ •  Frequently Asked Questions](chapters/3_freq-asked-questions.md)
+- [ •  Configuration and Setup Issues](chapters/8.2-configuration-setup-issues.md)
 - [ •  Tracking Issues](chapters/8.3-tracking-issues.md)
 - [ •  Troubleshooting Tools](chapters/8.4-troubleshooting-tools.md)
 
