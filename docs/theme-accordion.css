@@ -143,9 +143,9 @@ ul.accordion-wrapper > li > .accordion-content-container {
   float: right;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  margin: -2px 0px 0px 0px
+  width: 18px;
+  height: 18px;
+  margin: -2px 0px 0px 0px;
   border: 1px solid black;
   transition: transform 0.3s ease; /* Smooth rotation */
 }
