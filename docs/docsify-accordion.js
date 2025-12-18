@@ -53,8 +53,8 @@
             }
           })
 
-          //  \u1F53A = blue diamond, \u2022=dot
-          element.firstChild.textContent = '\u1F53A '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
+          // \u2022=dot
+          element.firstChild.textContent = '\u2022 '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
 
           //Add arrows
           let arrow=document.createElement("i")
@@ -66,7 +66,7 @@
           //  arrow.classList.add("arrow","right")
           //}
           arrow.classList.add("arrow","right")
-          arrow.textContent = '\u25B6'
+          arrow.textContent = '>'
           let p=element.children.item(0);
           p.appendChild(arrow)
 
