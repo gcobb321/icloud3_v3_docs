@@ -133,20 +133,21 @@ ul.accordion-wrapper > li > .accordion-content-container {
   border-width: 0 3px 3px 0;*/
   font-size: 13px;
   font-weight: bold;
-  display: inline-block;
-  padding: 4px;
-  float:right;
+  color: red;
+  /*display: inline-block;
+  padding: 4px;*/
+  float: right;
   /*margin-top: 1%;*/
 }
 
 /* Arrow On right side Off item line (>) */
-/*.right {
+.right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}*/
+}
 
 /* Arrow On right side Off item line (v) */
-/*.down {
+.down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}*/
+}
