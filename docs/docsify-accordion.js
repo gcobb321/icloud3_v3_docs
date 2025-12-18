@@ -35,7 +35,6 @@
               let arrow= e.target.childNodes.item(1).classList;
               arrow.remove("down");
               arrow.add("right");
-              arrow.textContent = '+'
             } else {
               document.querySelectorAll("li").forEach(function (_el) {
                 if (_el.classList.contains("accordion")) {
@@ -44,7 +43,6 @@
                   let arrow = _el.children.item(0).children.item(0).classList;
                   arrow.remove("down");
                   arrow.add("right");
-                  arrow.textContent = '+'
                 }
               });
               e.target.parentElement.classList.add('active')
@@ -68,8 +66,7 @@
           //  arrow.classList.add("arrow","right")
           //}
           arrow.classList.add("arrow","right")
-          arrow.textContent = '+'
-          //arrow.classList.add("arrow")
+          arrow.textContent = '/u25B6'
           let p=element.children.item(0);
           p.appendChild(arrow)
 
