@@ -134,7 +134,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
   font-size: 13px;
   font-weight: bold;
   color: black;
-  /*display: inline-block;
+  display: inline-bloc;
   padding: 4px;*/
   float: right;
   /*margin-top: 1%;*/
@@ -142,12 +142,12 @@ ul.accordion-wrapper > li > .accordion-content-container {
 
 /* Arrow On right side Off item line (>) */
 .right {
-  transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 /* Arrow On right side Off item line (v) */
 .down {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
