@@ -127,8 +127,40 @@ ul.accordion-wrapper > li > .accordion-content-container {
 /*------------------------------*/
 /* RIGHT SIDE ARROW DEFINITIONS */
 
-/* Arrow On right side Off item line */
+/* Container styling */
+.line-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* The Box at the end of the line */
 .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+/* Insert the Black Right-Pointing Triangle */
+.arrow::after {
+  content: '\25B6'; 
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* When the JavaScript adds the 'open' class, rotate the entire box */
+.line-container.open .icon-box {
+  transform: rotate(90deg);
+}
+/* Arrow On right side Off item line */
+.xarrow {
   border: solid red;
   border-width: 19px 0px 10px 0px;
   font-size: 13px;
