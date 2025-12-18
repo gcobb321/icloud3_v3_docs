@@ -66,7 +66,7 @@
           //  arrow.classList.add("arrow","right")
           //}
           arrow.classList.add("arrow","right")
-          arrow.textContent = \u25B7
+          arrow.textContent = '\u25B7'
           let p=element.children.item(0);
           p.appendChild(arrow)
 
