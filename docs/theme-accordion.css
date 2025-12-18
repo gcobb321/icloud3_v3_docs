@@ -143,8 +143,8 @@ ul.accordion-wrapper > li > .accordion-content-container {
   float: right;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border: 1px solid black;
   transition: transform 0.3s ease; /* Smooth rotation */
 }
@@ -181,7 +181,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
 }
 
 /* Arrow On right side Off item line (v) */
-.xdown {
+.down {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
