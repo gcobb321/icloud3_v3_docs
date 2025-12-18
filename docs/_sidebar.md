@@ -37,9 +37,9 @@
 - [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
 - [ •  Waze Map Card Display](chapters/4_waze-map-card.md)
 
-<u>**Configure Operational Parameters**</u>
+<u>**Configure Operational  Settings**</u>
 - [ •  Away Time Zone](chapters/5_away-time-zone.md)
-- [ •  Display Settings & Other Parms](chapters/5_display_settings_parms.md)
+- [ •  Display & Other Settings](chapters/5_display_settings_parms.md)
 -  [ •  Display Text As](chapters/5_display-text-as.md)
 - [ •  Maintenance Tools](chapters/5_tools.md)
 - [ •  Sensors](chapters/5_sensors.md)

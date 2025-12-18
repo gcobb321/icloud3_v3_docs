@@ -49,7 +49,7 @@
               //Change arrow
               let arrow=e.target.childNodes.item(1).classList
               arrow.remove("right");
-              arrow.add("down");'
+              arrow.add("down");
             }
           })
 
