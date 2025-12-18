@@ -57,7 +57,7 @@
           element.firstChild.textContent = '\u2022 '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
 
           //Add arrows
-          let arrow=document.createElement("i")
+          let arrow=document.createElement("p")
           //if (indexAccordionItemIndex === 0) {
           //  element.classList.add("active");
           //  arrow.classList.add("arrow","down")

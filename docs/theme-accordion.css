@@ -153,11 +153,12 @@ ul.accordion-wrapper > li > .accordion-content-container {
 .arrow::after {
   content: '\25B6'; 
   font-size: 12px;
+  font-style: normal;
   display: inline-block;
 }
 
 /* When the JavaScript adds the 'open' class, rotate the entire box */
-.accordion.open .arrow {
+.xaccordion.open .xarrow {
   transform: rotate(90deg);
 }
 /* Arrow On right side Off item line */
