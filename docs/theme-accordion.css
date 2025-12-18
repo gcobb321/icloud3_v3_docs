@@ -127,17 +127,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
 /*------------------------------*/
 /* RIGHT SIDE ARROW DEFINITIONS */
 
-/* Container styling */
-.line-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-/* The Box at the end of the line */
+/* The Box with the Arrow at the end of the line */
 .arrow {
   display: flex;
   float: right;
@@ -145,7 +135,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
   justify-content: center;
   width: 18px;
   height: 18px;
-  margin: -2px 0px 0px 0px;
+  margin: -2px 0px 0px 10px;
   border: 1px solid black;
   transition: transform 0.3s ease; /* Smooth rotation */
 }
@@ -158,28 +148,8 @@ ul.accordion-wrapper > li > .accordion-content-container {
   display: inline-block;
 }
 
-/* When the JavaScript adds the 'open' class, rotate the entire box */
-.xaccordion.open .xarrow {
-  transform: rotate(90deg);
-}
-/* Arrow On right side Off item line */
-.xarrow {
-  border: solid red;
-  border-width: 19px 0px 10px 0px;
-  font-size: 13px;
-  font-weight: bold;
-  color: black;
-  display: inline-bloc;
-  /*padding: 4px;*/
-  float: right;
-  /*margin-top: 1%;*/
-}
-.right{}
 /* Arrow On right side Off item line (>) */
-.xright {
-  transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-}
+.right{}
 
 /* Arrow On right side Off item line (v) */
 .down {
