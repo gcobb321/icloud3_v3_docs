@@ -31,9 +31,9 @@
 - [ •  iCloud3 Devices](chapters/3_devices.md)
 
 <u>**Configure Operational  Settings**</u>
-- [ •  Parameter Reference](chapters/5_parameter-reference.md)
+- [ •  Parameter Field Reference](chapters/5_parameter-reference.md)
 - [ •  Away Time Zone](chapters/5_away-time-zone.md)
-- [ •  Display & Other Settings](chapters/5_display_settings_parms.md)
+- [ •  Display Settings & Other Parameters](chapters/5_display_settings_parms.md)
 -  [ •  Display Text As](chapters/5_display-text-as.md)
 - [ •  Maintenance Tools](chapters/5_tools.md)
 - [ •  Sensors](chapters/5_sensors.md)
