@@ -129,25 +129,25 @@ ul.accordion-wrapper > li > .accordion-content-container {
 
 /* Arrow On right side Off item line */
 .arrow {
-  /*border: solid black;
-  border-width: 0 3px 3px 0;*/
+  border: solid red;
+  border-width: 19px 0px 10px 0px;
   font-size: 13px;
   font-weight: bold;
   color: black;
   display: inline-bloc;
-  padding: 4px;*/
+  /*padding: 4px;*/
   float: right;
   /*margin-top: 1%;*/
 }
 
 /* Arrow On right side Off item line (>) */
 .right {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
 }
 
 /* Arrow On right side Off item line (v) */
 .down {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
