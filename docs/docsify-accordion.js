@@ -49,14 +49,14 @@
               //Change arrow
               let arrow=e.target.childNodes.item(1).classList
               arrow.remove("right");
-              arrow.add("down");
-              arrow.textContent = '-'
+              arrow.add("down");'
             }
           })
 
-          element.firstChild.textContent = '\u2022 '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
+          //  \u1F53A = blue diamond, \u2022=dot
+          element.firstChild.textContent = '\u1F53A '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
 
-          //Add arrows \u1F53A = blue diamond
+          //Add arrows
           let arrow=document.createElement("i")
           //if (indexAccordionItemIndex === 0) {
           //  element.classList.add("active");
@@ -66,7 +66,7 @@
           //  arrow.classList.add("arrow","right")
           //}
           arrow.classList.add("arrow","right")
-          arrow.textContent = '/u25B6'
+          arrow.textContent = '\u25B6'
           let p=element.children.item(0);
           p.appendChild(arrow)
 
