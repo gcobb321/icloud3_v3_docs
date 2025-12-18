@@ -56,7 +56,7 @@
           element.firstChild.textContent = '\u2022 '+element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
 
           //Add arrows
-          let arrow=document.createElement("i")
+          //let arrow=document.createElement("i")
           //if (indexAccordionItemIndex === 0) {
           //  element.classList.add("active");
           //  arrow.classList.add("arrow","down")
@@ -64,9 +64,9 @@
           //else{
           //  arrow.classList.add("arrow","right")
           //}
-          arrow.classList.add("arrow","right")
-          let p=element.children.item(0);
-          p.appendChild(arrow)
+          //arrow.classList.add("arrow","right")
+          //let p=element.children.item(0);
+          //p.appendChild(arrow)
 
           indexAccordionItemIndex++;
         }
