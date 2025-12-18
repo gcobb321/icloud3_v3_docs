@@ -140,6 +140,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
 /* The Box at the end of the line */
 .arrow {
   display: flex;
+  float: right;
   align-items: center;
   justify-content: center;
   width: 24px;
@@ -156,7 +157,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
 }
 
 /* When the JavaScript adds the 'open' class, rotate the entire box */
-.line-container.open .icon-box {
+.accordion.open .arrow {
   transform: rotate(90deg);
 }
 /* Arrow On right side Off item line */
@@ -171,15 +172,15 @@ ul.accordion-wrapper > li > .accordion-content-container {
   float: right;
   /*margin-top: 1%;*/
 }
-
+.right{}
 /* Arrow On right side Off item line (>) */
-.right {
+.xright {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
 }
 
 /* Arrow On right side Off item line (v) */
-.down {
+.xdown {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
