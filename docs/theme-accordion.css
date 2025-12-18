@@ -148,6 +148,6 @@ ul.accordion-wrapper > li > .accordion-content-container {
 
 /* Arrow On right side Off item line (v) */
 .down {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
