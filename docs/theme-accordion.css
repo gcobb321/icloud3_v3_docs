@@ -142,7 +142,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
 
 /* Insert the Black Right-Pointing Triangle */
 .arrow::after {
-  content: '\25B7'; 
+  content: '\25BA'; 
   font-size: 12px;
   font-style: normal;
   display: inline-block;
