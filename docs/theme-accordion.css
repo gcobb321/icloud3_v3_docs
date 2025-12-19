@@ -135,7 +135,7 @@ ul.accordion-wrapper > li > .accordion-content-container {
   justify-content: center;
   width: 18px;
   height: 18px;
-  margin: 1px 0px 0px 10px;
+  margin: 2px 0px 0px 11px;
   border: 1px solid black;
   transition: transform 0.3s ease; /* Smooth rotation */
 }
