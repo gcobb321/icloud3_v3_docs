@@ -45,8 +45,8 @@
 <u>**Advanced Features**</u>
 - [ •  iCloud3 Alerts Sensor](chapters/4_alerts-sensor.md)
 - [ •  Track From Multiple Zones](chapters/4_track-from-zone.md)
-- [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
 - [ •  Waze Map Card Display](chapters/4_waze-map-card.md)
+- [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
 
 <u>**Other Topics**</u>
 - [ •  Startup & Device Alerts](chapters/7.6-alerts.md)
