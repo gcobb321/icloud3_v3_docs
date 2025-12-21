@@ -22,7 +22,6 @@
 
   HA provides a Lovelace map card that will show the location track of your iDevices. Refer to the HA Map documentation on setting it up. Add each Person (_person.gary_) or iDevice (<em>devicetracker.gary_iphone</em>)  you want to track on the Map configuration screen in the Entity field.
   
-+ 
 
 
 -----
@@ -53,7 +52,7 @@
 	      command: locate
 	      device_name: gary_iphone
 	   mode: single
-
+	```
 
 
 
@@ -62,26 +61,24 @@
   
   Not changing to Away when you leave a zone means iCloud3 is not getting the zone exit trigger from the Mobile app. Check the following:
   
-    - Verify the Mobile App device_tracker entity name has not changed. 
+  - Verify the Mobile App device_tracker entity name has not changed. 
   
-    - Go to *Configuration &gt; iCloud3 Devices &gt; Select device&gt; Mobile App device_tracker entity* and verify the tracked device has a valid Mobile App device_tracker entity assigned.
+  - Go to *Configuration &gt; iCloud3 Devices &gt; Select device&gt; Mobile App device_tracker entity* and verify the tracked device has a valid Mobile App device_tracker entity assigned.
   
-    - The HA mobile app integration is not installed. 
+  - The HA mobile app integration is not installed. 
   
-    - Go to *Installing and Configuring iCloud3 &gt; Step #2 - Install the Mobile App on your iPhone or iPad* for more information.
+  - Go to *Installing and Configuring iCloud3 &gt; Step #2 - Install the Mobile App on your iPhone or iPad* for more information.
 
 
 
 
-
-
-  - The Mobile app device_tracker entity location is not being updated by the Mobile app +
++ The Mobile app device_tracker entity location is not being updated by the Mobile app +
 
     The Mobile App logs events as they take place, including location changes and zone enter/exit activity. On the device, open the Mobile App. Select *HA Settings &gt; Companion App &gt; Debugging*. Then select *Event Log* to see what events the Mobile App responded to or *Location History* to display a map showing the devices location at various times.
     
-    - Check the device_tracker state value to see if is being updated. Go to *Developer Tools &gt; States &gt; device_tracker entity* and see if the zone name is displayed. The value is *not_home* when you are not in a zone and the zone>s name when you are in a zone.
-    - Verify the Mobile App is sharing location information. Go to *Installing and Configuring iCloud3 &gt; Step #2 - Install the Mobile App on your iPhone or iPad* for screenshots of the correct settings.
-    - Tracking Monitors can be displayed in the Event Log that show update activity. Select *Event Log &gt; Actions &gt; Show/Hide Tracking Monitors*. Look at the state change and trigger change values and times they changed. See *Debugging with Tracking Monitors* below.
+  - Check the device_tracker state value to see if is being updated. Go to *Developer Tools &gt; States &gt; device_tracker entity* and see if the zone name is displayed. The value is *not_home* when you are not in a zone and the zone>s name when you are in a zone.
+  - erify the Mobile App is sharing location information. Go to *Installing and Configuring iCloud3 &gt; Step #2 - Install the Mobile App on your iPhone or iPad* for screenshots of the correct settings.
+  - Tracking Monitors can be displayed in the Event Log that show update activity. Select *Event Log &gt; Actions &gt; Show/Hide Tracking Monitors*. Look at the state change and trigger change values and times they changed. See *Debugging with Tracking Monitors* below.
 
 
 
