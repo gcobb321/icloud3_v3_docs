@@ -32,15 +32,12 @@
   My wife and I were at home, ran a short trip (5-6km) and returned. My iPhone has the Mobile App and my wife's does not (or she wore her Watch). My iPhone did not exit the Home zone and no activity was recorded until I returned Home. Her iPhone/Watch didn't either. Other HA devices did record when I left. 
   
   What happened? What can I do?
-
   - The Mobile App on your phone did not issue an Exit Trigger that took your iPhone out of the Home Zone and you returned before the next update time was reached. 
   - Her iPhone/Watch without the Mobile App next update time had not been reached either and you returned Home before then.
 
-
   You will never know why events work fine most of the time but fail occasionally. It could be the Mobile App on your iPhone was asleep and did not wake up to issue an Exit Trigger or it was not running, the cell signal was poor at then time, the location was old or the gps accuracy was poor, etc. Also, the iDevice without the Mobile App left and returned before the next update time was reached.
-  
-  There are several things you can do:
 
+  There are several things you can do:
   - Reduce the inzone interval time for devices not using the Mobile App. It is best not to go below 10-minutes or the interval will approach the >old location> threshold (usually about 3-minutes). A good location could be rejected, a bad location could be used when it shouldn>t or an old location will be within the >old threshold> and used again when a new location should be requested.
   - See if there is another way to identify when the iPhone leaves home. It might be a camera, the garage door opening/closing, the iPhone disconnects from the network, etc. When this happens, and it's iCloud3 device_tracker state still shows Home or the [devicename]_zone_fname entity is still Home, issue an iCloud3 service call to locate the iPhone. This will then update it's current location and take it out of the Home zone.  An example of a location script is shown below.
 
