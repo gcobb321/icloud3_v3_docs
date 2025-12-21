@@ -113,23 +113,23 @@ body{
 }
 # Heading colors = themeColor in index.html
 .markdown-section h1 {
-    font-size: 20px;
+    font-size: 1.75rem;
     margin: 30px 0 10px 0;
 }
 .markdown-section h2 {
-    font-size: 19px;
+    font-size: 1.5rem;
     margin: 30px 0 10px 0;
 }
 .markdown-section h3 {
-    font-size: 18px;
+    font-size: 1.25rem;
     margin: 30px 0 10px 0;
 }
 .markdown-section h4 {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 30px 0 10px 0;
 }
 .markdown-section h5 {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 30px 0 10px 0;
 }
 .markdown-section h6 {
