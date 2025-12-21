@@ -1,15 +1,3 @@
-<nav>
-  <table style="padding: 10px 0px 5px 20px;">
-    <tr>
-      <td>
-        <a href="https://github.com/gcobb321/icloud3_v3" class="button-base">GitHub</a>
-      </td>
-      <td>
-        <a href="https://github.com/gcobb321/icloud3_v3/releases" class="button-base">Download</a>
-      </td>
-    </tr>
-  </table>
-</nav>
 <a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
 
 ------
@@ -42,8 +30,8 @@
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
 
 <u>**Help**</u>
-- [ •  Configuration and Setup Issues](chapters/6-configuration-setup-issues.md)
-- [ •  Apple Account  Issues](chapters/6-apple-acct-issues.md)
+- [ •  Configuration and Setup Issues](chapters/6_configuration-setup-issues.md)
+- [ •  Apple Account  Issues](chapters/6_apple-acct-issues.md)
 - [ •  Tracking Issues](chapters/6_tracking-issues.md)
 - [ •  Troubleshooting Tools](chapters/6_troubleshooting-tools.md)
 
@@ -64,5 +52,10 @@
 - [**User Guide Index**](chapters/6-index.md)
 
 <u>**Other Topics**</u>
-- [ •   Technical Information](chapters/9.1-tech-info.md)
+-  [ •   Technical Information](chapters/9.1-tech-info.md)
+- [ •  GitHub](https://github.com/gcobb321/icloud3)
+- [ •   GitHub Releases](https://github.com/gcobb321/icloud3/releases)
+- [ •   GitHub Developers](https://github.com/gcobb321/icloud3_v3)
+- [ •   GitHub Developers Releases](https://github.com/gcobb321/icloud3_v3/releases)
+
 
