@@ -27,6 +27,7 @@ ul.accordion-wrapper > li > p:first-of-type {
   position: relative;
   margin: 0;
   padding: 3px 10px 3px 10px;
+  font-size: 12px;
   font-weight: normal;
   border-top: 1px solid rgba(0, 0, 0, 0.0);
   border-bottom: 1px solid rgba(0, 0, 0, 0.0);
@@ -61,6 +62,7 @@ ul.accordion-wrapper > li:hover > p:first-of-type {
 ul.accordion-wrapper > li.active > p:first-of-type {
   background-color: #D4DDE9;
   padding: 3px 10px 3px 8px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -74,6 +76,7 @@ ul.accordion-wrapper > li.active > p:first-of-type {
 /* Selected item display area */
 ul.accordion-wrapper > li > .accordion-content-container {
   display: block;
+  font-size: 12px;
   color: black;
   padding: 3px 10px 3px 15px;
   background: white;
