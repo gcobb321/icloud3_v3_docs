@@ -4,17 +4,17 @@
 -->
 
 body{
-    font-size: 12px;
+    font-size: 13px;
     color: orange;
 }
 .content {
-   /*#padding-top: 10px;
-   #padding-bottom: 10px;*/
+   font-size: 13px;
    padding: 10px 0px;
    margin: 10pm 0px;
    left: 250px;
 }
 .anchor span {
+
     color: #446ca2;
 }
 /*---------------------------------------------------*/
@@ -113,19 +113,23 @@ body{
 }
 # Heading colors = themeColor in index.html
 .markdown-section h1 {
-    margin: 30px 0 10px 0;
-}
-.markdown-section h2 {
-    margin: 30px 0 10px 0;
-}
-.markdown-section h3 {
-    margin: 30px 0 10px 0;
-}
-.markdown-section h4 {
     font-size: 20px;
     margin: 30px 0 10px 0;
 }
+.markdown-section h2 {
+    font-size: 18px;
+    margin: 30px 0 10px 0;
+}
+.markdown-section h3 {
+    font-size: 16px;
+    margin: 30px 0 10px 0;
+}
+.markdown-section h4 {
+    font-size: 13px;
+    margin: 30px 0 10px 0;
+}
 .markdown-section h5 {
+    font-size: 13px;
     margin: 30px 0 10px 0;
 }
 .markdown-section h6 {
