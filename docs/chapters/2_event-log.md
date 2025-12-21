@@ -40,7 +40,7 @@ The icons above the *Actions* drop-down menu list in the top-right are used for 
 
 ------
 
-### Actions
+## Actions
 
 The **Actions** drop-down menu is used to issue commands to:
 
@@ -81,7 +81,7 @@ The **Actions** drop-down menu is used to issue commands to:
 
 
 ------
-### Event Log During Startup
+## Event Log During Startup
 
 When iCloud3 starts,  a number of events take place where it sets up the configuration, zones, support structure, devices and sensors. The results of this process are shown in the Event Log. The information in these startup stages can help identify errors with tracked devices, parameters and actual device data in the Apple iCloud account and associated with the Mobile App.
 
@@ -152,7 +152,7 @@ The *Configure Tracked Devices* stage:
 
 ------
 
-### Setting up the Event Log on a Custom Dashboard
+## Setting up the Event Log on a Custom Dashboard
 
 The Event Log is created by the Dashboard Builder when iCloud3 is installed and when a new iCloud3 Dashboard is created. You can also add the Event Log to a dashboard you created. This can be done by:
 
@@ -250,7 +250,7 @@ Hopefully, the Event Log displayed correctly. If it did not display and *Custom 
 
 ------
 
-### Lovelace Resource Configuration
+## Lovelace Resource Configuration
 
 The Lovelace Resources points to the location of the *icloud3-event-log-card.js* file and must be set up for the Event Log to be displayed.  If a problem occurs setting up the Lovelace Resource automatically, the Event Log (on the right in the above screenshot) will not be displayed and the following will be displayed instead:
 

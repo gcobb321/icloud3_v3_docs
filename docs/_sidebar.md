@@ -41,6 +41,12 @@
 -  [ •  Tracking Parameters](chapters/5_tracking_parms.md)
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
 
+<u>**Help**</u>
+- [ •  Configuration and Setup Issues](chapters/6-configuration-setup-issues.md)
+- [ •  Apple Account  Issues](chapters/6-apple-acct-issues.md)
+- [ •  Tracking Issues](chapters/6_tracking-issues.md)
+- [ •  Troubleshooting Tools](chapters/6_troubleshooting-tools.md)
+
 ------
 <u>**Advanced Features**</u>
 - [ •  iCloud3 Alerts Sensor](chapters/4_alerts-sensor.md)
@@ -49,16 +55,10 @@
 - [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
 
 <u>**Other Topics**</u>
+- [ •  Actions & Service Calls](chapters/7.4-service-calls.md)
+- [ •  Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
 - [ •  Startup & Device Alerts](chapters/7.6-alerts.md)
--  [ •  Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
 -  [ •  Sensor Attributes](chapters/7.3-attributes.md)
-- [ •  Service Calls](chapters/7.4-service-calls.md)
-
-<u>**Help**</u>
-- [ •  Frequently Asked Questions](chapters/3_freq-asked-questions.md)
-- [ •  Configuration and Setup Issues](chapters/8.2-configuration-setup-issues.md)
-- [ •  Tracking Issues](chapters/8.3-tracking-issues.md)
-- [ •  Troubleshooting Tools](chapters/8.4-troubleshooting-tools.md)
 
 ------
 - [**User Guide Index**](chapters/6-index.md)
