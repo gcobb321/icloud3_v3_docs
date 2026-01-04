@@ -30,6 +30,7 @@
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
 
 <u>**Help**</u>
+- [ •  Tools, Logging  and Utilities](chapters/5_tools.md)
 - [ •  Configuration and Setup Issues](chapters/6_configuration-setup-issues.md)
 - [ •  Apple Account  Issues](chapters/6_apple-acct-issues.md)
 - [ •  Tracking Issues](chapters/6_tracking-issues.md)
@@ -57,5 +58,4 @@
 - [ •   GitHub Releases](https://github.com/gcobb321/icloud3/releases)
 - [ •   GitHub Developers](https://github.com/gcobb321/icloud3_v3)
 - [ •   GitHub Developers Releases](https://github.com/gcobb321/icloud3_v3/releases)
-
 
