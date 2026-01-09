@@ -32,7 +32,7 @@
 <u>**Help**</u>
 - [ •  Tools, Logging  and Utilities](chapters/5_tools.md)
 - [ •  Configuration and Setup](chapters/6_configuration-setup-issues.md)
-- [ •  Apple Account, iCloud3 Devices, Sensors](chapters/6_apple-acct-issues.md)
+- [ •  Apple Acct, iCloud3 Devices, Sensors](chapters/6_apple-acct-issues.md)
 - [ •  Tracking Issues](chapters/6_tracking-issues.md)
 - [ •  Troubleshooting Tools](chapters/6_troubleshooting-tools.md)
 
