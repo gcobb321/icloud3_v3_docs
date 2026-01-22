@@ -62,7 +62,7 @@ When you change the password, be sure to change it here. If you do not change it
 
 -----
 
-### The Login Process, What can go wrong and things to do
+## The Login Process, what can go wrong and things to do
 
 When iCloud3 starts, the configuration information is used to log into the Apple Account. The following takes place:
 
@@ -71,7 +71,7 @@ When iCloud3 starts, the configuration information is used to log into the Apple
 3. Apple then sends all of the data for all of the devices in the owners Apple account (the one that was logged into) and the devices in the Family Sharing list. This includes, a request for the 6-digit verification code or hardware key code, the device type, names, location information, internal device-id code, if the account is locked, it's status, etc.
 4. iCloud3 uses this data to tie the Apple device to the iCloud3 device being tracked using a combination of the device names and the internal device-id. This information is listed on the Event Log.
 
-#### Event Log Startup Stage 4 - Apple Account Information
+### Event Log Startup Stage 4 - Apple Account Information
 
 When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
 
@@ -83,9 +83,9 @@ The results are shown in the *Event Log > Stage 4* screens.
 
 ![](../images/evlog-stage-4-notes.png)
 
-#### Errors that can occur when logging into the Apple account
+### Errors may happen when logging into the Apple account
 
-The following are some of the errors that may occur during this process. iCloud3 tries to detect and report them but there are many conditions out of iCloud3's control, including:
+The following are some of the errors that may occur during this process. iCloud3 tries to detect and report them in the *Event Log*. This includes:
 
 1. Internet Connection Errors and Apple being down. This is rare but it does happen.
 
@@ -97,22 +97,31 @@ The following are some of the errors that may occur during this process. iCloud3
 3. The Apple iCloud account returns data for some devices but not for all of them.
    1. Make sure *Location Sharing* is enabled on all of the devices and they can be seen in the *FindMy* app. 
    2. Make sure the Family Sharing list is correct.
+   3. Make sure the Apple account is not waiting for a verification code to be entered.
 
 4. The account gets a Username/Password error logging in.
-   1. Has the password changed but iCloud3 was never updated. 
+   1. Was the password changed in the Apple account but iCloud3 was never updated. 
    2. Check the password using another program.
 
-5. There are multiple devices with the same name - Check the devices in the Apple account and delete old ones you no longer have. When you upgrade an iPhone, the old one is not deleted from the account and iCloud might be track the old one instead of the new one.
+5. There are multiple devices with the same name.
 
-6. The account is locked - Log into the Apple account at www.icloud.com and verify there are no problems accessing all of your devices.
+   1. Check the devices in the Apple account. Delete old ones you no longer have. 
+   2. When you upgrade an iPhone, the old one is not deleted from the account and iCloud might be track the old one instead of the new one.
 
-7. iCloud3 can not find the Apple device in it's configuration file to one in the data Apple sent. Check the *Configure > Update iCloud3 Device* screen and check the Apple iCloud3 Device selection field. 
+6. The account is locked.
+
+   1. Log into the Apple account at www.icloud.com and unlock the account.
+   2. Use the *FindMy* app to show the location of your devices.
+
+7. iCloud3 can not find configured the Apple device in the data Apple sent back. Check the *Configure > Update iCloud3 Device* screen and check the Apple iCloud3 Device selection field. 
    1. Correct any errors that are displayed. 
-   2. Change it to None, Save the change, then select it again and Save again. 
+   2. Change it to *None*, Save the change, then select it again and Save again. 
    3. Delete the iCloud3 device and readd it.
    4. If you are using devices in multiple accounts, make sure the other Apple accounts are not waiting for a verification code to be entered.
 
-8. You get an Error Code 503 (Server Refused PwSRP Request) - Apple keeps track of how many times you try to log into the account is a small amount of time (time=unknown). If there are too many failures, it will refuse the login request and return the 503 error. This may happen when the username/password are valid. There is nothing you can do but wait. After a period of time (time=unknown), Apple will accept the login and continue. iCloud3 identifies when this occurs and will retry the login on a variable delay (10-minutes, then 20-minutes, then 30, 40, 50 and 1-hour).
+8. You get an Error Code 503 (Server Refused PwSRP Request) 
+
+   Apple keeps track of how many times you try to log into the account is a small amount of time (time=unknown). If there are too many failures, it will refuse the login request thinking it is a spam attack and return the 503 error. This may happen when the username/password are valid. There is nothing you can do but wait. After a period of time (time=unknown), Apple will accept the login and continue. iCloud3 identifies when this occurs and will retry the login on a variable delay (10-minutes, then 20-minutes, then 30, 40, 50 and 1-hour).
 
    1. Do not delete and reinstall iCloud3.
 
@@ -123,7 +132,7 @@ The following are some of the errors that may occur during this process. iCloud3
       You will only make it worse and it will take longer for Apple to reset it's timers and counters.
 
 
-#### What to do next to help solve the problem
+### What to do next to help solve the problem
 
 The following steps will help fix your issues:
 
@@ -133,6 +142,7 @@ The following steps will help fix your issues:
    3. Verify each device's name and type to make sure they are correct, there are no duplicates and the correct Apple device is assigned to the correct iCloud3 device.
 2. Check HA for any error messages related to iCloud3 at *HA Settings > System > Logs*.
 3. Check the *FindMy* app.
+4. Review the *Help* section of this User Guide for a more detailed description of some of the errors and things to do.
 
 
 
