@@ -60,6 +60,82 @@ When you change the password, be sure to change it here. If you do not change it
 
 
 
+-----
+
+### The Login Process, What can go wrong and things to do
+
+When iCloud3 starts, the configuration information is used to log into the Apple Account. The following takes place:
+
+1. The Username and password are verified by sending a request to a special Apple URL that returns a status code indicating if they are valid.
+2. Generally, the Apple account is logged into and a *session* is established that links iCloud3 with Apple and the Apple account. iCloud3 then sends a *Trust Token* (stored in the Apple session cookie files) if it has one back to Apple. Apple uses it to verify that it is a valid request and that the *Trust Token* has not expired. If it has, Apple requests the account password, iCloud3 sends it and Apple returns a new *Trust Token* that is used for the next account authentication about 20-minutes later. An account login email is sent to you when the password is used to log into the Apple account. 
+3. Apple then sends all of the data for all of the devices in the owners Apple account (the one that was logged into) and the devices in the Family Sharing list. This includes, a request for the 6-digit verification code or hardware key code, the device type, names, location information, internal device-id code, if the account is locked, it's status, etc.
+4. iCloud3 uses this data to tie the Apple device to the iCloud3 device being tracked using a combination of the device names and the internal device-id. This information is listed on the Event Log.
+
+#### Event Log Startup Stage 4 - Apple Account Information
+
+When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
+
+- Log into the Apple account, establish a *session*, handle the authentication and retrieve the data from Apple for all of the devices (above)
+- Match the Apple device with the iCloud3 device using the Apple Account iCloud Device parameter from the *Update iCloud3 Device* screen
+- Handle any errors that occur.
+
+The results are shown in the *Event Log > Stage 4* screens. 
+
+![](../images/evlog-stage-4-notes.png)
+
+#### Errors that can occur when logging into the Apple account
+
+The following are some of the errors that may occur during this process. iCloud3 tries to detect and report them but there are many conditions out of iCloud3's control, including:
+
+1. Internet Connection Errors and Apple being down. This is rare but it does happen.
+
+2. A data request is sent to Apple but Apple never receives it or does not respond.
+   1. Disable IPv6 on *HA Settings > System > Network*.
+   2. See if you can login with another program.
+   3. You are running in a container or on a virtual machine and it can not connect to Apple or the internet.
+
+3. The Apple iCloud account returns data for some devices but not for all of them.
+   1. Make sure *Location Sharing* is enabled on all of the devices and they can be seen in the *FindMy* app. 
+   2. Make sure the Family Sharing list is correct.
+
+4. The account gets a Username/Password error logging in.
+   1. Has the password changed but iCloud3 was never updated. 
+   2. Check the password using another program.
+
+5. There are multiple devices with the same name - Check the devices in the Apple account and delete old ones you no longer have. When you upgrade an iPhone, the old one is not deleted from the account and iCloud might be track the old one instead of the new one.
+
+6. The account is locked - Log into the Apple account at www.icloud.com and verify there are no problems accessing all of your devices.
+
+7. iCloud3 can not find the Apple device in it's configuration file to one in the data Apple sent. Check the *Configure > Update iCloud3 Device* screen and check the Apple iCloud3 Device selection field. 
+   1. Correct any errors that are displayed. 
+   2. Change it to None, Save the change, then select it again and Save again. 
+   3. Delete the iCloud3 device and readd it.
+   4. If you are using devices in multiple accounts, make sure the other Apple accounts are not waiting for a verification code to be entered.
+
+8. You get an Error Code 503 (Server Refused PwSRP Request) - Apple keeps track of how many times you try to log into the account is a small amount of time (time=unknown). If there are too many failures, it will refuse the login request and return the 503 error. This may happen when the username/password are valid. There is nothing you can do but wait. After a period of time (time=unknown), Apple will accept the login and continue. iCloud3 identifies when this occurs and will retry the login on a variable delay (10-minutes, then 20-minutes, then 30, 40, 50 and 1-hour).
+
+   1. Do not delete and reinstall iCloud3.
+
+   2. Do not delete any Apple session and cookie files on the *Configure > Tools* screen,
+
+   3. Do not try to login again in a short time span. 
+
+      You will only make it worse and it will take longer for Apple to reset it's timers and counters.
+
+
+#### What to do next to help solve the problem
+
+The following steps will help fix your issues:
+
+1. Review the messages and information in the *Event Log*. Go through every line in Stages 3 & 4 to see if it makes sense. 
+   1. Are all of the Apple accounts listed.
+   2. Are all of the devices listed.
+   3. Verify each device's name and type to make sure they are correct, there are no duplicates and the correct Apple device is assigned to the correct iCloud3 device.
+2. Check HA for any error messages related to iCloud3 at *HA Settings > System > Logs*.
+3. Check the *FindMy* app.
+
+
+
 
 -----
 
@@ -91,25 +167,6 @@ Although the chance of someone else successfully logging into your Apple Account
    ![](..\images\apple-acct-auth-evlog-password-msg.png)
 
 2. Refresh the Event Log or select a device to redisplay the tracking screen.
-
-
-
------
-
-### Event Log Startup Stage 4 - Apple Account Information
-
-When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App devices. The following is done:
-
-- Verify the Username/Password
-- Read all of the devices in the Apple Account
-- Match them up with the iCloud3 device using the Apple Account iCloud Device parameter from the *Update iCloud3 Device* screen
-- Errors are identified. This includes login errors, missing devices, duplicate devices, authentication, changed device names, etc.
-
-The results are shown in the *Event Log > Stage 4* screens. 
-
-![](../images/evlog-stage-4-notes.png)
-
-
 
 
 
