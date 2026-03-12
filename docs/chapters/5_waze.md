@@ -18,4 +18,4 @@ The following fields are available:
 
 
 
-![](../images/waze.png)
+![](../images/cf-waze.png)

@@ -4,7 +4,7 @@ Use the *sensor.icloud3_wazehist_track* sensor entity as the source of a Lovelac
 
 Create a Lovelace map card:
 
-![](../images/wazehist-map-card-setup.png)
+![](../images/cf-wazehist-map-card-setup.png)
 
 Or copy the yaml code below into the *Show Code Editor* yaml code field on a new Lovelace card.
 

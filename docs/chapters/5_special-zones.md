@@ -18,4 +18,4 @@ This screen is used to configure:
 
 
 
-![](../images/special-zones.png)
+![](../images/cf-special-zones.png)
