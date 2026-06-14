@@ -8,11 +8,9 @@ When iCloud3 logs in the first time and then about every 90 days, access to your
   - An *Apple Account Sign-on* window is displayed on your iPhone when the key is activated in the Authentication step. You do not need to respond it to complete the authentication. Select the 'OK' option to close the window.
   - The Security Key is inserted into your HA Server, not your iPhone or iPad.
 
-> The following links will provide additional information from Apple Support:
->
-> - See [here⧉](https://support.apple.com/en-us/122621) for information about Trusted Devices
-> - See [here⧉](https://support.apple.com/guide/mac-help/add-or-remove-trusted-devices-mchl2310b175/mac) for information about Trusted Devices on a Mac
-> - See [here⧉](https://support.apple.com/en-us/102637) for information about Security Keys
+> - See [here⧉](https://support.apple.com/en-us/122621) for information in Apple Support about Trusted Devices
+>- See [here⧉](https://support.apple.com/guide/mac-help/add-or-remove-trusted-devices-mchl2310b175/mac) for information in Apple Support about Trusted Devices on a Mac
+> - See [here⧉](https://support.apple.com/en-us/102637) for information in Apple Suppor about Security Keys
 
 
 
@@ -28,7 +26,7 @@ The screen below is used to Authenticate Apple Account access and to configure h
   - **Text Message** - Sends the text message to the selected Trusted Device
   - **Security Key** - Gets ready for the Authentication step
 
-  ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\apple-acct-auth-code-hwkey.png)
+  ![](..\images\apple-acct-auth-code-hwkey.png)
 
 - **Authenticate** - *Step #2* - Completes the authentication process, what you need to do:
 
@@ -41,11 +39,11 @@ The screen below is used to Authenticate Apple Account access and to configure h
 
 - **Change Authentication Method** - This screen is used to select the authentication method to be used. Only active methods are displayed. 
 
-  ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\apple-acct-auth-change-method.png)
+  ![](..\images\apple-acct-auth-change-method.png)
 
 - **Apple Did not Send a Code** - There may be times when the text messages do not arrive or the push notification window is not being sent. This is a work-around, manual way of authenticating access to your account. Follow the instructions on the screen.
 
-  ![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\images\apple-acct-auth-no-code.png)
+  ![](..\images\apple-acct-auth-no-code.png)
 
 #### General Notes:
 
