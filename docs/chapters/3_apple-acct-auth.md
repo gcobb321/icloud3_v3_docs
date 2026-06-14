@@ -10,7 +10,7 @@ When iCloud3 logs in the first time and then about every 90 days, access to your
 
 > - See [here⧉](https://support.apple.com/en-us/122621) for information in Apple Support about Trusted Devices
 >- See [here⧉](https://support.apple.com/guide/mac-help/add-or-remove-trusted-devices-mchl2310b175/mac) for information in Apple Support about Trusted Devices on a Mac
-> - See [here⧉](https://support.apple.com/en-us/102637) for information in Apple Suppor about Security Keys
+> - See [here⧉](https://support.apple.com/en-us/102637) for information in Apple Support about Security Keys
 
 
 
@@ -37,17 +37,23 @@ The screen below is used to Authenticate Apple Account access and to configure h
     1. Submit to activate the keypress (it should now be blinking). 
     2. Go to the HA Server and touch the Security Key. If it is not blinking, start over with the Request... step.
 
-- **Change Authentication Method** - This screen is used to select the authentication method to be used. Only active methods are displayed. 
+  #### General Notes:
 
-  ![](..\images\apple-acct-auth-change-method.png)
+  - **Apple Rejected the Code** - The code is valid for about 15-30 minutes. An error message is displayed if Apple rejects the Verification Code. Reenter it to verify it was not entered incorrectly. It is is still rejected, request a new code.
 
-- **Apple Did not Send a Code** - There may be times when the text messages do not arrive or the push notification window is not being sent. This is a work-around, manual way of authenticating access to your account. Follow the instructions on the screen.
+  - **Security Keys** - Security Keys are set up on your iPhone/iPad, go to *Settings App > Your Apple Account > Sign-in & Security > Two-Factor Authentication > Security Keys*. 
 
-  ![](..\images\apple-acct-auth-no-code.png)
+### Change Authentication Method
 
-#### General Notes:
+ This screen is used to select the authentication method to be used. Only active methods are displayed. It is opened on the *Authenticate Apple Account Sign-in* screen.
 
-- **Apple Rejected the Code** - The code is valid for about 15-30 minutes. An error message is displayed if Apple rejects the Verification Code. Reenter it to verify it was not entered incorrectly. It is is still rejected, request a new code.
+![](..\images\apple-acct-auth-change-method.png)
 
-- **Security Keys** - Security Keys are set up on your iPhone/iPad, go to *Settings App > Your Apple Account > Sign-in & Security > Two-Factor Authentication > Security Keys*. 
+### Apple Did not Send a Code
+
+There may be times when the text messages do not arrive or the push notification window is not being sent. This is a work-around, manual way of authenticating access to your account. Follow the instructions on the screen. It is opened on the *Authenticate Apple Account Sign-in* screen.
+
+![](..\images\apple-acct-auth-no-code.png)
+
+- 
 
