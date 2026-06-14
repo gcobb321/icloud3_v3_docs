@@ -23,8 +23,8 @@ iCloud3 is available on the HACS and is installed using the same process as othe
 
 - **Using HACS to install iCloud3**
   1. Open HACS.
-  2. Select **Integrations** and type **icloud3** in the search bar.
-  3. Select the **iCloud3 v3, iDevice Tracker** item, then select **+Download** to download iCloud3 and follow the normal steps for installing an integration using HACS.
+  2. Select **Integrations**, type **icloud3** in the search bar.
+  3. Select the **iCloud3, iDevice Tracker** item, then select **+Download** to download iCloud3 and follow the normal steps for installing an integration using HACS.
 
 - **Manual Installation from the iCloud3 Repository Releases Page**
   1. Download the *icloud3 v3.x.x.zip* file from the *gcobb321/icloud3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3/releases). Selects *Assets* at the bottom, then the zip file. The file save screen is displayed, select the location on your computer and save the zip file.
@@ -69,7 +69,7 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
 
 1. Select **☰ > HA Settings > Devices & Services > Integrations**.
 2. Select **+ Add Integration** in the lower-right hand corner.
-3. Type **iCloud3**. Then select **iCloud3 v3** from the list of Integrations. The iCloud3 v3 entry will be added to the *Integrations* screen.
+3. Type **iCloud3**. Then select **iCloud3** from the list of Integrations. The iCloud3 entry will be added to the *Integrations* screen.
 4. Open the *iCloud3 Configure screen* as depicted below.
    - Event Log has not been set:
      - Select **☰ > HA  Settings > Devices & Services > Integrations  > iCloud3  > Configure Gear Icon**.
