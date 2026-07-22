@@ -1,6 +1,6 @@
 # iCloud3 Devices <!-- {docsify-ignore} -->
 
-iCloud3 devices are added, updated and deleted using these screens. When a device is added, a device_tracker entity and all of the sensor entities are created and added to the Home Assistant registry files. When the device is deleted, it is deleted from the iCloud3 configuration files and it's device_tracker and sensor entities are removed from the Home Assistant registry files.
+Apple Account devices can be imported into iCloud3 iCloud3 devices are added, updated and deleted using these screens. When a device is added, a device_tracker entity and all of the sensor entities are created and added to the Home Assistant registry files. When the device is deleted, it is deleted from the iCloud3 configuration files and it's device_tracker and sensor entities are removed from the Home Assistant registry files.
 
 These screens list the devices you have added to iCloud3 to be tracked or monitored.
 
@@ -10,22 +10,61 @@ These screens list the devices you have added to iCloud3 to be tracked or monito
   - Add a new iCloud3 device
   - Delete the selected iCloud3 device
   - Change the order of the devices on the Event Log
-- **Update iCloud3 Device** - on the right below:
-  - Selected from -  *Apple Account & Mobile App - Data Source* screen
-  - Update the parameters on an existing iCloud3 device
-  - Add a new iCloud3 device
-  - Specify the Apple/iCloud Account and Mobile App that provide location and other data for this device
+  
+  
 
-![](../images/cf-device-list-update.png)
+![](../images/cf-device-list-and-no-devices.png)
+
+
+
+## Importing Apple Account Devices to Create the iCloud3 Devices
+
+- Selected from the *iCloud3 Devices > Import Apple Devices* option. (iCloud3 v3.7+ feature)
+
+When this screen is displayed, all of the Apple Accounts that have been setup are scanned and devices that are not already been configured will be displayed. Devices that iCloud3 can track or monitor are enabled, those that do not provide battery or location information are not enabled and in the *Inactive* section.
+
+![](..\images\cf-import-apple-devices.png)
+
+> Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customed on the *Update iCloud3 Devices* screen.
+
+1. Enable the devices to be created.
+
+2. Select **Add Imported Apple Devices** and **Submit**.
+
+   The selected devices will be added to the iCloud3 Configuration file and created immediately. This will take a few seconds. Each device can be further customized on the **Update Device** screen. For example, you can change the entity name, display name, display picture, etc. to meet your needs.
+
+Additional Information:
+
+- The iCloud3 names (display and device_tracker entity names) are created from the Apple Device name and the type of device.  For example: 
+  - Gary's iPhone → Gary (gary_iphone)
+  - iPhone de Philippe → Philippe (philippe_iphone)
+  - iPad de María → María-iPad (maria_iPad)
+  - Watch van Jan → - Jan-Watch (jan_watch_ic3)
+  - Mac di Marco → Marco-Mac (marco_mac_ic3)
+- The tracking method is based on the type of device:
+  - Tracked - iPhone, Watch
+  - Monitored - iPad, Mac
+  - Inactive - AirPods
 
 
 
 ## Add and Update an iCloud3 Device
 
+
+
+**Update iCloud3 Device** - on the right below:
+
+- Selected from -  *Apple Account & Mobile App - Data Source* screen
+- Update the parameters on an existing iCloud3 device
+- Add a new iCloud3 device
+- Specify the Apple/iCloud Account and Mobile App that provide location and other data for this device
+
+![](..\images\cf-device-update.png)
+
 Fields that are updated on this screen:
 
 1. **iCloud3 device_tracker Entity ID**  (*gary_iphone*) - The unique name used to create the device_tracker entity (device.tracker.gary_iphone) and sensor entities (sensor.gary_iphone_battery_level).
-2. **Friendly Name** -  Typically, this is the same as the name on the *Settings App > General > About* value.
+2. **Display (Friendly) Name** -  Typically, this is the same as the name on the *Settings App > General > About* value.
 3. **Apple/iCloud device, Mobile App device** - Apple and Mobile App device providing location, zone and other data. See examples of the lists below.
 4. **Picture or icon** - An image file that is displayed on the dashboard. See examples of the lists below.
 5. **Tracking Mode** - Describes how the device will be tracked: 
@@ -33,6 +72,8 @@ Fields that are updated on this screen:
    - **Track** - Actively requests the location and track the device,
    - **Monitor** - Do not request the location. Report it's location when a tracked device is updated using data that is also  returned from iCloud
    - **Inactive** - Not tracked or monitored. This option keeps the device's parameters in the the configuration file but does not track it. 
+
+
 
 ## Delete an iCloud3 Device
 

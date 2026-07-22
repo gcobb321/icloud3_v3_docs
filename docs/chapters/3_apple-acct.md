@@ -60,6 +60,27 @@ When you change the password, be sure to change it here. If you do not change it
 
 
 
+### Importing Apple Account Devices to Create the iCloud3 Devices
+
+Devices in the Apple Account can be imported into iCloud3 on the *Import Apple Devices* screen or they can be entered individually on the *iCloud3 Devices > Add Devices* selection. 
+
+![](..\images\cf-import-apple-devices.png)
+
+> Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customed on the *Update iCloud3 Devices* screen.
+
+- The iCloud3 names (display and device_tracker entity names) are created from the Apple Device name and the type of device.  For example: 
+  - Gary's iPhone → Gary (gary_iphone)
+  - iPhone de Philippe → Philippe (philippe_iphone)
+  - iPad de María → María-iPad (maria_iPad)
+  - Watch van Jan → - Jan-Watch (jan_watch_ic3)
+  - Mac di Marco → Marco-Mac (marco_mac_ic3)
+- The tracking method is based on the type of device:
+  - Tracked - iPhone, Watch
+  - Monitored - iPad, Mac
+  - Inactive - AirPods
+
+This is described in detail in the *iCloud3 Devices* chapter HERE. 
+
 -----
 
 ## The Login Process, what can go wrong and things to do
@@ -274,7 +295,16 @@ Location Sharing must be enabled on all Apple devices that are tracked by iCloud
 
 !> The location of the devices you are tracking must be displayed on the *FindMy App > People* Map screen. If it is not displayed here, it's location is not shared and will not be returned to iCloud3 when it is requested.
 
+#### Authenticating the Other Apple Accounts
 
+If you are setting up several Apple Accounts (spouse, children, parents, etc.), those accounts will need to be authenticated every 90-days or so. The default Authentication Method is to push the 6-digit code to a popup window. You will need access to their iPhone or other trusted device to complete the process. If you do not have access to the iPhone, you will not be able to complete the authentication process. 
+
+Add your phone number to their Apple Account.
+
+1. Add your phone number as a Trusted Phone Number to their Apple Account.
+2. On the *Change Authentication Screen* for their Apple Account, change the *Authentication Method* to *Text Message* and select your phone number.
+
+Then, authenticate their Apple Account with the code in the text message sent to your iPhone as you normally do.
 
 #### Family Sharing vs Owner's Devices when using several Apple Accounts
 
@@ -296,6 +326,8 @@ This is configured on the *Configure > Update Apple Account Username/Password* s
 
 - Enable - If the devices are usually located close to each other
 - Disable - If this is another family members or a friends account
+
+
 
 
 
