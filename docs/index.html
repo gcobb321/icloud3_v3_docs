@@ -40,11 +40,13 @@
       subMaxLevel: 2,
       search: 'auto',
       themeColor: '#64A1E4',
-	  EditOnGithubPlugin.create(
-          'https://github.com/gcobb321/icloud3_v3_docs/blob/main/docs/chapters/',
-		  null,
-		  'Edit on GitHub'
-        ),
+	  plugins: [
+		EditOnGithubPlugin.create(
+			'https://github.com/gcobb321/icloud3_v3_docs/blob/main/docs/chapters/',
+			null,
+			'Edit on GitHub'
+			)
+		]
     }
 
   </script>
