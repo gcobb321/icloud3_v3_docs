@@ -1,5 +1,14 @@
 # Apple Account <!-- {docsify-ignore} -->
 
+Screens described in this chapter:
+
+- **Apple Account & Mobile App - Data Source** - The Apple Acct and Mobile App provide location and other information iCloud3 uses to track the iDevice.
+  - **Update Apple Account Username/Password** - 
+    - **Apple Account Parameters** - 
+  - **Remove an Apple Account** - 
+
+
+
 The Apple Account is the primary source of location data for iCloud3. It provides information related to the iPhones, iPads, Watches  and other devices in the Family Sharing list to the devices that are tracked and monitored.
 
 Two screens are used to list, add and update the Apple Accounts that provide this data.

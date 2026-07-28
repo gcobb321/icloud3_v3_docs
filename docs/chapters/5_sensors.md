@@ -1,6 +1,13 @@
 # Sensors <!-- {docsify-ignore} -->
 
-##### Selected From: *Configure Devices & Sensors Menu*
+- Selected From: *Configure Devices & Sensors Menu*
+
+Screens described below:
+
+- **Sensors** - Many sensors are used to display tracking results and other information for a device.\n\n This screen is used to select the sensors that should be created.
+  - **Exclude Sensors** - Many sensors are created for the devices but there may be times when you want to not create a sensor for a specific device. For example, you may want to create a bettery sensor for all devices except one.\n\nThis screen lets you specify the sensor entity name that should not be created.
+
+
 
 Many sensors are used to display tracking results and other information for a device. This screen is used to select the sensors that should be created and to exclude specific sensors from being created.
 

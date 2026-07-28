@@ -1,5 +1,18 @@
 # Apple Account Authentication
 
+Screens described below:
+
+- **Authenticate Apple Account Sign-In** -The Apple Account sign-in must be reauthenticated every 90-days or so. This screen is used to enter the 6-digit authentication code or to authenticate using Security Key (YubiKey) plugged into your HA server.
+
+  - **Change Apple Account Authentication Method** - Apple uses several methods to authenticate access to the Apple Account - a 'push notification' window (default), in a text message or by a Security Key (YubiKey). iCloud3 will use the authentication method selected on this screen
+  - **Get an Authentication Code from Apple.com** - If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one
+
+  
+
+
+
+
+
 When iCloud3 logs in the first time and then about every 90 days, access to your Apple Account needs to be authenticated again. iCloud3 supports three authentication methods:
 
 - **Push notification** - The *Apple Id Sign in Requested... > 6-digit Verification Code* pop-up window 

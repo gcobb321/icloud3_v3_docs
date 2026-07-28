@@ -1,5 +1,19 @@
 # iCloud3 Devices <!-- {docsify-ignore} -->
 
+Screens described in this chapter:
+
+- **Update iCloud3 Device** - This screen lets you configure each of the devices that can be tracked or monitored using iCloud3
+  - **iCloud3 Devices** - This screen is used to select a device that needs to be updated, add a new device or delete a device that should no longer be tracked or monitored. Apple Devices can also be imported into iCloud3 and the order of devices on the Event Log can be changed.
+    - **Update Other Device Parameters** - This screen updates device parameters that are rearly updated
+
+- **Import Apple Devices** - Import the devices from all Apple Accounts that have not been configured. Then create an iCloud3 device for those that are selected. The devices can be customized on the `Update Devices` screen.
+- **Delete iCloud3 Device** -
+- **Event Log Device Display Sequence** - The devices are displayed in the Event Log heading area and in various Event Log messages in the sequence below.\n\nThis screen lets you change the order of the devices.
+
+
+
+
+
 Apple Account devices can be imported into iCloud3 iCloud3 devices are added, updated and deleted using these screens. When a device is added, a device_tracker entity and all of the sensor entities are created and added to the Home Assistant registry files. When the device is deleted, it is deleted from the iCloud3 configuration files and it's device_tracker and sensor entities are removed from the Home Assistant registry files.
 
 These screens list the devices you have added to iCloud3 to be tracked or monitored.
