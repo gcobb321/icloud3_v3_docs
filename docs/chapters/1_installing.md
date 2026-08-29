@@ -86,7 +86,7 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
 
 Click the Gear icon in the above image to open the iCloud3 Configure screens. Since you are doing this for the first time, the iCloud3 configuration file (*.storage/icloud3/configuration*) will be created with default values. The *Update Apple Account* screen is displayed.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\apple_acct\apple-acct-update-first-time.png)
+![](..\screens\apple_acct\apple-acct-update-first-time.png)
 
 - Enter your Apple account email (username) and pasword.
 - Click **Submit**
@@ -101,7 +101,7 @@ Three-methods of authentication are supported - getting the code from a Push not
 
 iCloud3 defaults to the Push notification window and the code request is automatically sent. You should see the pop-up window display on your iPhone. Enter that 6-digit code in the Authentication Code field and click submit. The code will be sent to Apple and be verified. If Apple accepts the code, the *Import Apple Devices* screen is displayed.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\authenticate\apple-acct-auth.png)
+![](..\screens\authenticate\apple-acct-auth.png)
 
 If you are using a security key or want to get the code from a text message, select the *Change Authentication Method* action at the bottom of the screen and click Submit. Then, select the method you want and return to this screen. Select *Request Authentication Code* to restart the process and click Submit. Then enter a new code or press the security key. Then select *Authenticate* and click Submit.
 
@@ -115,7 +115,7 @@ The next step is to create the iCloud3 devices from the devices in your Apple ac
 
 Note: You can change the tracking mode for a device after the iCloud3 devices are created on the *iCloud3 Devices > Update Device* screen.
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\apple_acct\import-apple-devices.png)
+![](..\screens\apple_acct\import-apple-devices.png)
 
 - Click Submit to create the iCloud3 device_tracker and sensor entities for all of the devices that have been checked.
 
@@ -125,7 +125,7 @@ The *iCloud3 Device List* screen is displayed.
 
 This screen lists all of the devices that iCloud3 will Track and Monitor. Devices can be updated, added and deleted from this screen. 
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\device\cf-device-list.png)
+![](..\screens\device\cf-device-list.png)
 
 ## Complete the setup process
 
@@ -136,7 +136,7 @@ You have completed all of the steps needed to configure iCloud3. Exit back to th
 
 The iCloud3 Dashboard will be created and added to the HA Sidebar with a *Cloud* icon and iCloud3 is restarted. The devices you added are located and all of the device_tracker and sensor entities are updated. 
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\dashboard-summary.png)
+![](..\screens\dashboard-summary.png)
 
 - Click the *Cloud* icon on the HA Sidebar to display the iCloud3 Dashboard screen.
 

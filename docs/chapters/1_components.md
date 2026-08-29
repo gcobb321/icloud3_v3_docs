@@ -65,7 +65,7 @@ The iCloud3 configuration screens are used to:
 - Configure how tracking results and other information should be displayed
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\menu-devices-sensors-parms.png)
+![](..\screens\menu-devices-sensors-parms.png)
 
 -----
 
@@ -84,6 +84,6 @@ Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are b
 - Device Badge sensors and Battery sensor as one item in several formats
 - Device Battery sensors in several formats
 
-![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\dashboard_builder\dashboard-builder.png)
+![](..\screens\dashboard_builder\dashboard-builder.png)
 
 Note: The *Tracking Results Summary and Detail* screens above were created with the Dashboard Builder
