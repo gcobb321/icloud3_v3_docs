@@ -31,7 +31,7 @@ The screens below show examples of a tracked device's current status. The follow
 - Gary is tracking from Home and the Quail Zone, Lillian just from Home.
 - The *Info* field shows tracking results from nearby devices is being used.
 
-![](..\images\track-gary-home-lillian-away-captions.png)
+![](../screens/tracking/track-gary-home-lillian-away-captions.png)
 
 
 
@@ -46,7 +46,7 @@ The Event Log is a Lovelace custom card that shows past and current activity rel
 - Error messages, problems and location data issues
 - Detail tracking monitors that show what is going on under the covers, how location data from the iCloud Location Services and the Mobile App is analyzed and processed
 
-![](..\images\dashboard-allinfo-2-zones.png)
+![](../screens/dashboard-allinfo-summary.png)
 
 
 
@@ -56,14 +56,16 @@ The Event Log is a Lovelace custom card that shows past and current activity rel
 The iCloud3 configuration screens are used to:
 
 - Add and update Apple accounts
+- Authenticate access to your Apple accounts
 - Add and update tracked and monitored devices. You can assign the Apple account device and Mobile App device that provides location and other data, zone and tracking parameters, a picture or icon, etc
 - Select the sensors to be updated during tracking operations
 - Create HA Dashboards with iCloud3 sensors showing tracking results and battery information in several formats.
 - Run special Tools to fix configuration problems
 - Configure other tracking and formatting parameters
+- Configure how tracking results and other information should be displayed
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
-
+![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\menu-devices-sensors-parms.png)
 
 -----
 
@@ -81,3 +83,7 @@ Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are b
 - All tracking information (tracking results sensors, tracking status sensors, device information sensors) as separate items
 - Device Badge sensors and Battery sensor as one item in several formats
 - Device Battery sensors in several formats
+
+![](C:\Users\Gary\GitHub\icloud3_v3_docs\docs\screens\dashboard_builder\dashboard-builder.png)
+
+Note: The *Tracking Results Summary and Detail* screens above were created with the Dashboard Builder

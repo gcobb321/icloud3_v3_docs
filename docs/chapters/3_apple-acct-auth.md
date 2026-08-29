@@ -5,21 +5,21 @@ Screens described below:
 - **Authenticate Apple Account Sign-In** -The Apple Account sign-in must be reauthenticated every 90-days or so. This screen is used to enter the 6-digit authentication code or to authenticate using Security Key (YubiKey) plugged into your HA server.
 
   - **Change Apple Account Authentication Method** - Apple uses several methods to authenticate access to the Apple Account - a 'push notification' window (default), in a text message or by a Security Key (YubiKey). iCloud3 will use the authentication method selected on this screen
-  - **Get an Authentication Code from Apple.com** - If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one
-
   
-
-
-
-
+  - **Get an Authentication Code from Apple.com** - If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one
+  
 
 When iCloud3 logs in the first time and then about every 90 days, access to your Apple Account needs to be authenticated again. iCloud3 supports three authentication methods:
 
 - **Push notification** - The *Apple Id Sign in Requested... > 6-digit Verification Code* pop-up window 
+
 - **Text Messages** - Sending a text message to your Trusted Phone Numbers - These are set up on your Apple Account. On your iPhone/iPad, go to *Settings App > Your Apple Account > Sign-in & Security > Email & Phone Numbers*. 
+
 - **Security Keys (YubiKey**) - Touching the Security Key, when it is activated, will authenticate the access to your Apple Account.
   - An *Apple Account Sign-on* window is displayed on your iPhone when the key is activated in the Authentication step. You do not need to respond it to complete the authentication. Select the 'OK' option to close the window.
-  - The Security Key is inserted into your HA Server, not your iPhone or iPad.
+  
+
+!> The Security Key is inserted into your HA Server, not your iPhone or iPad.
 
 > - See [here⧉](https://support.apple.com/en-us/122621) for information in Apple Support about Trusted Devices
 >- See [here⧉](https://support.apple.com/guide/mac-help/add-or-remove-trusted-devices-mchl2310b175/mac) for information in Apple Support about Trusted Devices on a Mac
@@ -31,7 +31,7 @@ When iCloud3 logs in the first time and then about every 90 days, access to your
 
 The screen below is used to Authenticate Apple Account access and to configure how you want to do it:
 
-![](..\images\apple-acct-auth.png)
+![](../screens/authenticate/apple-acct-auth.png)
 
 - **Request an Authentication Code or Security Key Keypress** - *Step #1* - Start the authentication process. The screens below are displayed. It will untrust your Apple Account and then:
 
@@ -39,7 +39,7 @@ The screen below is used to Authenticate Apple Account access and to configure h
   - **Text Message** - Sends the text message to the selected Trusted Device
   - **Security Key** - Gets ready for the Authentication step
 
-  ![](..\images\apple-acct-auth-code-hwkey.png)
+  ![](../screens/authenticate/apple-acct-auth-code-hwkey.png)
 
 - **Authenticate** - *Step #2* - Completes the authentication process, what you need to do:
 
@@ -60,13 +60,13 @@ The screen below is used to Authenticate Apple Account access and to configure h
 
  This screen is used to select the authentication method to be used. Only active methods are displayed. It is opened on the *Authenticate Apple Account Sign-in* screen.
 
-![](..\images\apple-acct-auth-change-method.png)
+![](../screens/authenticate/apple-acct-auth-change-method.png)
 
 ### Apple Did not Send a Code
 
 There may be times when the text messages do not arrive or the push notification window is not being sent. This is a work-around, manual way of authenticating access to your account. Follow the instructions on the screen. It is opened on the *Authenticate Apple Account Sign-in* screen.
 
-![](..\images\apple-acct-auth-no-code.png)
+![](../screens/authenticate/apple-acct-auth-get-code-applecom.png)
 
-- 
+
 

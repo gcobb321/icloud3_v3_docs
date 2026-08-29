@@ -74,7 +74,7 @@ When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App
 
 The results are shown in the *Event Log > Stage 4* screens. 
 
-![](../images/evlog-stage-4-notes.png)
+![](../screens/evlog/evlog-stage-4-notes.png)
 
 
 

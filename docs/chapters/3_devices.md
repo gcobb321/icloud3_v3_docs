@@ -10,15 +10,12 @@ Screens described in this chapter:
 - **Delete iCloud3 Device** -
 - **Event Log Device Display Sequence** - The devices are displayed in the Event Log heading area and in various Event Log messages in the sequence below.\n\nThis screen lets you change the order of the devices.
 
-
-
-
-
 Apple Account devices can be imported into iCloud3 iCloud3 devices are added, updated and deleted using these screens. When a device is added, a device_tracker entity and all of the sensor entities are created and added to the Home Assistant registry files. When the device is deleted, it is deleted from the iCloud3 configuration files and it's device_tracker and sensor entities are removed from the Home Assistant registry files.
 
 These screens list the devices you have added to iCloud3 to be tracked or monitored.
 
-- **iCloud3 Devices** - on the left below:
+- **iCloud3 Devices** screen:
+  
   - Lists the devices that will be tracked and monitored
   - Select the device to be updated or deleted
   - Add a new iCloud3 device
@@ -27,7 +24,17 @@ These screens list the devices you have added to iCloud3 to be tracked or monito
   
   
 
-![](../images/cf-device-list-and-no-devices.png)
+![](../screens/device/device-list.png)
+
+
+
+### Setting up devices for the first time
+
+When no devices have been configured, an empty screen is displayed.
+
+![](../screens/device/device-list-no-devices.png)
+
+- Select *Import Apple Account Devices* to import them from your Apple Account or to *Add a new Device* manually. The appropriate screen will then be displayed. See below for examples of those screens.
 
 
 
@@ -37,7 +44,7 @@ These screens list the devices you have added to iCloud3 to be tracked or monito
 
 When this screen is displayed, all of the Apple Accounts that have been setup are scanned and devices that are not already been configured will be displayed. Devices that iCloud3 can track or monitor are enabled, those that do not provide battery or location information are not enabled and in the *Inactive* section.
 
-![](..\images\cf-import-apple-devices.png)
+![](../screens/apple_acct/import-apple-devices.png)
 
 > Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customed on the *Update iCloud3 Devices* screen.
 
@@ -73,11 +80,11 @@ Additional Information:
 - Add a new iCloud3 device
 - Specify the Apple/iCloud Account and Mobile App that provide location and other data for this device
 
-![](..\images\cf-device-update.png)
+![](../screens/device/device-update-dd.png)
 
 Fields that are updated on this screen:
 
-1. **iCloud3 device_tracker Entity ID**  (*gary_iphone*) - The unique name used to create the device_tracker entity (device.tracker.gary_iphone) and sensor entities (sensor.gary_iphone_battery_level).
+1. **iCloud3 device_tracker Entity ID**  (*gary_iphone*) - The unique name used to create the device_tracker entity (device_tracker.gary_iphone) and sensor entities (sensor.gary_iphone_battery_level).
 2. **Display (Friendly) Name** -  Typically, this is the same as the name on the *Settings App > General > About* value.
 3. **Apple/iCloud device, Mobile App device** - Apple and Mobile App device providing location, zone and other data. See examples of the lists below.
 4. **Picture or icon** - An image file that is displayed on the dashboard. See examples of the lists below.
@@ -112,10 +119,6 @@ It is possible to delete or disable a device from outside of iCloud3 on these sc
 
 When iCloud3 starts, the Apple Accounts are opened and the devices in the accounts are retrieved. The devices in the Mobile App Integration are also identified. When an iCloud3 device is added, the iCloud and Mobile App devices that will provide location, battery status, current zone and other data are assigned by selecting the corresponding device from the list of devices detected when iCloud3 started.
 
-Below are examples of these selection lists:
-
-![](../images/cf-device-update-sel-lists.png)
-
 
 
 ## Rarely Updated Parameters
@@ -138,4 +141,4 @@ The devices are listed in the Event Log in the order they are added (monitored d
 1. Select the device.
 2. Select *Move Up* or *Move Down*, then select *Submit*.
 
-![](../images/cf-device-order.png)
+![](../screens/device/device-update-other-parms-dd.png)

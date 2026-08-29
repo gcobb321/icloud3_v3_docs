@@ -26,7 +26,7 @@ Two screens are used to list, add and update the Apple Accounts that provide thi
   - Delete the Apple Account
 
 
-![](../images/apple-acct-list-update.png)
+![](../screens/apple_acct/apple-acct-list-update.png)
 
 -----
 
@@ -59,7 +59,7 @@ When you change the password, be sure to change it here. If you do not change it
 - Select *Delete Apple Account*, then select *Submit*
 - The following confirmation screen is displayed:
 
-![](../images/apple-acct-delete.png)
+![](../screens/apple_acct/apple-acct-delete.png)
 
 - Select what to do with devices assigned to the Apple account being deleted.
 
@@ -73,7 +73,7 @@ When you change the password, be sure to change it here. If you do not change it
 
 Devices in the Apple Account can be imported into iCloud3 on the *Import Apple Devices* screen or they can be entered individually on the *iCloud3 Devices > Add Devices* selection. 
 
-![](..\images\cf-import-apple-devices.png)
+![](../screens/apple_acct/import-apple-devices.png)
 
 > Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customed on the *Update iCloud3 Devices* screen.
 
@@ -188,7 +188,7 @@ An email is sent from Apple when you log into your your iCloud account using you
 
 !> You will receive a number of these emails from Apple each day while iCloud3 is tracking your devices. The number you receive is determined by Apple, iCloud3 can not do anything about this.  iCloud3 minimizes the number you receive as best it can by using tokens first and only logging in when Apple requests one.
 
-![](..\images\apple-acct-auth-email.png)
+![](../screens/apple_acct/apple-acct-auth-email.png)
 
 ####  What can you do to minimize these emails from clogging up your inbox
 
@@ -204,7 +204,7 @@ Although the chance of someone else successfully logging into your Apple Account
 
    Scroll through the items for an entry similar to this. Logins during the startup process are in the Stage 4 area while logins during normal tracking are shown near the top of the list. 
 
-   ![](..\images\apple-acct-auth-evlog-password-msg.png)
+   ![](../screens/authenticate/apple-acct-auth-evlog-password-msg.png)
 
 2. Refresh the Event Log or select a device to redisplay the tracking screen.
 
@@ -253,7 +253,7 @@ These devices can not be tracked. They are not tracked by Apple like an iPhone o
 
 A different URL is used to access the Apple Account servers in China (.cn is added to the URL). This is configured on the *Update Apple Account Username/Password* screen, *Apple Server Location* field. 
 
-This selection field is displayed when the Home Assistant country code is `cn` or `hk`.![](../images/apple-account-china-server.png)
+This selection field is displayed when the Home Assistant country code is `cn` or `hk`.![](../screens/apple_acct/apple-acct-other-parms.png)
 
 The HA Server contains the 2-character code for the location. The *Apple Server Location* field is displayed if it is 'cn' or 'hk'. If you are using a VPN, you may need this field to be displayed when the location code is not 'cn' or 'hk'.
 
