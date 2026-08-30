@@ -58,11 +58,9 @@ New features are added to iCloud3 Development Version before they are released t
 
   3. Download the *icloud3.v3.x.x.zip* file from the *gcobb321/icloud3_v3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3_v3/releases). Follow the Manual instructions above. 
 
-     
 
 
 ------
-
 ## Add the iCloud3 Integration
 
 iCloud3 is a Home Assistant Integration and is configured on the Integrations screens like all the other Integrations you may be using.
@@ -79,7 +77,6 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
 ![](../screens/home_assistant/ha-integrations-icloud3-entry.png)
 
 -----
-
 ## Configure iCloud3 for the first time
 
 ### Add your Apple Account
@@ -88,38 +85,68 @@ Click the Gear icon in the above image to open the iCloud3 Configure screens. Si
 
 ![](..\screens\apple_acct\apple-acct-update-first-time.png)
 
-- Enter your Apple account email (username) and pasword.
+- Enter your Apple account **username** (email id) and **password**.
 - Click **Submit**
 
-The username and password will be validated, iCloud3 will log into your Apple account and download the devices in your account. If *Locate All Devices* is enabled, all of the devices in your Family List will downloaded. If it is disabled, only your devices are downloaded. The *Authenticate Apple Account Sign-in* screen will be displayed.
+The username and password will be validated, iCloud3 will log into your Apple account and download the devices in your account. 
+
+Note:
+
+- *Locate All Devices* is enabled - All of the devices in your Family List will downloaded. 
+- *Locate All Devices* is disabled - Only your devices are downloaded. 
+
+If Apple logged into your account, the *Authenticate Apple Account Sign-in* screen will be displayed.
 
 ### Authenticate Apple Account Sign-in
 
 The next step is to authenticate iCloud3 access to your Apple account. This is done by entering the 6-digit 2fa code that will be sent to your trusted device. 
 
-Three-methods of authentication are supported - getting the code from a Push notification pop-up window on your iPhone, getting the code in a Text message sent to a Trusted Phone and using a security key (YubiKey) that you will insert into the computer running HA (Mac, RPi, etc). 
+Three-methods of authentication are supported:
 
-iCloud3 defaults to the Push notification window and the code request is automatically sent. You should see the pop-up window display on your iPhone. Enter that 6-digit code in the Authentication Code field and click submit. The code will be sent to Apple and be verified. If Apple accepts the code, the *Import Apple Devices* screen is displayed.
+- **Push notification pop-up window** (default) - Apple opens the 'Someone is logging into your account > Allow/Do Not Allow ', followed by the 6-digit code on your iPhone
+- **Text message** - The code is sent to a Trusted Phone in a text message.
+- **Security key (YubiKey)** - You have configured your Apple account to use a security key. The security key is insert into the computer running HA (Mac, RPi, HA Green, etc). 
 
 ![](..\screens\authenticate\apple-acct-auth.png)
 
-If you are using a security key or want to get the code from a text message, select the *Change Authentication Method* action at the bottom of the screen and click Submit. Then, select the method you want and return to this screen. Select *Request Authentication Code* to restart the process and click Submit. Then enter a new code or press the security key. Then select *Authenticate* and click Submit.
+Do one of the following:
+
+- **Push notification pop-up window**:
+
+  - Select *Authenticate* if it not selected.
+
+  - On the Trusted Device, touch **Allow** to display the 6-digit code. 
+
+  - Enter the 6-digit code into the **Authentication Code** field, then click **Submit**.
+
+- **Using a Security Key (Yubikey)** :
+  - Select *Authenticate* if it not selected.
+  - **Touch the Security key** inserted into your HA Server, then click **Submit**. 
+  - The Security Key should be blinking. If it is not blinking, select *Request Authentication*, then click Submit to restart the process.
+
+The code will be sent to Apple and verified. 
+
+**Change Authentication Method** - The authentication method that is being used is displayed in *Apple Account to be Authenticated* field. If you want to change it, select the *Change Authentication Method* Action Command, then click Submit. Select the new method on the screen that is displayed, then click Submit to return to this screen. Select *Request Authentication Code* to restart the authentication process, then click Submit to request a new code or reinitialize the security key Then follow the steps above.
+
+If Apple accepts the code, the *Import Apple Devices* screen will be displayed.
 
 ### Importing Apple Devices
 
-The next step is to create the iCloud3 devices from the devices in your Apple account that was downloaded when you logged into your Apple account. Devices are grouped into three categories:
+The next step is to create the iCloud3 device_tracker and sensor entities from your Apple account devices that was downloaded earlier. 
 
-- Tracked (iPhone, Watch) - iCloud3 issues location requests to Apple when they are needed. The location, battery and other information is updated.
-- Monitored (iPad, Mac) - These devices are updated using data Apple provides when the Tracked are located.
-- Inactive (AirPods, other Apple devices) - Apple does not provide any location or battery information for these devices. 
+The devices are grouped into three *Tracking Modes*:
 
-Note: You can change the tracking mode for a device after the iCloud3 devices are created on the *iCloud3 Devices > Update Device* screen.
+- **Tracked (iPhone, Watch)** - iCloud3 issues location requests to Apple when they are needed. The location, battery and other information is updated.
+- **Monitored (iPad, Mac)** - These devices are updated using data Apple provides when the Tracked are located.
+- **Inactive (AirPods, other Apple devices)** - Apple does not provide any location or battery information for these devices. 
+
+​	 Note: You can change the *Tracking Mode* for a device later on the *iCloud3 Devices > Update Device* screen.
 
 ![](..\screens\apple_acct\import-apple-devices.png)
 
-- Click Submit to create the iCloud3 device_tracker and sensor entities for all of the devices that have been checked.
+- Click Submit to create the iCloud3 device_tracker and sensor entities for the checked items.
 
-The *iCloud3 Device List* screen is displayed. 
+The *iCloud3 Devices* screen is displayed showing the iCloud3 devices you just created.
 
 ### Review the iCloud3 Devices
 
@@ -127,14 +154,32 @@ This screen lists all of the devices that iCloud3 will Track and Monitor. Device
 
 ![](..\screens\device\cf-device-list.png)
 
-## Complete the setup process
+- If you want to review or change the device's individual fields (it's picture for example):
 
-You have completed all of the steps needed to configure iCloud3. Exit back to the HA Devices & services screen.
+  - Select the device
 
-- Select **Menu**, then click Submit to display to the Configure and *Devices and Sensor*s menu.
-- Select **Exit**, then click Submit to end the Configuration session. 
+  - Select *Update the Device* Action Command, then click **Submit**.
 
-The iCloud3 Dashboard will be created and added to the HA Sidebar with a *Cloud* icon and iCloud3 is restarted. The devices you added are located and all of the device_tracker and sensor entities are updated. 
+  - The *Update Device* screen is displayed. See 
+
+    [here]: ../#/chapters/3_devices?id=add-and-update-an-icloud3-device
+
+    for more information on this screen.
+
+
+
+You have completed all of the steps needed to configure iCloud3. Exit back to the *HA Devices & services* screen.
+
+- Select **Menu**, then click **Submit** to display to the Configure and *Devices and Sensor*s menu.
+- Select **Exit**, then click **Submit** to end the *iCloud3 Configure Session*. 
+
+### iCloud3 Dashboard
+
+When you end the *iCloud3 Configure Session*:
+
+- The iCloud3 Dashboard is created and added to the *HA Sidebar* with a *Cloud* icon (see a sample screen below).
+- The devices you added are located.
+- The device_tracker and sensor entities are updated. 
 
 ![](..\screens\dashboard-summary.png)
 
@@ -144,12 +189,15 @@ That's it. Congratulations! You have installed iCloud3 and are tracking your dev
 
 That was the easy part. Now for the hard part - review the rest of the documentation and see how the many features can be used. Be sure to review the *Core Component Details* section so you can get familiar with the *Event Log*, the *Dashboard Builder* and various Configure screens. Go through the *Configure Tracked Devices* and *Operational Settings* and look for things that might be useful to you.
 
-
-
 Thanks and good luck
 
-Gary Cobb aka GeeksterGary
 
-*and if you like iCloud3, I like coffee*
 
-<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="images/buymeacoffee-sidebar-button.png"/></a>
+*And if you like iCloud3, maybe you could get me a cup of coffee*
+
+<a href="https://www.buymeacoffee.com/gcobb321" target="_blank"><img src="https://gcobb321.github.io/icloud3_v3_docs/images/buymeacoffee-docs-button.png"/></a>
+
+
+-----
+*Gary Cobb, aka GeeksterGary*
+
