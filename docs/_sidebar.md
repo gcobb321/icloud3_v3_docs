@@ -4,7 +4,7 @@
 <u>**Getting Started**</u>
 - [ •  Highlights](chapters/1_highlights.md)
 - [ •  Core Components](chapters/1_components.md)
-- [ •  Installing iCloud3](chapters/1_installing.md)
+- [ •  Installing & Configuring  iCloud3](chapters/1_installing.md)
 - [ •  Using the HA Mobile App](chapters/1_mobile-app.md)
 - [ •  iCloud3 Theme](chapters/1_icloud3-theme.md)
 

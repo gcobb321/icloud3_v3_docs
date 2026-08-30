@@ -84,6 +84,6 @@ Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are b
 - Device Badge sensors and Battery sensor as one item in several formats
 - Device Battery sensors in several formats
 
-![](..\screens\dashboard_builder\dashboard-builder.png)
+![](..\screens\dashboard_bldr\dashboard-builder.png)
 
 Note: The *Tracking Results Summary and Detail* screens above were created with the Dashboard Builder

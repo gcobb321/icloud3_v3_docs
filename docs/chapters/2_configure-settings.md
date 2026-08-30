@@ -17,7 +17,7 @@ The iCloud3 configuration screens are used to:
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
 
-![](..\images\menu-devices-sensors-parms.png)
+![](..\screens\menu-devices-sensors-parms.png)
 
 #### Configure Devices & Sensors screen
 
@@ -85,5 +85,5 @@ The screen you selected will be displayed It generally has two parts:
 
 These show these 2-sections. 
 
-![](..\images\apple-acct-list-update.png)
+![](../screens/apple_acct/apple-acct-list-update.png)
 

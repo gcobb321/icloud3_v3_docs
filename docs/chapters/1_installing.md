@@ -95,15 +95,15 @@ Note:
 - *Locate All Devices* is enabled - All of the devices in your Family List will downloaded. 
 - *Locate All Devices* is disabled - Only your devices are downloaded. 
 
-If Apple logged into your account, the *Authenticate Apple Account Sign-in* screen will be displayed.
+If Apple logged into your account, the *Authenticate Apple Account Sign-in* screen is displayed.
 
 ### Authenticate Apple Account Sign-in
 
-The next step is to authenticate iCloud3 access to your Apple account. This is done by entering the 6-digit 2fa code that will be sent to your trusted device. 
+The next step is to authenticate iCloud3 access to your Apple account. This is done by entering the 6-digit 2fa code that will be sent to your iPhone or, if you are using a Security Key, inserting it into your HA Server and pressing it's button.
 
 Three-methods of authentication are supported:
 
-- **Push notification pop-up window** (default) - Apple opens the 'Someone is logging into your account > Allow/Do Not Allow ', followed by the 6-digit code on your iPhone
+- **Push notification pop-up window** (default) - The *Apple Sign-in Requested* message is displayed on your Trusted Device (iPhone/iPad/Mac). This is followed by the popup window with the your location and *Don't Allow/Allow* buttons, followed by the *Apple ID Verification Code* window with the 6-digit code.
 - **Text message** - The code is sent to a Trusted Phone in a text message.
 - **Security key (YubiKey)** - You have configured your Apple account to use a security key. The security key is insert into the computer running HA (Mac, RPi, HA Green, etc). 
 
@@ -134,11 +134,11 @@ If Apple accepts the code, the *Import Apple Devices* screen will be displayed.
 
 The next step is to create the iCloud3 device_tracker and sensor entities from your Apple account devices that was downloaded earlier. 
 
-The devices are grouped into three *Tracking Modes*:
+The devices are grouped into three categories, the *Tracking Mode*:
 
-- **Tracked (iPhone, Watch)** - iCloud3 issues location requests to Apple when they are needed. The location, battery and other information is updated.
-- **Monitored (iPad, Mac)** - These devices are updated using data Apple provides when the Tracked are located.
-- **Inactive (AirPods, other Apple devices)** - Apple does not provide any location or battery information for these devices. 
+- **Tracked Devices (iPhone, Watch)** - iCloud3 issues location requests to Apple when they are needed. The location, battery and other information is updated.
+- **Monitored Devices (iPad, Mac)** - These devices are updated using data Apple provides when the Tracked are located.
+- **Inactive Devices (AirPods, other Apple devices)** - Apple does not provide any location or battery information for these devices. 
 
 ​	 Note: You can change the *Tracking Mode* for a device later on the *iCloud3 Devices > Update Device* screen.
 
@@ -160,16 +160,13 @@ This screen lists all of the devices that iCloud3 will Track and Monitor. Device
 
   - Select *Update the Device* Action Command, then click **Submit**.
 
-  - The *Update Device* screen is displayed. See 
-
-    [here]: ../#/chapters/3_devices?id=add-and-update-an-icloud3-device
-
-    for more information on this screen.
+  - The *Update Device* screen is displayed. See [here](../#/chapters/3_devices?id=add-and-update-an-icloud3-device) for more information about this screen.
 
 
 
-You have completed all of the steps needed to configure iCloud3. Exit back to the *HA Devices & services* screen.
+You have completed all of the steps needed to configure iCloud3. 
 
+To end the iCloud3 Configure Session and display the *HA Devices & services* screen.
 - Select **Menu**, then click **Submit** to display to the Configure and *Devices and Sensor*s menu.
 - Select **Exit**, then click **Submit** to end the *iCloud3 Configure Session*. 
 
@@ -177,7 +174,7 @@ You have completed all of the steps needed to configure iCloud3. Exit back to th
 
 When you end the *iCloud3 Configure Session*:
 
-- The iCloud3 Dashboard is created and added to the *HA Sidebar* with a *Cloud* icon (see a sample screen below).
+- The iCloud3 Dashboard is created and added to the *HA Sidebar* with a *Cloud* icon (<img src="../images2/cloud-icon-42x42.png" width="20" height="16">). A sample screen is shown below..
 - The devices you added are located.
 - The device_tracker and sensor entities are updated. 
 
@@ -185,13 +182,23 @@ When you end the *iCloud3 Configure Session*:
 
 - Click the *Cloud* icon on the HA Sidebar to display the iCloud3 Dashboard screen.
 
-That's it. Congratulations! You have installed iCloud3 and are tracking your devices. You entered 3-fields - your Apple email id, the Apple account password and the 6-digit authentication code. 
+  
 
-That was the easy part. Now for the hard part - review the rest of the documentation and see how the many features can be used. Be sure to review the *Core Component Details* section so you can get familiar with the *Event Log*, the *Dashboard Builder* and various Configure screens. Go through the *Configure Tracked Devices* and *Operational Settings* and look for things that might be useful to you.
+That's it. Congratulations! You have installed iCloud3 and are tracking your devices. 
 
-Thanks and good luck
+When you can, review the rest of the documentation. You may find other features you can use. Things like:
+
+- Opening your garage door when you get home or closing it when you leave.
+- Checking to make sure your doors are all locked when no one is home.
+- Tracking the location of service vehicles.
+- Monitoring your irrigation zones so your automated mower does not mow one that is still wet.
+- Getting notified when your spouse or children are nearing home or leaving school or the gym.
+- Getting notified when the battery level of your iPad is low or when it has been fully charged.
+- Logging when you enter and exit a zone to a .csv spreadsheet file that can be used for filing expense reports.
 
 
+
+Thanks and good luck!
 
 *And if you like iCloud3, maybe you could get me a cup of coffee*
 
