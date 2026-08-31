@@ -21,12 +21,10 @@
 <body>
   <div id="app"></div>
 
-  <script src="./docsify-main-v4.13.1.min.js"></script> 
-  <!--<script src="./docsify-accordion.js"></script>-->
-  <script src="./docsify-copy-code.js"></script>
-  <script src="./docsify-edit-on-github.js"></script>
-  <script src="//unpkg.com/docsify-accordion/src/index.js"></script>
-  
+  <!-- The $docsify config object MUST be defined before any plugin script is  -->
+  <!-- loaded. Plugins register themselves by pushing onto window.$docsify.    -->
+  <!-- plugins as they load, so a plain 'window.$docsify = {...}' assignment   -->
+  <!-- after them would discard every plugin that had already registered.      -->
   <script>
     window.$docsify = {
       name: 'iCloud3 iDevice Tracker',
@@ -40,10 +38,16 @@
       maxDepth: 3,
       subMaxLevel: 2,
       search: 'auto',
-      themeColor: '#64A1E4'
+      themeColor: '#64A1E4',
+      plugins: []
     }
 
   </script>
+
+  <script src="./docsify-main-v4.13.1.min.js"></script>
+  <script src="./docsify-accordion.js"></script>
+  <script src="./docsify-copy-code.js"></script>
+  <script src="./docsify-edit-on-github.js"></script>
 
 
    <!--
