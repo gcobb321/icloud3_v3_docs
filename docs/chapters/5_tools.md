@@ -44,13 +44,15 @@ The following show the type of records added to the icloud3.log file by the diff
 
 + **General Information** - Display the Info log file  +
 
-![](../screens/tools/log-file-info.png)
+	![](../screens/tools/log-file-info.png)
 
 + **Debug** - Display the Debug log file  +
-  ![](../screens/tools/log-file-debug.png)
+
+  	![](../screens/tools/log-file-debug.png)
 
 + **Rawdata** - Display the Rawdata log file  +
-![](../screens/tools/log-file-rawdata.png)
+
+	![](../screens/tools/log-file-rawdata.png)
 
 -----
 ## Cleanup HA Entity Registry Devices & Sensors
