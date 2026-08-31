@@ -24,6 +24,6 @@ The following fields are available:
 
 - **Event Log 'Gear' Icon URL** > Special URL that display's the HA Configure Settings screen
 
+  
 
-
-![](../screens/parameters/display-settings-other-parameters.png)
+![](../images/display-settings-other-parameters.png)
