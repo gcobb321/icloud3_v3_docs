@@ -46,8 +46,8 @@ The following show the type of records added to the icloud3.log file by the diff
 
 ![](../screens/tools/log-file-info.png)
 
-+**Debug** - Display the Debug log file  +
-![](../screens/tools/log-file-debug.png)
++ **Debug** - Display the Debug log file  +
+  ![](../screens/tools/log-file-debug.png)
 
 + **Rawdata** - Display the Rawdata log file  +
 ![](../screens/tools/log-file-rawdata.png)
