@@ -3,9 +3,9 @@
 Screens described in this chapter:
 
 - **Apple Account & Mobile App - Data Source** - The Apple Acct and Mobile App provide location and other information iCloud3 uses to track the iDevice.
-  - **Update Apple Account Username/Password** - 
-    - **Apple Account Parameters** - 
-  - **Remove an Apple Account** - 
+  - **Update Apple Account Username/Password** -
+    - **Apple Account Parameters** -
+  - **Remove an Apple Account** -
 
 
 
@@ -40,12 +40,12 @@ There are 4-steps to adding an Apple account and setting up the devices to be tr
 
 **Step 1** - Enter your Apple account username/email-id and password.
 
-​	Display the *Update Apple Account Username/Password* screen. 
+​	Display the *Update Apple Account Username/Password* screen.
 
 - Enter the *Username* and *Password* fields.
 - Select *Save & Log into Apple Acct*, then select *Submit*
 
-​	The username and password are verified and the Apple account is logged into. 
+​	The username and password are verified and the Apple account is logged into.
 
 **Step 2** - Approve iCloud3 signing into your Apple account.
 
@@ -65,13 +65,13 @@ There are 4-steps to adding an Apple account and setting up the devices to be tr
 
 ### Updating an Apple Account
 
-The Apple Account is updated on the *Update Apple Account* screen highlighted above. 
+The Apple Account is updated on the *Update Apple Account* screen highlighted above.
 
 > China users need to specify additional parameters. This is described later in this section.
 
 #### Changing the Password
 
-When you change the password, be sure to change it here. If you do not change it, iCloud3 will still log into the account until the Trust Token expires. Once it expires, the account login will fail and error messages are displayed in the Event Log. The account will also show 'Not Logged Into' on the Apple Accounts list. 
+When you change the password, be sure to change it here. If you do not change it, iCloud3 will still log into the account until the Trust Token expires. Once it expires, the account login will fail and error messages are displayed in the Event Log. The account will also show 'Not Logged Into' on the Apple Accounts list.
 
 - Enter your new password in the Password field
 - Select *Save & Log into Apple Acct*, then select *Submit*
@@ -80,7 +80,7 @@ When you change the password, be sure to change it here. If you do not change it
 
 ### Deleting an Apple Account
 
-- Display the *Update Apple Account Username/Password* screen. 
+- Display the *Update Apple Account Username/Password* screen.
 - Select *Delete Apple Account*, then select *Submit*
 - The following confirmation screen is displayed:
 
@@ -96,13 +96,13 @@ When you change the password, be sure to change it here. If you do not change it
 
 ### Importing Apple Account Devices to Create the iCloud3 Devices
 
-Devices in the Apple Account can be imported into iCloud3 on the *Import Apple Devices* screen or they can be entered individually on the *iCloud3 Devices > Add Devices* selection. 
+Devices in the Apple Account can be imported into iCloud3 on the *Import Apple Devices* screen or they can be entered individually on the *iCloud3 Devices > Add Devices* selection.
 
 ![](../screens/apple_acct/import-apple-devices.png)
 
 > Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customed on the *Update iCloud3 Devices* screen.
 
-- The iCloud3 names (display and device_tracker entity names) are created from the Apple Device name and the type of device.  For example: 
+- The iCloud3 names (display and device_tracker entity names) are created from the Apple Device name and the type of device.  For example:
   - Gary's iPhone → Gary (gary_iphone)
   - iPhone de Philippe → Philippe (philippe_iphone)
   - iPad de María → María-iPad (maria_iPad)
@@ -113,7 +113,7 @@ Devices in the Apple Account can be imported into iCloud3 on the *Import Apple D
   - Monitored - iPad, Mac
   - Inactive - AirPods
 
-This is described in detail in the *iCloud3 Devices* chapter HERE. 
+This is described in detail in the *iCloud3 Devices* chapter HERE.
 
 -----
 
@@ -122,7 +122,7 @@ This is described in detail in the *iCloud3 Devices* chapter HERE.
 When iCloud3 starts, the configuration information is used to log into the Apple Account. The following takes place:
 
 1. The Username and password are verified by sending a request to a special Apple URL that returns a status code indicating if they are valid.
-2. Generally, the Apple account is logged into and a *session* is established that links iCloud3 with Apple and the Apple account. iCloud3 then sends a *Trust Token* (stored in the Apple session cookie files) if it has one back to Apple. Apple uses it to verify that it is a valid request and that the *Trust Token* has not expired. If it has, Apple requests the account password, iCloud3 sends it and Apple returns a new *Trust Token* that is used for the next account authentication about 20-minutes later. An account login email is sent to you when the password is used to log into the Apple account. 
+2. Generally, the Apple account is logged into and a *session* is established that links iCloud3 with Apple and the Apple account. iCloud3 then sends a *Trust Token* (stored in the Apple session cookie files) if it has one back to Apple. Apple uses it to verify that it is a valid request and that the *Trust Token* has not expired. If it has, Apple requests the account password, iCloud3 sends it and Apple returns a new *Trust Token* that is used for the next account authentication about 20-minutes later. An account login email is sent to you when the password is used to log into the Apple account.
 3. Apple then sends all of the data for all of the devices in the owners Apple account (the one that was logged into) and the devices in the Family Sharing list. This includes, a request for the 6-digit verification code or hardware key code, the device type, names, location information, internal device-id code, if the account is locked, it's status, etc.
 4. iCloud3 uses this data to tie the Apple device to the iCloud3 device being tracked using a combination of the device names and the internal device-id. This information is listed on the Event Log.
 
@@ -134,9 +134,9 @@ When iCloud3 starts, Stage 4 handles setting up the Apple Account and Mobile App
 - Match the Apple device with the iCloud3 device using the Apple Account iCloud Device parameter from the *Update iCloud3 Device* screen
 - Handle any errors that occur.
 
-The results are shown in the *Event Log > Stage 4* screens. 
+The results are shown in the *Event Log > Stage 4* screens.
 
-![](../images/evlog-stage-4-notes.png)
+![](../screens/evlog/evlog-stage-4-notes.png)
 
 ### Errors may happen when logging into the Apple account
 
@@ -150,17 +150,17 @@ The following are some of the errors that may occur during this process. iCloud3
    3. You are running in a container or on a virtual machine and it can not connect to Apple or the internet.
 
 3. The Apple iCloud account returns data for some devices but not for all of them.
-   1. Make sure *Location Sharing* is enabled on all of the devices and they can be seen in the *FindMy* app. 
+   1. Make sure *Location Sharing* is enabled on all of the devices and they can be seen in the *FindMy* app.
    2. Make sure the Family Sharing list is correct.
    3. Make sure the Apple account is not waiting for a verification code to be entered.
 
 4. The account gets a Username/Password error logging in.
-   1. Was the password changed in the Apple account but iCloud3 was never updated. 
+   1. Was the password changed in the Apple account but iCloud3 was never updated.
    2. Check the password using another program.
 
 5. There are multiple devices with the same name.
 
-   1. Check the devices in the Apple account. Delete old ones you no longer have. 
+   1. Check the devices in the Apple account. Delete old ones you no longer have.
    2. When you upgrade an iPhone, the old one is not deleted from the account and iCloud might be track the old one instead of the new one.
 
 6. The account is locked.
@@ -168,13 +168,13 @@ The following are some of the errors that may occur during this process. iCloud3
    1. Log into the Apple account at www.icloud.com and unlock the account.
    2. Use the *FindMy* app to show the location of your devices.
 
-7. iCloud3 can not find configured the Apple device in the data Apple sent back. Check the *Configure > Update iCloud3 Device* screen and check the Apple iCloud3 Device selection field. 
-   1. Correct any errors that are displayed. 
-   2. Change it to *None*, Save the change, then select it again and Save again. 
+7. iCloud3 can not find configured the Apple device in the data Apple sent back. Check the *Configure > Update iCloud3 Device* screen and check the Apple iCloud3 Device selection field.
+   1. Correct any errors that are displayed.
+   2. Change it to *None*, Save the change, then select it again and Save again.
    3. Delete the iCloud3 device and readd it.
    4. If you are using devices in multiple accounts, make sure the other Apple accounts are not waiting for a verification code to be entered.
 
-8. You get an Error Code 503 (Server Refused PwSRP Request) 
+8. You get an Error Code 503 (Server Refused PwSRP Request)
 
    Apple keeps track of how many times you try to log into the account is a small amount of time (time=unknown). If there are too many failures, it will refuse the login request thinking it is a spam attack and return the 503 error. This may happen when the username/password are valid. There is nothing you can do but wait. After a period of time (time=unknown), Apple will accept the login and continue. iCloud3 identifies when this occurs and will retry the login on a variable delay (10-minutes, then 20-minutes, then 30, 40, 50 and 1-hour).
 
@@ -182,7 +182,7 @@ The following are some of the errors that may occur during this process. iCloud3
 
    2. Do not delete any Apple session and cookie files on the *Configure > Tools* screen,
 
-   3. Do not try to login again in a short time span. 
+   3. Do not try to login again in a short time span.
 
       You will only make it worse and it will take longer for Apple to reset it's timers and counters.
 
@@ -191,7 +191,7 @@ The following are some of the errors that may occur during this process. iCloud3
 
 The following steps will help fix your issues:
 
-1. Review the messages and information in the *Event Log*. Go through every line in Stages 3 & 4 to see if it makes sense. 
+1. Review the messages and information in the *Event Log*. Go through every line in Stages 3 & 4 to see if it makes sense.
    1. Are all of the Apple accounts listed.
    2. Are all of the devices listed.
    3. Verify each device's name and type to make sure they are correct, there are no duplicates and the correct Apple device is assigned to the correct iCloud3 device.
@@ -217,17 +217,17 @@ An email is sent from Apple when you log into your your iCloud account using you
 
 ####  What can you do to minimize these emails from clogging up your inbox
 
-The short answer is not much. 
+The short answer is not much.
 
 I have set up a gmail filter that detects the email from Apple, marks it as read, bypasses the inbox and puts it in a special Apple email folder. Some have said they are concerned about someone hacking into their Apple account, they will not know about it and do not want to use these automatic filters. A valid concern but this works for me. I would welcome any other suggestions I might add to this User Guide to help others deal with this problem.
 
 #### Monitoring the emails from Apple
 
-Although the chance of someone else successfully logging into your Apple Account is almost impossible, especially where 2fa is now required, you may want to review the times iCloud3 logs in with your password and compare these logins with the email you receive. 
+Although the chance of someone else successfully logging into your Apple Account is almost impossible, especially where 2fa is now required, you may want to review the times iCloud3 logs in with your password and compare these logins with the email you receive.
 
-1. Select *Event Log > Actions > Show Startup Logs, Errors and Alerts*. 
+1. Select *Event Log > Actions > Show Startup Logs, Errors and Alerts*.
 
-   Scroll through the items for an entry similar to this. Logins during the startup process are in the Stage 4 area while logins during normal tracking are shown near the top of the list. 
+   Scroll through the items for an entry similar to this. Logins during the startup process are in the Stage 4 area while logins during normal tracking are shown near the top of the list.
 
    ![](../screens/authenticate/apple-acct-auth-evlog-password-msg.png)
 
@@ -243,20 +243,20 @@ Although the chance of someone else successfully logging into your Apple Account
 
 #### App Specific Password
 
-App Specific Passwords can not be used with iCloud3. Apple does not provide an interface for web based programs like iCloud3 to use them. They can only be used by Apps installed on the iPhone or iPad. 
+App Specific Passwords can not be used with iCloud3. Apple does not provide an interface for web based programs like iCloud3 to use them. They can only be used by Apps installed on the iPhone or iPad.
 
 Try to log into your Apple Account at www.icloud.com from a browser. Use your username and the App Specific Password. It will fail.
 
 #### Hardware Security Keys like Yubikey
 
-Hardware security keys can not be used with iCloud3 to authenticate access to your Apple Account. 
+Hardware security keys can not be used with iCloud3 to authenticate access to your Apple Account.
 
 If are using a Yubikey or other hardware key for your Apple Account and get an authentication request or if you request a new verification code, you will get the window requesting Apple account access approval as you normally do. You can approve the access but there is no method of linking that approval to iCloud3.
 
 #### Tracking an Apple Watch
 
 
-The Watch is tracked like any other iPhone or iPad. It is added on the *iCloud3 Devices* screen and configured on the *Update Devices* screen. 
+The Watch is tracked like any other iPhone or iPad. It is added on the *iCloud3 Devices* screen and configured on the *Update Devices* screen.
 
 Although the Mobile App Complication can be installed on the Apple Watch, there are a number of limitations regarding tracking :
 
@@ -276,7 +276,7 @@ These devices can not be tracked. They are not tracked by Apple like an iPhone o
 
 ## China Users
 
-A different URL is used to access the Apple Account servers in China (.cn is added to the URL). This is configured on the *Update Apple Account Username/Password* screen, *Apple Server Location* field. 
+A different URL is used to access the Apple Account servers in China (.cn is added to the URL). This is configured on the *Update Apple Account Username/Password* screen, *Apple Server Location* field.
 
 This selection field is displayed when the Home Assistant country code is `cn` or `hk`.![](../screens/apple_acct/apple-acct-other-parms.png)
 
@@ -331,7 +331,7 @@ Location Sharing must be enabled on all Apple devices that are tracked by iCloud
 
 #### Authenticating the Other Apple Accounts
 
-If you are setting up several Apple Accounts (spouse, children, parents, etc.), those accounts will need to be authenticated every 90-days or so. The default Authentication Method is to push the 6-digit code to a popup window. You will need access to their iPhone or other trusted device to complete the process. If you do not have access to the iPhone, you will not be able to complete the authentication process. 
+If you are setting up several Apple Accounts (spouse, children, parents, etc.), those accounts will need to be authenticated every 90-days or so. The default Authentication Method is to push the 6-digit code to a popup window. You will need access to their iPhone or other trusted device to complete the process. If you do not have access to the iPhone, you will not be able to complete the authentication process.
 
 Add your phone number to their Apple Account.
 
@@ -348,12 +348,12 @@ When a device needs to be located, iCloud3 sends a location request to Apple. Ap
 
 However, when you are using several Apple Accounts and both apple accounts are sharing the same devices, you can limit the devices located during a location request to those 'owned' by that Apple Account. There are benefits and determents associated with each method.
 
-- Improved response time when an Apple account's devices are being located since Apple does not have to locate all the devices in the Family Sharing list. 
+- Improved response time when an Apple account's devices are being located since Apple does not have to locate all the devices in the Family Sharing list.
 - Additional location requests must be sent to Apple to locate the devices on the other Apple account
 
 For example: You have an Apple account with an iPhone and iPad (you are the owner) and your spouse has an iPhone and iPad (the spouse is the owner).
 
-- Family Sharing devices - You and your spouse's iPhones and iPads are all located (4-devices) whenever one device is located. This can reduce the number of location requests sent to Apple, especially if the devices are close to each other. However, it takes Apple longer to locate all of them and it may return an old location if the device takes too long to locate. 
+- Family Sharing devices - You and your spouse's iPhones and iPads are all located (4-devices) whenever one device is located. This can reduce the number of location requests sent to Apple, especially if the devices are close to each other. However, it takes Apple longer to locate all of them and it may return an old location if the device takes too long to locate.
 - Owner's Devices - When one of your devices needs to be located, the location request sent to Apple is only for your iPhone and iPad (2-devices). Your spouse's devices are not located at that time. Another location request is sent to Apple for them when they need to be located.
 
 This is configured on the *Configure > Update Apple Account Username/Password* screen, *Always Locate All Devices* field.
@@ -371,10 +371,10 @@ This is configured on the *Configure > Update Apple Account Username/Password* s
 
 The device's name (*Gary iPhone*) selected from the above list is stored in the iCloud3 configuration file. This is used to determine the actual Apple device providing location data when iCloud3 starts.
 
-Several events take place when you upgrade a device, i.e, replace an iPhone 15 with an iPhone 16. 
+Several events take place when you upgrade a device, i.e, replace an iPhone 15 with an iPhone 16.
 
 - The apps, data and settings are transferred from the iPhone 15 to the iPhone 16.
-- In this example, the name is on the iPhone 16 Pro Max is *Gary iPhone*. 
+- In this example, the name is on the iPhone 16 Pro Max is *Gary iPhone*.
 - A new name is assigned to the iPhone 16 Pro Max, i.e, *Gary iPhone (2)*.
 - The iPhone 15 is assigned a new *device_id* by Apple. This *device_id* is used internally by Apple and you never see it. It is used, however, by iCloud3 to identify the actual device providing location data.
 - The iPhone 15 is removed from the *FindMy App* and the Apple iCloud account and traded-in or sold.
@@ -383,18 +383,18 @@ At this time, iCloud3 is still tracking the *Gary iPhone/iPhone 15* that is no l
 
 **Easy way** - The following steps should be done to make it easier to identify and transfer to the new iPhone:
 
-- Rename the iPhone 15 from *Gary iPhone* to *Gary iPhone 15*. 
+- Rename the iPhone 15 from *Gary iPhone* to *Gary iPhone 15*.
 - Rename the iPhone 16 Pro Max from *Gary iPhone 15 (2)* back to *Gary iPhone* after you transfer the apps, data and settings.
 - Restart iCloud3.
 
 Since the new iPhone 16 Pro Max is now the *Gary iPhone* device, it will be now be assigned to the same iCloud3 tracked device.
 
-**Harder way** - You realize that *Gary iPhone* is no longer being tracked because the iPhone is no longer on your Apple iCloud account or it has been wiped and powered off. 
+**Harder way** - You realize that *Gary iPhone* is no longer being tracked because the iPhone is no longer on your Apple iCloud account or it has been wiped and powered off.
 
 - Restart iCloud3 - The Apple Account device list will be rebuilt with the current name.
-  - Reconfigure the iCloud3 device on the *Update iCloud3 Device* screen - Select the new iPhone from the Apple Account iCloud Device list. 
+  - Reconfigure the iCloud3 device on the *Update iCloud3 Device* screen - Select the new iPhone from the Apple Account iCloud Device list.
   - Exit the Configure screens - iCloud3 will be restarted and the new iPhone's name will be assigned to the iCloud3 tracked device.
-- Or, 
+- Or,
   - Change the name on the iPhone 16 Pro Max from *Gary iPhone (2)* to *Gary iPhone*.
   - Wait a few minutes until this name is re-registered with the Apple account.
   - Restart iCloud3 to reassign the name to the iCloud3 tracked device.
@@ -419,7 +419,7 @@ When this happens:
 
 - After it has been down for 3-minutes, an Internet Connection Error message is sent to the *icloud3_alerts* sensor
 
-  ![](../images/internet-connection-error.png)
+  ![](../screens/other/internet-connection-error.png)
 
 When the Internet Connection is restored and www.icloud.com is available:
 
@@ -438,14 +438,7 @@ iCloud3 is always logged into your Apple account. When iCloud3 starts and logs i
 
 The access token is stored in cookie files in the *config/.storage/icloud3.apple_acct* directory. Normally, you will never have to delete these files. However, if you really want to delete them:
 
-- Display the *Tools* screen. 
+- Display the *Tools* screen.
 - Select *Delete All Apple/iCloud Cookie Files*, then select *Submit*.
 
-All cookie and session files for all Apple accounts will be deleted. Restarting iCloud3 or logging into the Apple account will recreate the files for the Apple account. This will also display the _Someone is logging into your Apple account_ popup screen on your Trusted devices with a new 6-digit verification code. 
-
-
-
-
-
-
-
+All cookie and session files for all Apple accounts will be deleted. Restarting iCloud3 or logging into the Apple account will recreate the files for the Apple account. This will also display the _Someone is logging into your Apple account_ popup screen on your Trusted devices with a new 6-digit verification code.
