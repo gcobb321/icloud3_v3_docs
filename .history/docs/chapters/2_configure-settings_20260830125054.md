@@ -17,7 +17,7 @@ The iCloud3 configuration screens are used to:
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
 
-![](../screens/menu-devices-sensors-parms.png)
+![](..\screens\menu-devices-sensors-parms.png)
 
 #### Configure Devices & Sensors screen
 
@@ -40,32 +40,32 @@ This is the secondary menu screen that is used to set various parameters related
 - Change the text strings should be shown on the Event log
 - Setup Waze Route information and Waze Route History
 - Setup sensors changes when entering non-monitored zones, stationary zones that can be used when in a non-zone location for an extended period of time and using a pseudo home zone when away from home
-- Setup default inZone time intervals
+- Setup default inZone time intervals 
 
-
+  
 
 ------
 
 ## Open the Configuration screens
 
-There are two ways to open the Configuration Screens.
+There are two ways to open the Configuration Screens. 
 
-- Select the   ![](..\images\evlog-icons-config-small.png) **Configure Icon** shortcut on the *Event Log screen*
-  Then select **Configure**
-  *or*
+- Select the   ![](..\images\evlog-icons-config-small.png) **Configure Icon** shortcut on the *Event Log screen* 
+  Then select **Configure** 
+  *or*   
 - Select from the HA Dashboard using **☰ > HA Settings > Devices & Services > Integrations > iCloud3** screen
   Then select **Configure**
 
 
 > The Configure Icon shortcut is not available when you first install the iCloud3 integration. It will be available after the Event Log card has been setup.
 
-![](../screens/home_assistant/icloud3-configure.png)
+![](..\images\icloud3-configure.png)
 
 
 
 The *Configure Devices & Sensors* menu is displayed when you select *Configure*. Toggle between the two menus by selecting it from the Action list at the bottom of the screen.
 
-
+  
 
 ------
 ## Selection and Parameter Update screens
@@ -83,6 +83,7 @@ The screen you selected will be displayed It generally has two parts:
 - **Top Part - Item Selection or Parameter Entry** - This is used to select a task to be done, select an Apple account or Device to be updated, select an item from a list and entering and configuring parameters, etc
 - **Bottom Part - Command or Action to be done** - First select the desired option (Select/Next/Add/Update/Delete/etc.), then select the command i(Submit/Next/Last) in the bottom right-hand corner. Some screens will launch other screens for additional parameters, action confirmation, menu options, etc.
 
-These show these 2-sections.
+These show these 2-sections. 
 
 ![](../screens/apple_acct/apple-acct-list-update.png)
+

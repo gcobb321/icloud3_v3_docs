@@ -40,7 +40,7 @@ iCloud3 writes operational messages to the iCloud3 Log file (icloud3.log) when i
 ![](../screens/tools/log-level.png)
 
 #### iCloud3 Log File
-The following drop-down items (Info, Debug, Rawdata) show examples of theiCloud3 Log file.
+The following drop-down items (Info, Debug, Rawdata) show examples of the iCloud3 Log file.
 	![](../screens/tools/log-file-thumbnail.png)
 
 + **Info Log Level** +

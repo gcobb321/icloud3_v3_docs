@@ -34,15 +34,40 @@ Two screens are used to list, add and update the Apple Accounts that provide thi
 
 
 
-### Add, or Update an Apple Account
+### Adding an Apple Account
 
-- Display the *Update Apple Account Username/Password* screen. 
+There are 4-steps to adding an Apple account and setting up the devices to be tracked.
+
+**Step 1** - Enter your Apple account username/email-id and password.
+
+​	Display the *Update Apple Account Username/Password* screen. 
+
 - Enter the *Username* and *Password* fields.
 - Select *Save & Log into Apple Acct*, then select *Submit*
 
-The username and password are verified and the Apple account will be logged into. If the account is being added, the *Sign-in Warning  pop-up* screen is displayed on your Trusted Devices and the *Authenticate Apple Account Sign-in* screen is displayed for entry of the 6-digit verification code or for handling the hardware security key authentication (not available yet).
+​	The username and password are verified and the Apple account is logged into. 
 
-Note: The Apple account can locate only your devices or all devices in your Family Sharing list. Apple's location request may take slightly longer when this is enabled since it has to locate more devices. However, all tracked devices are updated when this is done.  See the *Family Sharing vs Owner's Devices when using several Apple Accounts* paragraph below for more information.
+**Step 2** - Approve iCloud3 signing into your Apple account.
+
+​	The Authenticate Apple Account Sign-in screen is automatically displayed after you log into the account. The 6-digit authentication code or security key prompt is requested
+
+- Enter your 6-digit Authentication code or press the security key
+
+**Step 3** - Import the devices in your Apple account
+
+​	The devices in your account are read when you logged into the account. The device data is analyzed and the iCloud3 devicename and friendly name are assigned, the associated Apple account and Mobile App device are assigned and the devices is put into a tracked (iPhone, Watch), Monitored (iPad, Mac) or inactive (AirPods, other devices). The Tracked and Monitored devices are imported.
+
+**Step 4** - Review the imported devices and make and changes to the parameters that are desired.
+
+![](../screens/apple_acct/apple-acct-auth-import-devices-steps.png)
+
+
+
+### Updating an Apple Account
+
+The Apple Account is updated on the *Update Apple Account* screen highlighted above. 
+
+> China users need to specify additional parameters. This is described later in this section.
 
 #### Changing the Password
 
@@ -67,7 +92,7 @@ When you change the password, be sure to change it here. If you do not change it
 
   The Apple account will be deleted and the *Update Apple Account Username/Password* screen is displayed.
 
-
+-----
 
 ### Importing Apple Account Devices to Create the iCloud3 Devices
 

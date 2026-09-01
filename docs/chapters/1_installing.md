@@ -77,11 +77,22 @@ iCloud3 is a Home Assistant Integration and is configured on the Integrations sc
 ![](../screens/home_assistant/ha-integrations-icloud3-entry.png)
 
 -----
-## Configure iCloud3 for the first time
+## Configure iCloud3 for the First Time
+
+Generally, when you click the Gear icon in the above image to open the iCloud3 Configure screens, the following will happen:
+
+- The screen for adding your Apple Account is displayed. You enter your username/email-id and password and iCloud3 will log into your account.
+- The authentication process will start. The 6-digit code or security key keypress is requested and the Authenticate Apple Sign-in screen is displayed. Enter the code or press the security key.
+- The devices in your Apple account are imported and iCloud3 device_tracker and sensor entities are created.
+- The list of the created devices is displayed for review and/or updating.
+- You end the iCloud3 Configure Session and the iCloud3 Dashboard is creaed and added to the HA Sidebar.
+- You are done! Each of these steps is described in detail below.
+
+![](../screens/apple_acct/apple-acct-auth-import-devices-steps.png)
 
 ### Add your Apple Account
 
-Click the Gear icon in the above image to open the iCloud3 Configure screens. Since you are doing this for the first time, the iCloud3 configuration file (*.storage/icloud3/configuration*) will be created with default values. The *Update Apple Account* screen is displayed.
+ Since you are doing this for the first time, the iCloud3 configuration file (*.storage/icloud3/configuration*) will be created with default values. The *Update Apple Account* screen is displayed.
 
 ![](..\screens\apple_acct\apple-acct-update-first-time.png)
 
