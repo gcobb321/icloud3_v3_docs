@@ -26,7 +26,7 @@ Various tools that will perform maintenance actions on the iCloud3 Configuration
 -----
 ## Set Log Level
 
-iCloud3 writes operational messages to the iCloud3.log file when it starts up, tracks devices, updates sensors, communicates with your Apple accounts and Mobile Apps, updates the configuration parameters, etc. The level of detail is determined by this parameter.
+iCloud3 writes operational messages to the iCloud3 Log file (icloud3.log) when it starts up, tracks devices, updates sensors, communicates with your Apple accounts and Mobile Apps, updates the configuration parameters, etc. The level of detail is determined by this parameter.
    - **Info** - Log General Information and Event Log messages
    - **Debug** - Info + Other Internal Tracking Monitors
    - **Debug (HALog)** - Also add log records to the `home-assistant.log` file
@@ -40,7 +40,7 @@ iCloud3 writes operational messages to the iCloud3.log file when it starts up, t
 ![](../screens/tools/log-level.png)
 
 #### iCloud3 Log File
-aThe following show examples of the icloud3.log file entries for the differnt Log Levels.
+The following drop-down items (Info, Debug, Rawdata) show examples of theiCloud3 Log file.
 	![](../screens/tools/log-file-thumbnail.png)
 
 + **Info** - Display the Info log file +

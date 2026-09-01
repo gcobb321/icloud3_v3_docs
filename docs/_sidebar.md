@@ -24,11 +24,11 @@
 - [ •  Away Time Zone](chapters/5_away-time-zone.md)
 - [ •  Display Settings & Other Parameters](chapters/5_display-settings-parms.md)
 -  [ •  Display Text As](chapters/5_display-text-as.md)
-- [ •  Maintenance Tools](chapters/5_tools.md)
 - [ •  Sensors](chapters/5_sensors.md)
 - [ •  Special Zones](chapters/5_special-zones.md)
 -  [ •  Tracking Parameters](chapters/5_tracking-parms.md)
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
+- [ •  Tools](chapters/5_tools.md)
 
 <u>**Help**</u>
 - [ •  Tools, Logging  and Utilities](chapters/5_tools.md)
