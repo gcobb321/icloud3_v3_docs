@@ -28,10 +28,9 @@
 - [ •  Special Zones](chapters/5_special-zones.md)
 -  [ •  Tracking Parameters](chapters/5_tracking-parms.md)
 - [ •  Waze Route Time & Distance](chapters/5_waze.md)
-- [ •  Tools](chapters/5_tools.md)
 
 <u>**Help**</u>
-- [ •  Tools, Logging  and Utilities](chapters/5_tools.md)
+- [ •  Tools, Logging  and Utilities](chapters/6_tools.md)
 - [ •  Configuration and Setup](chapters/6_configuration-setup-issues.md)
 - [ •  Apple Acct, iCloud3 Devices, Sensors](chapters/6_apple-acct-issues.md)
 - [ •  Tracking Issues](chapters/6_tracking-issues.md)
@@ -39,23 +38,23 @@
 
 ------
 <u>**Advanced Features**</u>
-- [ •  iCloud3 Alerts Sensor](chapters/4_alerts-sensor.md)
-- [ •  Track From Multiple Zones](chapters/4_track-from-zone.md)
-- [ •  Waze Map Card Display](chapters/4_waze-map-card.md)
-- [ •  Zone Log for Expense Reports](chapters/4_zone-log.md)
+- [ •  iCloud3 Alerts Sensor](chapters/7_alerts-sensor.md)
+- [ •  Track From Multiple Zones](chapters/7_track-from-zone.md)
+- [ •  Waze Map Card Display](chapters/7_waze-map-card.md)
+- [ •  Zone Log for Expense Reports](chapters/7_zone-log.md)
 
 <u>**Other Topics**</u>
-- [ •  Actions & Service Calls](chapters/7.4-service-calls.md)
-- [ •  Sample Automation & Scripts](chapters/7.5-sample-automation-scripts.md)
-- [ •  Startup & Device Alerts](chapters/7.6-alerts.md)
--  [ •  Sensor Attributes](chapters/7.3-attributes.md)
+- [ •  Actions & Service Calls](chapters/8_service-calls.md)
+- [ •  Sample Automation & Scripts](chapters/8_sample-automation-scripts.md)
+- [ •  Startup & Device Alerts](chapters/8_alerts.md)
+-  [ •  Sensor Attributes](chapters/8_attributes.md)
 
 ------
-- [**User Guide Index**](chapters/6-index.md)
+- [**User Guide Index**](chapters/9_index.md)
 
 <u>**Other Topics**</u>
--  [ •   Technical Information](chapters/9.1-tech-info.md)
-- [ •  GitHub](https://github.com/gcobb321/icloud3)
-- [ •   GitHub Releases](https://github.com/gcobb321/icloud3/releases)
-- [ •   GitHub Developers](https://github.com/gcobb321/icloud3_v3)
-- [ •   GitHub Developers Releases](https://github.com/gcobb321/icloud3_v3/releases)
+-  [ •   Technical Information](chapters/9_tech-info.md)
+- [ •   Link to -  GitHub](https://github.com/gcobb321/icloud3)
+- [ •    Link to - GitHub Releases](https://github.com/gcobb321/icloud3/releases)
+- [ •    Link to - GitHub Developers](https://github.com/gcobb321/icloud3_v3)
+- [ •    Link to - GitHub Developers Releases](https://github.com/gcobb321/icloud3_v3/releases)
