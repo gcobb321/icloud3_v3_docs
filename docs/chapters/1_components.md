@@ -1,13 +1,11 @@
-
-
 # iCloud3 Components
 
 There are 4 major parts to the iCloud3 custom component that are used to configure, track and report device location information. They are:
 
 - **iCloud3 Device Tracker** - This monitors the device's location, determines when the device should be located next and updates all the sensors
-- **Event Log** - Shows a devices location, how the location changes, the results of location updates, errors, and startup information
+- **Event Log** - Shows a device's location, how the location changes, the results of location updates, errors, and startup information
 - **Configure Settings** - Set up all the iCloud3 tracked devices, Apple Accounts, sensors and other parameters
-- **Dashboard Builder** - Create iCloud3 dashboards with tracking results, battery information and the Event Log in several formats. The dashboards can then be customized with the Home Assistant Dashboard Editor and the various items and views can be copied and pasted into other dashboards. The Dashboard Builder is one of the *Configure Settings* screens. 
+- **Dashboard Builder** - Create iCloud3 dashboards with tracking results, battery information and the Event Log in several formats. The dashboards can then be customized with the Home Assistant Dashboard Editor and the various items and views can be copied and pasted into other dashboards. The Dashboard Builder is one of the *Configure Settings* screens.
 
 
 
@@ -26,10 +24,10 @@ The iCloud3 Custom Component provides the core device tracking service. It does 
 The screens below show examples of a tracked device's current status. The following is displayed:
 
 - Gary, on the left, is at Home. Lillian, on the Right is Away.
-  - Arrive item - The icons and text show Gary is at Home (Home icon in a circle and he arrived home at @3:22p. Lillian is traveling towards home. Notice the distance, travel time and travel direction from the Home Zone. 
-- Notice when the device was last located by iCloud or the Mobile App, when it was last updated by iCloud3 and the time of the next update. 
+  - Arrive item - The icons and text show Gary is at Home (Home icon in a circle) and he arrived home at @3:22p. Lillian is traveling towards home. Notice the distance, travel time and travel direction from the Home Zone.
+- Notice when the device was last located by iCloud or the Mobile App, when it was last updated by iCloud3 and the time of the next update.
 - Gary is tracking from Home and the Quail Zone, Lillian just from Home.
-- The *Info* field shows tracking results from nearby devices is being used.
+- The *Info* field shows tracking results from nearby devices are being used.
 
 ![](../screens/tracking/track-gary-home-lillian-away-captions.png)
 
@@ -65,17 +63,17 @@ The iCloud3 configuration screens are used to:
 - Configure how tracking results and other information should be displayed
 - Set up Special Zones and specify how Waze Route Tracking should be configured
 
-![](..\screens\menu-devices-sensors-parms.png)
+![](../screens/menu-devices-sensors-parms.png)
 
 -----
 
 ## Dashboard Builder
 
-The Dashboard Builder is a tool that will create and update dashboards showing iCloud3 tracking results and other device information provided by iCloud3. It is added to the HA Sidebar panel when it is created and can be edited using the HA Dashboard Editor in the same manner as other dashboards. It's name starts with *iCloud3-#* and can be changed to meet your needs. There is no limit to the number of iCloud3 dashboards that can be created.  The screen above was created by the Dashboard Builder. 
+The Dashboard Builder is a tool that will create and update dashboards showing iCloud3 tracking results and other device information provided by iCloud3. It is added to the HA Sidebar panel when it is created and can be edited using the HA Dashboard Editor in the same manner as other dashboards. Its name starts with *iCloud3-#* and can be changed to meet your needs. There is no limit to the number of iCloud3 dashboards that can be created.  The screen above was created by the Dashboard Builder.
 
-!> When the iCloud3 Integration is install the first time, the *iCloud3* is created and added to the HA Sidebar panel.
+!> When the iCloud3 Integration is installed the first time, the *iCloud3 Dashboard* is created and added to the HA Sidebar panel.
 
-!> When new devices are added on the *Update iCloud3 Devices* screen, they are added to all iCloud3 dashboards *All Info, *Track Results and *Badge, Battery view tabs.*
+!> When new devices are added on the *Update iCloud3 Devices* screen, they are added to all iCloud3 dashboards *\*All Info, \*Track Results and \*Badge, Battery* view tabs.
 
 Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are built for the selected devices when the dashboard is created. The other view tabs (their name starts with a '*') are recreated for all devices whenever a dashboard is updated. The type of elements that are created are:
 
@@ -84,6 +82,6 @@ Each dashboard has six view tabs. The *Main* and *Other Devices* view tabs are b
 - Device Badge sensors and Battery sensor as one item in several formats
 - Device Battery sensors in several formats
 
-![](..\screens\dashboard_bldr\dashboard-builder.png)
+![](../screens/dashboard_bldr/dashboard-builder.png)
 
 Note: The *Tracking Results Summary and Detail* screens above were created with the Dashboard Builder

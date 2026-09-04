@@ -1,4 +1,4 @@
-# Display Settings & Other Parameters <!-- {docsify-ignore} -->
+# Display Settings & Other Parameters {docsify-ignore}
 
 ##### Selected From: *Configure Parameters Menu*
 
@@ -7,7 +7,7 @@ This screen specifies how tracking results and other information is displayed in
 
 The following fields are available:
 
-- **Event Log Zone Display Nam**e - How the Zone name is displayed in sensors and the Event Log
+- **Event Log Zone Display Name** - How the Zone name is displayed in sensors and the Event Log
 
 - **Device Tracker State Value** - How the device's device_tracker entity state value is determined
 
@@ -22,7 +22,7 @@ The following fields are available:
 
 - **Event Log Card Dashboard Resources Directory** - Event Log custom card .js file directory
 
-- **Event Log 'Gear' Icon URL** > Special URL that display's the HA Configure Settings screen
+- **Event Log 'Gear' Icon URL** - Special URL that displays the HA Configure Settings screen
 
 
 

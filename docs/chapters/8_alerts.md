@@ -11,7 +11,7 @@ iCloud3 constantly monitors the status of the devices and displays alert message
 
 ![](../screens/evlog/alerts-evlog.png)
 
-### Attribute Attributes {docsify-ignore}
+## Sensor Alert Attributes {docsify-ignore}
 
 The alerts are also updated in the iCloud3 Event Log sensor entity `sensor.icloud3_event_log`. See the following example automations to see how the attributes can be used
 
@@ -32,8 +32,8 @@ The following automations are examples that will send a message with the alert i
   ```
   alias: iCloud3 Alert Message (Startup)
   description: Send an Alert Msg (Startup Alerts)
-  trigger:
-    - platform: state
+  triggers:
+    - trigger: state
       entity_id:
         - sensor.icloud3_event_log
       attribute: alert_startup
@@ -41,16 +41,16 @@ The following automations are examples that will send a message with the alert i
         hours: 0
         minutes: 0
         seconds: 0
-  condition:
+  conditions:
     - condition: template
       value_template: "{{ state_attr('sensor.icloud3_event_log', 'alert_startup') != '' }}"
     - condition: template
       value_template: >-
         {{ trigger.to_state.attributes.alert_startup !=
         trigger.from_state.attributes.alert_startup }}
-  action:
-    - service: notify.mobile_app_gary_iphone_app
-      data_template:
+  actions:
+    - action: notify.mobile_app_gary_iphone_app
+      data:
         title: iCloud3 Alert-Startup Events
         message: "{{ state_attr('sensor.icloud3_event_log', 'alert_startup') }}"
   mode: single
@@ -62,8 +62,8 @@ The following automations are examples that will send a message with the alert i
   ```
   alias: iCloud3 Alert Message (Tracked)
   description: Send an Alert Msg (Tracked Devices Alerts)
-  trigger:
-    - platform: state
+  triggers:
+    - trigger: state
       entity_id:
         - sensor.icloud3_event_log
       attribute: alert_tracked
@@ -71,16 +71,16 @@ The following automations are examples that will send a message with the alert i
         hours: 0
         minutes: 0
         seconds: 0
-  condition:
+  conditions:
     - condition: template
       value_template: "{{ state_attr('sensor.icloud3_event_log', 'alert_tracked') != '' }}"
     - condition: template
       value_template: >-
         {{ trigger.to_state.attributes.alert_tracked !=
         trigger.from_state.attributes.alert_tracked }}
-  action:
-    - service: notify.mobile_app_gary_iphone_app
-      data_template:
+  actions:
+    - action: notify.mobile_app_gary_iphone_app
+      data:
         title: iCloud3 Alert-Tracked Devices
         message: "{{ state_attr('sensor.icloud3_event_log', 'alert_tracked') }}"
   mode: single
@@ -93,8 +93,8 @@ The following automations are examples that will send a message with the alert i
   ```
   alias: iCloud3 Alert Message (Monitored)
   description: Send an Alert Msg (Monitored Devices Alerts)
-  trigger:
-    - platform: state
+  triggers:
+    - trigger: state
       entity_id:
         - sensor.icloud3_event_log
       attribute: alert_monitored
@@ -102,16 +102,16 @@ The following automations are examples that will send a message with the alert i
         hours: 0
         minutes: 0
         seconds: 0
-  condition:
+  conditions:
     - condition: template
       value_template: "{{ state_attr('sensor.icloud3_event_log', 'alert_monitored') != '' }}"
     - condition: template
       value_template: >-
         {{ trigger.to_state.attributes.alert_monitored !=
         trigger.from_state.attributes.alert_monitored }}
-  action:
-    - service: notify.mobile_app_gary_iphone_app
-      data_template:
+  actions:
+    - action: notify.mobile_app_gary_iphone_app
+      data:
         title: iCloud3 Alert-Monitored Devices
         message: "{{ state_attr('sensor.icloud3_event_log', 'alert_monitored') }}"
   mode: single
@@ -123,9 +123,9 @@ The following automations are examples that will send a message with the alert i
 
   ```
   alias: iCloud3 Alert Message (Summary)
-  description: Send and Alert Msg (Summary)
-  trigger:
-    - platform: state
+  description: Send an Alert Msg (Summary)
+  triggers:
+    - trigger: state
       entity_id:
         - sensor.icloud3_event_log
       attribute: alerts
@@ -133,16 +133,16 @@ The following automations are examples that will send a message with the alert i
         hours: 0
         minutes: 0
         seconds: 0
-  condition:
+  conditions:
     - condition: template
       value_template: "{{ state_attr('sensor.icloud3_event_log', 'alerts') != '' }}"
     - condition: template
       value_template: >-
         {{ trigger.to_state.attributes.alerts !=
         trigger.from_state.attributes.alerts }}
-  action:
-    - service: notify.mobile_app_gary_iphone_app
-      data_template:
+  actions:
+    - action: notify.mobile_app_gary_iphone_app
+      data:
         title: iCloud3 Alert-Summary
         message: "{{ state_attr('sensor.icloud3_event_log', 'alerts') }}"
   mode: single

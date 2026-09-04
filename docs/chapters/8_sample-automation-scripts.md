@@ -1,11 +1,11 @@
 # Sample Automations & Scripts
 
-The following automations and scripts are one example of how I My setup is using using iCloud3 for presence detection. Specifically, these show how I open my garage door when I arrive home.
+The following automations and scripts are one example of how I am using iCloud3 for presence detection. Specifically, these show how I open my garage door when I arrive home.
 
 I have an ESP32 running ESPHome that is connected to my garage door that creates several HA entities:
 
 - *switch.garage_door* - Opens and closes it just like a wall mounted switch.
-- *sensor.garage_door* - Detects if the door is open or closed.
+- *cover.garage_door* - Detects if the door is open or closed.
 - *sensor.garage_door_distance* - Measures where the door is when it is opening or closing
 
 I use several entities:
@@ -16,20 +16,20 @@ I use several entities:
 
 I use the following iCloud3 sensors and sensor attributes:
 
-- *gary_iphone_distance_home* - Distance to Home.  I could also use *sensor.gary_iphone_distance_home* or *sensor.gary_iphone_distance_warehouse* when tracking from several zones.
+- *gary_iphone_zone_distance* - Distance to Home. I could also use *sensor.gary_iphone_home_distance* or *sensor.gary_iphone_zone_distance_warehouse* when tracking from several zones.
 - *gary_iphone_zone_name* - Set to the zone name (Home) when in the zone.
-- *sensor.gary_iphone_zone_distance/max_distance attribute* - Set to the 0 when exiting the zone, then set to the furthest distance from the zone while traveling. This is used to see when I went more than 2 miles and probably driving rather than leaving the Home zone and just walking around the neighborhood. I could also use *sensor.gary_iphone_distance_home/max_distance attribute* or *sensor.gary_iphone_distance_warehouse/max_distance attribute* when tracking from several zones.
+- *sensor.gary_iphone_zone_distance/max_distance attribute* - Set to 0 when exiting the zone, then set to the furthest distance from the zone while traveling. This is used to see when I went more than 2 miles and probably driving rather than leaving the Home zone and just walking around the neighborhood. I could also use *sensor.gary_iphone_home_distance/max_distance attribute* or *sensor.gary_iphone_zone_distance_warehouse/max_distance attribute* when tracking from several zones.
 
-My goal is to 
+My goal is to
 
 - Open the garage door when I arrive home.
-- Detect if the garage door is open when it should not e.
+- Detect if the garage door is open when it should not be.
 - Display badges showing the stage of the garage door and location of people.
 - Be able to check the status of the garage door.
 - Close it manually if it is open when it should not be.
 - Close it if everyone is far away from Home.
 
-The following automations and scripts does this reliably as long as I have a good cell signal and the GPS accuracy is within limits. These automations and scripts can be adapted for many other tasks (lights, security system, locks, camera operations, etc). 
+The following automations and scripts do this reliably as long as I have a good cell signal and the GPS accuracy is within limits. These automations and scripts can be adapted for many other tasks (lights, security system, locks, camera operations, etc).
 
 
 #### Example Automations, Scripts and Sensor Templates
@@ -40,9 +40,11 @@ The following Automations, Scripts and Sensor Templates are shown:
 - Gary - Arrives Home (Script)
 - Gary - Leaves Home (Automation)
 - Gary - Leaves Home (Script)
-- Gary - Send Message (Automation)
+- Gary - Arrives Warehouse (Automation)
+- Gary - Send Message (Script)
 - Garage Door - Open (Script)
 - Garage Door - Close (Script)
+- Garage Door - Open or Close (Automation)
 - Garage Door - Status (Script)
 - Garage Door - Close at 8pm (Automation)
 - Garage Door - Close when no one is Home (Automation)
@@ -53,18 +55,19 @@ The following Automations, Scripts and Sensor Templates are shown:
 
 -----
 
-#### Home Assistance has started (Automation)
+#### Home Assistant has started (Automation)
 
 ```
 alias: HA - Started Flag, Set
-trigger:
-  - platform: homeassistant
+triggers:
+  - trigger: homeassistant
     event: start
-condition: null
-action:
+conditions: []
+actions:
   - delay: "00:00:20"
-  - service: input_boolean.turn_on
-    entity_id: input_boolean.ha_started_flag
+  - action: input_boolean.turn_on
+    target:
+      entity_id: input_boolean.ha_started_flag
 mode: single
 ```
 
@@ -73,7 +76,7 @@ mode: single
 -----
 #### Gary Arrives Home (Automation) -  (HomeDistance sensor)
 
-This automation uses the *HomeDistance* sensor. This sensor is always available and can be used when tracking from only one zone. 
+This automation uses the *HomeDistance* sensor. This sensor is always available and can be used when tracking from only one zone.
 
 - Triggers:
   - *Gary's ZoneName* changes to *Home*, or
@@ -88,25 +91,25 @@ This automation uses the *HomeDistance* sensor. This sensor is always available 
 ```
 alias: Gary - Arrives Home
 description: Gary Arrives Home
-trigger:
-  - platform: state
+triggers:
+  - trigger: state
     entity_id:
       - sensor.gary_iphone_zone_name
     to: Home
-  - platform: numeric_state
+  - trigger: numeric_state
     entity_id: sensor.gary_iphone_home_distance
     below: 0.35
-condition:
+conditions:
   - condition: numeric_state
     entity_id: sensor.gary_iphone_home_distance
     attribute: max_distance
     above: 3
-action:
-  - service: script.notify_gary_iphone
-    data_template:
+actions:
+  - action: script.notify_gary_iphone
+    data:
       title: Gary Arrives Home
       message: "Distance: {{ states('sensor.gary_iphone_home_distance') }}"
-  - service: script.garage_door_open
+  - action: script.garage_door_open
     data: {}
 mode: single
 ```
@@ -117,26 +120,26 @@ mode: single
 #### Gary Leaves Home (Automation)
 
 - Triggers:
-  - *Gary's ZoneName* changes to 'Away' from 'Home' 
+  - *Gary's ZoneName* changes to 'Away' from 'Home'
 
 - Conditions:
   - Home Assistant has been running for more than 2 minutes.
   - *Gary's HomeDistance* more than 0.1 miles
-  
+
 - Action:
   - Run the *Gary -  Leaves Home* script, and
   - Send a message that Gary has left Home
-  
-  
+
+
 
 ```yaml
 alias: Gary - Leaves Home
-trigger:
-  - platform: state
+triggers:
+  - trigger: state
     entity_id: sensor.gary_iphone_zone_name
     to: Away
     from: Home
-condition:
+conditions:
   - condition: state
     entity_id: input_boolean.ha_started_flag
     state: "on"
@@ -147,13 +150,13 @@ condition:
   - condition: numeric_state
     entity_id: sensor.gary_iphone_home_distance
     above: 0.1
-action:
-  - service: script.gary_leaves_home
+actions:
+  - action: script.gary_leaves_home
     data: {}
-  - service: script.notify_gary_iphone
-    data_template:
+  - action: script.notify_gary_iphone
+    data:
       title: Gary Leaves Home
-      message: "Distance: {{ states(\"sensor.gary_iphone_home_distance\") }}"
+      message: "Distance: {{ states('sensor.gary_iphone_home_distance') }}"
 mode: single
 ```
 
@@ -168,7 +171,7 @@ mode: single
 ```
 alias: Gary - Arrives Home
 sequence:
-  - service: script.garage_door_open
+  - action: script.garage_door_open
     data: {}
 mode: single
 icon: mdi:location-enter
@@ -186,13 +189,13 @@ icon: mdi:location-enter
 alias: Gary - Leaves Home
 sequence:
   - condition: state
+    entity_id: input_boolean.ha_started_flag
     state: "on"
     for:
       hours: 0
       minutes: 2
       seconds: 0
-    entity_id: input_boolean.ha_started_flag
-  - service: script.garage_door_close
+  - action: script.garage_door_close
     data: {}
 mode: single
 icon: mdi:location-exit
@@ -202,30 +205,30 @@ icon: mdi:location-exit
 
 -----
 
-#### Gary - Arrives Warehouse (Automation) 
+#### Gary - Arrives Warehouse (Automation)
 
-This is an example of an automation for a *Track from Zone* action. It is slightly different than the *Gary - Arrives Home* automation since it uses the *gary_iphone_distance_warehouse* instead of the *gary_iphone_zone_distance* entity.
+This is an example of an automation for a *Track from Zone* action. It is slightly different than the *Gary - Arrives Home* automation since it uses the *gary_iphone_zone_distance_warehouse* instead of the *gary_iphone_zone_distance* entity.
 
 ```
 alias: Gary - Arrives Warehouse
 description: ""
-trigger:
-  - platform: state
+triggers:
+  - trigger: state
     entity_id:
       - sensor.gary_iphone_zone_name
     to: Warehouse
-  - platform: numeric_state
-    entity_id: sensor.gary_iphone_distance_warehouse
+  - trigger: numeric_state
+    entity_id: sensor.gary_iphone_zone_distance_warehouse
     below: 0.35
-condition: []
-action:
-  - service: script.notify_gary_iphone
-    data_template:
+conditions: []
+actions:
+  - action: script.notify_gary_iphone
+    data:
       title: Gary Arrives - Warehouse Zone
       message: >-
         Zone: {{ states('sensor.gary_iphone_zone_name') }},
         Distance: {{ states('sensor.gary_iphone_zone_distance') }}
-  - service: script.gary_arrives_warehouse
+  - action: script.gary_arrives_warehouse
     data: {}
 mode: single
 ```
@@ -242,8 +245,8 @@ mode: single
 ```
 alias: Gary - Send Message
 sequence:
-  - service: notify.mobile_app_gary_iphone
-    data_template:
+  - action: notify.mobile_app_gary_iphone
+    data:
       title: "{{ title }}"
       message: "{{ message }}"
 mode: single
@@ -258,18 +261,15 @@ icon: mdi:message-alert-outline
 #### Garage Door - Open (Script)
 
 - Conditions:
-  - Home Assistant has been running for 2 minutes
-  - The Garage Door switch was not toggled 2 minutes ago
-  - The Garage Door is closed
-  - No one is Far Away from Home
+  - Home Assistant has been running for more than 2 minutes
+  - The Garage Door has been closed for more than 2 minutes
+  - No one is Far Away from Home (the *Someone Home* sensor is not *AllFarAway*)
 
-- Action:
+- Actions:
+  - Press the Garage Door switch to open it
+  - Send a message that the door has been opened
 
-  - Run the *Garage Door - Open* script
 
-  - Send some messages that the door has been opened
-
-    
 
 ```
 alias: Garage Door - Open
@@ -292,12 +292,13 @@ sequence:
     conditions:
       - condition: state
         entity_id: sensor.someone_home
-        state: all_far_away
-    alias: Confirm AnyoneHome Sensor is not All-Far-Away
-  - service: switch.turn_on
-    entity_id: switch.garage_door
-  - service: script.notify_gary_iphone
-    data_template:
+        state: AllFarAway
+    alias: Confirm SomeoneHome Sensor is not AllFarAway
+  - action: switch.turn_on
+    target:
+      entity_id: switch.garage_door
+  - action: script.notify_gary_iphone
+    data:
       title: Garage Door Action
       message: Garage Door Opened
 mode: single
@@ -310,18 +311,15 @@ icon: mdi:garage-open
 -----
 #### Garage Door - Close (Script)
 
-- Trigger:
-  - Time is 8:00:00pm
-
-- Condition:
-  - Garage door is open
+- Conditions:
+  - Home Assistant has been running for more than 2 minutes
+  - The Garage Door has been open for at least 15 seconds
 
 - Actions:
-  - Close the Garage Door
-  
+  - Press the Garage Door switch to close it
   - Send a message to Gary
-  
-    
+
+
 
 ```
 alias: Garage Door - Close
@@ -334,16 +332,17 @@ sequence:
       minutes: 2
       seconds: 0
   - condition: state
-    entity_id: binary_sensor.garage_door
-    state: "off"
+    entity_id: cover.garage_door
+    state: open
     for:
       hours: 0
       minutes: 0
       seconds: 15
-  - service: switch.turn_on
-    entity_id: switch.garage_door
-  - service: script.notify_gary_iphone
-    data_template:
+  - action: switch.turn_on
+    target:
+      entity_id: switch.garage_door
+  - action: script.notify_gary_iphone
+    data:
       title: Garage Door Action
       message: Garage Door Closed
 mode: single
@@ -362,8 +361,8 @@ icon: mdi:garage
 ```
 alias: Garage Door - Show Status
 sequence:
-  - service: script.notify_gary_iphone
-    data_template:
+  - action: script.notify_gary_iphone
+    data:
       title: Garage Door Control Status
       message: >-
         DoorStatus={{states("cover.garage_door")}},
@@ -392,21 +391,20 @@ Make sure the Garage Door is closed after 8pm
 ```
 alias: Garage Door - Close After 8pm
 description: ""
-trigger:
-  - platform: time
+triggers:
+  - trigger: time
     at: "20:00:00"
-condition:
+conditions:
   - condition: state
     entity_id: cover.garage_door
     state: open
-action:
-  - service: script.garage_door_close
+actions:
+  - action: script.garage_door_close
     data: {}
-  - service: script.notify_gary_iphone
+  - action: script.notify_gary_iphone
     data:
-      data:
-        title: Garage Door Closed
-        message: After 8pm - Close Door Automation Triggered
+      title: Garage Door Closed
+      message: After 8pm - Close Door Automation Triggered
 mode: single
 ```
 
@@ -419,8 +417,8 @@ mode: single
 Make sure the Garage Door is closed when no one is Home or everyone is far away from Home.
 
 - Triggers:
-  - The SomeOne Home sensor changes to 'AllAway', or
-  - The SoneOne Home sensor changes to 'AllFarAway'
+  - The Someone Home sensor changes to 'AllAway', or
+  - The Someone Home sensor changes to 'AllFarAway'
 - Conditions:
   - The Garage door is open
 - Actions:
@@ -429,23 +427,23 @@ Make sure the Garage Door is closed when no one is Home or everyone is far away 
 
 ```
 alias: Garage Door - Close, No One Home
-trigger:
-  - platform: state
+triggers:
+  - trigger: state
     entity_id:
       - sensor.someone_home
     to: AllAway
-  - platform: state
+  - trigger: state
     entity_id:
       - sensor.someone_home
     to: AllFarAway
-condition:
+conditions:
   - condition: state
     entity_id: cover.garage_door
     state: open
-action:
-  - service: script.garage_door_close
+actions:
+  - action: script.garage_door_close
     data: {}
-  - service: script.notify_gary_iphone
+  - action: script.notify_gary_iphone
     data:
       title: Garage Door Closed
       message: No One Home - Close Door Automation Triggered
@@ -463,13 +461,14 @@ Open or Close the Garage Door by toggling the switch
 
 ```
 alias: Garage Door - Press Switch
-trigger:
-  - platform: state
+triggers:
+  - trigger: state
     entity_id: switch.garage_door
     to: "on"
-action:
-  - service: switch.turn_on
-    entity_id: switch.garage_door
+actions:
+  - action: switch.turn_on
+    target:
+      entity_id: switch.garage_door
 mode: single
 ```
 
@@ -479,9 +478,9 @@ mode: single
 -----
 #### Garage Door Badge (Template Sensor)
 
-This creates the *sensor.garage_door_badge* entity that displays a garage door open/close image, 
+This creates the *sensor.garage_door_badge* entity that displays a garage door open/close image,
 
-*Note*: Sample images, *garage_door_open.png* and *garage_door_closed.png*, can be found in the *custom_components/icloud3/event_log* directory. Copy them to the */www/ (/local/*) directory for this script.
+*Note*: Sample images, *garage-door-open.png* and *garage-door-closed.png*, are in the *icloud3/event_log* directory. Copy them to the */www/images* directory for this script. HA converts the 'local' in the script to 'www'.
 
 ```yaml
 #-------------------------------------------------------
@@ -496,7 +495,7 @@ This creates the *sensor.garage_door_badge* entity that displays a garage door o
         {% if is_state("cover.garage_door", "open") %}
           /local/images/garage-door-open.png
         {% else %}
-          /local/images/garage-door-closed.png 
+          /local/images/garage-door-closed.png
         {% endif %}
 
 ```
@@ -511,9 +510,9 @@ This creates the *sensor.someone_home* entity using the *sensor.[devicename]_zon
 
 Value:
 
-- AllHome - *sensor.gary_iphone_zone_name* and *sensor.illian_iphone_zone_nam*e = "Home"
-- FarAway - *input_boolean.gary_far_away_flag* and *input_boolean.gary_far_away_flag* are "on"
-- AllAway - *sensor.gary_iphone_zone_name* and *sensor.lillian_iphone_zone_nam*e are not "Home"
+- AllHome - *sensor.gary_iphone_zone_name* and *sensor.lillian_iphone_zone_name* = "Home"
+- AllFarAway - *input_boolean.gary_far_away_flag* and *input_boolean.lillian_far_away_flag* are "on"
+- AllAway - *sensor.gary_iphone_zone_name* and *sensor.lillian_iphone_zone_name* are not "Home"
 - SomeAway -  *sensor.gary_iphone_zone_name* or *sensor.lillian_iphone_zone_name* are not "Home"
 
 ```yaml
@@ -553,9 +552,6 @@ Value:
         {% else %}
           mdi:home-minus-outline
         {% endif %}
-            
-            
+
+
 ```
-
-
-

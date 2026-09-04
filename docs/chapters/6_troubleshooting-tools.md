@@ -6,7 +6,7 @@
 
 ## Event Log
 
-- **Stage 3 > Prepare Configured Device**s - This stage shows each device that will be tracked and the parameters in the configuration. If no devices are displayed, than Sharing has not been enabled for the devices. If you just enabled it, restart iCloud3 using the  *Event Log > Actions > Restart iCloud3* selection.
+- **Stage 3 > Prepare Configured Devices** - This stage shows each device that will be tracked and the parameters in the configuration. If no devices are displayed, then Sharing has not been enabled for the devices. If you just enabled it, restart iCloud3 using the  *Event Log > Actions > Restart iCloud3* selection.
 
 - **Stage 4 > Setup iCloud & Mobile App Tracking Methods, Family Sharing List devices** - This stage lists all of the devices in the Family Sharing List on your iCloud account.
 
@@ -21,14 +21,14 @@
 - **Things to look for:**
 
   -  Stage 4 - Every device in the Family Sharing list is listed. This includes the current iPhones, iPads, etc. along with old devices you no longer have.
-  -  Stage 4 - Make sure there are no duplicate devices names for different models (for example: Gary-iPhone/iPhone 12, Gary-iPhone (2)/iPhone 13 Pro, etc). If there is, delete the old device from the Family Sharing List, change the name on the device itself (Settings > General > About) and select the correct device in the iCloud3 Configuration Wizard.
-  -  Stage 3 - Make sure the device assigned in the configuration is correct and not  duplicate or old device that you no longer own.
+  -  Stage 4 - Make sure there are no duplicate devices names for different models (for example: Gary-iPhone/iPhone 18, Gary-iPhone (2)/iPhone 18 Pro, etc). If there is, delete the old device from the Family Sharing List, change the name on the device itself (Settings > General > About) and select the correct device on the *iCloud3 Devices > Update iCloud3 Device* screen.
+  -  Stage 3 - Make sure the device assigned in the configuration is correct and not a duplicate or old device that you no longer own.
 
 - **Stage 5 > Configure Tracked Devices** - This screen is a summary of how the device is set up.
 
   - It shows the monitored and tracked devices
   - The actual entities or devices that have been assigned:
-    - FamShr Device - The device from the family Sharing List
+    - Apple Account iCloud Device - The device from the Family Sharing List
     - Mobile App Entity device - the HA device_tracker entity name
     - Update Trigger - The Mobile App's update trigger sensor that is monitored
     - Battery - The Mobile App's Battery sensor entity that is monitored for the battery level
@@ -38,16 +38,12 @@
 ![](../screens/evlog/evlog-stage-5.png)
 
 
-​
-
 -----
-
 ## Exporting the Event Log
 
-The Event Log is exported to the file */config/icloud3-event-log_[date]_[time].txt* file using the following methods:
+The Event Log file name consists of the device, date and time (*/config/icloud3-event-log_Gar-2026.0902-18.31.log*).
 
 - Select *Export Event Log* from the *Event Log > Actions* drop down menu.
-- Select *Export Event Log* from the *Configurator > Actions* menu.
 
 The sections on the report are:
 
@@ -81,4 +77,4 @@ Below are sample Tracking Monitors screens.
 		*Event Log Tracking Monitors while away from Home*
 
 ![](../screens/evlog/evlog-trk-monitors-away-2.png)
-		*Event Log Tracking Monitors while away from Home
+		*Event Log Tracking Monitors while away from Home*

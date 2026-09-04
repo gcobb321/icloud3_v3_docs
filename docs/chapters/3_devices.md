@@ -1,16 +1,16 @@
-# iCloud3 Devices <!-- {docsify-ignore} -->
+# iCloud3 Devices {docsify-ignore}
 
 Screens described in this chapter:
 
 - **Update iCloud3 Device** - This screen lets you configure each of the devices that can be tracked or monitored using iCloud3
   - **iCloud3 Devices** - This screen is used to select a device that needs to be updated, add a new device or delete a device that should no longer be tracked or monitored. Apple Devices can also be imported into iCloud3 and the order of devices on the Event Log can be changed.
-    - **Update Other Device Parameters** - This screen updates device parameters that are rearly updated
+    - **Update Other Device Parameters** - This screen updates device parameters that are rarely updated
 
-- **Import Apple Devices** - Import the devices from all Apple Accounts that have not been configured. Then create an iCloud3 device for those that are selected. The devices can be customized on the `Update Devices` screen.
-- **Delete iCloud3 Device** -
-- **Event Log Device Display Sequence** - The devices are displayed in the Event Log heading area and in various Event Log messages in the sequence below.\n\nThis screen lets you change the order of the devices.
+- **Import Apple Devices** - Import the devices from all Apple Accounts that have not been configured. Then create an iCloud3 device for those that are selected. The devices can be customized on the `Update iCloud3 Devices` screen.
+- **Delete iCloud3 Device** - Delete an iCloud3 device
+- **Change Device Order** - The devices are displayed in the Event Log heading area and in various Event Log messages in the sequence the devices were added (Tracked followed by Monitored devices). This screen lets you change their order.
 
-Apple Account devices can be imported into iCloud3 iCloud3 devices are added, updated and deleted using these screens. When a device is added, a device_tracker entity and all of the sensor entities are created and added to the Home Assistant registry files. When the device is deleted, it is deleted from the iCloud3 configuration files and it's device_tracker and sensor entities are removed from the Home Assistant registry files.
+Apple Account devices can be imported into iCloud3. iCloud3 devices are added, updated and deleted using these screens. When a device is added, a device_tracker entity and all of the sensor entities are created and added to the Home Assistant registry files. When the device is deleted, it is deleted from the iCloud3 configuration files and its device_tracker and sensor entities are removed from the Home Assistant registry files.
 
 These screens list the devices you have added to iCloud3 to be tracked or monitored.
 
@@ -42,11 +42,11 @@ When no devices have been configured, an empty screen is displayed.
 
 - Selected from the *iCloud3 Devices > Import Apple Devices* option. (iCloud3 v3.7+ feature)
 
-When this screen is displayed, all of the Apple Accounts that have been setup are scanned and devices that are not already been configured will be displayed. Devices that iCloud3 can track or monitor are enabled, those that do not provide battery or location information are not enabled and in the *Inactive* section.
+When this screen is displayed, all of the Apple Accounts that have been set up are scanned and devices that have not already been configured will be displayed. Devices that iCloud3 can track or monitor are enabled, those that do not provide battery or location information are not enabled and in the *Inactive* section.
 
 ![](../screens/apple_acct/import-apple-devices.png)
 
-> Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customed on the *Update iCloud3 Devices* screen.
+> Importing the Apple Devices lets you create all (or those you want to track) into iCloud3 with one-click. The created devices can then be customized on the *Update iCloud3 Devices* screen.
 
 1. Enable the devices to be created.
 
@@ -59,9 +59,10 @@ Additional Information:
 - The iCloud3 names (display and device_tracker entity names) are created from the Apple Device name and the type of device.  For example:
   - Gary's iPhone → Gary (gary_iphone)
   - iPhone de Philippe → Philippe (philippe_iphone)
-  - iPad de María → María-iPad (maria_iPad)
-  - Watch van Jan → - Jan-Watch (jan_watch_ic3)
+  - iPad de María → María-iPad (maria_ipad)
+  - Watch van Jan → Jan-Watch (jan_watch_ic3)
   - Mac di Marco → Marco-Mac (marco_mac_ic3)
+
 - The tracking method is based on the type of device:
   - Tracked - iPhone, Watch
   - Monitored - iPad, Mac
@@ -90,9 +91,9 @@ Fields that are updated on this screen:
 4. **Picture or icon** - An image file that is displayed on the dashboard. See examples of the lists below.
 5. **Tracking Mode** - Describes how the device will be tracked:
 
-   - **Track** - Actively requests the location and track the device,
-   - **Monitor** - Do not request the location. Report it's location when a tracked device is updated using data that is also  returned from iCloud
-   - **Inactive** - Not tracked or monitored. This option keeps the device's parameters in the the configuration file but does not track it.
+   - **Track** - Actively requests the location and tracks the device.
+   - **Monitor** - Do not request the location. Report its location when a tracked device is updated using data that is also returned from iCloud
+   - **Inactive** - Not tracked or monitored. This option keeps the device's parameters in the configuration file but does not track it.
 
 
 
@@ -105,12 +106,12 @@ When it is deleted, it is removed from the iCloud3 configuration file, device_tr
 
 #### Deleting from the iCloud3 Integration screen or HA Devices screen
 
-> !  This is not recommended. Use _Delete an iCloud3 Device_ described above instead.
+!> This is not recommended. Use _Delete an iCloud3 Device_ described above instead.
 
 It is possible to delete or disable a device from outside of iCloud3 on these screens. However, this causes a conflict between the iCloud configuration file and the HA entity registry files. To prevent this conflict:
 
 - The device is set to an _Inactive_ status in the iCloud3 configuration file which prevents it from being recreated when iCloud3 restarts
-- It's  device_tracker and sensor entities are removed from the HA entity registry files active and deleted lists.
+- Its device_tracker and sensor entities are removed from the HA entity registry files active and deleted lists.
 - It is removed from the list of devices on the iCloud3 Integration screen.
 
 
@@ -123,16 +124,16 @@ When iCloud3 starts, the Apple Accounts are opened and the devices in the accoun
 
 ## Rarely Updated Parameters
 
-There are several parameters that further configure the device that are rarely updated: These include:
+There are several parameters that further configure the device that are rarely updated. These include:
 
-- **Device Typ**e (*iPhone, iPad, Watch*) - Type of the device that help identify it on the Event Log.
+- **Device Type** (*iPhone, iPad, Watch*) - Type of the device that helps identify it on the Event Log.
 - **InZone Interval** - Time between location requests when the device is in a zone.
 - **Fixed Interval** - Normally, the next location update is determined by the distance from Home (or another tracked zone) and the direction. This overrides that calculation and will request a location update on a fixed time frame.
-- **Log Zone Activity** - Update a csv file when the device enters a zone with the date/time, zone, and length of time in the zone. This can be used for expense reporting records. This is described in detail in the Advanced Features chapter [here]().
+- **Zone Log Activity** - Update a csv file when the device enters a zone with the date/time, zone, and length of time in the zone. This can be used for expense reporting records. This is described in detail in the Advanced Features chapter [here](#/chapters/7_zone-log).
 - **Track from Zone**s - The device always updates the time and distance from the Home zone. This selects other zone(s) you also want to track the time and distance from.
 - **Track from Home Zone Override** - The Home zone is the main zone for all activities. Examples of when you might want to override the Home zone and set another zone as the main zone include you are away from Home (at a second home, on vacation), the device belongs to your parents and you want to monitor where they are in relation to their house.
 
-![](../screens/devices/device-update-other-parms-dd.png)
+![](../screens/device/device-update-other-parms-dd.png)
 
 ## Change Event Log Device Order
 
@@ -141,4 +142,4 @@ The devices are listed in the Event Log in the order they are added (monitored d
 1. Select the device.
 2. Select *Move Up* or *Move Down*, then select *Submit*.
 
-![](../screens/device/device-orderd.png)
+![](../screens/device/device-order.png)

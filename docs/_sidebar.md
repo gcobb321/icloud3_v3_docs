@@ -20,7 +20,7 @@
 - [ •  iCloud3 Devices](chapters/3_devices.md)
 
 <u>**Configure Operational  Settings**</u>
-- [ •  Parameters Reference Sheet](chapters/5_parameter-list.md)
+- [ •  Parameters Reference Sheet](chapters/5_parameters-list.md)
 - [ •  Away Time Zone](chapters/5_away-time-zone.md)
 - [ •  Display Settings & Other Parameters](chapters/5_display-settings-parms.md)
 -  [ •  Display Text As](chapters/5_display-text-as.md)

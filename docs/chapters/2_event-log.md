@@ -1,9 +1,9 @@
-# Event Log  <!-- {docsify-ignore} -->
+# Event Log  {docsify-ignore}
 
 The Event Log is a Lovelace custom card that shows past and current activity related to tracking a device. This includes:
 
 - Startup configuration.
-- Device information for Family Sharing, Find-my-Friends and Mobile App devices and entities.
+- Device information for Family Sharing and Mobile App devices and entities.
 - Tracking results including zone, travel time and distance data.
 - Error messages, problems and location data issues.
 - Detail tracking monitors that show what is going on under the covers, how location data from the iCloud Location Services and the Mobile App is analyzed and processed.
@@ -18,7 +18,7 @@ The Event Log has an *Actions* command menu that can control iCloud3 operations 
 - Show/hide tracking monitors
 - Start/stop detailed debugging that will dump set up information and all raw data received from iCloud Location Services.
 
-Note: The Event Log is installed into the *config/www/icloud3* directory. This directory can be changed on the *Configure Settings > Tracking & Other Parameters* screen on Menu page #2.
+Note: The Event Log custom card file is copied into the *config/www/icloud3* directory. This directory can be changed on the *Configure Settings > Tracking & Other Parameters* screen on Menu page #2.
 
 ![](../screens/evlog/track-evlog-gary-tfz-away-lillian-home.png)
 
@@ -31,7 +31,7 @@ The icons above the *Actions* drop-down menu list in the top-right are used for 
 | Icon                                                      | Description                                                  |
 | --------------------------------------------------------- | ------------------------------------------------------------ |
 | ![](../screens/evlog/evlog-icons-refresh.png) | **Refresh** - This updates the Event Log screen with new activity for the selected device. |
-| ![](../screens/evlog/evlog-icons-coffee.png)                     | **Buy Me a Coffee** - You find iCloud3 useful, appreciate the work I have done and want to send me a few dollars, euros, pesos, pounds, etc. Thanks. I appreciate it. |
+| ![](../screens/evlog/evlog-icons-coffee.png)                     | **Buy Me a Coffee** -  Send me a few dollars, euros, pesos, pounds, etc. if you find iCloud3 useful and appreciate the work I have done. Thanks. I appreciate it. |
 | ![](../screens/evlog/evlog-icons-issues.png)                     | **GitHub Issue** - You are having a problem and think you may have found a bug or other problem. This takes you to the iCloud3 GitHub Issues page to create a new issue or to review existing issues. |
 | ![](../screens/evlog/evlog-icons-config.png)                     | **Configure Settings** - This opens the iCloud3 Configure Settings screen. This will open a new browser page. It will only work when you are connected to your local network. It may not work on iPads and iPhones using the Mobile App. |
 | ![](../screens/evlog/evlog-icons-help.png)                       | **User Manual** - This opens the iCloud3 User Manual.        |
@@ -65,18 +65,18 @@ The **Actions** drop-down menu is used to issue commands to:
 | **Selected Device**                            |                                                              |
 | Pause Tracking This Device                     | Tracking is paused for the selected devices                  |
 | Resume Tracking This Device                    | Tracking is resumed for the selected  devices                |
-| Locate This Device (FamShr)                    | A location request is sent to iCloud and the tracking/location results are updated for the selected |
+| Locate This Device (FamShr)                    | A location request is sent to iCloud and the tracking/location results are updated for the selected device|
 | Send Location Request to the Mobile App        | A location request is sent to the Mobile App for the selected device if it is using the Mobile App. If the Mobile App is alive, it should respond with the current location and the tracking/location results are updated |
 | Send Find My Phone Alert (FamShr)              | Send a Find My Phone Alert request to the selected device. This will play the alert tone on the device. |
 | **Other Commands**                             |                                                              |
-| Export Event Log                               | The Event Log is exported to a file in the HA _config_ directory. The file name is _icloud3-event-log-[date-time].log_ |
+| Export Event Log                               | The Event Log is exported to a file in the HA _config_ directory. The file name consists of the device, date and time (*/config/icloud3-event-log_Gar-2026.0902-18.31.log*) |
 | Show Tracking Monitors, Hide Tracking Monitors | Show (or Hide) additional information about starting iCloud3 and processing tracking events using FamShr and Mobile App location data. |
-| Show Startup Log, Errors & Alerts              | Many event messages are written to the Event Log when iCloud3 starts. This command will redisplay these messages. Select the Refresh Icon or a Devicename to return to normal operations. |
-| Start/Stop Debug Logging                       | Start/Stop adding additional debug items to the _iCloud3-0.log_ file |
+| Show Startup Log, Errors and Alerts              | Many event messages are written to the Event Log when iCloud3 starts. This command will redisplay these messages. Select the Refresh Icon or a Devicename to return to normal operations. |
+| Start/Stop Debug Logging                       | Start/Stop adding additional debug items to the *config/icloud3.log* file |
 | Start/Stop RawData Logging                     | Start/Stop Debug Logging plus display the actual device and location data as it is received from iCloud or the Mobile App |
 | WazeHist-Recalculate Route Time/Dist           | The Waze Time and Distance information is saved to the Waze History Database for local handling of Waze route requests. This eliminates delays that can occur responding to route requests in poor cell phone areas with poor internet response times. This command will send a request to Waze to update the time and distance for all locations in the database. It is processed in the background at midnight on your HA server. Select it a second time to start the update immediately. |
 | WazeHist-Load Track Locations for Map          | The locations in the Waze History database can be displayed on an HA Map. This command will load those locations into the _sensor.icloud3_wazehist_track_ entity, the data source for the map. See  _Reference > Other iCloud3 Features > Display the Waze History Location on a Map Card_ for more information. |
-| Request Apple ID Verification Code             | Request a new 6-digit verificatoin code from Apple. This is the same as requesting a new code on the _Configure Settings > Enter/Request an Apple  ID Verification Code_ screen. |
+| Request Apple ID Verification Code             | Request a new 6-digit verification code from Apple. This is the same as requesting a new code on the _Configure Settings > Enter/Request an Apple  ID Verification Code_ screen. |
 
 
 
@@ -126,11 +126,11 @@ During the *Prepare Configured Devices* stage:
 ------
 #### Stage 4 - Setup iCloud & Mobile App Tracking Methods
 
-During the *Setup iCloud & Mobile APP Tracking Methods* stage:
+During the *Setup iCloud & Mobile App Tracking Methods* stage:
 
-- The devices in the Family Sharing list and the Find-my-Friends list in the Apple iCloud account are identified.
+- The devices in the Family Sharing list in the Apple iCloud account are identified.
 - The devices in the HA device and entity registries are read and identified.
-- The iCloud3 devices are linked to those in the Family Sharing list, the Find-my-Friends list and the Mobile App device list.
+- The iCloud3 devices are linked to those in the Family Sharing list and the Mobile App device list.
 - The devices in each of these lists that are not associated with an iCloud3 device are identified.
 
 !> The final verification of each device is done during this stage. Configuration errors due to a change in device names, device_tracker entity name errors and unavailable devices are reported.
@@ -163,11 +163,11 @@ This describes how to create it manually.
 
 The Event Log is a custom card and HA looks for it in the /www directory.
 
-- When iCloud3 was installed, the *icloud3-event-log-card.js* file was copied from the *icloud3/event_log_card* directory to the */www/icloud3* directory.
+- When iCloud3 is installed, the *icloud3-event-log-card.js* file is copied from the *icloud3/event_log_card* directory to the */www/icloud3* directory.
 
 - When iCloud3 starts, it does the following:
 
-  - Determine if the Event Log in the */www/icloud3* directory is the latest version. If not, it is updated. A browser refresh will be needed it it was updated. A notification is displayed on each device that a refresh is needed.
+  - Determine if the Event Log in the */www/icloud3* directory is the latest version. If not, it is updated. A browser refresh will be needed if it was updated. A notification is displayed on each device that a refresh is needed.
 
     Note: The notification will not be displayed when it is first installed, it is only displayed on an update.
 
@@ -177,7 +177,7 @@ The Event Log is a custom card and HA looks for it in the /www directory.
 
 #### Add the Event Log to an existing dashboard layout
 
-The following yaml will create the Event Log custom card on the dashboard card you added at another time all of the other statements.
+Follow these steps to add the Event Log custom card to an already existing dashboard card:
 
 
 - **GUI Entry Method**
@@ -216,7 +216,7 @@ The following yaml will create the Event Log custom card on the dashboard card y
 
 #### Create a new dashboard card for the Event Log
 
-The following yaml will create the Event Log custom card on the dashboard card you added at another time all of the other statements.
+Follow these steps to create a new dashboard card containing the Event Log:
 
 - **GUI Entry Method**
 

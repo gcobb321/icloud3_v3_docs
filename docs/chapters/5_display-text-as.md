@@ -1,4 +1,4 @@
-# Display Text As <!-- {docsify-ignore} -->
+# Display Text As {docsify-ignore}
 
 ##### Selected From: *Configure Parameters Menu*
 
@@ -6,7 +6,7 @@ There may be some text fields, such as email addresses or phone numbers, that ar
 
 The following fields are available:
 
-- **Original Tex**t - Text to be replaced (example: gary_real_email@gmail.com)
+- **Original Text** - Text to be replaced (example: geekstergary@apple.com)
 
 - **Displayed Text** - Text to be displayed (display:  gary@email.com)
 

@@ -1,4 +1,4 @@
-# Using HA Companion Mobile App  for Location Data<!-- {docsify-ignore} -->
+# Using HA Companion Mobile App  for Location Data {docsify-ignore}
 
 iCloud3 monitors the Mobile App device_tracker entity and several sensors for:
 
@@ -13,7 +13,7 @@ The sensors are monitored for changed data every 5-seconds. iCloud3 also sends m
 The Mobile App consists of two components:
 
 - **Home Assistant Companion App [(HA Docs here⧉ )](https://companion.home-assistant.io/)**  - This is installed from the Apple App store [here⧉ ](https://apps.apple.com/us/app/home-assistant/id1099568401) on every iPhone and iPad you want to monitor.
-- **Mobile App integration [(HA Docs here⧉)](https://www.home-assistant.io/integrations/mobile_app/)**. - This is added like all integrations on the _Settings > Devices & services > Integration_ screen. It connects to the Home Assistant App on the iPhone or iPad and updates device_tracker and sensor entities for the  zone, battery, location and other data from the  App.
+- **Mobile App integration [(HA Docs here⧉)](https://www.home-assistant.io/integrations/mobile_app/)** - This is added like all integrations on the _Settings > Devices & services > Integration_ screen. It connects to the Home Assistant App on the iPhone or iPad and updates device_tracker and sensor entities for the  zone, battery, location and other data from the  App.
 
 
 
@@ -21,13 +21,13 @@ The Mobile App consists of two components:
 
 - **Device Name** - This is the name the Mobile App Integration will use for the device_tracker entity (*device_tracker.gary_iphone_app*) and sensors (*sensor.gary_iphone_app_battery_level*).
 
-  Tip: When the HA App is first installed, it uses the name of the device on the *Settings App > General > About > Name* (*Gary_iPhone*) as the device name. That is fine but later on, you will need to create a different name for the iCloud3 device name (*i.e., gary_iphone_ic3)*. However, if you would rather have the iCloud3 device and sensors to start with actual name of the device (*gary_iphone*) instead of something else (*gary_iphone_ic3*), you need to change the HA Mobile App Device Name field. Below it was changed to *Gary_iPhone_app*.
+  Tip: When the HA App is first installed, it uses the name of the device on the *Settings App > General > About > Name* (*Gary_iPhone*) as the device name. That is fine but later on, you will need to create a different name for the iCloud3 device name (*gary_iphone_ic3*). However, if you would rather have the iCloud3 device and sensors start with the actual name of the device (*gary_iphone*) instead of something else (*gary_iphone_ic3*), change the HA Mobile App Device Name field. Below it was changed to *Gary_iPhone_app*.
 
 - **Location Permissions** - The 3 screen images on the left show the configuration to share zone changes, location updates and other information.
 
-The screens below shows the configuration settings App. This is done on the device.
+The screens below show the configuration settings in the Companion App. This is done on the device.
 
-![](../screens/home_assistants/mobapp-config.png)
+![](../screens/home_assistant/mobapp-config.png)
 
 
 
@@ -43,14 +43,14 @@ iCloud3 does not require the Mobile App to be installed on an iPhone or iPad. Ho
 - Notifications can not be sent to the device.
 - In this case, a short *inZone Interval* will help reduce the time between location updates.
 
-The documentation for the Home Assistant Companion can be found [here](https://companion.home-assistant.io/). It is very extensive and explains how to set it up and use it.  ay particular attention to:
+The documentation for the Home Assistant Companion can be found [here](https://companion.home-assistant.io/). It is very extensive and explains how to set it up and use it. Pay particular attention to:
 - Setting it up [here](https://companion.home-assistant.io/docs/getting_started/)
 
 - Location [here](https://companion.home-assistant.io/docs/core/location)
 
 - Sensors [here](https://companion.home-assistant.io/docs/core/sensors)
 
-- Notifications [here](https://companion.home-assistant.io/docs/noticationsnotifications-basic)
+- Notifications [here](https://companion.home-assistant.io/docs/notifications/notifications-basic)
 
 
 
@@ -81,7 +81,7 @@ The results are shown in the *Event Log > Stage 4* screens.
 ------
 ## Clearing the Mobile App Cache
 
-The cache needs to be cleared when a new version of the Event Log is installed. This does not happen very often, usually when major iCloud3 version is released. A message, with instructions, is displayed when this is needed. It will need to be cleared on every device (iPhones, iPads) that is using the Mobile App.
+The cache needs to be cleared when a new version of the Event Log is installed. This does not happen very often, usually when a major iCloud3 version is released. A message, with instructions, is displayed when this is needed. It will need to be cleared on every device (iPhones, iPads) that is using the Mobile App.
 
 1. In the *Home Assistant Companion App*, tap **☰ > HA Settings > Companion App.**
 2. Scroll to the bottom.

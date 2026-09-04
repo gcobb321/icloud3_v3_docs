@@ -1,8 +1,7 @@
-# Tools <!-- {docsify-ignore} -->
-
+# Tools {docsify-ignore}
 ##### Selected From: *Configure Devices & Sensors Menu*
 
-This screen can be used to change the iCloud3 Log Level, update the iCloud3 configuration files to correct errors, reset the configuration their default values, reload iCloud3, restart Home Assistant, etc.
+This screen can be used to change the iCloud3 Log Level, update the iCloud3 configuration files to correct errors, reset the configuration to their default values, reload iCloud3, restart Home Assistant, etc.
 
 ## Tools
 
@@ -16,7 +15,7 @@ Various tools that will perform maintenance actions on the iCloud3 Configuration
 
 -  **Reset General Configuration Parameters** - Set the General Parameters to their default value (Other Parameter Menu screens). Sensors are reset on the Sensors screen.
 
--  **Delete All Apple/iCloud Cookie Files** - Delete Apple Acct Cookie & Session files in the **.storage/icloud3.apple_acct* directory, and Restart HA
+-  **Delete All Apple/iCloud Cookie Files** - Delete Apple Acct Cookie & Session files in the *.storage/icloud3.apple_acct* directory, and Restart HA
 
 -  **Delete All iCloud3 Configuration Files** - Delete the iCloud3  Configuration files in the *.storage/icloud3* directory.
 
@@ -26,7 +25,7 @@ Various tools that will perform maintenance actions on the iCloud3 Configuration
 -----
 ## Set Log Level
 
-iCloud3 writes operational messages to the iCloud3 Log file (icloud3.log) when it starts up, tracks devices, updates sensors, communicates with your Apple accounts and Mobile Apps, updates the configuration parameters, etc. The level of detail is determined by this parameter.
+iCloud3 writes operational messages to the iCloud3 Log file (*config/icloud3.log*) when it starts up, tracks devices, updates sensors, communicates with your Apple accounts and Mobile Apps, updates the configuration parameters, etc. The level of detail is determined by this parameter.
    - **Info** - Log General Information and Event Log messages
    - **Debug** - Info + Other Internal Tracking Monitors
    - **Debug (HALog)** - Also add log records to the `home-assistant.log` file
@@ -58,26 +57,26 @@ The following drop-down items (Info, Debug, Rawdata) show examples of the iCloud
 -----
 ## Cleanup HA Entity Registry Devices & Sensors
 
-This screen scans the HA Entity and Device registries and displays iCloud3 entities in following the categories:
+This screen scans the HA Entity and Device registries and displays iCloud3 entities in the following categories:
    - **Active** - Devices being tracked or monitored
    - **Inactive** - Devices that are set to `Inactive` and not tracked by iCloud3
    - **Orphaned** - Sensors that once existed but are no longer associated with the iCloud3 Integration
    - **Disabled** - Devices & Sensors that have been disabled on the HA Devices, Entity or iCloud3 Integration screen
-   - **Suffix Error**s - Sensors that have been duplicated by HA and are now unavailable
+   - **Suffix Errors** - Sensors that have been duplicated by HA and are now unavailable
    - **Deleted Devices** - Sensors that were used by a device that has been deleted from iCloud3
 
-- **Deleted Sensor**s - Sensors that belong to an iCloud3 device that are no longer used
+- **Deleted Sensors** - Sensors that belong to an iCloud3 device that are no longer used
 
 
 Removing all traces of a device or sensor from the HA Registries can solve various problems, including:
 
 - Devices and sensors with duplicate entities not being created
-- Sensors not being creating because they have been disabled in HA but Active in iCloud3
-- Unused sensors are preventing new sensors with the same name for a new device not being created
+- Sensors not being created because they have been disabled in HA but Active in iCloud3
+- Unused sensors preventing new sensors with the same name from being created for a new device
 
 ### Device Information
 
-The device and it's sensors can be displayed showing an abbreviated list (left) or showing all of the sensors (right).  Use the _Display Sensor Names (2-Lines/All)_ to toggle the display.
+The device and its sensors can be displayed showing an abbreviated list (left) or showing all of the sensors (right).  Use the _Display Sensor Names (2-Lines/All)_ to toggle the display.
 
 The device_tracker entity actually resides in two HA files, the _.storage/core.device_registry_ and _.storage/core.entity_registry_. This is noted in the sensor list by the _.dr:_ and  _.er:_ prefix (.dr:gary_iphone and .er:gary_iphone).
 
@@ -93,6 +92,6 @@ To delete the items from the registry:
 Note: Select *Check All Items/Uncheck All Items* to select or unselect all devices.
 
 - Non-Active categories can be removed from the Registry files.
-- Active are removed and then recreated since they belong to iCloud3 devices being tracked or monitored
+- Active items are removed and then recreated since they belong to iCloud3 devices being tracked or monitored
 
 ![](../screens/tools/cleanup-entities.png)

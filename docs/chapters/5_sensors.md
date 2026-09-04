@@ -1,36 +1,36 @@
-# Sensors <!-- {docsify-ignore} -->
+# Sensors {docsify-ignore}
 
 - Selected From: *Configure Devices & Sensors Menu*
 
 Screens described below:
 
-- **Sensors** - Many sensors are used to display tracking results and other information for a device.\n\n This screen is used to select the sensors that should be created.
-  - **Exclude Sensors** - Many sensors are created for the devices but there may be times when you want to not create a sensor for a specific device. For example, you may want to create a bettery sensor for all devices except one.\n\nThis screen lets you specify the sensor entity name that should not be created.
+- **Sensors** - Many sensors are used to display tracking results and other information for a device. This screen is used to select the sensors that should be created.
+  - **Exclude Sensors** - Many sensors are created for the devices but there may be times when you want to not create a sensor for a specific device. For example, you may want to create a battery sensor for all devices except one. This screen lets you specify the sensor entities that should not be created.
 
 
 
 Many sensors are used to display tracking results and other information for a device. This screen is used to select the sensors that should be created and to exclude specific sensors from being created.
 
-### Creating, Deleting and Excluding a Sensors
+### Creating, Deleting and Excluding Sensors
 
 The Sensor Groups below list the sensors that can be created in several categories.
 
 - **Tracked devices** - Enabling the sensor will create it and add it to the HA entities registry, disabling the sensor will prevent it from being created and remove it from the HA entities registry.
 
-- **Monitored devices** - These devices are not actively tracked but are updated when another tracked device is updated and are a little different. A special _Monitored Device sensors_ category list groups of sensors that will be created. They are badge sensors, battery sensors and location sensors.
+- **Monitored devices** - These devices are not actively tracked but are updated when another tracked device is updated and are a little different. A special _Monitored Device sensors_ category lists groups of sensors that will be created. They are badge sensors, battery sensors and location sensors.
 
 - **Excluding sensors** - You can prevent a specific sensor for a specific device from being created using the _Excluded Sensors_ screen. For example, you want to track an iPad but you are not interested in the polling interval, next or last update time or when it was last located. These specific sensors can be added to the excluded list and they will not be created.
 
 #### Deleting or disabling a sensor on the iCloud3 Integration screen or HA Entities screen
 
-> !  This is not recommended. Use _Sensors > Exclude Sensor_ screen instead.
+!> This is not recommended. Use _Sensors > Exclude Sensor_ screen instead.
 
 It is possible to delete or disable a sensor from outside of iCloud3 on these screens. However, this causes a conflict between the iCloud configuration file and the HA entity registry files. To prevent this conflict:
 
 - The sensor is added to the Excluded Sensors List in the iCloud3 configuration file which prevents it from being recreated when iCloud3 restarts
 - The sensor entity is removed from the HA entity registry files active and deleted lists so it can not be reenabled from the HA screens.
 
-The sensor is listed in the Excluded Sensors group. Uncheck the sensor to recreated it.
+The sensor is listed in the Excluded Sensors group. Uncheck the sensor to recreate it.
 
 ### Sensor Groups
 
@@ -44,10 +44,10 @@ The sensors are grouped into the following categories:
 
 - **Tracking update sensors**:
 
-  - **_interval** - Time between location request
+  - **_interval** - Time between location requests
   - **_last_update** - Last time the location was updated
   - **_next_update**  - Next time the location will be updated (Always Created)
-  - **_last_located** - Last time the was located using iCloud or Mobile App location
+  - **_last_located** - Last time the device was located using iCloud or Mobile App location
 
 - **Tracking time sensors:**
 
@@ -69,8 +69,7 @@ The sensors are grouped into the following categories:
   - **_zone** - HA Zone entity_id (`the_shores`)
   - **_zone_name** - Reformat the Zone entity_id, capitalize and remove `_`s (`the_shores` → `TheShores`)
   - **_zone_datetime** - The time the Device entered the Zone
-  - **_zone_fname** > HA Zone entity Friendly Name (HA Config > Areas & Zones > Zones > Name)
-  - **_last_zone[...]** - Create the same sensors for the device`s last HA Zone
+  - **_last_zone[...]** - Create the same sensors for the device's last HA Zone
 
 - **Other tracking sensors:**
 
@@ -93,15 +92,15 @@ This screen is used to add sensors for a specific device to the Exclude Sensors 
 
 ### Filter the list of available sensors
 
-A list of [devicename]_[sensorname] entities to select from is displayed on this screen. This list can be filtered to the ones you are interested in. _
+A list of [devicename]_[sensorname] entities to select from is displayed on this screen. This list can be filtered to the ones you are interested in.
 
 1. Enter part of the sensor name in the _Filter Displayed Sensors_ field.
 2. Select **Filter Sensors**, then select **Submit**. Only sensors with the Filter text are displayed.
 
-The screen image below, _bat_ was entered to list all sensors with _bat- in the entity name (battery, battery_status).
+The screen image above, *bat* was entered as a filter to display only those sensors with *bat* in the entity name (battery, battery_status).
 
 ### Add Excluded Sensor
 
 1. Enter part of the name in the _Filter Displayed Sensors_ field, select Submit.
 2. Check the sensors to be added to the list.
-3. Select **Update List, Return to Sensor Screen**. then select **Submit**.
+3. Select **Update List, Return to Sensor Screen**, then select **Submit**.

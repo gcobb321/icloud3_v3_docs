@@ -1,0 +1,15 @@
+# iCloud3 Theme <!-- {docsify-ignore} -->
+
+The iCloud3 Theme provides an alternate Home Assistant theme that:
+
+- Changes the Description Text color to improve readability
+- Changes the background color of pop-p windows on the dark that improves the contract between the pop-up window and the background
+
+The theme is installed into the *config/themes* directory when iCloud3 starts. Select it on the *HA User Preferences* window, *Theme* field.
+
+Below are the *iCloud3 Theme* vs the *Home Assistant* Theme:
+
+![](..\images\theme-icloud3-light.png)
+
+![](..\images\theme-icloud3-dark.png)
+
