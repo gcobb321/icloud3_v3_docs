@@ -25,7 +25,7 @@ iCloud3 is available on the HACS and is installed using the same process as othe
   3. Select the **iCloud3, iDevice Tracker** item, then select **+Download** to download iCloud3 and follow the normal steps for installing an integration using HACS.
 
 - **Manual Installation from the iCloud3 Repository Releases Page**
-  1. Download the *icloud3 v3.x.x.zip* file from the *gcobb321/icloud3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3/releases). Select *Assets* at the bottom, then the zip file. The file save screen is displayed, select the location on your computer and save the zip file.
+  1. Download the *icloud3.zip* file from the *gcobb321/icloud3 iCloud3 GitHub Repository Releases* page [here](https://github.com/gcobb321/icloud3/releases). Select *Assets* at the bottom, then the zip file. The file save screen is displayed, select the location on your computer and save the zip file.
   2. Unzip the file into the *config/custom_components/icloud3* directory on your Home Assistant server (ex.: Raspberry Pi)
   3. Restart Home Assistant
 

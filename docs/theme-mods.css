@@ -201,6 +201,7 @@ body{
 # em = italics text
 .markdown-section em {
     color: DarkBlue;
+	font-weight: 450;
     margin: 0 .2rem 0 .1rem;
 }
 
