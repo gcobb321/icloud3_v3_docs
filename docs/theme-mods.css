@@ -111,7 +111,7 @@ body{
 .markdown-section::-webkit-scrollbar-thumb:vertical:hover {
     background-color: #a5bcd9;
 }
-# Heading colors = themeColor in index.html
+/* Heading colors = themeColor in index.html */
 .markdown-section h1 {
     font-size: 1.55rem;
     margin: 30px 0 10px 0;
@@ -198,7 +198,7 @@ body{
     font-weight: 450;
     background-color: #f2f2f2;
 }
-# em = italics text
+/* em = italics text */
 .markdown-section em {
     color: DarkBlue;
 	color: red;
