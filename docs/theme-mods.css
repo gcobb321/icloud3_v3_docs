@@ -1,4 +1,4 @@
-﻿<!-- theme-vue.css customization 
+﻿<!-- theme-vue.css customization
 
 
 -->
@@ -8,10 +8,10 @@ body{
     color: orange;
 }
 .content {
-   font-size: 14px;
-   padding: 10px 0px;
-   margin: 10pm 0px;
-   left: 250px;
+    font-size: 14px;
+    padding: 10px 0px;
+    margin: 10pm 0px;
+    left: 250px;
 }
 .anchor span {
 
@@ -40,7 +40,7 @@ body{
 .sidebar-toggle span {
     background-color: red;
 }
-    
+
 .sidebar>h1 {
     margin: 5px 10px 2px 10px;
 }
@@ -99,7 +99,7 @@ body{
     max-width: 800px;
     padding: 0px 15px 40px;
     position: relative;
-    
+
 }.markdown-section::-webkit-scrollbar {
     width: 8px;
     background: #edf2f7;
@@ -157,8 +157,8 @@ body{
     margin: .75rem 0 .15em 0;
 }
 .markdown-section ol li p {
-   margin-top: .05rem;   /*.15rem; */
-   vertical-align: top;
+    margin-top: .05rem;   /*.15rem; */
+    vertical-align: top;
 }
 .markdown-section ul li p {
    margin-top: .05rem; /*.15rem; */
@@ -200,9 +200,8 @@ body{
 }
 /* em = italics text */
 .markdown-section em {
-    color: DarkBlue;
-	color: red;
-	font-weight: 650;
+    /*color: DarkBlue;*/
+	font-weight: 400;
     margin: 0 .2rem 0 .1rem;
 }
 
@@ -259,4 +258,3 @@ body{
     background: #faebe1;
     text-decoration: none;
 }
-
