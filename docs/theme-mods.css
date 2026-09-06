@@ -4,11 +4,11 @@
 -->
 
 body{
-    font-size: 13px;
+    font-size: 14px;
     color: orange;
 }
 .content {
-   font-size: 13px;
+   font-size: 14px;
    padding: 10px 0px;
    margin: 10pm 0px;
    left: 250px;
@@ -31,7 +31,7 @@ body{
 }
 
 .sidebar {
-    font-size: 13px;
+    font-size: 14px;
     background: #F6F9FB;
     color: #005CB9;
     padding: 02px 0 0 0;
@@ -53,7 +53,7 @@ body{
     margin: 4px 0;
 }
 .sidebar ul li a {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1em;
     word-wrap: break-word;
     white-space: normal;
@@ -201,7 +201,7 @@ body{
 # em = italics text
 .markdown-section em {
     color: DarkBlue;
-	font-weight: 450;
+	font-weight: 600;
     margin: 0 .2rem 0 .1rem;
 }
 
