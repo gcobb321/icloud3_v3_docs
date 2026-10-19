@@ -358,7 +358,35 @@ This is configured on the *Configure > Update Apple Account Username/Password* s
 
 
 
+-----
 
+### Password SRP 503 Error
+
+#### How Apple Verifies your Password
+
+Apple signs you in using a secure password exchange called SRP. iCloud3 sends Apple your username and an encrypted proof of your password, never the password itself. A 503 (Service Unavailable) error means Apple's sign-in server refused to handle the request at that moment. It does not mean your password is wrong. A wrong password returns a different error (401).
+
+When Apple refuses to log you in and verify the password, it usually does this by rejecting all requests from your IP address. Other Apple Accounts you are also using will also get the 503 error when they try to log in again.
+
+Apple starts a timer when the first password verification is rejected and the 503 error occurs. After a period of time (this is not published by Apple but maybe 1, 3 or 6 hours), the service block is lifted and the login will succeed. Each time you try to login when the timer is active, the timer resets so you are starting over again at 0. Waiting and not logging in again for a few hours is the only solution.
+
+#### Common causes
+
+- Too many sign-in attempts. Apple temporarily throttles an account or network after repeated logins in a short time. This often happens after restarting Home Assistant several times, reloading iCloud3 repeatedly, or re-entering the password over and over while troubleshooting.
+- More than one app signing in to the same Apple Account. For example, the built-in HA iCloud integration, a second iCloud3 install, or iCloud Photos Downloader all using the same account.
+- An Apple-side problem. Apple's authentication servers occasionally have outages or slowdowns.
+- Network or IP reputation. Sign-ins through a VPN, proxy, or shared/cloud IP address are more likely to be throttled.
+
+#### What to do
+
+1.	Do not delete any configuration files in the *.storage/icloud3* or Apple Authentication files in  *.storage/icloud3.apple_acct*.  That will not help and probably make the problem worse.
+2.	Do not delete and reinstall the iCloud3 integration. The problem is caused by Apple on Apple's end and has nothing to do with iCloud3, your configuration or Home Assistant.
+3.	Stop and wait. Don't restart HA or retry the login. Wait at least 15–30 minutes. If you made many attempts, it can take a few hours for Apple to clear the block. Each retry can extend the throttle.
+4.	Check Apple System Status (apple.com/support/systemstatus) for problems with Apple Account or iCloud sign-in.
+5.	Confirm the account works by signing in at icloud.com from a browser on the same network.
+6.	Make sure only one integration uses this Apple Account. Disable the HA iCloud integration or any other tool signing in with the same account.
+7.	Turn off VPNs or proxies on the HA host's network connection, if you use them.
+8.	Retry once from iCloud3 Configure > Apple Account > Log into Apple Account. If you still get a 503, wait longer before trying again.
 
 -----
 
