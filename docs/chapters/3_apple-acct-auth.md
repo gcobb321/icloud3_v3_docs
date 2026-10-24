@@ -27,7 +27,7 @@ When iCloud3 logs in the first time and then about every 90 days, access to your
 
 
 
-### Authenticate Apple Account Sign-in screens
+## Authenticate Apple Account Sign-in screens
 
 The screen below is used to Authenticate Apple Account access and to configure how you want to do it:
 
@@ -56,14 +56,77 @@ The screen below is used to Authenticate Apple Account access and to configure h
 
   - **Security Keys** - Security Keys are set up on your iPhone/iPad, go to *Settings App > Your Apple Account > Sign-in & Security > Two-Factor Authentication > Security Keys*.
 
-### Change Authentication Method
+## Change Authentication Method
 
  This screen is used to select the authentication method to be used. Only active methods are displayed. It is opened on the *Authenticate Apple Account Sign-in* screen.
 
 ![](../screens/authenticate/apple-acct-auth-change-method.png)
 
-### Apple Did not Send a Code
 
-There may be times when the text messages do not arrive or the push notification window is not being sent. This is a work-around, manual way of authenticating access to your account. Follow the instructions on the screen. It is opened on the *Authenticate Apple Account Sign-in* screen.
 
-![](../screens/authenticate/apple-acct-auth-get-code-applecom.png)
+## Authenticating an Apple Account from a Dashboard Card
+
+- Selected from the Authenticate Apple Account Sign-in Screen *(v3.8.0+ feature)*
+
+Authenticating your Apple Account sign-in is normally done on the Configure > Authenticate Apple Account Sign-in screen. On this screen, you can request and send a code to Apple, authenticate using a Security key and change the authentication method for an Apple Account. This screen is only available to those who have HA Admin privileges. 
+
+This can present several problems authenticating an account:
+
+- If you are using more than one Apple Account and the owners of the other accounts do not have admin privileges.
+- You do not have the Mobile App installed on a device and you do not access to the HA server.
+- You are away from home, only have an iPhone with a small screen and using the Configure screen is difficult.
+
+This feature provides a solution to these problems. With it, you can add a Text/Button entity to a dashboard card for each of your Apple Accounts and use them to request an authentication code, enter the code and send it to Apple for approval. 
+
+### Dashboard Authentication Cards
+
+The Dashboard Cards can only be used when an Apple account needs to be authenticated. Requesting or entering a code when an account does not need to be authenticated will not do anything. Below are dashboard cards that can be created. Instructions to create them are in a later section. 
+
+![](../screens/authenticate/user_auth_dashboard_card.png)
+
+
+
+To authenticate an account:
+
+- **Requesting a cod**e - Press the Press button on the Request Auth Code line. This only works when an account needs to be authenticated. Use this when the code is not displayed on your device or it has expired.
+
+- **Send the Code to App**le - Type the code in the Enter Auth Code line. You can add it to the end of any messages that are displayed. Then press Enter
+
+  
+
+### Build User Authentication Dashboard Card screen
+
+This screen is used to generate the raw_yaml code for these cards.
+
+The Apple Accounts that are displayed on the card is specified using the *Include parameter*. You can:
+
+- Display all Apple accounts on one card
+- Display only a specific Apple Account on a card
+
+Their visibility status is selected using the *Display Mode paramete*r. They can:
+
+- The card shows on the Dashboard all tie time
+- The card is only visible when an authentication needs to be done
+
+![](../screens/authenticate/user_auth_build_dashboard.png)
+
+
+
+### Creating the User Authentication Card on a Dashboard screen
+
+1. Opening the Configure > Authenticate Apple Sign-in screen > Build User Authentication Dashboard Card. The raw_yaml code for All Devices, Always Display is displayed on the screen.
+2. To change the format:
+   1. select the **Include parameter**, **Display Mode parameter**
+   2. **Refresh**. The new raw_yaml code is displayed.
+3. To copy the raw_yaml code:
+   1. Click anywhere in the text area.
+   2. **Ctrl+A or ⌘+A** to Select the text, then **Ctrl+C or ⌘+C** to Copy the text.
+4. Close the iCloud3 Configure screen (Exit or click the 'X' in the upper-left corner).
+5. **Go to the Dashboard** you want to add the User Authentication Card, go into **Edit mode**, Click **+Add Card**.
+6. Select Manual Card (scroll to the bottom).
+   1. Select the text in the area on the left (it probably has *type: '  '* ). 
+   2. **Ctrl+V or ⌘+V** to paste the raw_yaml code
+7. Click **Save** and then **Done**
+
+
+
